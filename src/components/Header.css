@@ -29,6 +29,18 @@
 .logo {
     text-decoration: none;
     display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.logo-image {
+    height: 50px;
+    width: auto;
+    object-fit: contain;
+}
+
+.logo-text-wrapper {
+    display: flex;
     align-items: baseline;
     gap: 2px;
 }
@@ -186,11 +198,11 @@
 }
 
 @media (max-width: 500px) {
-    .logo-text {
-        font-size: 1.2rem;
+    .logo-text-wrapper {
+        display: none;
     }
 
-    .logo-llc {
-        display: none;
+    .logo-image {
+        height: 45px;
     }
 }

@@ -27,10 +27,13 @@ const Header = () => {
         <header className={`header ${isScrolled ? 'scrolled' : ''}`}>
             <div className="header-container">
                 <a href="#home" className="logo">
-                    <span className="logo-text">
-                        A <span className="red">"Good"</span> <span className="blue">Locksmith</span>
-                    </span>
-                    <span className="logo-llc">, LLC.</span>
+                    <img src="/logo.png" alt="A Good Locksmith" className="logo-image" />
+                    <div className="logo-text-wrapper">
+                        <span className="logo-text">
+                            A <span className="red">"Good"</span> <span className="blue">Locksmith</span>
+                        </span>
+                        <span className="logo-llc">, LLC.</span>
+                    </div>
                 </a>
 
                 <nav className={`nav ${isMobileMenuOpen ? 'open' : ''}`}>
