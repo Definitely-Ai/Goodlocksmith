@@ -1,0 +1,192 @@
+.hero {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    overflow: hidden;
+    background: linear-gradient(135deg, var(--navy-dark) 0%, var(--blue-primary) 50%, var(--navy-medium) 100%);
+    padding-top: 80px;
+}
+
+.hero-bg {
+    position: absolute;
+    inset: 0;
+    overflow: hidden;
+}
+
+.stars {
+    position: absolute;
+    inset: 0;
+}
+
+.star {
+    position: absolute;
+    color: var(--white);
+    font-size: 1rem;
+    opacity: 0.6;
+    animation: star-twinkle 2s infinite;
+}
+
+.stripes {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 200px;
+    background: repeating-linear-gradient(0deg,
+            transparent,
+            transparent 15px,
+            rgba(178, 34, 52, 0.15) 15px,
+            rgba(178, 34, 52, 0.15) 30px);
+    opacity: 0.5;
+}
+
+.hero-container {
+    max-width: var(--container-max);
+    margin: 0 auto;
+    padding: 40px 20px;
+    position: relative;
+    z-index: 1;
+}
+
+.hero-content {
+    text-align: center;
+    color: var(--white);
+}
+
+.hero-badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    padding: 12px 25px;
+    background: linear-gradient(135deg, var(--red-primary), var(--red-dark));
+    border-radius: 50px;
+    font-weight: 600;
+    font-size: 0.95rem;
+    margin-bottom: 30px;
+    animation: pulse-glow 2s infinite;
+}
+
+.hero-title {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    margin-bottom: 25px;
+}
+
+.hero-title .small-text {
+    font-size: clamp(1rem, 3vw, 1.5rem);
+    font-weight: 500;
+    color: rgba(255, 255, 255, 0.8);
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+.hero-title .any-text {
+    font-size: clamp(1.8rem, 5vw, 3rem);
+    font-weight: 700;
+    color: var(--gray-light);
+    text-decoration: line-through;
+    text-decoration-color: var(--red-primary);
+    opacity: 0.7;
+}
+
+.hero-title .call-text {
+    font-size: clamp(2rem, 6vw, 4rem);
+    font-weight: 900;
+    color: var(--gold);
+    letter-spacing: 4px;
+    margin-top: 10px;
+    text-shadow: 0 0 30px rgba(212, 175, 55, 0.5);
+}
+
+.hero-title .brand-text {
+    font-size: clamp(2.5rem, 8vw, 5rem);
+    font-weight: 900;
+    line-height: 1.1;
+}
+
+.hero-title .brand-text .red {
+    color: var(--red-light);
+    text-shadow: 0 0 30px rgba(178, 34, 52, 0.5);
+}
+
+.hero-title .brand-text .blue {
+    color: var(--white);
+}
+
+.hero-subtitle {
+    font-size: 1.3rem;
+    margin-bottom: 30px;
+    letter-spacing: 1px;
+}
+
+.hero-features {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    margin-bottom: 40px;
+    flex-wrap: wrap;
+}
+
+.feature {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 1rem;
+    color: rgba(255, 255, 255, 0.9);
+}
+
+.feature-icon {
+    color: var(--gold);
+    font-size: 1.2rem;
+}
+
+.hero-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-bottom: 40px;
+    flex-wrap: wrap;
+}
+
+.hero-areas {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+    flex-wrap: wrap;
+    font-size: 1rem;
+    color: rgba(255, 255, 255, 0.7);
+}
+
+.hero-areas .area {
+    color: var(--white);
+    font-weight: 600;
+}
+
+.hero-areas .divider {
+    color: var(--red-primary);
+}
+
+@media (max-width: 768px) {
+    .hero {
+        padding-top: 100px;
+        min-height: auto;
+        padding-bottom: 60px;
+    }
+
+    .hero-features {
+        gap: 20px;
+    }
+
+    .hero-buttons {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .hero-areas {
+        gap: 10px;
+    }
+}

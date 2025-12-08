@@ -1,0 +1,110 @@
+.reviews {
+    padding: var(--section-padding);
+    background: var(--white);
+}
+
+.reviews-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 25px;
+    margin-bottom: 50px;
+}
+
+.review-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 35px 25px;
+    background: var(--white);
+    border-radius: 16px;
+    box-shadow: var(--shadow-md);
+    text-decoration: none;
+    color: var(--text-dark);
+    transition: all var(--transition-medium);
+    border: 2px solid transparent;
+}
+
+.review-card:hover {
+    border-color: var(--accent-color, var(--blue-primary));
+    box-shadow: var(--shadow-lg);
+}
+
+.review-icon {
+    width: 70px;
+    height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    font-size: 2rem;
+    color: var(--white);
+    margin-bottom: 20px;
+}
+
+.review-card h3 {
+    font-size: 1.3rem;
+    margin-bottom: 10px;
+}
+
+.review-card p {
+    color: var(--gray-medium);
+    font-size: 0.9rem;
+    margin-bottom: 15px;
+}
+
+.review-link {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    color: var(--blue-primary);
+    font-weight: 600;
+    font-size: 0.95rem;
+}
+
+.review-link svg {
+    font-size: 0.8rem;
+}
+
+.testimonial-cta {
+    text-align: center;
+    padding: 50px;
+    background: linear-gradient(135deg, var(--off-white), var(--white));
+    border-radius: 20px;
+    border: 2px solid var(--gray-light);
+}
+
+.stars-row {
+    display: flex;
+    justify-content: center;
+    gap: 8px;
+    margin-bottom: 20px;
+}
+
+.star-icon {
+    font-size: 1.8rem;
+    color: var(--gold);
+}
+
+.testimonial-cta h3 {
+    font-size: 1.8rem;
+    color: var(--blue-primary);
+    margin-bottom: 15px;
+}
+
+.testimonial-cta p {
+    max-width: 700px;
+    margin: 0 auto;
+    color: var(--gray-medium);
+    line-height: 1.7;
+}
+
+@media (max-width: 500px) {
+    .testimonial-cta {
+        padding: 30px 20px;
+    }
+
+    .star-icon {
+        font-size: 1.4rem;
+    }
+}

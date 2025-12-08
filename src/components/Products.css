@@ -1,0 +1,120 @@
+.products {
+    padding: var(--section-padding);
+    background: linear-gradient(180deg, var(--navy-dark) 0%, var(--blue-primary) 100%);
+    color: var(--white);
+}
+
+.products-title h2 {
+    color: var(--white);
+}
+
+.products-title .red-text {
+    color: var(--red-light);
+}
+
+.fire-icon {
+    display: inline-block;
+    animation: float 2s ease-in-out infinite;
+}
+
+.products .patriotic-divider .line {
+    background: linear-gradient(90deg, var(--red-light), var(--gold));
+}
+
+.products .section-title p {
+    color: rgba(255, 255, 255, 0.8);
+}
+
+.products-intro {
+    text-align: center;
+    max-width: 600px;
+    margin: 0 auto 40px;
+}
+
+.products-intro p {
+    font-size: 1.1rem;
+    opacity: 0.9;
+    line-height: 1.7;
+}
+
+.products-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 25px;
+    margin-bottom: 40px;
+}
+
+.product-card {
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    padding: 30px;
+    border-radius: 16px;
+    text-align: center;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    transition: all var(--transition-medium);
+}
+
+.product-card:hover {
+    background: rgba(255, 255, 255, 0.15);
+    transform: translateY(-5px);
+    border-color: var(--gold);
+}
+
+.product-icon {
+    width: 60px;
+    height: 60px;
+    margin: 0 auto 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(135deg, var(--red-primary), var(--blue-light));
+    border-radius: 50%;
+    font-size: 1.5rem;
+}
+
+.product-card h3 {
+    font-size: 1.1rem;
+    margin-bottom: 10px;
+    line-height: 1.4;
+}
+
+.product-card p {
+    font-size: 0.9rem;
+    opacity: 0.7;
+    margin-bottom: 20px;
+}
+
+.product-card .btn-outline {
+    color: var(--white);
+    border-color: var(--white);
+    font-size: 0.9rem;
+    padding: 10px 20px;
+}
+
+.product-card .btn-outline:hover {
+    background: var(--white);
+    color: var(--blue-primary);
+}
+
+.products-cta {
+    text-align: center;
+    padding: 30px;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 12px;
+}
+
+.products-cta h4 {
+    font-size: 1.3rem;
+    margin-bottom: 8px;
+    color: var(--gold);
+}
+
+.products-cta p {
+    opacity: 0.8;
+}
+
+@media (max-width: 500px) {
+    .product-card {
+        padding: 25px;
+    }
+}
