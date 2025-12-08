@@ -37,6 +37,10 @@
     height: 50px;
     width: auto;
     object-fit: contain;
+    background: linear-gradient(135deg, var(--blue-primary), var(--navy-dark));
+    padding: 8px;
+    border-radius: 10px;
+    box-shadow: var(--shadow-sm);
 }
 
 .logo-text-wrapper {

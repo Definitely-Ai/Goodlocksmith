@@ -67,7 +67,7 @@ const Footer = () => {
                         Copyright © 2018 - {currentYear} A Good Locksmith, LLC. - All Rights Reserved.
                     </p>
                     <p className="made-with">
-                        Made with <FaHeart className="heart" /> in Southwest Florida
+                        Made by <a href="https://aidreambuilders.com" target="_blank" rel="noopener noreferrer" className="builder-link">aidreambuilders.com</a>
                     </p>
                 </div>
             </div>

@@ -119,9 +119,16 @@
     gap: 5px;
 }
 
-.heart {
+.builder-link {
+    color: var(--gold);
+    text-decoration: none;
+    font-weight: 600;
+    transition: all var(--transition-fast);
+}
+
+.builder-link:hover {
     color: var(--red-light);
-    animation: pulse 1.5s infinite;
+    text-decoration: underline;
 }
 
 @media (max-width: 900px) {
