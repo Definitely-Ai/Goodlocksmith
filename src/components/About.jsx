@@ -1,13 +1,19 @@
 import { motion } from 'framer-motion';
-import { FaCheckCircle, FaUsers, FaClock, FaAward, FaPhone } from 'react-icons/fa';
+import { FaCheckCircle, FaUsers, FaClock, FaAward, FaPhone, FaMapMarkerAlt } from 'react-icons/fa';
 import './About.css';
 
 const About = () => {
     const stats = [
-        { icon: <FaClock />, value: '35+', label: 'Years Experience' },
+        { icon: <FaClock />, value: '30+', label: 'Years Experience' },
         { icon: <FaUsers />, value: '10K+', label: 'Happy Customers' },
         { icon: <FaClock />, value: '24/7', label: 'Availability' },
-        { icon: <FaAward />, value: '100%', label: 'Satisfaction' },
+        { icon: <FaMapMarkerAlt />, value: '25mi', label: 'Service Radius' },
+    ];
+
+    const serviceAreas = [
+        'Fuquay-Varina', 'Angier', 'Dunn', 'Erwin', 'Coats', 'Holly Springs',
+        'Sanford', 'Cameron', 'Spring Lake', 'Buies Creek', 'Willow Spring',
+        'Broadwell', 'Mamers', 'Olivia', 'Pittsboro', 'Apex', 'Garner', 'Raleigh'
     ];
 
     return (
@@ -31,50 +37,36 @@ const About = () => {
                         viewport={{ once: true }}
                     >
                         <div className="about-card">
+                            <div className="owner-image-container">
+                                <img src="/images/Pictureofowner.jpg" alt="Owner" className="owner-image" />
+                            </div>
                             <h3>Our Story</h3>
                             <p>
-                                <strong>A Good Locksmith, LLC</strong> is a reputable, trusted locksmith and security
-                                business located in Southwest Florida. We operate out of <strong>Bonita Springs</strong>,
-                                located on the border of Lee and Collier counties. Our response time cannot be matched
-                                being between Naples and Fort Myers.
+                                <strong>A Good Locksmith, LLC</strong> has been proudly serving customers since
+                                <strong> 1994</strong>, delivering fast, reliable, and professional locksmith
+                                services with integrity at the core of everything we do.
                             </p>
                             <p>
-                                We have been in operation since <strong>1988</strong> and offer around the clock,
-                                24-hour emergency service with fully equipped mobile units. The original founder
-                                of the business was <strong>Mr. Harry Good</strong>, thus came the name, A Good Locksmith.
+                                With fully equipped mobile units and decades of hands-on experience, we provide
+                                trusted <strong>automotive, residential, and commercial</strong> solutions —
+                                24 hours a day.
                             </p>
                             <p>
-                                In 1994 the business was purchased and taken over by <strong>Mike Galdine</strong>.
-                                Over the last 30 years Mike has built up the small business into a much larger operation,
-                                creating a following with many local realtors, property managers, shopping centers,
-                                outlet malls, law enforcement agencies, and golf communities.
+                                Now based in <strong>Lillington, North Carolina</strong>, we serve a wide
+                                <strong> 25-mile radius</strong>, bringing dependable service to communities
+                                throughout the Triangle region.
                             </p>
                         </div>
 
                         <div className="team-section">
-                            <h4>Meet Our Team</h4>
-                            <div className="team-members">
-                                <div className="team-member">
-                                    <FaCheckCircle className="check-icon" />
-                                    <div>
-                                        <strong>Mike Galdine</strong>
-                                        <span>Owner & Operator</span>
+                            <h4>Service Areas</h4>
+                            <div className="service-areas-grid">
+                                {serviceAreas.map((area, index) => (
+                                    <div key={index} className="area-tag">
+                                        <FaMapMarkerAlt className="area-icon" />
+                                        {area}
                                     </div>
-                                </div>
-                                <div className="team-member">
-                                    <FaCheckCircle className="check-icon" />
-                                    <div>
-                                        <strong>Ryan Delfino</strong>
-                                        <span>Senior Technician (Since 2001)</span>
-                                    </div>
-                                </div>
-                                <div className="team-member">
-                                    <FaCheckCircle className="check-icon" />
-                                    <div>
-                                        <strong>Matt Galdine</strong>
-                                        <span>Auto Entry Technician</span>
-                                    </div>
-                                </div>
+                                ))}
                             </div>
                         </div>
                     </motion.div>
@@ -88,23 +80,23 @@ const About = () => {
                     >
                         <div className="why-choose-card">
                             <h3>Why Choose Us?</h3>
+                            <p className="tagline">Fast. Professional. Local.</p>
                             <p>
-                                Mike Galdine works hard to earn the trust and confidence of his clients by providing
-                                solutions to their vital locksmith and security needs. Whatever your problem—automotive,
-                                residential, or commercial—we deliver a solution at an affordable price.
+                                From emergency lockouts to full security upgrades, A Good Locksmith delivers
+                                dependable service when you need it most. We're here to help — morning, day, or night.
                             </p>
 
                             <ul className="benefits-list">
-                                <li><FaCheckCircle /> We actually answer the phone</li>
-                                <li><FaCheckCircle /> Return messages promptly</li>
-                                <li><FaCheckCircle /> Call back missed calls 24/7</li>
-                                <li><FaCheckCircle /> Customer service unmatched</li>
-                                <li><FaCheckCircle /> Affordable pricing</li>
-                                <li><FaCheckCircle /> Fully equipped mobile units</li>
+                                <li><FaCheckCircle /> 30+ Years of Experience</li>
+                                <li><FaCheckCircle /> We Actually Answer the Phone</li>
+                                <li><FaCheckCircle /> Fast Response Times</li>
+                                <li><FaCheckCircle /> Fully Equipped Mobile Units</li>
+                                <li><FaCheckCircle /> Fair & Affordable Pricing</li>
+                                <li><FaCheckCircle /> Serving the Entire Triangle South</li>
                             </ul>
 
-                            <a href="tel:239-278-5397" className="btn btn-primary full-width">
-                                <FaPhone /> Give Us a Call!
+                            <a href="tel:984-480-5397" className="btn btn-primary full-width">
+                                <FaPhone /> Call (984) 480-5397
                             </a>
                             <p className="cta-text">Morning, Day or Night — We're Here to Help!</p>
                         </div>

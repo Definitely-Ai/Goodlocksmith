@@ -95,7 +95,7 @@ const Contact = () => {
                                     name="phone"
                                     value={formData.phone}
                                     onChange={handleChange}
-                                    placeholder="(239) 000-0000"
+                                    placeholder="(984) 000-0000"
                                 />
                             </div>
 
@@ -157,10 +157,10 @@ const Contact = () => {
                                     <FaMapMarkerAlt />
                                 </div>
                                 <div>
-                                    <h4>Address</h4>
+                                    <h4>Location</h4>
                                     <p>A Good Locksmith, LLC.</p>
-                                    <p>PO Box 367781</p>
-                                    <p>Bonita Springs, FL 34136</p>
+                                    <p>Lillington, NC</p>
+                                    <p className="service-note">Serving 25-mile radius</p>
                                 </div>
                             </div>
 
@@ -170,7 +170,8 @@ const Contact = () => {
                                 </div>
                                 <div>
                                     <h4>Phone</h4>
-                                    <a href="tel:239-278-5397" className="phone-link">(239) 278-5397</a>
+                                    <a href="tel:984-480-5397" className="phone-link">(984) 480-5397</a>
+                                    <p className="phone-hint">KEYS</p>
                                 </div>
                             </div>
 
@@ -181,7 +182,7 @@ const Contact = () => {
                                 <div>
                                     <h4>Hours</h4>
                                     <p><strong>Available 24/7</strong></p>
-                                    <p>By Appointment Only</p>
+                                    <p>Emergency Service Anytime</p>
                                 </div>
                             </div>
                         </div>

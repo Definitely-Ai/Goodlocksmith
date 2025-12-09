@@ -1,6 +1,7 @@
 import { useState, useEffect } from 'react';
 import { FaPhone, FaBars, FaTimes } from 'react-icons/fa';
 import { motion, AnimatePresence } from 'framer-motion';
+import { Link } from 'react-router-dom';
 import './Header.css';
 
 const Header = () => {
@@ -16,17 +17,17 @@ const Header = () => {
     }, []);
 
     const navLinks = [
-        { name: 'Home', href: '#home' },
-        { name: 'About', href: '#about' },
-        { name: 'Services', href: '#services' },
-        { name: 'Reviews', href: '#reviews' },
-        { name: 'Contact', href: '#contact' },
+        { name: 'Home', href: '/#home' },
+        { name: 'About', href: '/#about' },
+        { name: 'Services', href: '/#services' },
+        { name: 'Service Areas', href: '/#areas' },
+        { name: 'Contact', href: '/#contact' },
     ];
 
     return (
         <header className={`header ${isScrolled ? 'scrolled' : ''}`}>
             <div className="header-container">
-                <a href="#home" className="logo">
+                <Link to="/" className="logo">
                     <img src="/logo.png" alt="A Good Locksmith" className="logo-image" />
                     <div className="logo-text-wrapper">
                         <span className="logo-text">
@@ -34,7 +35,7 @@ const Header = () => {
                         </span>
                         <span className="logo-llc">, LLC.</span>
                     </div>
-                </a>
+                </Link>
 
                 <nav className={`nav ${isMobileMenuOpen ? 'open' : ''}`}>
                     <ul className="nav-links">
@@ -51,9 +52,9 @@ const Header = () => {
                     </ul>
                 </nav>
 
-                <a href="tel:239-278-5397" className="phone-btn">
+                <a href="tel:984-480-5397" className="phone-btn">
                     <FaPhone className="phone-icon" />
-                    <span className="phone-number">(239) 278-5397</span>
+                    <span className="phone-number">(984) 480-5397</span>
                 </a>
 
                 <button
@@ -85,8 +86,8 @@ const Header = () => {
                                 </li>
                             ))}
                             <li>
-                                <a href="tel:239-278-5397" className="mobile-phone">
-                                    <FaPhone /> (239) 278-5397
+                                <a href="tel:984-480-5397" className="mobile-phone">
+                                    <FaPhone /> (984) 480-5397
                                 </a>
                             </li>
                         </ul>

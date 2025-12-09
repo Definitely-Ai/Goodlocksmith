@@ -1,5 +1,5 @@
 import { motion } from 'framer-motion';
-import { FaPhone, FaInfoCircle, FaClock, FaStar } from 'react-icons/fa';
+import { FaPhone, FaInfoCircle, FaClock, FaStar, FaMapMarkerAlt } from 'react-icons/fa';
 import './Hero.css';
 
 const Hero = () => {
@@ -39,27 +39,27 @@ const Hero = () => {
                     </h1>
 
                     <p className="hero-subtitle">
-                        🇺🇸 Trusted by Southwest Florida since 1988 🇺🇸
+                        🇺🇸 Serving the NC Triangle Since 1994 🇺🇸
                     </p>
 
                     <div className="hero-features">
                         <div className="feature">
                             <FaStar className="feature-icon" />
-                            <span>Licensed & Insured</span>
+                            <span>30+ Years Experience</span>
                         </div>
                         <div className="feature">
                             <FaClock className="feature-icon" />
                             <span>Fast Response Time</span>
                         </div>
                         <div className="feature">
-                            <FaStar className="feature-icon" />
-                            <span>Locally Owned</span>
+                            <FaMapMarkerAlt className="feature-icon" />
+                            <span>25-Mile Radius</span>
                         </div>
                     </div>
 
                     <div className="hero-buttons">
-                        <a href="tel:239-278-5397" className="btn btn-primary">
-                            <FaPhone /> Call Now: (239) 278-5397
+                        <a href="tel:984-480-5397" className="btn btn-primary">
+                            <FaPhone /> Call Now: (984) 480-5397
                         </a>
                         <a href="#about" className="btn btn-secondary">
                             <FaInfoCircle /> About Us
@@ -68,14 +68,25 @@ const Hero = () => {
 
                     <div className="hero-areas">
                         <span>Serving:</span>
-                        <span className="area">Naples</span>
+                        <span className="area">Lillington</span>
                         <span className="divider">|</span>
-                        <span className="area">Bonita Springs</span>
+                        <span className="area">Fuquay-Varina</span>
                         <span className="divider">|</span>
-                        <span className="area">Estero</span>
+                        <span className="area">Angier</span>
                         <span className="divider">|</span>
-                        <span className="area">Fort Myers</span>
+                        <span className="area">Dunn</span>
+                        <span className="divider">|</span>
+                        <span className="area">& More</span>
                     </div>
+                </motion.div>
+
+                <motion.div
+                    className="hero-image"
+                    initial={{ opacity: 0, x: 30 }}
+                    animate={{ opacity: 1, x: 0 }}
+                    transition={{ duration: 0.6, delay: 0.2 }}
+                >
+                    <img src="/images/Pictrureofownerwithtruck.jpg" alt="A Good Locksmith Mobile Service" className="truck-image" />
                 </motion.div>
             </div>
         </section>
