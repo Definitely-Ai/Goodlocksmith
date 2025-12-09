@@ -9,7 +9,7 @@ const Reviews = () => {
             name: 'Google',
             icon: <FaGoogle />,
             color: '#4285F4',
-            url: 'https://google.com/search?q=A+Good+Locksmith+Bonita+Springs',
+            url: 'https://google.com/search?q=A+Good+Locksmith+Lillington+NC',
             description: 'Read our Google reviews'
         },
         {
@@ -93,9 +93,9 @@ const Reviews = () => {
                     <h3>Join Our Satisfied Customers</h3>
                     <p>
                         A Good Locksmith has earned a loyal following of satisfied customers throughout
-                        Naples, Bonita, Estero, and Ft. Myers. By word of mouth, these individuals and
-                        companies have referred family and friends who have joined the ever growing
-                        ranks of satisfied clientele.
+                        Lillington, Fuquay-Varina, Angier, Dunn, and the surrounding NC Triangle area.
+                        By word of mouth, these individuals and companies have referred family and friends
+                        who have joined the ever growing ranks of satisfied clientele.
                     </p>
                 </motion.div>
             </div>
