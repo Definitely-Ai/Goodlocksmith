@@ -55,9 +55,22 @@
 }
 
 .team-section h4 {
+    display: flex;
+    align-items: center;
+    gap: 10px;
     color: var(--blue-primary);
     font-size: 1.3rem;
-    margin-bottom: 20px;
+    margin-bottom: 15px;
+}
+
+.team-section h4 svg {
+    color: var(--red-primary);
+}
+
+.mobile-service-text {
+    color: var(--text-dark);
+    line-height: 1.7;
+    font-size: 1rem;
 }
 
 .owner-image-container {

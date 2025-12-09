@@ -1,0 +1,244 @@
+.service-areas {
+    padding: var(--section-padding);
+    background: linear-gradient(180deg, var(--off-white) 0%, var(--white) 100%);
+}
+
+/* Cities Grid */
+.cities-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 25px;
+    margin-bottom: 50px;
+}
+
+.city-card {
+    background: var(--white);
+    padding: 25px;
+    border-radius: 16px;
+    box-shadow: var(--shadow-md);
+    text-decoration: none;
+    color: var(--text-dark);
+    transition: all var(--transition-medium);
+    border: 2px solid transparent;
+    display: block;
+}
+
+.city-card:hover {
+    transform: translateY(-5px);
+    border-color: var(--blue-primary);
+    box-shadow: var(--shadow-lg);
+}
+
+.city-header {
+    display: flex;
+    align-items: flex-start;
+    gap: 12px;
+    margin-bottom: 15px;
+    position: relative;
+}
+
+.city-icon {
+    color: var(--red-primary);
+    font-size: 1.5rem;
+    flex-shrink: 0;
+    margin-top: 3px;
+}
+
+.city-header h3 {
+    font-size: 1.3rem;
+    color: var(--blue-primary);
+    margin-bottom: 4px;
+}
+
+.county {
+    font-size: 0.85rem;
+    color: var(--gray-medium);
+}
+
+.city-badge {
+    position: absolute;
+    top: -5px;
+    right: -5px;
+    background: var(--gold);
+    color: var(--navy-dark);
+    padding: 4px 10px;
+    border-radius: 20px;
+    font-size: 0.75rem;
+    font-weight: 600;
+}
+
+.city-card p {
+    color: var(--gray-medium);
+    font-size: 0.95rem;
+    line-height: 1.5;
+    margin-bottom: 15px;
+}
+
+.view-more {
+    color: var(--red-primary);
+    font-weight: 600;
+    font-size: 0.9rem;
+    display: inline-flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.city-card:hover .view-more {
+    color: var(--blue-primary);
+}
+
+/* Subsection Titles */
+.subsection-title {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 1.4rem;
+    color: var(--blue-primary);
+    margin-bottom: 25px;
+}
+
+.subsection-title svg {
+    color: var(--red-primary);
+}
+
+/* County Section */
+.county-section {
+    margin-bottom: 50px;
+}
+
+.county-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 25px;
+}
+
+.county-card {
+    background: linear-gradient(135deg, var(--blue-primary), var(--navy-dark));
+    color: var(--white);
+    padding: 30px;
+    border-radius: 16px;
+    text-decoration: none;
+    transition: all var(--transition-medium);
+    display: block;
+}
+
+.county-card:hover {
+    transform: translateY(-5px);
+    box-shadow: var(--shadow-lg);
+}
+
+.county-card h4 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+.county-card p {
+    opacity: 0.9;
+    margin-bottom: 15px;
+    font-size: 0.95rem;
+}
+
+.county-card .view-more {
+    color: var(--gold);
+}
+
+/* Additional Areas */
+.additional-areas {
+    margin-bottom: 50px;
+}
+
+.areas-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+}
+
+.areas-tags .area-tag {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    padding: 12px 20px;
+    background: var(--white);
+    border: 2px solid var(--gray-light);
+    border-radius: 30px;
+    font-size: 0.95rem;
+    color: var(--text-dark);
+    transition: all var(--transition-fast);
+}
+
+.areas-tags .area-tag:hover {
+    border-color: var(--blue-primary);
+    background: var(--blue-primary);
+    color: var(--white);
+}
+
+.areas-tags .area-tag svg {
+    color: var(--red-primary);
+    font-size: 0.8rem;
+}
+
+.areas-tags .area-tag:hover svg {
+    color: var(--white);
+}
+
+/* CTA */
+.areas-cta {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 30px;
+    padding: 35px;
+    background: linear-gradient(135deg, var(--red-primary), var(--red-dark));
+    border-radius: 20px;
+    color: var(--white);
+}
+
+.areas-cta .cta-content {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.areas-cta .cta-icon {
+    font-size: 2.5rem;
+    color: var(--gold);
+}
+
+.areas-cta h3 {
+    font-size: 1.3rem;
+    margin-bottom: 5px;
+}
+
+.areas-cta p {
+    opacity: 0.9;
+    font-size: 0.95rem;
+}
+
+/* Responsive */
+@media (max-width: 900px) {
+    .areas-cta {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .areas-cta .cta-content {
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 600px) {
+    .city-badge {
+        position: static;
+        display: inline-block;
+        margin-top: 8px;
+    }
+
+    .city-header {
+        flex-wrap: wrap;
+    }
+
+    .areas-tags .area-tag {
+        padding: 10px 16px;
+        font-size: 0.9rem;
+    }
+}

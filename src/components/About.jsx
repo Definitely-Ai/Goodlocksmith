@@ -1,5 +1,5 @@
 import { motion } from 'framer-motion';
-import { FaCheckCircle, FaUsers, FaClock, FaAward, FaPhone, FaMapMarkerAlt } from 'react-icons/fa';
+import { FaCheckCircle, FaUsers, FaClock, FaPhone, FaMapMarkerAlt, FaTruck } from 'react-icons/fa';
 import './About.css';
 
 const About = () => {
@@ -8,12 +8,6 @@ const About = () => {
         { icon: <FaUsers />, value: '10K+', label: 'Happy Customers' },
         { icon: <FaClock />, value: '24/7', label: 'Availability' },
         { icon: <FaMapMarkerAlt />, value: '25mi', label: 'Service Radius' },
-    ];
-
-    const serviceAreas = [
-        'Fuquay-Varina', 'Angier', 'Dunn', 'Erwin', 'Coats', 'Holly Springs',
-        'Sanford', 'Cameron', 'Spring Lake', 'Buies Creek', 'Willow Spring',
-        'Broadwell', 'Mamers', 'Olivia', 'Pittsboro', 'Apex', 'Garner', 'Raleigh'
     ];
 
     return (
@@ -54,20 +48,17 @@ const About = () => {
                             <p>
                                 Now based in <strong>Lillington, North Carolina</strong>, we serve a wide
                                 <strong> 25-mile radius</strong>, bringing dependable service to communities
-                                throughout the Triangle region.
+                                throughout the Triangle region including Fuquay-Varina, Angier, Dunn, and more.
                             </p>
                         </div>
 
                         <div className="team-section">
-                            <h4>Service Areas</h4>
-                            <div className="service-areas-grid">
-                                {serviceAreas.map((area, index) => (
-                                    <div key={index} className="area-tag">
-                                        <FaMapMarkerAlt className="area-icon" />
-                                        {area}
-                                    </div>
-                                ))}
-                            </div>
+                            <h4><FaTruck /> Fully Equipped Mobile Units</h4>
+                            <p className="mobile-service-text">
+                                We come to you! Our mobile locksmith vans are fully stocked with professional
+                                tools and equipment to handle any locksmith job on-site — from car lockouts
+                                to home rekeying to commercial lock installations.
+                            </p>
                         </div>
                     </motion.div>
 
