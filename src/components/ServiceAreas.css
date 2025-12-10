@@ -24,9 +24,9 @@
 }
 
 .city-card:hover {
-    transform: translateY(-5px);
+    transform: translateY(-8px);
     border-color: var(--blue-primary);
-    box-shadow: var(--shadow-lg);
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.12);
 }
 
 .city-header {
@@ -170,11 +170,14 @@
     border-color: var(--blue-primary);
     background: var(--blue-primary);
     color: var(--white);
+    transform: translateY(-3px);
+    box-shadow: 0 6px 20px rgba(60, 59, 110, 0.25);
 }
 
 .areas-tags .area-tag svg {
     color: var(--red-primary);
     font-size: 0.8rem;
+    transition: color var(--transition-fast);
 }
 
 .areas-tags .area-tag:hover svg {

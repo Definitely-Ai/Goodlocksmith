@@ -50,13 +50,20 @@
     font-family: var(--font-primary);
     font-size: 1rem;
     transition: all var(--transition-fast);
+    background: var(--white);
+}
+
+.form-group input:hover,
+.form-group textarea:hover {
+    border-color: var(--blue-light);
 }
 
 .form-group input:focus,
 .form-group textarea:focus {
     outline: none;
     border-color: var(--blue-primary);
-    box-shadow: 0 0 0 3px rgba(60, 59, 110, 0.1);
+    box-shadow: 0 0 0 4px rgba(60, 59, 110, 0.1), 0 4px 12px rgba(60, 59, 110, 0.05);
+    transform: translateY(-1px);
 }
 
 .form-group textarea {
