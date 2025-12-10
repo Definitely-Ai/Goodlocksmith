@@ -36,8 +36,8 @@ const About = () => {
                             </div>
                             <h3>Our Story</h3>
                             <p>
-                                <strong>A Good Locksmith, LLC</strong> has been proudly serving customers since
-                                <strong> 1994</strong>, delivering fast, reliable, and professional locksmith
+                                <strong>A Good Locksmith, LLC</strong> has been proudly serving customers with
+                                decades of experience, delivering fast, reliable, and professional locksmith
                                 services with integrity at the core of everything we do.
                             </p>
                             <p>

@@ -57,16 +57,15 @@ const Services = () => {
         <section className="services" id="services">
             <div className="container">
                 <div className="section-title">
-                    <h2><span className="blue-text">🇺🇸 OUR SERVICES 🇺🇸</span></h2>
-                    <div className="patriotic-divider">
-                        <span className="line"></span>
-                        <FaKey />
-                        <span className="line"></span>
+                    <h2><span className="title-gradient">Professional Locksmith Services</span></h2>
+                    <div className="title-accent">
+                        <span className="accent-line"></span>
+                        <FaKey className="accent-icon" />
+                        <span className="accent-line"></span>
                     </div>
-                    <p>A Good Locksmith can be on-scene and ready to help 24/7, GUARANTEED!</p>
-                    <div className="service-areas">
-                        <span>Bonita</span> | <span>Naples</span> | <span>Estero</span> | <span>Fort Myers</span>
-                    </div>
+                    <p className="section-subtitle">
+                        Available 24/7 for all your security needs — fast, reliable, and guaranteed!
+                    </p>
                 </div>
 
                 <motion.div
@@ -113,8 +112,8 @@ const Services = () => {
                             <p>We're available 24/7 for all your locksmith needs</p>
                         </div>
                     </div>
-                    <a href="tel:239-278-5397" className="btn btn-primary">
-                        <FaWrench /> Call Now: (239) 278-5397
+                    <a href="tel:984-480-5397" className="btn btn-primary">
+                        <FaWrench /> Call Now: (984) 480-5397
                     </a>
                 </motion.div>
             </div>

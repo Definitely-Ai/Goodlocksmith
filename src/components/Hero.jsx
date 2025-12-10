@@ -39,7 +39,7 @@ const Hero = () => {
                     </h1>
 
                     <p className="hero-subtitle">
-                        🇺🇸 Serving the NC Triangle Since 1994 🇺🇸
+                        🇺🇸 Serving the NC Triangle 🇺🇸
                     </p>
 
                     <div className="hero-features">

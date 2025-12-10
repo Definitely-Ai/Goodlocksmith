@@ -24,7 +24,7 @@ const Footer = () => {
                                 A <span className="red">"Good"</span> <span className="blue">Locksmith</span>, LLC.
                             </h3>
                             <p>
-                                Professional locksmith services in the NC Triangle since 1994. Fast. Professional. Local.
+                                Professional locksmith services in the NC Triangle. Fast. Professional. Local.
                             </p>
                             <div className="footer-flag">🇺🇸</div>
                         </div>
@@ -75,7 +75,7 @@ const Footer = () => {
             <div className="footer-bottom">
                 <div className="container">
                     <p>
-                        Copyright © 1994 - {currentYear} A Good Locksmith, LLC. - All Rights Reserved.
+                        Copyright © {currentYear} A Good Locksmith, LLC. - All Rights Reserved.
                     </p>
                     <p className="made-with">
                         Made by <a href="https://aidreambuilders.com" target="_blank" rel="noopener noreferrer" className="builder-link">aidreambuilders.com</a>
