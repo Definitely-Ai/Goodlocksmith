@@ -1,5 +1,5 @@
 import { motion } from 'framer-motion';
-import { FaGoogle, FaYelp, FaStar, FaExternalLinkAlt } from 'react-icons/fa';
+import { FaGoogle, FaYelp, FaStar, FaExternalLinkAlt, FaQuoteLeft } from 'react-icons/fa';
 import { SiNextdoor } from 'react-icons/si';
 import './Reviews.css';
 
@@ -32,6 +32,34 @@ const Reviews = () => {
             color: '#8ED500',
             url: 'https://nextdoor.com',
             description: 'Neighborhood recommendations'
+        }
+    ];
+
+    const testimonials = [
+        {
+            title: "Reliable and Efficient",
+            text: "The technician arrived exactly when promised and was extremely professional. He handled our lockout quickly and the pricing was very fair. It is great to find a local business that is both reliable and efficient. Highly recommend!",
+            rating: 5
+        },
+        {
+            title: "Expert Knowledge and Great Service",
+            text: "A professional team that clearly knows their trade. They arrived on time, resolved the issue quickly, and even took the time to adjust a few other locks while they were here. They were friendly, knowledgeable, and the price was very reasonable.",
+            rating: 5
+        },
+        {
+            title: "Fast Emergency Response",
+            text: "I called in an emergency situation and they were at my location in less than 20 minutes. They had me back inside my home in no time with zero damage to the lock. The service was top-notch and made a stressful situation much easier to handle.",
+            rating: 5
+        },
+        {
+            title: "Excellent Value and Reliability",
+            text: "We needed several specialized keys cut and the service was quick and accurate. They offer transparent pricing and a high level of customer care that you only get with a local family-owned business. I wouldn't call anyone else for my security needs.",
+            rating: 5
+        },
+        {
+            title: "Highly Recommended for Home Security",
+            text: "Very impressed with the level of communication and the quality of work. They handled a complex re-keying job for our new house with ease and were very helpful in explaining our security options. Professional, clean, and courteous from start to finish.",
+            rating: 5
         }
     ];
 
@@ -75,6 +103,47 @@ const Reviews = () => {
                                 Visit <FaExternalLinkAlt />
                             </span>
                         </motion.a>
+                    ))}
+                </motion.div>
+
+                <div className="section-title" style={{ marginTop: '80px' }}>
+                    <h2><span className="red-text">CUSTOMER</span> <span className="blue-text">TESTIMONIALS</span></h2>
+                    <div className="patriotic-divider">
+                        <span className="line"></span>
+                        <span>⭐</span>
+                        <span className="line"></span>
+                    </div>
+                </div>
+
+                <motion.div
+                    className="testimonials-grid"
+                    initial={{ opacity: 0 }}
+                    whileInView={{ opacity: 1 }}
+                    transition={{ duration: 0.5, staggerChildren: 0.1 }}
+                    viewport={{ once: true }}
+                >
+                    {testimonials.map((testimonial, index) => (
+                        <motion.div
+                            key={index}
+                            className="testimonial-card"
+                            initial={{ opacity: 0, y: 30 }}
+                            whileInView={{ opacity: 1, y: 0 }}
+                            viewport={{ once: true }}
+                        >
+                            <div className="testimonial-quote-icon">
+                                <FaQuoteLeft />
+                            </div>
+                            <div className="testimonial-rating">
+                                {[...Array(testimonial.rating)].map((_, i) => (
+                                    <FaStar key={i} />
+                                ))}
+                            </div>
+                            <h3>{testimonial.title}</h3>
+                            <p>"{testimonial.text}"</p>
+                            <div className="testimonial-footer">
+                                <span className="verified-badge">Verified Customer</span>
+                            </div>
+                        </motion.div>
                     ))}
                 </motion.div>
 
