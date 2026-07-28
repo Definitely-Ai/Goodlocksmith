@@ -36,6 +36,7 @@ const Hero = () => {
                         <span className="brand-text">
                             A <span className="red">"Good"</span> <span className="blue">Locksmith</span>
                         </span>
+                        <span className="small-text">NCLL #3119</span>
                     </h1>
 
                     <p className="hero-subtitle">
