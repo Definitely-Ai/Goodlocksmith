@@ -9,6 +9,9 @@ const Footer = () => {
         { name: 'Fuquay-Varina', path: '/Fuquay-Varina' },
         { name: 'Angier', path: '/Angier' },
         { name: 'Dunn', path: '/Dunn' },
+        { name: 'Coats', path: '/Coats' },
+        { name: 'Erwin', path: '/Erwin' },
+        { name: 'Sanford', path: '/Sanford' },
         { name: 'Harnett County', path: '/Harnett-County' },
         { name: 'Wake County', path: '/Wake-County' },
     ];
