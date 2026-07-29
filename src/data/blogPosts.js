@@ -6,7 +6,7 @@ export const blogPosts = [
     publishedDate: 'July 29, 2026',
     readingTime: '6 min read',
     category: 'Home & Business Security',
-    image: '/images/rekey-property-handoff.png',
+    image: '/images/rekey-property-handoff.webp',
     imageAlt: 'A secure home and business entrance during a new-key property handoff',
   },
 ];
