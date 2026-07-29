@@ -13,6 +13,27 @@ const ServiceAreas = () => {
             description: 'Our headquarters - fastest response times guaranteed'
         },
         {
+            name: 'Coats',
+            slug: 'Coats',
+            county: 'Harnett County',
+            badge: null,
+            description: 'Local service for Coats homes, vehicles, and businesses'
+        },
+        {
+            name: 'Erwin',
+            slug: 'Erwin',
+            county: 'Harnett County',
+            badge: null,
+            description: 'Mobile locksmith service throughout the Erwin community'
+        },
+        {
+            name: 'Sanford',
+            slug: 'Sanford',
+            county: 'Lee County',
+            badge: null,
+            description: 'Professional locksmith service for the Sanford area'
+        },
+        {
             name: 'Fuquay-Varina',
             slug: 'Fuquay-Varina',
             county: 'Wake County',
@@ -51,7 +72,7 @@ const ServiceAreas = () => {
     ];
 
     const additionalAreas = [
-        'Erwin', 'Coats', 'Holly Springs', 'Sanford', 'Cameron',
+        'Holly Springs', 'Cameron',
         'Spring Lake', 'Buies Creek', 'Willow Spring', 'Broadwell',
         'Mamers', 'Olivia', 'Pittsboro', 'Apex', 'Garner'
     ];
