@@ -27,6 +27,9 @@
 .article-content h2 { margin: 44px 0 18px; color: var(--blue-dark); font-size: 2rem; }
 .article-content h3 { color: var(--blue-dark); font-size: 1.25rem; }
 .article-featured-image { width: 100%; aspect-ratio: 16/9; object-fit: cover; border-radius: 18px; box-shadow: var(--shadow-lg); margin-bottom: 34px; }
+.article-inline-photo { margin: 34px 0 42px; }
+.article-inline-photo img { display: block; width: 100%; aspect-ratio: 16/9; object-fit: cover; border-radius: 16px; box-shadow: var(--shadow-md); }
+.article-inline-photo figcaption { margin-top: 10px; color: var(--gray-medium); font-size: .9rem; font-style: italic; text-align: center; }
 .article-callout { margin: 30px 0; padding: 24px; border-left: 5px solid var(--gold); border-radius: 0 12px 12px 0; background: #fff; box-shadow: var(--shadow-sm); }
 .article-callout-primary { color: #fff; border-left-color: var(--red-light); background: var(--blue-primary); }
 .audience-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 20px; }
