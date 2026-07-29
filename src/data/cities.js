@@ -96,7 +96,7 @@ export const cities = {
 
 export const services = [
     {
-        name: 'Automotive Services',
+        name: 'Automotive & Motorcycle',
         icon: '🚗',
         items: ['Car Lockouts', 'Key Cutting', 'Transponder Keys', 'Broken Key Extraction']
     },
