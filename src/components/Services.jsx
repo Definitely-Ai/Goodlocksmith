@@ -16,7 +16,7 @@ const Services = () => {
             title: 'Auto Services',
             emoji: '🚗',
             description: 'Complete automotive locksmith services for all makes and models. Car lockouts, key programming, and more.',
-            features: ['Car Lockouts', 'Key Cutting', 'Transponder Keys', 'Ignition Repair']
+            features: ['Car Lockouts', 'Key Cutting', 'Transponder Keys']
         },
         {
             icon: <FaBuilding />,

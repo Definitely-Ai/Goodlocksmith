@@ -4,7 +4,7 @@ import './About.css';
 
 const About = () => {
     const stats = [
-        { icon: <FaClock />, value: '30+', label: 'Years Experience' },
+        { icon: <FaClock />, value: '34+', label: 'Years Experience' },
         { icon: <FaUsers />, value: '10K+', label: 'Happy Customers' },
         { icon: <FaClock />, value: '24/7', label: 'Availability' },
         { icon: <FaMapMarkerAlt />, value: '25mi', label: 'Service Radius' },
@@ -78,7 +78,7 @@ const About = () => {
                             </p>
 
                             <ul className="benefits-list">
-                                <li><FaCheckCircle /> 30+ Years of Experience</li>
+                                <li><FaCheckCircle /> 34+ Years of Experience</li>
                                 <li><FaCheckCircle /> We Actually Answer the Phone</li>
                                 <li><FaCheckCircle /> Fast Response Times</li>
                                 <li><FaCheckCircle /> Fully Equipped Mobile Units</li>

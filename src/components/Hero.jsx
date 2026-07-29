@@ -46,7 +46,7 @@ const Hero = () => {
                     <div className="hero-features">
                         <div className="feature">
                             <FaStar className="feature-icon" />
-                            <span>30+ Years Experience</span>
+                            <span>34+ Years Experience</span>
                         </div>
                         <div className="feature">
                             <FaClock className="feature-icon" />
