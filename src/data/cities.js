@@ -98,7 +98,7 @@ export const services = [
     {
         name: 'Automotive & Motorcycle',
         icon: '🚗',
-        items: ['Car Lockouts', 'Key Cutting', 'Transponder Keys', 'Broken Key Extraction']
+        items: ['Car Lockouts', 'Key Cutting', 'Transponder Keys', 'Broken Key Extraction', 'Duplicate Motorcycle Keys', 'Lost Motorcycle Key Replacement']
     },
     {
         name: 'Residential Services',
