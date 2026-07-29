@@ -1,5 +1,5 @@
 import { motion } from 'framer-motion';
-import { FaHome, FaCar, FaBuilding, FaMobileAlt, FaKey, FaLock, FaShieldAlt, FaWrench } from 'react-icons/fa';
+import { FaHome, FaCar, FaBuilding, FaMobileAlt, FaKey, FaLock, FaShieldAlt, FaWrench, FaMotorcycle, FaPhone } from 'react-icons/fa';
 import './Services.css';
 
 const Services = () => {
@@ -13,7 +13,7 @@ const Services = () => {
         },
         {
             icon: <FaCar />,
-            title: 'Auto Services',
+            title: 'Automotive & Motorcycle',
             emoji: '🚗',
             description: 'Complete automotive locksmith services for all makes and models. Car lockouts, key programming, and more.',
             features: ['Car Lockouts', 'Key Cutting', 'Transponder Keys']
@@ -97,6 +97,31 @@ const Services = () => {
                         </motion.div>
                     ))}
                 </motion.div>
+
+                <motion.section
+                    className="motorcycle-services"
+                    initial={{ opacity: 0, y: 20 }}
+                    whileInView={{ opacity: 1, y: 0 }}
+                    transition={{ duration: 0.5 }}
+                    viewport={{ once: true }}
+                >
+                    <div className="motorcycle-heading">
+                        <div className="motorcycle-icon"><FaMotorcycle /></div>
+                        <div>
+                            <span className="motorcycle-eyebrow">Mechanical motorcycle keys</span>
+                            <h3>Motorcycle Key Services</h3>
+                            <p>Mobile motorcycle locksmith service throughout Lillington, Harnett County, Wake County, and our surrounding service areas.</p>
+                        </div>
+                    </div>
+                    <ul className="motorcycle-features">
+                        <li><FaShieldAlt /> Duplicate Motorcycle Keys</li>
+                        <li><FaShieldAlt /> All-Keys-Lost Replacement</li>
+                        <li><FaShieldAlt /> Broken Motorcycle-Key Extraction</li>
+                    </ul>
+                    <a href="tel:984-480-5397" className="btn btn-secondary">
+                        <FaPhone /> Call About a Motorcycle Key
+                    </a>
+                </motion.section>
 
                 <motion.div
                     className="services-cta"
