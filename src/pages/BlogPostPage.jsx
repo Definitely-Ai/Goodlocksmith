@@ -14,7 +14,7 @@ const BlogPostPage = () => {
   useEffect(() => {
     if (!post) return;
     document.title = 'Rekey Locks in Harnett & Wake County, NC | A Good Locksmith';
-    const description = 'Rekey your home, rental property, or business locks in Lillington, Angier, Dunn, Fuquay-Varina, Harnett County, and Wake County. Call A Good Locksmith.';
+    const description = 'Rekey your home, rental property, or business locks in Lillington, Angier, Dunn, Coats, Erwin, Sanford, Fuquay-Varina, Harnett County, and Wake County. Call A Good Locksmith.';
     let meta = document.querySelector('meta[name="description"]');
     if (meta) meta.setAttribute('content', description);
 
@@ -57,7 +57,7 @@ const BlogPostPage = () => {
       publisher: { '@type': 'Organization', name: 'A Good Locksmith, LLC', url: 'https://goodlocksmith.com' },
       mainEntityOfPage: canonicalUrl,
       about: ['Lock rekeying', 'Residential security', 'Commercial security', 'Rental property security'],
-      areaServed: ['Lillington, NC', 'Angier, NC', 'Dunn, NC', 'Fuquay-Varina, NC', 'Harnett County, NC', 'Wake County, NC'],
+      areaServed: ['Lillington, NC', 'Angier, NC', 'Dunn, NC', 'Coats, NC', 'Erwin, NC', 'Sanford, NC', 'Fuquay-Varina, NC', 'Harnett County, NC', 'Wake County, NC'],
     });
     document.head.appendChild(schema);
 
@@ -137,12 +137,15 @@ const BlogPostPage = () => {
               <p>Rekeying changes which key operates a compatible lock. Replacement installs different hardware. Rekeying may be the efficient choice when the existing locks are suitable and in good condition. Replacement may be recommended when hardware is damaged, worn, incompatible, or no longer meets the property’s needs. A locksmith should inspect the doors and hardware before recommending the best course.</p>
 
               <h2>Local rekeying service in Harnett and Wake counties</h2>
-              <p>A Good Locksmith, LLC provides residential, rental-property, and commercial locksmith service from Lillington throughout our listed service area, including Angier, Dunn, Fuquay-Varina, Harnett County, and Wake County, North Carolina.</p>
+              <p>A Good Locksmith, LLC provides residential, rental-property, and commercial locksmith service from Lillington throughout our listed service area, including Angier, Dunn, Coats, Erwin, Sanford, Fuquay-Varina, Harnett County, and Wake County, North Carolina.</p>
 
               <div className="service-area-links">
                 <Link to="/Lillington">Lillington</Link>
                 <Link to="/Angier">Angier</Link>
                 <Link to="/Dunn">Dunn</Link>
+                <Link to="/Coats">Coats</Link>
+                <Link to="/Erwin">Erwin</Link>
+                <Link to="/Sanford">Sanford</Link>
                 <Link to="/Fuquay-Varina">Fuquay-Varina</Link>
                 <Link to="/Harnett-County">Harnett County</Link>
                 <Link to="/Wake-County">Wake County</Link>
@@ -171,6 +174,9 @@ const BlogPostPage = () => {
                   <li><Link to="/Lillington">Lillington, NC</Link></li>
                   <li><Link to="/Angier">Angier, NC</Link></li>
                   <li><Link to="/Dunn">Dunn, NC</Link></li>
+                  <li><Link to="/Coats">Coats, NC</Link></li>
+                  <li><Link to="/Erwin">Erwin, NC</Link></li>
+                  <li><Link to="/Sanford">Sanford, NC</Link></li>
                   <li><Link to="/Fuquay-Varina">Fuquay-Varina, NC</Link></li>
                   <li><Link to="/Harnett-County">Harnett County, NC</Link></li>
                   <li><Link to="/Wake-County">Wake County, NC</Link></li>
