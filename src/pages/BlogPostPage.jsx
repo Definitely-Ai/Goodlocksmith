@@ -95,6 +95,11 @@ const BlogPostPage = () => {
 
               <p>Rekeying changes the lock so the old keys no longer operate it. In many situations, the existing lock hardware can remain in place while authorized occupants receive new keys. A professional locksmith can inspect the hardware and explain whether rekeying or replacement is the appropriate option.</p>
 
+              <figure className="article-inline-photo">
+                <img src="/images/residential-rekey-good-locksmith.png" alt="A Good Locksmith providing residential lock service at a North Carolina home" />
+                <figcaption>Professional residential lock service from A Good Locksmith, LLC.</figcaption>
+              </figure>
+
               <h2>Who should make rekeying a priority?</h2>
 
               <div className="audience-grid">
@@ -115,6 +120,11 @@ const BlogPostPage = () => {
                   <p>Rekey after employee or vendor changes, missing keys, management transitions, or changes in who should access offices, storage rooms, and exterior doors.</p>
                 </section>
               </div>
+
+              <figure className="article-inline-photo">
+                <img src="/images/commercial-rekey-good-locksmith.png" alt="A Good Locksmith providing commercial lock service at a North Carolina business" />
+                <figcaption>Professional commercial door and lock service for local businesses.</figcaption>
+              </figure>
 
               <h2>When should locks be rekeyed?</h2>
               <ul className="article-checklist">
