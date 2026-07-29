@@ -2,19 +2,6 @@
     "buildCommand": "npm run build",
     "outputDirectory": "dist",
     "framework": "vite",
-    "redirects": [
-        {
-            "source": "/:path*",
-            "has": [
-                {
-                    "type": "host",
-                    "value": "goodlocksmith.vercel.app"
-                }
-            ],
-            "destination": "https://goodlocksmith.com/:path*",
-            "permanent": true
-        }
-    ],
     "rewrites": [
         {
             "source": "/(.*)",
