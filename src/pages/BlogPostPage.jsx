@@ -3,6 +3,7 @@ import { Link, Navigate, useParams } from 'react-router-dom';
 import { FaPhone, FaCheckCircle } from 'react-icons/fa';
 import Header from '../components/Header';
 import Footer from '../components/Footer';
+import ProfessionalLocksmithPost from './ProfessionalLocksmithPost';
 import { getBlogPost } from '../data/blogPosts';
 import { phoneLink } from '../data/cities';
 import './Blog.css';
@@ -13,8 +14,8 @@ const BlogPostPage = () => {
 
   useEffect(() => {
     if (!post) return;
-    document.title = 'Rekey Locks in Harnett & Wake County, NC | A Good Locksmith';
-    const description = 'Rekey your home, rental property, or business locks in Lillington, Angier, Dunn, Coats, Erwin, Sanford, Fuquay-Varina, Harnett County, and Wake County. Call A Good Locksmith.';
+    document.title = post.seoTitle;
+    const description = post.seoDescription;
     let meta = document.querySelector('meta[name="description"]');
     if (meta) meta.setAttribute('content', description);
 
@@ -50,14 +51,14 @@ const BlogPostPage = () => {
       '@type': 'Article',
       headline: post.title,
       description,
-      datePublished: '2026-07-29',
-      dateModified: '2026-07-29',
+      datePublished: post.datePublished,
+      dateModified: post.datePublished,
       image: 'https://goodlocksmith.com' + post.image,
       author: { '@type': 'Organization', name: 'A Good Locksmith, LLC' },
       publisher: { '@type': 'Organization', name: 'A Good Locksmith, LLC', url: 'https://goodlocksmith.com' },
       mainEntityOfPage: canonicalUrl,
-      about: ['Lock rekeying', 'Residential security', 'Commercial security', 'Rental property security'],
-      areaServed: ['Lillington, NC', 'Angier, NC', 'Dunn, NC', 'Coats, NC', 'Erwin, NC', 'Sanford, NC', 'Fuquay-Varina, NC', 'Harnett County, NC', 'Wake County, NC'],
+      about: post.about,
+      areaServed: ['Lillington, NC', 'Angier, NC', 'Bunlevel, NC', 'Dunn, NC', 'Coats, NC', 'Erwin, NC', 'Sanford, NC', 'Fuquay-Varina, NC', 'Harnett County, NC', 'Wake County, NC'],
     });
     document.head.appendChild(schema);
 
@@ -67,6 +68,10 @@ const BlogPostPage = () => {
   }, [post]);
 
   if (!post) return <Navigate to="/blog" replace />;
+
+  if (post.slug === 'why-hire-professional-locksmith-avoid-damage') {
+    return <ProfessionalLocksmithPost post={post} />;
+  }
 
   return (
     <>
