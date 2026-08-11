@@ -52,6 +52,15 @@ const About = () => {
                             </p>
                         </div>
 
+                        <figure className="about-service-photo">
+                            <img
+                                src="/images/locksmith-customer-key-handoff.webp"
+                                alt="A Good Locksmith handing a customer her vehicle keys after completing locksmith service"
+                                loading="lazy"
+                            />
+                            <figcaption>Professional, friendly locksmith service from a local expert you can trust.</figcaption>
+                        </figure>
+
                         <div className="team-section">
                             <h4><FaTruck /> Fully Equipped Mobile Units</h4>
                             <p className="mobile-service-text">
