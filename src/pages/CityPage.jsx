@@ -1,3 +1,4 @@
+import { useEffect } from 'react';
 import { useParams, Link } from 'react-router-dom';
 import { motion } from 'framer-motion';
 import { FaPhone, FaMapMarkerAlt, FaCheckCircle, FaClock, FaArrowLeft, FaHome, FaCar, FaBuilding, FaMobileAlt } from 'react-icons/fa';
@@ -7,6 +8,22 @@ import './CityPage.css';
 const CityPage = () => {
     const { citySlug } = useParams();
     const city = cities[citySlug];
+
+    useEffect(() => {
+        if (!city) return;
+        const canonicalUrl = `https://www.goodlocksmith.com/${city.slug}`;
+        document.title = `Locksmith in ${city.name}, NC | A Good Locksmith`;
+        const canonical = document.querySelector('link[rel="canonical"]');
+        const ogUrl = document.querySelector('meta[property="og:url"]');
+        if (canonical) canonical.setAttribute('href', canonicalUrl);
+        if (ogUrl) ogUrl.setAttribute('content', canonicalUrl);
+
+        return () => {
+            document.title = 'A Good Locksmith, LLC | 24/7 Locksmith Service | Lillington, NC | (984) 480-5397';
+            if (canonical) canonical.setAttribute('href', 'https://www.goodlocksmith.com/');
+            if (ogUrl) ogUrl.setAttribute('content', 'https://www.goodlocksmith.com/');
+        };
+    }, [city]);
 
     if (!city) {
         return (

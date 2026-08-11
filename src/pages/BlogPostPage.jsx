@@ -19,7 +19,7 @@ const BlogPostPage = () => {
     let meta = document.querySelector('meta[name="description"]');
     if (meta) meta.setAttribute('content', description);
 
-    const canonicalUrl = 'https://goodlocksmith.com/blog/' + post.slug;
+    const canonicalUrl = 'https://www.goodlocksmith.com/blog/' + post.slug;
     let canonical = document.querySelector('link[rel="canonical"]');
     if (!canonical) {
       canonical = document.createElement('link');
@@ -41,7 +41,7 @@ const BlogPostPage = () => {
     setMeta('og:title', post.title + ' | A Good Locksmith');
     setMeta('og:description', description);
     setMeta('og:url', canonicalUrl);
-    setMeta('og:image', 'https://goodlocksmith.com' + post.image);
+    setMeta('og:image', 'https://www.goodlocksmith.com' + post.image);
 
     const schema = document.createElement('script');
     schema.type = 'application/ld+json';
@@ -53,9 +53,9 @@ const BlogPostPage = () => {
       description,
       datePublished: post.datePublished,
       dateModified: post.datePublished,
-      image: 'https://goodlocksmith.com' + post.image,
+      image: 'https://www.goodlocksmith.com' + post.image,
       author: { '@type': 'Organization', name: 'A Good Locksmith, LLC' },
-      publisher: { '@type': 'Organization', name: 'A Good Locksmith, LLC', url: 'https://goodlocksmith.com' },
+      publisher: { '@type': 'Organization', name: 'A Good Locksmith, LLC', url: 'https://www.goodlocksmith.com/' },
       mainEntityOfPage: canonicalUrl,
       about: post.about,
       areaServed: ['Lillington, NC', 'Angier, NC', 'Bunlevel, NC', 'Dunn, NC', 'Coats, NC', 'Erwin, NC', 'Sanford, NC', 'Fuquay-Varina, NC', 'Harnett County, NC', 'Wake County, NC'],
