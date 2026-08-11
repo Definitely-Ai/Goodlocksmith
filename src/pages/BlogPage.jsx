@@ -11,8 +11,14 @@ const BlogPage = () => {
     const description = 'Practical lock, key, and property security guidance for Harnett County and Wake County homeowners, landlords, realtors, rental agents, and businesses.';
     let meta = document.querySelector('meta[name="description"]');
     if (meta) meta.setAttribute('content', description);
+    const canonical = document.querySelector('link[rel="canonical"]');
+    if (canonical) canonical.setAttribute('href', 'https://www.goodlocksmith.com/blog');
+    const ogUrl = document.querySelector('meta[property="og:url"]');
+    if (ogUrl) ogUrl.setAttribute('content', 'https://www.goodlocksmith.com/blog');
     return () => {
       document.title = 'A Good Locksmith, LLC | 24/7 Locksmith Service | Lillington, NC | (984) 480-5397';
+      if (canonical) canonical.setAttribute('href', 'https://www.goodlocksmith.com/');
+      if (ogUrl) ogUrl.setAttribute('content', 'https://www.goodlocksmith.com/');
     };
   }, []);
 
