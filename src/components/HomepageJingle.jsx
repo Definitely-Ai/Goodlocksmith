@@ -1,61 +1,61 @@
-import { useEffect, useRef } from 'react';
+import { useRef, useState } from 'react';
+import './HomepageJingle.css';
 
 const HomepageJingle = () => {
     const audioRef = useRef(null);
+    const [isOpen, setIsOpen] = useState(true);
+    const [isEntering, setIsEntering] = useState(false);
 
-    useEffect(() => {
+    const enterSite = async () => {
+        if (isEntering) return;
+        setIsEntering(true);
+
         const audio = audioRef.current;
-        if (!audio) return undefined;
-
-        let fallbackActive = false;
-
-        const removeFallbackListeners = () => {
-            if (!fallbackActive) return;
-            window.removeEventListener('pointerdown', playAfterInteraction);
-            window.removeEventListener('keydown', playAfterInteraction);
-            fallbackActive = false;
-        };
-
-        const startPlayback = async () => {
+        if (audio) {
+            audio.currentTime = 0;
             try {
-                audio.currentTime = 0;
                 await audio.play();
-                removeFallbackListeners();
-                return true;
             } catch {
-                return false;
+                // The homepage still opens if a device cannot play the audio.
             }
-        };
+        }
 
-        const playAfterInteraction = () => {
-            startPlayback();
-        };
-
-        const attemptAutoplay = async () => {
-            const started = await startPlayback();
-            if (!started) {
-                fallbackActive = true;
-                window.addEventListener('pointerdown', playAfterInteraction, { once: true });
-                window.addEventListener('keydown', playAfterInteraction, { once: true });
-            }
-        };
-
-        attemptAutoplay();
-
-        return () => {
-            removeFallbackListeners();
-            audio.pause();
-        };
-    }, []);
+        setIsOpen(false);
+    };
 
     return (
-        <audio
-            ref={audioRef}
-            src="/locked-no-more-jingle.mp3"
-            preload="auto"
-            playsInline
-            aria-hidden="true"
-        />
+        <>
+            <audio
+                ref={audioRef}
+                src="/locked-no-more-jingle.mp3"
+                preload="auto"
+                playsInline
+                aria-hidden="true"
+            />
+            {isOpen && (
+                <div className="jingle-welcome" role="dialog" aria-modal="true" aria-labelledby="jingle-welcome-title">
+                    <div className="jingle-welcome__panel">
+                        <img
+                            className="jingle-welcome__logo"
+                            src="/logo.png"
+                            alt="A Good Locksmith"
+                        />
+                        <p className="jingle-welcome__eyebrow">Welcome to</p>
+                        <h1 id="jingle-welcome-title">A Good Locksmith</h1>
+                        <p className="jingle-welcome__message">Professional locksmith service you can trust.</p>
+                        <button
+                            type="button"
+                            className="jingle-welcome__enter"
+                            onClick={enterSite}
+                            disabled={isEntering}
+                        >
+                            {isEntering ? 'Opening…' : 'Tap to Enter'}
+                        </button>
+                        <p className="jingle-welcome__note">Our jingle will play once.</p>
+                    </div>
+                </div>
+            )}
+        </>
     );
 };
 
