@@ -7,10 +7,12 @@ import Reviews from '../components/Reviews';
 import Contact from '../components/Contact';
 import Products from '../components/Products';
 import Footer from '../components/Footer';
+import HomepageJingle from '../components/HomepageJingle';
 
 const HomePage = () => {
     return (
         <>
+            <HomepageJingle />
             <Header />
             <main>
                 <Hero />
