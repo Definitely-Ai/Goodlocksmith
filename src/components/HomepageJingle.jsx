@@ -3,20 +3,26 @@ import './HomepageJingle.css';
 
 const HomepageJingle = () => {
     const audioRef = useRef(null);
+    const hasEnteredRef = useRef(false);
     const [isOpen, setIsOpen] = useState(true);
-    const [isEntering, setIsEntering] = useState(false);
 
-    const enterSite = async () => {
-        if (isEntering) return;
-        setIsEntering(true);
+    const enterSite = () => {
+        if (hasEnteredRef.current) return;
+        hasEnteredRef.current = true;
 
         const audio = audioRef.current;
+
+        // Keep play() as the first browser action from the visitor's gesture.
         if (audio) {
             audio.currentTime = 0;
-            try {
-                await audio.play();
-            } catch {
-                // The homepage still opens if a device cannot play the audio.
+            audio.volume = 1;
+            const playback = audio.play();
+
+            if (playback && typeof playback.catch === 'function') {
+                playback.catch(() => {
+                    hasEnteredRef.current = false;
+                    setIsOpen(true);
+                });
             }
         }
 
@@ -46,10 +52,12 @@ const HomepageJingle = () => {
                         <button
                             type="button"
                             className="jingle-welcome__enter"
-                            onClick={enterSite}
-                            disabled={isEntering}
+                            onPointerDown={enterSite}
+                            onKeyDown={(event) => {
+                                if (event.key === 'Enter' || event.key === ' ') enterSite();
+                            }}
                         >
-                            {isEntering ? 'Opening…' : 'Tap to Enter'}
+                            Tap to Enter
                         </button>
                         <p className="jingle-welcome__note">Our jingle will play once.</p>
                     </div>
