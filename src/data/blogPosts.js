@@ -1,5 +1,19 @@
 export const blogPosts = [
   {
+    slug: 'home-door-security-lock-checklist-nc',
+    title: 'Home Door Security Checklist: Locks, Frames & Strike Plates',
+    excerpt: 'A strong deadbolt is only one part of a secure entrance. Use this practical checklist to evaluate the locks, strike plates, frames, hinges, and garage-entry doors protecting your home.',
+    publishedDate: 'August 14, 2026',
+    datePublished: '2026-08-14',
+    readingTime: '8 min read',
+    category: 'Home Security',
+    image: '/images/locksmith-customer-key-handoff.webp',
+    imageAlt: 'A Good Locksmith handing keys to a customer after professional locksmith service in North Carolina',
+    seoTitle: 'Home Security Locks in Harnett County, NC | Door Checklist',
+    seoDescription: 'Use this home door security checklist to evaluate deadbolts, strike plates, frames, hinges, and garage-entry doors in Harnett and southern Wake County, NC.',
+    about: ['Home security locks', 'Deadbolt locks', 'Door reinforcement', 'Strike plates', 'Residential locksmith'],
+  },
+  {
     slug: 'why-hire-professional-locksmith-avoid-damage',
     title: 'Why Hiring a Professional Locksmith Helps Prevent Costly Damage',
     excerpt: 'A careful, experienced locksmith can solve lock and key problems while helping protect your vehicle, door, lock, and property from avoidable damage.',
