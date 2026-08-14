@@ -4,6 +4,7 @@ import { FaPhone, FaCheckCircle } from 'react-icons/fa';
 import Header from '../components/Header';
 import Footer from '../components/Footer';
 import ProfessionalLocksmithPost from './ProfessionalLocksmithPost';
+import DoorSecurityPost from './DoorSecurityPost';
 import { getBlogPost } from '../data/blogPosts';
 import { phoneLink } from '../data/cities';
 import './Blog.css';
@@ -71,6 +72,10 @@ const BlogPostPage = () => {
 
   if (post.slug === 'why-hire-professional-locksmith-avoid-damage') {
     return <ProfessionalLocksmithPost post={post} />;
+  }
+
+  if (post.slug === 'home-door-security-lock-checklist-nc') {
+    return <DoorSecurityPost post={post} />;
   }
 
   return (
