@@ -1,5 +1,19 @@
 export const blogPosts = [
   {
+    slug: 'locked-keys-in-car-safe-next-steps-nc',
+    title: 'Locked Keys in the Car? Safe Next Steps in North Carolina',
+    excerpt: 'A calm, safety-first guide to vehicle lockouts: when to call 911, what to check, what information a locksmith needs, and why improvised entry can cause expensive damage.',
+    publishedDate: 'August 15, 2026',
+    datePublished: '2026-08-15',
+    readingTime: '7 min read',
+    category: 'Automotive Locksmith Advice',
+    image: '/images/local-car-lockout-good-locksmith.webp',
+    imageAlt: 'A Good Locksmith service vehicle providing local automotive lockout assistance in North Carolina',
+    seoTitle: 'Car Lockout Locksmith in Harnett County, NC | Safe Steps',
+    seoDescription: 'Locked keys in your car? Learn safe next steps and when to call 911 or a car lockout locksmith in Lillington, Angier, Dunn, Fuquay-Varina, and nearby NC areas.',
+    about: ['Car lockout locksmith', 'Keys locked in car', 'Automotive locksmith', 'Vehicle lockout safety'],
+  },
+  {
     slug: 'home-door-security-lock-checklist-nc',
     title: 'Home Door Security Checklist: Locks, Frames & Strike Plates',
     excerpt: 'A strong deadbolt is only one part of a secure entrance. Use this practical checklist to evaluate the locks, strike plates, frames, hinges, and garage-entry doors protecting your home.',
