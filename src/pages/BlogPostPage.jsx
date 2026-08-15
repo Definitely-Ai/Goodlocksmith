@@ -5,6 +5,7 @@ import Header from '../components/Header';
 import Footer from '../components/Footer';
 import ProfessionalLocksmithPost from './ProfessionalLocksmithPost';
 import DoorSecurityPost from './DoorSecurityPost';
+import CarLockoutSafetyPost from './CarLockoutSafetyPost';
 import { getBlogPost } from '../data/blogPosts';
 import { phoneLink } from '../data/cities';
 import './Blog.css';
@@ -76,6 +77,10 @@ const BlogPostPage = () => {
 
   if (post.slug === 'home-door-security-lock-checklist-nc') {
     return <DoorSecurityPost post={post} />;
+  }
+
+  if (post.slug === 'locked-keys-in-car-safe-next-steps-nc') {
+    return <CarLockoutSafetyPost post={post} />;
   }
 
   return (
