@@ -1,5 +1,19 @@
 export const blogPosts = [
   {
+    slug: 'smart-lock-vs-traditional-deadbolt-nc',
+    title: 'Smart Lock or Traditional Deadbolt? A North Carolina Homeowner’s Guide',
+    excerpt: 'Compare smart locks and traditional deadbolts, including door fit, backup access, batteries, cybersecurity, product testing, and professional installation.',
+    publishedDate: 'August 16, 2026',
+    datePublished: '2026-08-16',
+    readingTime: '8 min read',
+    category: 'Smart Home Security',
+    image: '/images/residential-rekey-good-locksmith.webp',
+    imageAlt: 'A Good Locksmith providing residential lock service at a North Carolina home',
+    seoTitle: 'Smart Lock Installation in Harnett County, NC | Guide',
+    seoDescription: 'Compare smart locks and traditional deadbolts, including door fit, backup access, batteries, cybersecurity, and installation in Harnett County, NC.',
+    about: ['Smart lock installation', 'Smart locks versus deadbolts', 'Keyless entry', 'Residential locksmith', 'Connected home security'],
+  },
+  {
     slug: 'locked-keys-in-car-safe-next-steps-nc',
     title: 'Locked Keys in the Car? Safe Next Steps in North Carolina',
     excerpt: 'A calm, safety-first guide to vehicle lockouts: when to call 911, what to check, what information a locksmith needs, and why improvised entry can cause expensive damage.',
