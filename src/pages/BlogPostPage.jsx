@@ -6,6 +6,7 @@ import Footer from '../components/Footer';
 import ProfessionalLocksmithPost from './ProfessionalLocksmithPost';
 import DoorSecurityPost from './DoorSecurityPost';
 import CarLockoutSafetyPost from './CarLockoutSafetyPost';
+import SmartLockGuidePost from './SmartLockGuidePost';
 import { getBlogPost } from '../data/blogPosts';
 import { phoneLink } from '../data/cities';
 import './Blog.css';
@@ -81,6 +82,10 @@ const BlogPostPage = () => {
 
   if (post.slug === 'locked-keys-in-car-safe-next-steps-nc') {
     return <CarLockoutSafetyPost post={post} />;
+  }
+
+  if (post.slug === 'smart-lock-vs-traditional-deadbolt-nc') {
+    return <SmartLockGuidePost post={post} />;
   }
 
   return (
