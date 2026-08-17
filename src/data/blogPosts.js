@@ -1,5 +1,19 @@
 export const blogPosts = [
   {
+    slug: 'car-key-replacement-what-to-have-ready-nc',
+    title: 'Need a Replacement Car Key? What to Have Ready Before You Call',
+    excerpt: 'Learn which vehicle details and authorization documents to gather before requesting a replacement or spare car key from a mobile locksmith.',
+    publishedDate: 'August 17, 2026',
+    datePublished: '2026-08-17',
+    readingTime: '8 min read',
+    category: 'Automotive Locksmith Advice',
+    image: '/images/professional-locksmith-key-handoff.webp',
+    imageAlt: 'A Good Locksmith returning keys after professional automotive locksmith service in North Carolina',
+    seoTitle: 'Car Key Replacement in Harnett County, NC | What You Need',
+    seoDescription: 'Need car key replacement in Harnett County, NC? Learn which vehicle details, VIN, key information, and authorization documents to have ready before calling.',
+    about: ['Car key replacement', 'Spare car keys', 'Automotive key cutting', 'Transponder keys', 'Mobile automotive locksmith'],
+  },
+  {
     slug: 'smart-lock-vs-traditional-deadbolt-nc',
     title: 'Smart Lock or Traditional Deadbolt? A North Carolina Homeowner’s Guide',
     excerpt: 'Compare smart locks and traditional deadbolts, including door fit, backup access, batteries, cybersecurity, product testing, and professional installation.',
