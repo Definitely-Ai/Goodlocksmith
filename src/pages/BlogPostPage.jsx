@@ -7,6 +7,7 @@ import ProfessionalLocksmithPost from './ProfessionalLocksmithPost';
 import DoorSecurityPost from './DoorSecurityPost';
 import CarLockoutSafetyPost from './CarLockoutSafetyPost';
 import SmartLockGuidePost from './SmartLockGuidePost';
+import CarKeyReplacementGuidePost from './CarKeyReplacementGuidePost';
 import { getBlogPost } from '../data/blogPosts';
 import { phoneLink } from '../data/cities';
 import './Blog.css';
@@ -86,6 +87,10 @@ const BlogPostPage = () => {
 
   if (post.slug === 'smart-lock-vs-traditional-deadbolt-nc') {
     return <SmartLockGuidePost post={post} />;
+  }
+
+  if (post.slug === 'car-key-replacement-what-to-have-ready-nc') {
+    return <CarKeyReplacementGuidePost post={post} />;
   }
 
   return (
