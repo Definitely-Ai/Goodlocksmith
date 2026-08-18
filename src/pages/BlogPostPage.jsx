@@ -8,6 +8,7 @@ import DoorSecurityPost from './DoorSecurityPost';
 import CarLockoutSafetyPost from './CarLockoutSafetyPost';
 import SmartLockGuidePost from './SmartLockGuidePost';
 import CarKeyReplacementGuidePost from './CarKeyReplacementGuidePost';
+import MasterKeySystemsGuidePost from './MasterKeySystemsGuidePost';
 import { getBlogPost } from '../data/blogPosts';
 import { phoneLink } from '../data/cities';
 import './Blog.css';
@@ -91,6 +92,10 @@ const BlogPostPage = () => {
 
   if (post.slug === 'car-key-replacement-what-to-have-ready-nc') {
     return <CarKeyReplacementGuidePost post={post} />;
+  }
+
+  if (post.slug === 'commercial-master-key-system-guide-nc') {
+    return <MasterKeySystemsGuidePost post={post} />;
   }
 
   return (
