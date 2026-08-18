@@ -1,5 +1,19 @@
 export const blogPosts = [
   {
+    slug: 'commercial-master-key-system-guide-nc',
+    title: 'Master Key Systems for Small Businesses: A Practical Planning Guide',
+    excerpt: 'Learn how mechanical master key systems organize access, why key-control records matter, and what business owners should plan before changing commercial locks.',
+    publishedDate: 'August 18, 2026',
+    datePublished: '2026-08-18',
+    readingTime: '9 min read',
+    category: 'Commercial Security',
+    image: '/images/commercial-rekey-good-locksmith.webp',
+    imageAlt: 'A Good Locksmith providing commercial lock service at a North Carolina business',
+    seoTitle: 'Master Key Systems in Harnett County, NC | Business Guide',
+    seoDescription: 'Planning a commercial master key system in Harnett County, NC? Learn about access levels, key control, lost-key planning, door hardware, and safe egress.',
+    about: ['Commercial master key systems', 'Business key control', 'Commercial locksmith', 'Access control', 'Panic hardware'],
+  },
+  {
     slug: 'car-key-replacement-what-to-have-ready-nc',
     title: 'Need a Replacement Car Key? What to Have Ready Before You Call',
     excerpt: 'Learn which vehicle details and authorization documents to gather before requesting a replacement or spare car key from a mobile locksmith.',
