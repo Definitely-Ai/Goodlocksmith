@@ -9,6 +9,7 @@ import CarLockoutSafetyPost from './CarLockoutSafetyPost';
 import SmartLockGuidePost from './SmartLockGuidePost';
 import CarKeyReplacementGuidePost from './CarKeyReplacementGuidePost';
 import MasterKeySystemsGuidePost from './MasterKeySystemsGuidePost';
+import BrokenKeyGuidePost from './BrokenKeyGuidePost';
 import { getBlogPost } from '../data/blogPosts';
 import { phoneLink } from '../data/cities';
 import './Blog.css';
@@ -96,6 +97,10 @@ const BlogPostPage = () => {
 
   if (post.slug === 'commercial-master-key-system-guide-nc') {
     return <MasterKeySystemsGuidePost post={post} />;
+  }
+
+  if (post.slug === 'key-hard-to-turn-broken-key-extraction-nc') {
+    return <BrokenKeyGuidePost post={post} />;
   }
 
   return (
