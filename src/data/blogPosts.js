@@ -1,5 +1,19 @@
 export const blogPosts = [
   {
+    slug: 'key-hard-to-turn-broken-key-extraction-nc',
+    title: 'Key Hard to Turn? Signs It May Break—and What to Do Next',
+    excerpt: 'Learn how to recognize key wear, door misalignment, and lock resistance before the key snaps, plus safe next steps when a key is already broken.',
+    publishedDate: 'August 19, 2026',
+    datePublished: '2026-08-19',
+    readingTime: '9 min read',
+    category: 'Lock & Key Maintenance',
+    image: '/images/locksmith-customer-key-handoff.webp',
+    imageAlt: 'A Good Locksmith handing a properly working key to a North Carolina customer',
+    seoTitle: 'Broken Key Extraction in Harnett County, NC | What to Do',
+    seoDescription: 'Key hard to turn or broken in a lock? Learn safe next steps, common warning signs, and when to call for broken key extraction in Harnett County, NC.',
+    about: ['Broken key extraction', 'Key stuck in lock', 'Lock repair', 'Door alignment', 'Professional key cutting'],
+  },
+  {
     slug: 'commercial-master-key-system-guide-nc',
     title: 'Master Key Systems for Small Businesses: A Practical Planning Guide',
     excerpt: 'Learn how mechanical master key systems organize access, why key-control records matter, and what business owners should plan before changing commercial locks.',
