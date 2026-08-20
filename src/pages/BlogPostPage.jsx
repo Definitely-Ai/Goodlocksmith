@@ -10,6 +10,7 @@ import SmartLockGuidePost from './SmartLockGuidePost';
 import CarKeyReplacementGuidePost from './CarKeyReplacementGuidePost';
 import MasterKeySystemsGuidePost from './MasterKeySystemsGuidePost';
 import BrokenKeyGuidePost from './BrokenKeyGuidePost';
+import VerifyLicensedLocksmithPost from './VerifyLicensedLocksmithPost';
 import { getBlogPost } from '../data/blogPosts';
 import { phoneLink } from '../data/cities';
 import './Blog.css';
@@ -101,6 +102,10 @@ const BlogPostPage = () => {
 
   if (post.slug === 'key-hard-to-turn-broken-key-extraction-nc') {
     return <BrokenKeyGuidePost post={post} />;
+  }
+
+  if (post.slug === 'verify-licensed-locksmith-north-carolina') {
+    return <VerifyLicensedLocksmithPost post={post} />;
   }
 
   return (
