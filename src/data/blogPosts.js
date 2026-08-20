@@ -1,5 +1,19 @@
 export const blogPosts = [
   {
+    slug: 'verify-licensed-locksmith-north-carolina',
+    title: 'How to Verify a Licensed North Carolina Locksmith Before You Hire One',
+    excerpt: 'Use this practical checklist to verify a North Carolina locksmith’s license, identity, proposed work, pricing, authorization process, and invoice.',
+    publishedDate: 'August 20, 2026',
+    datePublished: '2026-08-20',
+    readingTime: '9 min read',
+    category: 'Consumer Protection',
+    image: '/images/professional-locksmith-key-handoff.webp',
+    imageAlt: 'A Good Locksmith returning keys after professional licensed locksmith service in North Carolina',
+    seoTitle: 'Licensed Locksmith in Harnett County, NC | Verify First',
+    seoDescription: 'Learn how to verify a licensed locksmith in Harnett County, NC, including state license records, photo ID, authorization, pricing, and invoice checks.',
+    about: ['Licensed locksmith', 'North Carolina locksmith license', 'Locksmith verification', 'Consumer protection', 'Local locksmith'],
+  },
+  {
     slug: 'key-hard-to-turn-broken-key-extraction-nc',
     title: 'Key Hard to Turn? Signs It May Break—and What to Do Next',
     excerpt: 'Learn how to recognize key wear, door misalignment, and lock resistance before the key snaps, plus safe next steps when a key is already broken.',
