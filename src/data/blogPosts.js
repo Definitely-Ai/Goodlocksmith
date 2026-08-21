@@ -1,5 +1,19 @@
 export const blogPosts = [
   {
+    slug: 'commercial-panic-hardware-exit-door-safety-nc',
+    title: 'Panic Hardware and Commercial Exit Doors: A Safety Checklist',
+    excerpt: 'Learn how panic bars, latches, closers, hinges, frames, and exit routes work together—and which warning signs call for professional attention.',
+    publishedDate: 'August 21, 2026',
+    datePublished: '2026-08-21',
+    readingTime: '9 min read',
+    category: 'Commercial Security',
+    image: '/images/commercial-rekey-good-locksmith.webp',
+    imageAlt: 'A Good Locksmith providing commercial door and lock service at a North Carolina business',
+    seoTitle: 'Panic Hardware in Harnett County, NC | Exit Door Guide',
+    seoDescription: 'Commercial exit door sticking or not latching? Use this panic hardware safety checklist for Harnett County, NC businesses and learn when to call a locksmith.',
+    about: ['Panic hardware', 'Commercial exit doors', 'Exit devices', 'Push bars', 'Commercial locksmith'],
+  },
+  {
     slug: 'verify-licensed-locksmith-north-carolina',
     title: 'How to Verify a Licensed North Carolina Locksmith Before You Hire One',
     excerpt: 'Use this practical checklist to verify a North Carolina locksmith’s license, identity, proposed work, pricing, authorization process, and invoice.',
