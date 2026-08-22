@@ -12,6 +12,7 @@ import MasterKeySystemsGuidePost from './MasterKeySystemsGuidePost';
 import BrokenKeyGuidePost from './BrokenKeyGuidePost';
 import VerifyLicensedLocksmithPost from './VerifyLicensedLocksmithPost';
 import PanicHardwareSafetyGuidePost from './PanicHardwareSafetyGuidePost';
+import HighSecurityLocksGuidePost from './HighSecurityLocksGuidePost';
 import { getBlogPost } from '../data/blogPosts';
 import { phoneLink } from '../data/cities';
 import './Blog.css';
@@ -111,6 +112,10 @@ const BlogPostPage = () => {
 
   if (post.slug === 'commercial-panic-hardware-exit-door-safety-nc') {
     return <PanicHardwareSafetyGuidePost post={post} />;
+  }
+
+  if (post.slug === 'high-security-locks-key-control-guide-nc') {
+    return <HighSecurityLocksGuidePost post={post} />;
   }
 
   return (
