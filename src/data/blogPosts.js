@@ -1,5 +1,19 @@
 export const blogPosts = [
   {
+    slug: 'high-security-locks-key-control-guide-nc',
+    title: 'What Makes a Lock “High Security”? A Practical Buyer’s Guide',
+    excerpt: 'Learn how independent certification, cylinder security levels, hardware grades, key control, and the complete door opening affect a meaningful security upgrade.',
+    publishedDate: 'August 22, 2026',
+    datePublished: '2026-08-22',
+    readingTime: '9 min read',
+    category: 'Home & Business Security',
+    image: '/images/locksmith-customer-key-handoff.webp',
+    imageAlt: 'A Good Locksmith discussing professional lock and key options with a North Carolina customer',
+    seoTitle: 'High-Security Locks in Harnett County, NC | Buyer’s Guide',
+    seoDescription: 'What makes a lock high security? Compare certification, cylinder levels, hardware grades, key control, and installation for Harnett County, NC properties.',
+    about: ['High-security locks', 'Restricted key control', 'High-security cylinders', 'BHMA certified locks', 'Lock upgrades'],
+  },
+  {
     slug: 'commercial-panic-hardware-exit-door-safety-nc',
     title: 'Panic Hardware and Commercial Exit Doors: A Safety Checklist',
     excerpt: 'Learn how panic bars, latches, closers, hinges, frames, and exit routes work together—and which warning signs call for professional attention.',
