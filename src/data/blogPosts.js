@@ -1,5 +1,19 @@
 export const blogPosts = [
   {
+    slug: 'motorcycle-key-replacement-no-original-nc',
+    title: 'Can a Locksmith Make a Motorcycle Key Without the Original?',
+    excerpt: 'Learn when an experienced locksmith may be able to originate a supported mechanical motorcycle key and what identification, VIN, ownership, and lock details to prepare.',
+    publishedDate: 'August 23, 2026',
+    datePublished: '2026-08-23',
+    readingTime: '9 min read',
+    category: 'Motorcycle Key Advice',
+    image: '/images/professional-locksmith-key-handoff.webp',
+    imageAlt: 'A Good Locksmith providing professional mechanical key service in North Carolina',
+    seoTitle: 'Motorcycle Key Replacement in Harnett County, NC | Guide',
+    seoDescription: 'Lost the only mechanical motorcycle key? Learn what a locksmith needs for motorcycle key replacement in Harnett County, NC. No transponder programming.',
+    about: ['Motorcycle key replacement', 'Lost motorcycle key', 'Mechanical motorcycle keys', 'Motorcycle key duplication', 'Mobile locksmith'],
+  },
+  {
     slug: 'high-security-locks-key-control-guide-nc',
     title: 'What Makes a Lock “High Security”? A Practical Buyer’s Guide',
     excerpt: 'Learn how independent certification, cylinder security levels, hardware grades, key control, and the complete door opening affect a meaningful security upgrade.',
