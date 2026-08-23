@@ -13,6 +13,7 @@ import BrokenKeyGuidePost from './BrokenKeyGuidePost';
 import VerifyLicensedLocksmithPost from './VerifyLicensedLocksmithPost';
 import PanicHardwareSafetyGuidePost from './PanicHardwareSafetyGuidePost';
 import HighSecurityLocksGuidePost from './HighSecurityLocksGuidePost';
+import MotorcycleKeyReplacementGuidePost from './MotorcycleKeyReplacementGuidePost';
 import { getBlogPost } from '../data/blogPosts';
 import { phoneLink } from '../data/cities';
 import './Blog.css';
@@ -116,6 +117,10 @@ const BlogPostPage = () => {
 
   if (post.slug === 'high-security-locks-key-control-guide-nc') {
     return <HighSecurityLocksGuidePost post={post} />;
+  }
+
+  if (post.slug === 'motorcycle-key-replacement-no-original-nc') {
+    return <MotorcycleKeyReplacementGuidePost post={post} />;
   }
 
   return (
