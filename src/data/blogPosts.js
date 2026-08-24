@@ -1,5 +1,19 @@
 export const blogPosts = [
   {
+    slug: 'locked-out-of-house-safe-next-steps-nc',
+    title: 'Locked Out of Your House? Safe Next Steps Before Calling a Locksmith',
+    excerpt: 'Learn when a home lockout is a 911 emergency, which safe access options to check, what authorization to prepare, and how to avoid unnecessary door damage.',
+    publishedDate: 'August 24, 2026',
+    datePublished: '2026-08-24',
+    readingTime: '9 min read',
+    category: 'Residential Locksmith Advice',
+    image: '/images/residential-rekey-good-locksmith.webp',
+    imageAlt: 'A Good Locksmith providing professional residential lock service at a North Carolina home',
+    seoTitle: 'House Lockout Locksmith in Harnett County, NC | Safe Steps',
+    seoDescription: 'Locked out of your house? Learn safe next steps, when to call 911, what ID to prepare, and when to call a house lockout locksmith in Harnett County, NC.',
+    about: ['House lockout locksmith', 'Locked out of house', 'Residential lockout service', 'Emergency lockout safety', 'Licensed locksmith'],
+  },
+  {
     slug: 'motorcycle-key-replacement-no-original-nc',
     title: 'Can a Locksmith Make a Motorcycle Key Without the Original?',
     excerpt: 'Learn when an experienced locksmith may be able to originate a supported mechanical motorcycle key and what identification, VIN, ownership, and lock details to prepare.',
