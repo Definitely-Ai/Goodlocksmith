@@ -14,6 +14,7 @@ import VerifyLicensedLocksmithPost from './VerifyLicensedLocksmithPost';
 import PanicHardwareSafetyGuidePost from './PanicHardwareSafetyGuidePost';
 import HighSecurityLocksGuidePost from './HighSecurityLocksGuidePost';
 import MotorcycleKeyReplacementGuidePost from './MotorcycleKeyReplacementGuidePost';
+import HomeLockoutSafetyGuidePost from './HomeLockoutSafetyGuidePost';
 import { getBlogPost } from '../data/blogPosts';
 import { phoneLink } from '../data/cities';
 import './Blog.css';
@@ -121,6 +122,10 @@ const BlogPostPage = () => {
 
   if (post.slug === 'motorcycle-key-replacement-no-original-nc') {
     return <MotorcycleKeyReplacementGuidePost post={post} />;
+  }
+
+  if (post.slug === 'locked-out-of-house-safe-next-steps-nc') {
+    return <HomeLockoutSafetyGuidePost post={post} />;
   }
 
   return (
