@@ -24,11 +24,11 @@ const KeyCodeSecurityPost = ({ post }) => (
           <div className="article-content">
             <figure className="article-inline-photo">
               <img src={post.image} alt={post.imageAlt} className="article-featured-image" decoding="async" />
-              <figcaption>The identifying number and cut edge have been obscured because both can reveal security-sensitive information.</figcaption>
+              <figcaption>AI-created example showing the type of stamped number and visible key cuts that should be protected on a real working key.</figcaption>
             </figure>
 
             <div className="article-callout article-callout-primary">
-              <strong>The practical takeaway:</strong> Never publicly share a clear photograph of either side of a working key. Cover the cuts and every stamped number before sending or posting an image.
+              <strong>The practical takeaway:</strong> Never publicly share a clear photograph of either side of a real working key. Cover the cuts and every stamped number before sending or posting an image.
             </div>
 
             <p>Most people understand the danger of losing a house key. What many homeowners and business owners do not realize is that someone may not need to physically possess a key for very long to create a working duplicate.</p>
@@ -37,7 +37,7 @@ const KeyCodeSecurityPost = ({ post }) => (
             <h2>The numbers on some keys are more than identification numbers</h2>
             <p>The Schlage key shown in this photograph provides an excellent example. The numbers stamped on the key are not merely a serial number or inventory reference. They correspond directly to the depths of the cuts used to operate the lock.</p>
             <p>Locksmiths call this sequence the key's <strong>bitting</strong>.</p>
-            <p>Because this particular marking reveals the actual cutting depths, a properly equipped person who knows the keyway and has access to the correct blank and cutting equipment could potentially originate a duplicate without tracing the original key. For security reasons, both the combination and the visible cuts have been obscured in the published photograph.</p>
+            <p>Because this particular marking reveals the actual cutting depths, a properly equipped person who knows the keyway and has access to the correct blank and cutting equipment could potentially originate a duplicate without tracing the original key. Because this is an AI-created teaching example rather than a customer's working key, the sample number remains visible so readers know what to look for.</p>
 
             <h2>Direct bitting codes versus blind codes</h2>
             <p>Not every number stamped on a key directly describes its cuts. Some keys display what locksmiths call a <strong>blind code</strong>. A blind code must be researched through an appropriate code database or reference system to determine the corresponding bitting. The code itself does not openly list the individual cutting depths.</p>
