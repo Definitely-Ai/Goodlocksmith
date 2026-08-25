@@ -15,6 +15,7 @@ import PanicHardwareSafetyGuidePost from './PanicHardwareSafetyGuidePost';
 import HighSecurityLocksGuidePost from './HighSecurityLocksGuidePost';
 import MotorcycleKeyReplacementGuidePost from './MotorcycleKeyReplacementGuidePost';
 import HomeLockoutSafetyGuidePost from './HomeLockoutSafetyGuidePost';
+import BreakInLockSecurityGuidePost from './BreakInLockSecurityGuidePost';
 import { getBlogPost } from '../data/blogPosts';
 import { phoneLink } from '../data/cities';
 import './Blog.css';
@@ -126,6 +127,10 @@ const BlogPostPage = () => {
 
   if (post.slug === 'locked-out-of-house-safe-next-steps-nc') {
     return <HomeLockoutSafetyGuidePost post={post} />;
+  }
+
+  if (post.slug === 'locks-after-break-in-forced-entry-nc') {
+    return <BreakInLockSecurityGuidePost post={post} />;
   }
 
   return (
