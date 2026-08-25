@@ -1,5 +1,19 @@
 export const blogPosts = [
   {
+    slug: 'locks-after-break-in-forced-entry-nc',
+    title: 'Door or Lock Damaged After a Break-In? What to Do First',
+    excerpt: 'Learn how to prioritize safety, preserve possible evidence, document forced-entry damage, coordinate temporary security, and evaluate whether locks should be rekeyed or replaced.',
+    publishedDate: 'August 25, 2026',
+    datePublished: '2026-08-25',
+    readingTime: '10 min read',
+    category: 'Property Security',
+    image: '/images/residential-rekey-good-locksmith.webp',
+    imageAlt: 'A Good Locksmith evaluating residential door and lock security in North Carolina',
+    seoTitle: 'Locks After a Break-In in Harnett County, NC | Next Steps',
+    seoDescription: 'Door or lock damaged by forced entry? Learn the safe next steps before rekeying or replacing locks after a break-in in Harnett County, NC.',
+    about: ['Locks after a break-in', 'Forced-entry door damage', 'Lock replacement', 'Lock rekeying', 'Property security assessment'],
+  },
+  {
     slug: 'locked-out-of-house-safe-next-steps-nc',
     title: 'Locked Out of Your House? Safe Next Steps Before Calling a Locksmith',
     excerpt: 'Learn when a home lockout is a 911 emergency, which safe access options to check, what authorization to prepare, and how to avoid unnecessary door damage.',
