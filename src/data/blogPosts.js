@@ -1,5 +1,19 @@
 export const blogPosts = [
   {
+    slug: 'key-photo-bitting-code-security-nc',
+    title: 'Your Key Could Reveal More Than You Think: The Security Risks of Mishandling Keys',
+    excerpt: 'Learn how exposed key photos, direct bitting numbers, blind codes, and poor key-control habits can create a serious property-security risk.',
+    publishedDate: 'August 25, 2026',
+    datePublished: '2026-08-25',
+    readingTime: '8 min read',
+    category: 'Key Control & Property Security',
+    image: '/images/schlage-key-bitting-redacted.png',
+    imageAlt: 'Schlage house key with its direct bitting number and visible cuts obscured for security',
+    seoTitle: 'Can Someone Copy a Key From a Photo? Key Security Tips',
+    seoDescription: 'Numbers and visible cuts on a key may reveal enough information to create a duplicate. Learn when to rekey your Harnett County, NC property.',
+    about: ['Key security', 'Key bitting', 'Blind key codes', 'Key duplication risk', 'Lock rekeying'],
+  },
+  {
     slug: 'locks-after-break-in-forced-entry-nc',
     title: 'Door or Lock Damaged After a Break-In? What to Do First',
     excerpt: 'Learn how to prioritize safety, preserve possible evidence, document forced-entry damage, coordinate temporary security, and evaluate whether locks should be rekeyed or replaced.',
