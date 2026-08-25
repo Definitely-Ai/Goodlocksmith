@@ -16,6 +16,7 @@ import HighSecurityLocksGuidePost from './HighSecurityLocksGuidePost';
 import MotorcycleKeyReplacementGuidePost from './MotorcycleKeyReplacementGuidePost';
 import HomeLockoutSafetyGuidePost from './HomeLockoutSafetyGuidePost';
 import BreakInLockSecurityGuidePost from './BreakInLockSecurityGuidePost';
+import KeyCodeSecurityPost from './KeyCodeSecurityPost';
 import { getBlogPost } from '../data/blogPosts';
 import { phoneLink } from '../data/cities';
 import './Blog.css';
@@ -127,6 +128,10 @@ const BlogPostPage = () => {
 
   if (post.slug === 'locked-out-of-house-safe-next-steps-nc') {
     return <HomeLockoutSafetyGuidePost post={post} />;
+  }
+
+  if (post.slug === 'key-photo-bitting-code-security-nc') {
+    return <KeyCodeSecurityPost post={post} />;
   }
 
   if (post.slug === 'locks-after-break-in-forced-entry-nc') {
