@@ -17,6 +17,7 @@ import MotorcycleKeyReplacementGuidePost from './MotorcycleKeyReplacementGuidePo
 import HomeLockoutSafetyGuidePost from './HomeLockoutSafetyGuidePost';
 import BreakInLockSecurityGuidePost from './BreakInLockSecurityGuidePost';
 import KeyCodeSecurityPost from './KeyCodeSecurityPost';
+import VacationHomeSecurityChecklistPost from './VacationHomeSecurityChecklistPost';
 import { getBlogPost } from '../data/blogPosts';
 import { phoneLink } from '../data/cities';
 import './Blog.css';
@@ -132,6 +133,10 @@ const BlogPostPage = () => {
 
   if (post.slug === 'key-photo-bitting-code-security-nc') {
     return <KeyCodeSecurityPost post={post} />;
+  }
+
+  if (post.slug === 'vacation-home-lock-security-checklist-nc') {
+    return <VacationHomeSecurityChecklistPost post={post} />;
   }
 
   if (post.slug === 'locks-after-break-in-forced-entry-nc') {
