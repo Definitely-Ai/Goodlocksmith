@@ -1,5 +1,19 @@
 export const blogPosts = [
   {
+    slug: 'vacation-home-lock-security-checklist-nc',
+    title: 'Leaving Town? A Lock-and-Key Vacation Security Checklist',
+    excerpt: 'Before a trip, test exterior locks, account for keys, plan trusted access, secure smart-lock accounts, and avoid obvious signs that your home is vacant.',
+    publishedDate: 'August 26, 2026',
+    datePublished: '2026-08-26',
+    readingTime: '9 min read',
+    category: 'Residential Security',
+    image: '/images/residential-rekey-good-locksmith.webp',
+    imageAlt: 'A Good Locksmith checking residential door and lock security at a North Carolina home',
+    seoTitle: 'Vacation Home Security Checklist | Harnett County, NC',
+    seoDescription: 'Use this vacation home security checklist to test locks, control spare keys, plan trusted access, and prepare your Harnett County, NC home before travel.',
+    about: ['Vacation home security checklist', 'Lock checklist before vacation', 'Spare key security', 'Smart lock security', 'Residential locksmith'],
+  },
+  {
     slug: 'key-photo-bitting-code-security-nc',
     title: 'Your Key Could Reveal More Than You Think: The Security Risks of Mishandling Keys',
     excerpt: 'Learn how exposed key photos, direct bitting numbers, blind codes, and poor key-control habits can create a serious property-security risk.',
