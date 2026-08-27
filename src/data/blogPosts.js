@@ -1,5 +1,19 @@
 export const blogPosts = [
   {
+    slug: 'deadbolt-wont-lock-door-alignment-nc',
+    title: 'Deadbolt Won’t Lock Unless You Push the Door? What That Usually Means',
+    excerpt: 'Learn how to tell whether a sticking deadbolt points to door alignment, strike placement, loose hardware, or a lock problem—and why forcing the key can make matters worse.',
+    publishedDate: 'August 27, 2026',
+    datePublished: '2026-08-27',
+    readingTime: '8 min read',
+    category: 'Lock & Door Maintenance',
+    image: '/images/residential-rekey-good-locksmith.webp',
+    imageAlt: 'A Good Locksmith checking deadbolt and door alignment at a North Carolina home',
+    seoTitle: 'Deadbolt Won’t Lock? Door Alignment Guide | Harnett County, NC',
+    seoDescription: 'Deadbolt won’t lock unless you push or pull the door? Learn what to check and when to call a locksmith for door lock alignment in Harnett County, NC.',
+    about: ['Deadbolt won’t lock', 'Door lock alignment', 'Strike plate alignment', 'Sticking deadbolt', 'Residential locksmith'],
+  },
+  {
     slug: 'vacation-home-lock-security-checklist-nc',
     title: 'Leaving Town? A Lock-and-Key Vacation Security Checklist',
     excerpt: 'Before a trip, test exterior locks, account for keys, plan trusted access, secure smart-lock accounts, and avoid obvious signs that your home is vacant.',

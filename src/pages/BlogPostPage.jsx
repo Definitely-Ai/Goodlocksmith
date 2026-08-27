@@ -18,6 +18,7 @@ import HomeLockoutSafetyGuidePost from './HomeLockoutSafetyGuidePost';
 import BreakInLockSecurityGuidePost from './BreakInLockSecurityGuidePost';
 import KeyCodeSecurityPost from './KeyCodeSecurityPost';
 import VacationHomeSecurityChecklistPost from './VacationHomeSecurityChecklistPost';
+import DeadboltAlignmentGuidePost from './DeadboltAlignmentGuidePost';
 import { getBlogPost } from '../data/blogPosts';
 import { phoneLink } from '../data/cities';
 import './Blog.css';
@@ -137,6 +138,10 @@ const BlogPostPage = () => {
 
   if (post.slug === 'vacation-home-lock-security-checklist-nc') {
     return <VacationHomeSecurityChecklistPost post={post} />;
+  }
+
+  if (post.slug === 'deadbolt-wont-lock-door-alignment-nc') {
+    return <DeadboltAlignmentGuidePost post={post} />;
   }
 
   if (post.slug === 'locks-after-break-in-forced-entry-nc') {
