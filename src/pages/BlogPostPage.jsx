@@ -19,6 +19,7 @@ import BreakInLockSecurityGuidePost from './BreakInLockSecurityGuidePost';
 import KeyCodeSecurityPost from './KeyCodeSecurityPost';
 import VacationHomeSecurityChecklistPost from './VacationHomeSecurityChecklistPost';
 import DeadboltAlignmentGuidePost from './DeadboltAlignmentGuidePost';
+import DoubleCylinderDeadboltSafetyPost from './DoubleCylinderDeadboltSafetyPost';
 import { getBlogPost } from '../data/blogPosts';
 import { phoneLink } from '../data/cities';
 import './Blog.css';
@@ -142,6 +143,10 @@ const BlogPostPage = () => {
 
   if (post.slug === 'deadbolt-wont-lock-door-alignment-nc') {
     return <DeadboltAlignmentGuidePost post={post} />;
+  }
+
+  if (post.slug === 'double-cylinder-deadbolt-egress-safety-nc') {
+    return <DoubleCylinderDeadboltSafetyPost post={post} />;
   }
 
   if (post.slug === 'locks-after-break-in-forced-entry-nc') {

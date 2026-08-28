@@ -1,5 +1,19 @@
 export const blogPosts = [
   {
+    slug: 'double-cylinder-deadbolt-egress-safety-nc',
+    title: 'Double-Cylinder Deadbolt Near Door Glass? Balance Security With Safe Exit',
+    excerpt: 'A lock keyed on both sides can limit reach-through unlocking near glass, but it can also require a key to exit. Learn the safety and code questions to answer first.',
+    publishedDate: 'August 28, 2026',
+    datePublished: '2026-08-28',
+    readingTime: '9 min read',
+    category: 'Residential Lock Safety',
+    image: '/images/residential-rekey-good-locksmith.webp',
+    imageAlt: 'A Good Locksmith evaluating residential deadbolt and exterior door security in North Carolina',
+    seoTitle: 'Double-Cylinder Deadbolt Safety | Harnett County, NC',
+    seoDescription: 'Considering a double-cylinder deadbolt near door glass? Compare reach-through security with emergency-egress requirements in Harnett County, NC.',
+    about: ['Double-cylinder deadbolt', 'Keyed-both-sides deadbolt', 'Egress door locks', 'Single-cylinder deadbolt', 'Deadbolt installation'],
+  },
+  {
     slug: 'deadbolt-wont-lock-door-alignment-nc',
     title: 'Deadbolt Won’t Lock Unless You Push the Door? What That Usually Means',
     excerpt: 'Learn how to tell whether a sticking deadbolt points to door alignment, strike placement, loose hardware, or a lock problem—and why forcing the key can make matters worse.',
