@@ -50,6 +50,16 @@ export const cities = {
         landmarks: ['Downtown Erwin', 'Dunn-Erwin Rail Trail', 'Cape Fear River area'],
         isHomeBase: false,
     },
+    'Bunnlevel': {
+        name: 'Bunnlevel',
+        county: 'Harnett County',
+        state: 'NC',
+        slug: 'Bunnlevel',
+        tagline: 'Reliable Mobile Locksmith Service in Bunnlevel',
+        description: 'A Good Locksmith provides professional automotive, residential, and commercial locksmith services throughout Bunnlevel, NC and nearby Harnett County communities.',
+        landmarks: ['Bunnlevel community', 'US Highway 401 area', 'Anderson Creek area'],
+        isHomeBase: false,
+    },
     'Sanford': {
         name: 'Sanford',
         county: 'Lee County',
