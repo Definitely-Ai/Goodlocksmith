@@ -17,6 +17,126 @@
     ],
     "rewrites": [
         {
+            "source": "/",
+            "has": [
+                {
+                    "type": "host",
+                    "value": "angierlocksmith.co"
+                }
+            ],
+            "destination": "/domains/angier.html"
+        },
+        {
+            "source": "/",
+            "has": [
+                {
+                    "type": "host",
+                    "value": "www.angierlocksmith.co"
+                }
+            ],
+            "destination": "/domains/angier.html"
+        },
+        {
+            "source": "/",
+            "has": [
+                {
+                    "type": "host",
+                    "value": "dunnlocksmith.com"
+                }
+            ],
+            "destination": "/domains/dunn.html"
+        },
+        {
+            "source": "/",
+            "has": [
+                {
+                    "type": "host",
+                    "value": "www.dunnlocksmith.com"
+                }
+            ],
+            "destination": "/domains/dunn.html"
+        },
+        {
+            "source": "/",
+            "has": [
+                {
+                    "type": "host",
+                    "value": "harnettcountylocksmith.com"
+                }
+            ],
+            "destination": "/domains/harnett.html"
+        },
+        {
+            "source": "/",
+            "has": [
+                {
+                    "type": "host",
+                    "value": "www.harnettcountylocksmith.com"
+                }
+            ],
+            "destination": "/domains/harnett.html"
+        },
+        {
+            "source": "/",
+            "has": [
+                {
+                    "type": "host",
+                    "value": "wakecountylocksmith.com"
+                }
+            ],
+            "destination": "/domains/wake.html"
+        },
+        {
+            "source": "/",
+            "has": [
+                {
+                    "type": "host",
+                    "value": "www.wakecountylocksmith.com"
+                }
+            ],
+            "destination": "/domains/wake.html"
+        },
+        {
+            "source": "/",
+            "has": [
+                {
+                    "type": "host",
+                    "value": "locksmithfuquay.com"
+                }
+            ],
+            "destination": "/domains/fuquay.html"
+        },
+        {
+            "source": "/",
+            "has": [
+                {
+                    "type": "host",
+                    "value": "www.locksmithfuquay.com"
+                }
+            ],
+            "destination": "/domains/fuquay.html"
+        },
+        {
+            "source": "/",
+            "has": [
+                {
+                    "type": "host",
+                    "value": "lillingtonlocksmith.com"
+                }
+            ],
+            "destination": "/domains/lillington.html"
+        },
+        {
+            "source": "/",
+            "has": [
+                {
+                    "type": "host",
+                    "value": "www.lillingtonlocksmith.com"
+                }
+            ],
+            "destination": "/domains/lillington.html"
+        },
+        {
             "source": "/(.*)",
             "destination": "/index.html"
         }
