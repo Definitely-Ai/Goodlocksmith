@@ -1,5 +1,19 @@
 export const blogPosts = [
   {
+    slug: 'duplicate-house-key-wont-work-nc',
+    title: 'New Duplicate House Key Won’t Work? Here’s What to Check',
+    excerpt: 'A fresh-looking copy can still fail because of the blank, cutting reference, wear in the source key, burrs, or the lock itself. Learn what to test without forcing it.',
+    publishedDate: 'August 29, 2026',
+    datePublished: '2026-08-29',
+    readingTime: '8 min read',
+    category: 'Key Cutting & Lock Advice',
+    image: '/images/locksmith-customer-key-handoff.webp',
+    imageAlt: 'A Good Locksmith handing a properly cut duplicate house key to a North Carolina customer',
+    seoTitle: 'Duplicate House Key Won’t Work? | Harnett County, NC',
+    seoDescription: 'New duplicate house key won’t work? Learn how worn originals, key blanks, cutting errors, burrs, and lock problems are diagnosed in Harnett County, NC.',
+    about: ['Duplicate house key', 'Key cutting', 'Worn house key', 'Key blank identification', 'Residential locksmith'],
+  },
+  {
     slug: 'double-cylinder-deadbolt-egress-safety-nc',
     title: 'Double-Cylinder Deadbolt Near Door Glass? Balance Security With Safe Exit',
     excerpt: 'A lock keyed on both sides can limit reach-through unlocking near glass, but it can also require a key to exit. Learn the safety and code questions to answer first.',
