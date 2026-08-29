@@ -137,6 +137,66 @@
             "destination": "/domains/lillington.html"
         },
         {
+            "source": "/",
+            "has": [
+                {
+                    "type": "host",
+                    "value": "erwinlocksmith.com"
+                }
+            ],
+            "destination": "/domains/erwin.html"
+        },
+        {
+            "source": "/",
+            "has": [
+                {
+                    "type": "host",
+                    "value": "www.erwinlocksmith.com"
+                }
+            ],
+            "destination": "/domains/erwin.html"
+        },
+        {
+            "source": "/",
+            "has": [
+                {
+                    "type": "host",
+                    "value": "bunnlevellocksmith.com"
+                }
+            ],
+            "destination": "/domains/bunnlevel.html"
+        },
+        {
+            "source": "/",
+            "has": [
+                {
+                    "type": "host",
+                    "value": "www.bunnlevellocksmith.com"
+                }
+            ],
+            "destination": "/domains/bunnlevel.html"
+        },
+        {
+            "source": "/",
+            "has": [
+                {
+                    "type": "host",
+                    "value": "coatslocksmith.com"
+                }
+            ],
+            "destination": "/domains/coats.html"
+        },
+        {
+            "source": "/",
+            "has": [
+                {
+                    "type": "host",
+                    "value": "www.coatslocksmith.com"
+                }
+            ],
+            "destination": "/domains/coats.html"
+        },
+        {
             "source": "/(.*)",
             "destination": "/index.html"
         }
