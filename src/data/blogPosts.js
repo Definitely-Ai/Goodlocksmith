@@ -1,5 +1,19 @@
 export const blogPosts = [
   {
+    slug: 'sliding-patio-door-wont-lock-nc',
+    title: 'Sliding Patio Door Won’t Lock? Check the Latch, Alignment, and Backup Security',
+    excerpt: 'Learn how to separate a patio-door latch problem from panel alignment, roller, keeper, or handle trouble—and how secondary security should support, not hide, a failed primary lock.',
+    publishedDate: 'August 30, 2026',
+    datePublished: '2026-08-30',
+    readingTime: '9 min read',
+    category: 'Patio Door Security',
+    image: '/images/residential-rekey-good-locksmith.webp',
+    imageAlt: 'A Good Locksmith evaluating exterior door and lock security at a North Carolina home',
+    seoTitle: 'Sliding Patio Door Won’t Lock? | Harnett County, NC',
+    seoDescription: 'Sliding patio door won’t lock? Learn how latch, keeper, panel alignment, rollers, and secondary security are evaluated in Harnett County, NC.',
+    about: ['Sliding patio door lock', 'Patio door latch', 'Sliding door alignment', 'Patio door security bar', 'Residential locksmith'],
+  },
+  {
     slug: 'duplicate-house-key-wont-work-nc',
     title: 'New Duplicate House Key Won’t Work? Here’s What to Check',
     excerpt: 'A fresh-looking copy can still fail because of the blank, cutting reference, wear in the source key, burrs, or the lock itself. Learn what to test without forcing it.',

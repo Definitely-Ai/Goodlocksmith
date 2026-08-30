@@ -21,6 +21,7 @@ import VacationHomeSecurityChecklistPost from './VacationHomeSecurityChecklistPo
 import DeadboltAlignmentGuidePost from './DeadboltAlignmentGuidePost';
 import DoubleCylinderDeadboltSafetyPost from './DoubleCylinderDeadboltSafetyPost';
 import DuplicateKeyTroubleshootingPost from './DuplicateKeyTroubleshootingPost';
+import SlidingPatioDoorSecurityPost from './SlidingPatioDoorSecurityPost';
 import { getBlogPost } from '../data/blogPosts';
 import { phoneLink } from '../data/cities';
 import './Blog.css';
@@ -75,7 +76,7 @@ const BlogPostPage = () => {
       publisher: { '@type': 'Organization', name: 'A Good Locksmith, LLC', url: 'https://www.goodlocksmith.com/' },
       mainEntityOfPage: canonicalUrl,
       about: post.about,
-      areaServed: ['Lillington, NC', 'Angier, NC', 'Bunlevel, NC', 'Dunn, NC', 'Coats, NC', 'Erwin, NC', 'Sanford, NC', 'Fuquay-Varina, NC', 'Harnett County, NC', 'Wake County, NC'],
+      areaServed: ['Lillington, NC', 'Angier, NC', 'Bunnlevel, NC', 'Dunn, NC', 'Coats, NC', 'Erwin, NC', 'Sanford, NC', 'Fuquay-Varina, NC', 'Harnett County, NC', 'Wake County, NC'],
     });
     document.head.appendChild(schema);
 
@@ -152,6 +153,10 @@ const BlogPostPage = () => {
 
   if (post.slug === 'duplicate-house-key-wont-work-nc') {
     return <DuplicateKeyTroubleshootingPost post={post} />;
+  }
+
+  if (post.slug === 'sliding-patio-door-wont-lock-nc') {
+    return <SlidingPatioDoorSecurityPost post={post} />;
   }
 
   if (post.slug === 'locks-after-break-in-forced-entry-nc') {
