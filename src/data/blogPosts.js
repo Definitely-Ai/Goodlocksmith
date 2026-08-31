@@ -1,5 +1,19 @@
 export const blogPosts = [
   {
+    slug: 'keyed-alike-home-locks-one-key-nc',
+    title: 'Can One Key Open Every Door? Keyed-Alike Home Locks Explained',
+    excerpt: 'Learn when compatible home locks can use one key, how keyed-alike locks differ from a master-key system, and what happens if that shared key is lost.',
+    publishedDate: 'August 31, 2026',
+    datePublished: '2026-08-31',
+    readingTime: '9 min read',
+    category: 'Residential Key Planning',
+    image: '/images/locksmith-customer-key-handoff.webp',
+    imageAlt: 'A Good Locksmith handing one properly planned residential key to a North Carolina homeowner',
+    seoTitle: 'Keyed-Alike Locks in Harnett County, NC | One-Key Guide',
+    seoDescription: 'Can one key open every exterior door? Learn about compatibility, rekeying locks alike, key control, and master-key differences in Harnett County, NC.',
+    about: ['Keyed-alike locks', 'One key for multiple doors', 'Rekey locks to same key', 'Residential key planning', 'Lock rekeying'],
+  },
+  {
     slug: 'sliding-patio-door-wont-lock-nc',
     title: 'Sliding Patio Door Won’t Lock? Check the Latch, Alignment, and Backup Security',
     excerpt: 'Learn how to separate a patio-door latch problem from panel alignment, roller, keeper, or handle trouble—and how secondary security should support, not hide, a failed primary lock.',

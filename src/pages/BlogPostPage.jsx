@@ -22,6 +22,7 @@ import DeadboltAlignmentGuidePost from './DeadboltAlignmentGuidePost';
 import DoubleCylinderDeadboltSafetyPost from './DoubleCylinderDeadboltSafetyPost';
 import DuplicateKeyTroubleshootingPost from './DuplicateKeyTroubleshootingPost';
 import SlidingPatioDoorSecurityPost from './SlidingPatioDoorSecurityPost';
+import KeyedAlikeHomeLocksPost from './KeyedAlikeHomeLocksPost';
 import { getBlogPost } from '../data/blogPosts';
 import { phoneLink } from '../data/cities';
 import './Blog.css';
@@ -157,6 +158,10 @@ const BlogPostPage = () => {
 
   if (post.slug === 'sliding-patio-door-wont-lock-nc') {
     return <SlidingPatioDoorSecurityPost post={post} />;
+  }
+
+  if (post.slug === 'keyed-alike-home-locks-one-key-nc') {
+    return <KeyedAlikeHomeLocksPost post={post} />;
   }
 
   if (post.slug === 'locks-after-break-in-forced-entry-nc') {
