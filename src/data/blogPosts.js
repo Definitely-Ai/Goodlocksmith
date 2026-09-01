@@ -1,5 +1,19 @@
 export const blogPosts = [
   {
+    slug: 'smart-lock-power-outage-battery-backup-nc',
+    title: 'Will Your Smart Lock Work During a Power Outage?',
+    excerpt: 'A power outage, lost internet connection, and dead lock batteries are different problems. Learn what to check and how to prepare a reliable backup entry plan.',
+    publishedDate: 'September 1, 2026',
+    datePublished: '2026-09-01',
+    readingTime: '6 min read',
+    category: 'Smart Lock Preparedness',
+    image: '/images/residential-rekey-good-locksmith.webp',
+    imageAlt: 'Residential locksmith service illustration',
+    seoTitle: 'Smart Locks During Power Outages | Harnett County, NC',
+    seoDescription: 'Will your smart lock work during a power outage? Learn about offline entry, dead batteries, and backup access for Harnett County and nearby Wake County homes.',
+    about: ['Smart lock power outage', 'Smart lock offline entry', 'Dead keypad lock batteries', 'Backup entry methods', 'Harnett County storm preparedness'],
+  },
+  {
     slug: 'keyed-alike-home-locks-one-key-nc',
     title: 'Can One Key Open Every Door? Keyed-Alike Home Locks Explained',
     excerpt: 'Learn when compatible home locks can use one key, how keyed-alike locks differ from a master-key system, and what happens if that shared key is lost.',

@@ -23,6 +23,7 @@ import DoubleCylinderDeadboltSafetyPost from './DoubleCylinderDeadboltSafetyPost
 import DuplicateKeyTroubleshootingPost from './DuplicateKeyTroubleshootingPost';
 import SlidingPatioDoorSecurityPost from './SlidingPatioDoorSecurityPost';
 import KeyedAlikeHomeLocksPost from './KeyedAlikeHomeLocksPost';
+import SmartLockOutagePost from './SmartLockOutagePost';
 import { getBlogPost } from '../data/blogPosts';
 import { phoneLink } from '../data/cities';
 import './Blog.css';
@@ -162,6 +163,10 @@ const BlogPostPage = () => {
 
   if (post.slug === 'keyed-alike-home-locks-one-key-nc') {
     return <KeyedAlikeHomeLocksPost post={post} />;
+  }
+
+  if (post.slug === 'smart-lock-power-outage-battery-backup-nc') {
+    return <SmartLockOutagePost post={post} />;
   }
 
   if (post.slug === 'locks-after-break-in-forced-entry-nc') {
