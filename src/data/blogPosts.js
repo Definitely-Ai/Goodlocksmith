@@ -1,5 +1,19 @@
 export const blogPosts = [
   {
+    slug: 'replace-door-knob-with-lever-handle-nc',
+    title: 'Door Knob Hard to Grip? What to Know Before Switching to a Lever',
+    excerpt: 'Lever handles can make doors easier to use. Check the lock function, deadbolt, door fit, and household needs before replacing a hard-to-grip knob.',
+    publishedDate: 'September 2, 2026',
+    datePublished: '2026-09-02',
+    readingTime: '5 min read',
+    category: 'Everyday Door Access',
+    image: '/images/residential-rekey-good-locksmith.webp',
+    imageAlt: 'Residential locksmith service illustration',
+    seoTitle: 'Replace a Door Knob With a Lever | Harnett County, NC',
+    seoDescription: 'Thinking about replacing a door knob with a lever? Check grip, lock function, door fit, and security with A Good Locksmith in Harnett County, NC.',
+    about: ['Replace door knob with lever', 'Lever handle installation', 'Easy-to-use door hardware', 'Residential lock installation', 'Door hardware compatibility'],
+  },
+  {
     slug: 'smart-lock-power-outage-battery-backup-nc',
     title: 'Will Your Smart Lock Work During a Power Outage?',
     excerpt: 'A power outage, lost internet connection, and dead lock batteries are different problems. Learn what to check and how to prepare a reliable backup entry plan.',
