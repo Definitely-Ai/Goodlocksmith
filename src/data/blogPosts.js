@@ -1,5 +1,19 @@
 export const blogPosts = [
   {
+    slug: 'key-fob-not-working-after-battery-change-nc',
+    title: 'Key Fob Not Working After a Battery Change?',
+    excerpt: 'A fresh battery does not automatically solve every key-fob problem. Check the correct battery, installation, spare key, and vehicle symptoms before assuming programming is needed.',
+    publishedDate: 'September 3, 2026',
+    datePublished: '2026-09-03',
+    readingTime: '5 min read',
+    category: 'Automotive Key Care',
+    image: '/images/local-car-lockout-good-locksmith.webp',
+    imageAlt: 'Mobile automotive locksmith service illustration',
+    seoTitle: 'Key Fob Not Working After Battery Change? | Harnett NC',
+    seoDescription: 'Key fob still not working after a battery change? Check installation and vehicle symptoms before reprogramming. Automotive key help in Harnett County, NC.',
+    about: ['Key fob not working after battery change', 'Key fob battery replacement', 'Car remote troubleshooting', 'Automotive key programming', 'Mobile automotive locksmith'],
+  },
+  {
     slug: 'replace-door-knob-with-lever-handle-nc',
     title: 'Door Knob Hard to Grip? What to Know Before Switching to a Lever',
     excerpt: 'Lever handles can make doors easier to use. Check the lock function, deadbolt, door fit, and household needs before replacing a hard-to-grip knob.',

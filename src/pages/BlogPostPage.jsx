@@ -25,6 +25,7 @@ import SlidingPatioDoorSecurityPost from './SlidingPatioDoorSecurityPost';
 import KeyedAlikeHomeLocksPost from './KeyedAlikeHomeLocksPost';
 import SmartLockOutagePost from './SmartLockOutagePost';
 import LeverHandleGuidePost from './LeverHandleGuidePost';
+import KeyFobBatteryGuidePost from './KeyFobBatteryGuidePost';
 import { getBlogPost } from '../data/blogPosts';
 import { phoneLink } from '../data/cities';
 import './Blog.css';
@@ -89,6 +90,10 @@ const BlogPostPage = () => {
   }, [post]);
 
   if (!post) return <Navigate to="/blog" replace />;
+
+  if (post.slug === 'key-fob-not-working-after-battery-change-nc') {
+    return <KeyFobBatteryGuidePost post={post} />;
+  }
 
   if (post.slug === 'why-hire-professional-locksmith-avoid-damage') {
     return <ProfessionalLocksmithPost post={post} />;
