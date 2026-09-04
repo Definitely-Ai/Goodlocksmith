@@ -1,29 +1,17 @@
 import { useEffect } from 'react';
 import { useParams, Link } from 'react-router-dom';
-import { motion } from 'framer-motion';
+import { motion as Motion } from 'framer-motion';
 import { FaPhone, FaMapMarkerAlt, FaCheckCircle, FaClock, FaArrowLeft, FaHome, FaCar, FaBuilding, FaMobileAlt } from 'react-icons/fa';
 import { cities, services, phoneNumber, phoneLink } from '../data/cities';
 import { businessFacts } from '../data/businessFacts';
+import {
+    getCityCanonicalUrl,
+    getCityFaqs,
+    getCityMetaDescription,
+    getCitySchema,
+    getCityTitle,
+} from '../data/citySeo';
 import './CityPage.css';
-
-const getCityFaqs = (city) => [
-    {
-        question: `Does A Good Locksmith provide mobile locksmith service in ${city.name}?`,
-        answer: `${city.description} Service is provided at the customer's location, subject to current availability and travel distance.`,
-    },
-    {
-        question: 'Is A Good Locksmith licensed in North Carolina?',
-        answer: `${businessFacts.legalName} advertises under ${businessFacts.licenseNumber}. Owner ${businessFacts.ownerName} has ${businessFacts.experienceYears} years of professional locksmithing experience.`,
-    },
-    {
-        question: 'How long has A Good Locksmith been in business?',
-        answer: `${businessFacts.publicName} was established in ${businessFacts.establishedYear}. ${businessFacts.ownerName}'s ${businessFacts.experienceYears} years in locksmithing include experience gained before he established the company.`,
-    },
-    {
-        question: `What locksmith services are available in ${city.name}?`,
-        answer: 'Services include automotive and motorcycle key work, home and business lockouts, rekeying, lock installation, commercial security hardware, and smart-lock service.',
-    },
-];
 
 const CityPage = () => {
     const { citySlug } = useParams();
@@ -32,9 +20,10 @@ const CityPage = () => {
 
     useEffect(() => {
         if (!city) return;
-        const canonicalUrl = `https://www.goodlocksmith.com/${city.slug}`;
-        const metaDescription = `${businessFacts.legalName} provides licensed mobile locksmith service in ${city.name}, NC. ${businessFacts.experienceYears} years of experience. ${businessFacts.licenseNumber}.`;
-        document.title = `Locksmith in ${city.name}, NC | A Good Locksmith`;
+        const canonicalUrl = getCityCanonicalUrl(city);
+        const metaDescription = getCityMetaDescription(city);
+        const pageTitle = getCityTitle(city);
+        document.title = pageTitle;
         const canonical = document.querySelector('link[rel="canonical"]');
         const ogUrl = document.querySelector('meta[property="og:url"]');
         const description = document.querySelector('meta[name="description"]');
@@ -50,69 +39,15 @@ const CityPage = () => {
         if (canonical) canonical.setAttribute('href', canonicalUrl);
         if (ogUrl) ogUrl.setAttribute('content', canonicalUrl);
         if (description) description.setAttribute('content', metaDescription);
-        if (ogTitle) ogTitle.setAttribute('content', `Locksmith in ${city.name}, NC | A Good Locksmith`);
+        if (ogTitle) ogTitle.setAttribute('content', pageTitle);
         if (ogDescription) ogDescription.setAttribute('content', metaDescription);
 
-        const schema = document.createElement('script');
+        const existingSchema = document.getElementById('city-page-schema');
+        const schema = existingSchema || document.createElement('script');
         schema.id = 'city-page-schema';
         schema.type = 'application/ld+json';
-        schema.textContent = JSON.stringify({
-            '@context': 'https://schema.org',
-            '@graph': [
-                {
-                    '@type': 'Locksmith',
-                    '@id': 'https://www.goodlocksmith.com/#business',
-                    name: businessFacts.legalName,
-                    url: 'https://www.goodlocksmith.com/',
-                    telephone: '+1-984-480-5397',
-                    foundingDate: businessFacts.establishedYear,
-                    founder: {
-                        '@type': 'Person',
-                        name: businessFacts.ownerName,
-                        jobTitle: 'Licensed Locksmith and Owner',
-                    },
-                    identifier: {
-                        '@type': 'PropertyValue',
-                        name: 'North Carolina Locksmith License',
-                        value: businessFacts.licenseNumber,
-                    },
-                    address: {
-                        '@type': 'PostalAddress',
-                        addressLocality: 'Lillington',
-                        addressRegion: 'NC',
-                        addressCountry: 'US',
-                    },
-                    areaServed: {
-                        '@type': city.isCounty ? 'AdministrativeArea' : 'City',
-                        name: `${city.name}, NC`,
-                    },
-                },
-                {
-                    '@type': 'Service',
-                    '@id': `${canonicalUrl}#mobile-locksmith-service`,
-                    name: `Mobile locksmith service in ${city.name}, NC`,
-                    serviceType: 'Automotive, motorcycle, residential, and commercial locksmith services',
-                    provider: { '@id': 'https://www.goodlocksmith.com/#business' },
-                    areaServed: {
-                        '@type': city.isCounty ? 'AdministrativeArea' : 'City',
-                        name: `${city.name}, NC`,
-                    },
-                },
-                {
-                    '@type': 'FAQPage',
-                    '@id': `${canonicalUrl}#frequently-asked-questions`,
-                    mainEntity: getCityFaqs(city).map(({ question, answer }) => ({
-                        '@type': 'Question',
-                        name: question,
-                        acceptedAnswer: {
-                            '@type': 'Answer',
-                            text: answer,
-                        },
-                    })),
-                },
-            ],
-        });
-        document.head.appendChild(schema);
+        schema.textContent = JSON.stringify(getCitySchema(city));
+        if (!existingSchema) document.head.appendChild(schema);
 
         return () => {
             document.title = 'A Good Locksmith, LLC | 24/7 Locksmith Service | Lillington, NC | (984) 480-5397';
@@ -152,7 +87,7 @@ const CityPage = () => {
             <section className="city-hero">
                 <div className="city-hero-bg"></div>
                 <div className="container">
-                    <motion.div
+                    <Motion.div
                         initial={{ opacity: 0, y: 20 }}
                         animate={{ opacity: 1, y: 0 }}
                         transition={{ duration: 0.5 }}
@@ -166,7 +101,7 @@ const CityPage = () => {
                         </div>
 
                         <h1>
-                            Locksmith in <span className="red">{city.name}</span>, NC
+                            <span className="red">{city.name}</span> Locksmith — Licensed Mobile Service
                             {city.isHomeBase && <span className="home-badge">🏠 Home Base</span>}
                         </h1>
 
@@ -181,14 +116,14 @@ const CityPage = () => {
                                 <FaPhone /> Call Now: {phoneNumber}
                             </a>
                         </div>
-                    </motion.div>
+                    </Motion.div>
                 </div>
             </section>
 
             {/* About Section */}
             <section className="city-about">
                 <div className="container">
-                    <motion.div
+                    <Motion.div
                         className="about-content"
                         initial={{ opacity: 0, y: 20 }}
                         whileInView={{ opacity: 1, y: 0 }}
@@ -198,6 +133,12 @@ const CityPage = () => {
                         <h2>24/7 Mobile Locksmith Service in {city.name}</h2>
                         <p>{city.description}</p>
 
+                        <div className="city-local-details">
+                            <h3>Local Locksmith Information for {city.name}</h3>
+                            <p>{city.localContext}</p>
+                            <p>{city.serviceFocus}</p>
+                        </div>
+
                         <div className="why-us">
                             <h3>Why {city.name} Residents Trust Us:</h3>
                             <ul>
@@ -205,8 +146,8 @@ const CityPage = () => {
                                 <li><FaCheckCircle /> Established in {businessFacts.establishedYear}</li>
                                 <li><FaCheckCircle /> Family-Owned & Operated</li>
                                 <li><FaCheckCircle /> Fair & Transparent Pricing</li>
-                                <li><FaCheckCircle /> Fast Arrival to {city.name} Neighborhoods</li>
-                                <li><FaCheckCircle /> Fully Equipped Mobile Units</li>
+                                <li><FaCheckCircle /> Mobile Service to {city.name}</li>
+                                <li><FaCheckCircle /> Fully Equipped Mobile Locksmith Service</li>
                                 <li><FaCheckCircle /> Licensed & Insured · {businessFacts.licenseNumber}</li>
                             </ul>
                         </div>
@@ -223,7 +164,7 @@ const CityPage = () => {
                                 </div>
                             </div>
                         )}
-                    </motion.div>
+                    </Motion.div>
                 </div>
             </section>
 
@@ -233,7 +174,7 @@ const CityPage = () => {
                     <h2>Our Services in {city.name}</h2>
                     <div className="services-grid">
                         {services.map((service, index) => (
-                            <motion.div
+                            <Motion.div
                                 key={index}
                                 className="service-card"
                                 initial={{ opacity: 0, y: 20 }}
@@ -250,7 +191,7 @@ const CityPage = () => {
                                         <li key={i}><FaCheckCircle /> {item}</li>
                                     ))}
                                 </ul>
-                            </motion.div>
+                            </Motion.div>
                         ))}
                     </div>
                 </div>
@@ -274,7 +215,7 @@ const CityPage = () => {
             {/* CTA Section */}
             <section className="city-cta-section">
                 <div className="container">
-                    <motion.div
+                    <Motion.div
                         className="cta-content"
                         initial={{ opacity: 0, scale: 0.95 }}
                         whileInView={{ opacity: 1, scale: 1 }}
@@ -287,7 +228,7 @@ const CityPage = () => {
                         <a href={phoneLink} className="btn btn-primary btn-large">
                             <FaPhone /> Call {phoneNumber}
                         </a>
-                    </motion.div>
+                    </Motion.div>
                 </div>
             </section>
         </div>

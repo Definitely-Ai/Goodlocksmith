@@ -115,6 +115,30 @@
     margin-bottom: 30px;
 }
 
+.city-local-details {
+    background: var(--white);
+    border-left: 4px solid var(--blue-primary);
+    border-radius: 12px;
+    box-shadow: var(--shadow-sm);
+    margin-bottom: 30px;
+    padding: 24px;
+}
+
+.city-local-details h3 {
+    color: var(--blue-primary);
+    margin-bottom: 12px;
+}
+
+.city-local-details p {
+    color: var(--text-dark);
+    line-height: 1.7;
+    margin: 0 0 12px;
+}
+
+.city-local-details p:last-child {
+    margin-bottom: 0;
+}
+
 .why-us {
     background: var(--white);
     padding: 30px;

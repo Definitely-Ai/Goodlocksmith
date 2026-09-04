@@ -5,200 +5,130 @@
     "redirects": [
         {
             "source": "/(.*)",
-            "has": [
-                {
-                    "type": "host",
-                    "value": "goodlocksmith.vercel.app"
-                }
-            ],
+            "has": [{ "type": "host", "value": "goodlocksmith.vercel.app" }],
             "destination": "https://www.goodlocksmith.com/$1",
+            "permanent": true
+        },
+        {
+            "source": "/",
+            "has": [{ "type": "host", "value": "angierlocksmith.com" }],
+            "destination": "https://www.goodlocksmith.com/Angier",
+            "permanent": true
+        },
+        {
+            "source": "/",
+            "has": [{ "type": "host", "value": "www.angierlocksmith.com" }],
+            "destination": "https://www.goodlocksmith.com/Angier",
+            "permanent": true
+        },
+        {
+            "source": "/",
+            "has": [{ "type": "host", "value": "dunnlocksmith.com" }],
+            "destination": "https://www.goodlocksmith.com/Dunn",
+            "permanent": true
+        },
+        {
+            "source": "/",
+            "has": [{ "type": "host", "value": "www.dunnlocksmith.com" }],
+            "destination": "https://www.goodlocksmith.com/Dunn",
+            "permanent": true
+        },
+        {
+            "source": "/",
+            "has": [{ "type": "host", "value": "harnettcountylocksmith.com" }],
+            "destination": "https://www.goodlocksmith.com/Harnett-County",
+            "permanent": true
+        },
+        {
+            "source": "/",
+            "has": [{ "type": "host", "value": "www.harnettcountylocksmith.com" }],
+            "destination": "https://www.goodlocksmith.com/Harnett-County",
+            "permanent": true
+        },
+        {
+            "source": "/",
+            "has": [{ "type": "host", "value": "wakecountylocksmith.com" }],
+            "destination": "https://www.goodlocksmith.com/Wake-County",
+            "permanent": true
+        },
+        {
+            "source": "/",
+            "has": [{ "type": "host", "value": "www.wakecountylocksmith.com" }],
+            "destination": "https://www.goodlocksmith.com/Wake-County",
+            "permanent": true
+        },
+        {
+            "source": "/",
+            "has": [{ "type": "host", "value": "locksmithfuquay.com" }],
+            "destination": "https://www.goodlocksmith.com/Fuquay-Varina",
+            "permanent": true
+        },
+        {
+            "source": "/",
+            "has": [{ "type": "host", "value": "www.locksmithfuquay.com" }],
+            "destination": "https://www.goodlocksmith.com/Fuquay-Varina",
+            "permanent": true
+        },
+        {
+            "source": "/",
+            "has": [{ "type": "host", "value": "lillingtonlocksmith.com" }],
+            "destination": "https://www.goodlocksmith.com/Lillington",
+            "permanent": true
+        },
+        {
+            "source": "/",
+            "has": [{ "type": "host", "value": "www.lillingtonlocksmith.com" }],
+            "destination": "https://www.goodlocksmith.com/Lillington",
+            "permanent": true
+        },
+        {
+            "source": "/",
+            "has": [{ "type": "host", "value": "erwinlocksmith.com" }],
+            "destination": "https://www.goodlocksmith.com/Erwin",
+            "permanent": true
+        },
+        {
+            "source": "/",
+            "has": [{ "type": "host", "value": "www.erwinlocksmith.com" }],
+            "destination": "https://www.goodlocksmith.com/Erwin",
+            "permanent": true
+        },
+        {
+            "source": "/",
+            "has": [{ "type": "host", "value": "bunnlevellocksmith.com" }],
+            "destination": "https://www.goodlocksmith.com/Bunnlevel",
+            "permanent": true
+        },
+        {
+            "source": "/",
+            "has": [{ "type": "host", "value": "www.bunnlevellocksmith.com" }],
+            "destination": "https://www.goodlocksmith.com/Bunnlevel",
+            "permanent": true
+        },
+        {
+            "source": "/",
+            "has": [{ "type": "host", "value": "coatslocksmith.com" }],
+            "destination": "https://www.goodlocksmith.com/Coats",
+            "permanent": true
+        },
+        {
+            "source": "/",
+            "has": [{ "type": "host", "value": "www.coatslocksmith.com" }],
+            "destination": "https://www.goodlocksmith.com/Coats",
             "permanent": true
         }
     ],
     "rewrites": [
-        {
-            "source": "/",
-            "has": [
-                {
-                    "type": "host",
-                    "value": "angierlocksmith.com"
-                }
-            ],
-            "destination": "/domains/angier.html"
-        },
-        {
-            "source": "/",
-            "has": [
-                {
-                    "type": "host",
-                    "value": "www.angierlocksmith.com"
-                }
-            ],
-            "destination": "/domains/angier.html"
-        },
-        {
-            "source": "/",
-            "has": [
-                {
-                    "type": "host",
-                    "value": "dunnlocksmith.com"
-                }
-            ],
-            "destination": "/domains/dunn.html"
-        },
-        {
-            "source": "/",
-            "has": [
-                {
-                    "type": "host",
-                    "value": "www.dunnlocksmith.com"
-                }
-            ],
-            "destination": "/domains/dunn.html"
-        },
-        {
-            "source": "/",
-            "has": [
-                {
-                    "type": "host",
-                    "value": "harnettcountylocksmith.com"
-                }
-            ],
-            "destination": "/domains/harnett.html"
-        },
-        {
-            "source": "/",
-            "has": [
-                {
-                    "type": "host",
-                    "value": "www.harnettcountylocksmith.com"
-                }
-            ],
-            "destination": "/domains/harnett.html"
-        },
-        {
-            "source": "/",
-            "has": [
-                {
-                    "type": "host",
-                    "value": "wakecountylocksmith.com"
-                }
-            ],
-            "destination": "/domains/wake.html"
-        },
-        {
-            "source": "/",
-            "has": [
-                {
-                    "type": "host",
-                    "value": "www.wakecountylocksmith.com"
-                }
-            ],
-            "destination": "/domains/wake.html"
-        },
-        {
-            "source": "/",
-            "has": [
-                {
-                    "type": "host",
-                    "value": "locksmithfuquay.com"
-                }
-            ],
-            "destination": "/domains/fuquay.html"
-        },
-        {
-            "source": "/",
-            "has": [
-                {
-                    "type": "host",
-                    "value": "www.locksmithfuquay.com"
-                }
-            ],
-            "destination": "/domains/fuquay.html"
-        },
-        {
-            "source": "/",
-            "has": [
-                {
-                    "type": "host",
-                    "value": "lillingtonlocksmith.com"
-                }
-            ],
-            "destination": "/domains/lillington.html"
-        },
-        {
-            "source": "/",
-            "has": [
-                {
-                    "type": "host",
-                    "value": "www.lillingtonlocksmith.com"
-                }
-            ],
-            "destination": "/domains/lillington.html"
-        },
-        {
-            "source": "/",
-            "has": [
-                {
-                    "type": "host",
-                    "value": "erwinlocksmith.com"
-                }
-            ],
-            "destination": "/domains/erwin.html"
-        },
-        {
-            "source": "/",
-            "has": [
-                {
-                    "type": "host",
-                    "value": "www.erwinlocksmith.com"
-                }
-            ],
-            "destination": "/domains/erwin.html"
-        },
-        {
-            "source": "/",
-            "has": [
-                {
-                    "type": "host",
-                    "value": "bunnlevellocksmith.com"
-                }
-            ],
-            "destination": "/domains/bunnlevel.html"
-        },
-        {
-            "source": "/",
-            "has": [
-                {
-                    "type": "host",
-                    "value": "www.bunnlevellocksmith.com"
-                }
-            ],
-            "destination": "/domains/bunnlevel.html"
-        },
-        {
-            "source": "/",
-            "has": [
-                {
-                    "type": "host",
-                    "value": "coatslocksmith.com"
-                }
-            ],
-            "destination": "/domains/coats.html"
-        },
-        {
-            "source": "/",
-            "has": [
-                {
-                    "type": "host",
-                    "value": "www.coatslocksmith.com"
-                }
-            ],
-            "destination": "/domains/coats.html"
-        },
-        {
-            "source": "/(.*)",
-            "destination": "/index.html"
-        }
+        { "source": "/Lillington", "destination": "/city-pages/Lillington.html" },
+        { "source": "/Angier", "destination": "/city-pages/Angier.html" },
+        { "source": "/Dunn", "destination": "/city-pages/Dunn.html" },
+        { "source": "/Coats", "destination": "/city-pages/Coats.html" },
+        { "source": "/Erwin", "destination": "/city-pages/Erwin.html" },
+        { "source": "/Bunnlevel", "destination": "/city-pages/Bunnlevel.html" },
+        { "source": "/Sanford", "destination": "/city-pages/Sanford.html" },
+        { "source": "/Fuquay-Varina", "destination": "/city-pages/Fuquay-Varina.html" },
+        { "source": "/Harnett-County", "destination": "/city-pages/Harnett-County.html" },
+        { "source": "/Wake-County", "destination": "/city-pages/Wake-County.html" },
+        { "source": "/(.*)", "destination": "/index.html" }
     ]
 }
