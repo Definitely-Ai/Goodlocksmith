@@ -1,5 +1,19 @@
 export const blogPosts = [
   {
+    slug: 'north-carolina-tenant-lock-change-safety-rights',
+    title: 'Can a North Carolina Tenant Request a Lock Change for Safety?',
+    excerpt: 'North Carolina law gives certain tenants affected by domestic violence, sexual assault, or stalking a specific process for requesting a lock change. Learn the timelines and authorization steps.',
+    publishedDate: 'September 4, 2026',
+    datePublished: '2026-09-04',
+    readingTime: '6 min read',
+    category: 'Tenant Safety & Lock Authorization',
+    image: '/images/rekey-property-handoff.webp',
+    imageAlt: 'Professional handoff of newly rekeyed property keys',
+    seoTitle: 'NC Tenant Lock-Change Rights | Safety Guide',
+    seoDescription: 'Learn North Carolina tenant lock-change rights for domestic violence, sexual assault, or stalking, including notice, authorization, and statutory timelines.',
+    about: ['North Carolina tenant lock change rights', 'Domestic violence lock change', 'Rental property rekeying', 'Landlord lock authorization', 'Licensed North Carolina locksmith'],
+  },
+  {
     slug: 'key-fob-not-working-after-battery-change-nc',
     title: 'Key Fob Not Working After a Battery Change?',
     excerpt: 'A fresh battery does not automatically solve every key-fob problem. Check the correct battery, installation, spare key, and vehicle symptoms before assuming programming is needed.',
