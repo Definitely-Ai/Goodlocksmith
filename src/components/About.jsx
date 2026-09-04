@@ -1,10 +1,11 @@
 import { motion } from 'framer-motion';
 import { FaCheckCircle, FaUsers, FaClock, FaPhone, FaMapMarkerAlt, FaTruck } from 'react-icons/fa';
+import { businessFacts } from '../data/businessFacts';
 import './About.css';
 
 const About = () => {
     const stats = [
-        { icon: <FaClock />, value: '34+', label: 'Years Experience' },
+        { icon: <FaClock />, value: businessFacts.experienceYears, label: 'Years Experience' },
         { icon: <FaUsers />, value: '10K+', label: 'Happy Customers' },
         { icon: <FaClock />, value: '24/7', label: 'Availability' },
         { icon: <FaMapMarkerAlt />, value: '25mi', label: 'Service Radius' },
@@ -32,13 +33,13 @@ const About = () => {
                     >
                         <div className="about-card">
                             <div className="owner-image-container">
-                                <img src="/images/Pictureofowner.jpg" alt="Owner" className="owner-image" />
+                                <img src="/images/Pictureofowner.jpg" alt="Michael Galdine, owner of A Good Locksmith" className="owner-image" />
                             </div>
                             <h3>Our Story</h3>
                             <p>
-                                <strong>A Good Locksmith, LLC</strong> has been proudly serving customers with
-                                decades of experience, delivering fast, reliable, and professional locksmith
-                                services with integrity at the core of everything we do.
+                                Licensed locksmith <strong>{businessFacts.ownerName}</strong> brings
+                                <strong> {businessFacts.experienceYears} years of professional locksmithing experience</strong> to every job.
+                                He established <strong>{businessFacts.legalName}</strong> in <strong>{businessFacts.establishedYear}</strong>.
                             </p>
                             <p>
                                 With fully equipped mobile units and decades of hands-on experience, we provide
@@ -87,7 +88,9 @@ const About = () => {
                             </p>
 
                             <ul className="benefits-list">
-                                <li><FaCheckCircle /> 34+ Years of Experience</li>
+                                <li><FaCheckCircle /> {businessFacts.experienceYears} Years of Experience</li>
+                                <li><FaCheckCircle /> Established in {businessFacts.establishedYear}</li>
+                                <li><FaCheckCircle /> North Carolina License {businessFacts.licenseNumber}</li>
                                 <li><FaCheckCircle /> We Actually Answer the Phone</li>
                                 <li><FaCheckCircle /> Fast Response Times</li>
                                 <li><FaCheckCircle /> Fully Equipped Mobile Units</li>

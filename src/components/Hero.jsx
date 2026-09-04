@@ -1,5 +1,6 @@
 import { motion } from 'framer-motion';
 import { FaPhone, FaInfoCircle, FaClock, FaStar, FaMapMarkerAlt } from 'react-icons/fa';
+import { businessFacts } from '../data/businessFacts';
 import './Hero.css';
 
 const Hero = () => {
@@ -36,7 +37,7 @@ const Hero = () => {
                         <span className="brand-text">
                             A <span className="red">"Good"</span> <span className="blue">Locksmith</span>
                         </span>
-                        <span className="small-text">NCLL #3119</span>
+                        <span className="small-text">{businessFacts.licenseNumber}</span>
                     </h1>
 
                     <p className="hero-subtitle">
@@ -46,7 +47,7 @@ const Hero = () => {
                     <div className="hero-features">
                         <div className="feature">
                             <FaStar className="feature-icon" />
-                            <span>34+ Years Experience</span>
+                            <span>{businessFacts.experienceYears} Years Experience</span>
                         </div>
                         <div className="feature">
                             <FaClock className="feature-icon" />

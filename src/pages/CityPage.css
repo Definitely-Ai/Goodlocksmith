@@ -241,6 +241,47 @@
     font-size: 0.8rem;
 }
 
+/* Direct answers for customers and AI-powered search */
+.city-faq {
+    padding: var(--section-padding);
+    background: var(--off-white);
+}
+
+.city-faq h2 {
+    color: var(--blue-primary);
+    font-size: 2rem;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.city-faq-list {
+    display: grid;
+    gap: 18px;
+    margin: 0 auto;
+    max-width: 900px;
+}
+
+.city-faq-item {
+    background: var(--white);
+    border-left: 4px solid var(--red-primary);
+    border-radius: 12px;
+    box-shadow: var(--shadow-sm);
+    padding: 24px;
+}
+
+.city-faq-item dt {
+    color: var(--blue-primary);
+    font-size: 1.1rem;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+.city-faq-item dd {
+    color: var(--text-dark);
+    line-height: 1.7;
+    margin: 0;
+}
+
 /* CTA Section */
 .city-cta-section {
     padding: var(--section-padding);
