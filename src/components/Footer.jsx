@@ -1,5 +1,6 @@
 import { FaPhone, FaMapMarkerAlt, FaClock } from 'react-icons/fa';
 import { Link } from 'react-router-dom';
+import { businessFacts } from '../data/businessFacts';
 import './Footer.css';
 
 const Footer = () => {
@@ -11,6 +12,7 @@ const Footer = () => {
         { name: 'Dunn', path: '/Dunn' },
         { name: 'Coats', path: '/Coats' },
         { name: 'Erwin', path: '/Erwin' },
+        { name: 'Bunnlevel', path: '/Bunnlevel' },
         { name: 'Sanford', path: '/Sanford' },
         { name: 'Harnett County', path: '/Harnett-County' },
         { name: 'Wake County', path: '/Wake-County' },
@@ -24,6 +26,7 @@ const Footer = () => {
                         <div className="footer-brand">
                             <h3>A <span className="red">"Good"</span> <span className="blue">Locksmith</span>, LLC.</h3>
                             <p>Professional locksmith services in the NC Triangle. Fast. Professional. Local.</p>
+                            <p>{businessFacts.experienceYears} years of locksmithing experience · Established {businessFacts.establishedYear} · {businessFacts.licenseNumber}</p>
                             <div className="footer-flag">🇺🇸</div>
                         </div>
                         <div className="footer-contact">

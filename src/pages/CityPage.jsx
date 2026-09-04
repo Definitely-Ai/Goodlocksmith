@@ -3,25 +3,125 @@ import { useParams, Link } from 'react-router-dom';
 import { motion } from 'framer-motion';
 import { FaPhone, FaMapMarkerAlt, FaCheckCircle, FaClock, FaArrowLeft, FaHome, FaCar, FaBuilding, FaMobileAlt } from 'react-icons/fa';
 import { cities, services, phoneNumber, phoneLink } from '../data/cities';
+import { businessFacts } from '../data/businessFacts';
 import './CityPage.css';
+
+const getCityFaqs = (city) => [
+    {
+        question: `Does A Good Locksmith provide mobile locksmith service in ${city.name}?`,
+        answer: `${city.description} Service is provided at the customer's location, subject to current availability and travel distance.`,
+    },
+    {
+        question: 'Is A Good Locksmith licensed in North Carolina?',
+        answer: `${businessFacts.legalName} advertises under ${businessFacts.licenseNumber}. Owner ${businessFacts.ownerName} has ${businessFacts.experienceYears} years of professional locksmithing experience.`,
+    },
+    {
+        question: 'How long has A Good Locksmith been in business?',
+        answer: `${businessFacts.publicName} was established in ${businessFacts.establishedYear}. ${businessFacts.ownerName}'s ${businessFacts.experienceYears} years in locksmithing include experience gained before he established the company.`,
+    },
+    {
+        question: `What locksmith services are available in ${city.name}?`,
+        answer: 'Services include automotive and motorcycle key work, home and business lockouts, rekeying, lock installation, commercial security hardware, and smart-lock service.',
+    },
+];
 
 const CityPage = () => {
     const { citySlug } = useParams();
     const city = cities[citySlug];
+    const cityFaqs = city ? getCityFaqs(city) : [];
 
     useEffect(() => {
         if (!city) return;
         const canonicalUrl = `https://www.goodlocksmith.com/${city.slug}`;
+        const metaDescription = `${businessFacts.legalName} provides licensed mobile locksmith service in ${city.name}, NC. ${businessFacts.experienceYears} years of experience. ${businessFacts.licenseNumber}.`;
         document.title = `Locksmith in ${city.name}, NC | A Good Locksmith`;
         const canonical = document.querySelector('link[rel="canonical"]');
         const ogUrl = document.querySelector('meta[property="og:url"]');
+        const description = document.querySelector('meta[name="description"]');
+        const ogTitle = document.querySelector('meta[property="og:title"]');
+        const ogDescription = document.querySelector('meta[property="og:description"]');
+        const previousValues = {
+            canonical: canonical?.getAttribute('href'),
+            ogUrl: ogUrl?.getAttribute('content'),
+            description: description?.getAttribute('content'),
+            ogTitle: ogTitle?.getAttribute('content'),
+            ogDescription: ogDescription?.getAttribute('content'),
+        };
         if (canonical) canonical.setAttribute('href', canonicalUrl);
         if (ogUrl) ogUrl.setAttribute('content', canonicalUrl);
+        if (description) description.setAttribute('content', metaDescription);
+        if (ogTitle) ogTitle.setAttribute('content', `Locksmith in ${city.name}, NC | A Good Locksmith`);
+        if (ogDescription) ogDescription.setAttribute('content', metaDescription);
+
+        const schema = document.createElement('script');
+        schema.id = 'city-page-schema';
+        schema.type = 'application/ld+json';
+        schema.textContent = JSON.stringify({
+            '@context': 'https://schema.org',
+            '@graph': [
+                {
+                    '@type': 'Locksmith',
+                    '@id': 'https://www.goodlocksmith.com/#business',
+                    name: businessFacts.legalName,
+                    url: 'https://www.goodlocksmith.com/',
+                    telephone: '+1-984-480-5397',
+                    foundingDate: businessFacts.establishedYear,
+                    founder: {
+                        '@type': 'Person',
+                        name: businessFacts.ownerName,
+                        jobTitle: 'Licensed Locksmith and Owner',
+                    },
+                    identifier: {
+                        '@type': 'PropertyValue',
+                        name: 'North Carolina Locksmith License',
+                        value: businessFacts.licenseNumber,
+                    },
+                    address: {
+                        '@type': 'PostalAddress',
+                        addressLocality: 'Lillington',
+                        addressRegion: 'NC',
+                        addressCountry: 'US',
+                    },
+                    areaServed: {
+                        '@type': city.isCounty ? 'AdministrativeArea' : 'City',
+                        name: `${city.name}, NC`,
+                    },
+                },
+                {
+                    '@type': 'Service',
+                    '@id': `${canonicalUrl}#mobile-locksmith-service`,
+                    name: `Mobile locksmith service in ${city.name}, NC`,
+                    serviceType: 'Automotive, motorcycle, residential, and commercial locksmith services',
+                    provider: { '@id': 'https://www.goodlocksmith.com/#business' },
+                    areaServed: {
+                        '@type': city.isCounty ? 'AdministrativeArea' : 'City',
+                        name: `${city.name}, NC`,
+                    },
+                },
+                {
+                    '@type': 'FAQPage',
+                    '@id': `${canonicalUrl}#frequently-asked-questions`,
+                    mainEntity: getCityFaqs(city).map(({ question, answer }) => ({
+                        '@type': 'Question',
+                        name: question,
+                        acceptedAnswer: {
+                            '@type': 'Answer',
+                            text: answer,
+                        },
+                    })),
+                },
+            ],
+        });
+        document.head.appendChild(schema);
 
         return () => {
             document.title = 'A Good Locksmith, LLC | 24/7 Locksmith Service | Lillington, NC | (984) 480-5397';
-            if (canonical) canonical.setAttribute('href', 'https://www.goodlocksmith.com/');
-            if (ogUrl) ogUrl.setAttribute('content', 'https://www.goodlocksmith.com/');
+            if (canonical && previousValues.canonical) canonical.setAttribute('href', previousValues.canonical);
+            if (ogUrl && previousValues.ogUrl) ogUrl.setAttribute('content', previousValues.ogUrl);
+            if (description && previousValues.description) description.setAttribute('content', previousValues.description);
+            if (ogTitle && previousValues.ogTitle) ogTitle.setAttribute('content', previousValues.ogTitle);
+            if (ogDescription && previousValues.ogDescription) ogDescription.setAttribute('content', previousValues.ogDescription);
+            schema.remove();
         };
     }, [city]);
 
@@ -40,7 +140,7 @@ const CityPage = () => {
     }
 
     const serviceIcons = {
-        'Automotive Services': <FaCar />,
+        'Automotive & Motorcycle': <FaCar />,
         'Residential Services': <FaHome />,
         'Commercial Services': <FaBuilding />,
         'Smart Locks': <FaMobileAlt />,
@@ -101,12 +201,13 @@ const CityPage = () => {
                         <div className="why-us">
                             <h3>Why {city.name} Residents Trust Us:</h3>
                             <ul>
-                                <li><FaCheckCircle /> 30+ Years of Experience</li>
+                                <li><FaCheckCircle /> {businessFacts.experienceYears} Years of Experience</li>
+                                <li><FaCheckCircle /> Established in {businessFacts.establishedYear}</li>
                                 <li><FaCheckCircle /> Family-Owned & Operated</li>
                                 <li><FaCheckCircle /> Fair & Transparent Pricing</li>
                                 <li><FaCheckCircle /> Fast Arrival to {city.name} Neighborhoods</li>
                                 <li><FaCheckCircle /> Fully Equipped Mobile Units</li>
-                                <li><FaCheckCircle /> Licensed & Insured</li>
+                                <li><FaCheckCircle /> Licensed & Insured · {businessFacts.licenseNumber}</li>
                             </ul>
                         </div>
 
@@ -152,6 +253,21 @@ const CityPage = () => {
                             </motion.div>
                         ))}
                     </div>
+                </div>
+            </section>
+
+            {/* Questions phrased the way customers and AI search tools ask them */}
+            <section className="city-faq" aria-labelledby="city-faq-title">
+                <div className="container">
+                    <h2 id="city-faq-title">Quick Answers About Locksmith Service in {city.name}</h2>
+                    <dl className="city-faq-list">
+                        {cityFaqs.map(({ question, answer }) => (
+                            <div className="city-faq-item" key={question}>
+                                <dt>{question}</dt>
+                                <dd>{answer}</dd>
+                            </div>
+                        ))}
+                    </dl>
                 </div>
             </section>
 

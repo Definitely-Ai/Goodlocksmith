@@ -1,3 +1,14 @@
+# AI search crawlers used to surface and cite public website content.
+User-agent: OAI-SearchBot
+Allow: /
+
+User-agent: PerplexityBot
+Allow: /
+
+User-agent: Claude-SearchBot
+Allow: /
+
+# Standard search crawlers, including Googlebot and Bingbot.
 User-agent: *
 Allow: /
 

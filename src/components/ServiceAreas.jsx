@@ -27,6 +27,13 @@ const ServiceAreas = () => {
             description: 'Mobile locksmith service throughout the Erwin community'
         },
         {
+            name: 'Bunnlevel',
+            slug: 'Bunnlevel',
+            county: 'Harnett County',
+            badge: null,
+            description: 'Mobile locksmith service for Bunnlevel and nearby communities'
+        },
+        {
             name: 'Sanford',
             slug: 'Sanford',
             county: 'Lee County',
