@@ -1,5 +1,19 @@
 export const blogPosts = [
   {
+    slug: 'locked-out-of-business-commercial-lockout-nc',
+    title: 'Locked Out of Your Business? What to Have Ready Before You Call',
+    excerpt: 'A commercial lockout call goes more smoothly when the decision-maker, authorization, exact location, door type, and access-system details are ready before dispatch.',
+    publishedDate: 'September 5, 2026',
+    datePublished: '2026-09-05',
+    readingTime: '6 min read',
+    category: 'Commercial Locksmith Advice',
+    image: '/images/commercial-rekey-good-locksmith.webp',
+    imageAlt: 'A Good Locksmith providing commercial door and lock service',
+    seoTitle: 'Business Lockout Locksmith | Harnett County, NC',
+    seoDescription: 'Locked out of your business? Prepare authorization, the exact location, door and lock details, and a safe access plan before calling a Harnett County locksmith.',
+    about: ['Business lockout locksmith', 'Commercial lockout service', 'Commercial door access', 'Customer authorization', 'Harnett County locksmith'],
+  },
+  {
     slug: 'north-carolina-tenant-lock-change-safety-rights',
     title: 'Can a North Carolina Tenant Request a Lock Change for Safety?',
     excerpt: 'North Carolina law gives certain tenants affected by domestic violence, sexual assault, or stalking a specific process for requesting a lock change. Learn the timelines and authorization steps.',
