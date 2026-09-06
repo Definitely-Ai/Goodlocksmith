@@ -1,5 +1,19 @@
 export const blogPosts = [
   {
+    slug: 'rekey-lock-without-original-key-nc',
+    title: 'Can a Locksmith Rekey a Lock Without the Original Key?',
+    excerpt: 'A missing original key does not always mean the entire lock must be replaced. Learn what determines whether an authorized locksmith can rekey the existing cylinder.',
+    publishedDate: 'September 6, 2026',
+    datePublished: '2026-09-06',
+    readingTime: '6 min read',
+    category: 'Lock Rekeying Advice',
+    image: '/images/rekey-property-handoff.webp',
+    imageAlt: 'Professional handoff of newly rekeyed property keys',
+    seoTitle: 'Rekey a Lock Without the Original Key | Harnett County, NC',
+    seoDescription: 'Can a locksmith rekey a lock without the original key? Learn how authorization, lock type, access, and hardware condition affect the answer in Harnett County.',
+    about: ['Rekey lock without original key', 'Lost house key', 'Lock rekeying', 'Rekey versus replace', 'Harnett County locksmith'],
+  },
+  {
     slug: 'locked-out-of-business-commercial-lockout-nc',
     title: 'Locked Out of Your Business? What to Have Ready Before You Call',
     excerpt: 'A commercial lockout call goes more smoothly when the decision-maker, authorization, exact location, door type, and access-system details are ready before dispatch.',

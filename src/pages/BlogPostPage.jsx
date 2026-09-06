@@ -28,6 +28,7 @@ import LeverHandleGuidePost from './LeverHandleGuidePost';
 import KeyFobBatteryGuidePost from './KeyFobBatteryGuidePost';
 import TenantSafetyLockChangePost from './TenantSafetyLockChangePost';
 import BusinessLockoutGuidePost from './BusinessLockoutGuidePost';
+import RekeyWithoutOriginalGuidePost from './RekeyWithoutOriginalGuidePost';
 import { getBlogPost } from '../data/blogPosts';
 import { phoneLink } from '../data/cities';
 import './Blog.css';
@@ -92,6 +93,10 @@ const BlogPostPage = () => {
   }, [post]);
 
   if (!post) return <Navigate to="/blog" replace />;
+
+  if (post.slug === 'rekey-lock-without-original-key-nc') {
+    return <RekeyWithoutOriginalGuidePost post={post} />;
+  }
 
   if (post.slug === 'locked-out-of-business-commercial-lockout-nc') {
     return <BusinessLockoutGuidePost post={post} />;
