@@ -29,6 +29,7 @@ import KeyFobBatteryGuidePost from './KeyFobBatteryGuidePost';
 import TenantSafetyLockChangePost from './TenantSafetyLockChangePost';
 import BusinessLockoutGuidePost from './BusinessLockoutGuidePost';
 import RekeyWithoutOriginalGuidePost from './RekeyWithoutOriginalGuidePost';
+import KeypadCodeManagementPost from './KeypadCodeManagementPost';
 import { getBlogPost } from '../data/blogPosts';
 import { phoneLink } from '../data/cities';
 import './Blog.css';
@@ -93,6 +94,10 @@ const BlogPostPage = () => {
   }, [post]);
 
   if (!post) return <Navigate to="/blog" replace />;
+
+  if (post.slug === 'when-to-change-keypad-lock-code-nc') {
+    return <KeypadCodeManagementPost post={post} />;
+  }
 
   if (post.slug === 'rekey-lock-without-original-key-nc') {
     return <RekeyWithoutOriginalGuidePost post={post} />;

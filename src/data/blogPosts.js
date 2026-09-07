@@ -1,5 +1,19 @@
 export const blogPosts = [
   {
+    slug: 'when-to-change-keypad-lock-code-nc',
+    title: 'Who Still Knows Your Door Code? When to Change a Keypad Lock Code',
+    excerpt: 'A keypad code should not become permanent shared knowledge. Learn when to remove old access, how to avoid a lockout, and why the exact lock model matters.',
+    publishedDate: 'September 7, 2026',
+    datePublished: '2026-09-07',
+    readingTime: '6 min read',
+    category: 'Keypad Lock Security',
+    image: '/images/residential-rekey-good-locksmith.webp',
+    imageAlt: 'A Good Locksmith evaluating residential door and lock security',
+    seoTitle: 'When to Change a Keypad Lock Code | Harnett County, NC',
+    seoDescription: 'Learn when to change a keypad lock code, remove former users, preserve backup entry, and avoid programming mistakes in Harnett County and nearby areas.',
+    about: ['Change keypad lock code', 'Delete door lock code', 'Keypad lock programming', 'Smart lock access control', 'Harnett County locksmith'],
+  },
+  {
     slug: 'rekey-lock-without-original-key-nc',
     title: 'Can a Locksmith Rekey a Lock Without the Original Key?',
     excerpt: 'A missing original key does not always mean the entire lock must be replaced. Learn what determines whether an authorized locksmith can rekey the existing cylinder.',
