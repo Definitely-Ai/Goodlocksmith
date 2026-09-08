@@ -1,5 +1,19 @@
 export const blogPosts = [
   {
+    slug: 'need-two-keys-program-spare-car-key-nc',
+    title: 'Do You Need Two Working Keys to Make a Spare Car Key?',
+    excerpt: 'Some vehicles allow owner programming only when two recognized keys are present, while others use different procedures. Learn what determines the answer.',
+    publishedDate: 'September 8, 2026',
+    datePublished: '2026-09-08',
+    readingTime: '6 min read',
+    category: 'Automotive Key Advice',
+    image: '/images/local-car-lockout-good-locksmith.webp',
+    imageAlt: 'Mobile automotive locksmith service illustration',
+    seoTitle: 'Do You Need Two Keys to Program a Spare Car Key? | Harnett NC',
+    seoDescription: 'Do you need two working keys to program a spare car key? Learn why requirements vary by vehicle and what to prepare for service in Harnett County, NC.',
+    about: ['Two keys to program a spare car key', 'Spare car key programming', 'Programmed car key', 'Transponder key duplication', 'Harnett County automotive locksmith'],
+  },
+  {
     slug: 'when-to-change-keypad-lock-code-nc',
     title: 'Who Still Knows Your Door Code? When to Change a Keypad Lock Code',
     excerpt: 'A keypad code should not become permanent shared knowledge. Learn when to remove old access, how to avoid a lockout, and why the exact lock model matters.',
