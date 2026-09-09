@@ -1,5 +1,19 @@
 export const blogPosts = [
   {
+    slug: 'what-lubricant-for-door-lock-nc',
+    title: 'What Should You Use to Lubricate a Door Lock?',
+    excerpt: 'A cylinder, latch, hinge, and door track are different mechanisms. Learn how to identify the source of friction and why the exact lock instructions matter before applying lubricant.',
+    publishedDate: 'September 9, 2026',
+    datePublished: '2026-09-09',
+    readingTime: '7 min read',
+    category: 'Lock Care & Maintenance',
+    image: '/images/residential-rekey-good-locksmith.webp',
+    imageAlt: 'A Good Locksmith evaluating a residential door lock in North Carolina',
+    seoTitle: 'Door Lock Lubricant Guide | Harnett County, NC',
+    seoDescription: 'What lubricant should you use on a door lock? Learn why the cylinder, latch, hinge, track, and exact manufacturer instructions determine the answer.',
+    about: ['Door lock lubricant', 'Lock cylinder maintenance', 'Sticking door lock', 'Lock care', 'Harnett County locksmith'],
+  },
+  {
     slug: 'need-two-keys-program-spare-car-key-nc',
     title: 'Do You Need Two Working Keys to Make a Spare Car Key?',
     excerpt: 'Some vehicles allow owner programming only when two recognized keys are present, while others use different procedures. Learn what determines the answer.',

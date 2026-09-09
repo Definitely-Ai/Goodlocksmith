@@ -31,6 +31,7 @@ import BusinessLockoutGuidePost from './BusinessLockoutGuidePost';
 import RekeyWithoutOriginalGuidePost from './RekeyWithoutOriginalGuidePost';
 import KeypadCodeManagementPost from './KeypadCodeManagementPost';
 import TwoKeyProgrammingGuidePost from './TwoKeyProgrammingGuidePost';
+import DoorLockLubricantGuidePost from './DoorLockLubricantGuidePost';
 import { getBlogPost } from '../data/blogPosts';
 import { phoneLink } from '../data/cities';
 import './Blog.css';
@@ -95,6 +96,10 @@ const BlogPostPage = () => {
   }, [post]);
 
   if (!post) return <Navigate to="/blog" replace />;
+
+  if (post.slug === 'what-lubricant-for-door-lock-nc') {
+    return <DoorLockLubricantGuidePost post={post} />;
+  }
 
   if (post.slug === 'need-two-keys-program-spare-car-key-nc') {
     return <TwoKeyProgrammingGuidePost post={post} />;
