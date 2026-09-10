@@ -1,5 +1,19 @@
 export const blogPosts = [
   {
+    slug: 'change-locks-after-eviction-north-carolina',
+    title: 'When Can a North Carolina Landlord Change the Locks After an Eviction?',
+    excerpt: 'Changing locks too early can become an unlawful self-help eviction. Learn where the writ of possession, sheriff, property-access period, and locksmith fit into a lawful turnover.',
+    publishedDate: 'September 10, 2026',
+    datePublished: '2026-09-10',
+    readingTime: '7 min read',
+    category: 'Rental Property Rekeying',
+    image: '/images/rekey-property-handoff.webp',
+    imageAlt: 'Professional handoff of newly rekeyed rental-property keys',
+    seoTitle: 'Change Locks After Eviction in North Carolina | Landlord Guide',
+    seoDescription: 'When may an NC landlord change locks after eviction? Learn how lawful possession, the sheriff, remaining property, authorization, and rekeying fit together.',
+    about: ['Change locks after eviction in North Carolina', 'Eviction rekeying', 'Rental property lock change', 'Writ of possession', 'Harnett County locksmith'],
+  },
+  {
     slug: 'what-lubricant-for-door-lock-nc',
     title: 'What Should You Use to Lubricate a Door Lock?',
     excerpt: 'A cylinder, latch, hinge, and door track are different mechanisms. Learn how to identify the source of friction and why the exact lock instructions matter before applying lubricant.',
