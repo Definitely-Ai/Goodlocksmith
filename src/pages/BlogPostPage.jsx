@@ -33,6 +33,7 @@ import KeypadCodeManagementPost from './KeypadCodeManagementPost';
 import TwoKeyProgrammingGuidePost from './TwoKeyProgrammingGuidePost';
 import DoorLockLubricantGuidePost from './DoorLockLubricantGuidePost';
 import EvictionLockChangeGuidePost from './EvictionLockChangeGuidePost';
+import SmartLockFitGuidePost from './SmartLockFitGuidePost';
 import { getBlogPost } from '../data/blogPosts';
 import { phoneLink } from '../data/cities';
 import './Blog.css';
@@ -97,6 +98,10 @@ const BlogPostPage = () => {
   }, [post]);
 
   if (!post) return <Navigate to="/blog" replace />;
+
+  if (post.slug === 'will-smart-lock-fit-existing-door-nc') {
+    return <SmartLockFitGuidePost post={post} />;
+  }
 
   if (post.slug === 'change-locks-after-eviction-north-carolina') {
     return <EvictionLockChangeGuidePost post={post} />;

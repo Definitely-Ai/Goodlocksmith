@@ -1,5 +1,19 @@
 export const blogPosts = [
   {
+    slug: 'will-smart-lock-fit-existing-door-nc',
+    title: 'Will a Smart Lock Fit Your Existing Door? What to Check Before You Buy',
+    excerpt: 'Before buying a smart lock, check the door preparation, thickness, backset, bolt alignment, inside clearance, connectivity, and backup entry method.',
+    publishedDate: 'September 11, 2026',
+    datePublished: '2026-09-11',
+    readingTime: '7 min read',
+    category: 'Smart Lock Installation',
+    image: '/images/residential-rekey-good-locksmith.webp',
+    imageAlt: 'A Good Locksmith evaluating an existing residential door for compatible lock hardware',
+    seoTitle: 'Will a Smart Lock Fit My Door? | Harnett County, NC',
+    seoDescription: 'Will a smart lock fit your existing door? Check door prep, thickness, backset, bolt alignment, clearance, connectivity, and backup access before buying.',
+    about: ['Will a smart lock fit my door', 'Smart lock compatibility', 'Smart lock installation', 'Door preparation', 'Harnett County locksmith'],
+  },
+  {
     slug: 'change-locks-after-eviction-north-carolina',
     title: 'When Can a North Carolina Landlord Change the Locks After an Eviction?',
     excerpt: 'Changing locks too early can become an unlawful self-help eviction. Learn where the writ of possession, sheriff, property-access period, and locksmith fit into a lawful turnover.',
