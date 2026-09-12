@@ -1,5 +1,19 @@
 export const blogPosts = [
   {
+    slug: 'key-turns-but-door-wont-unlock-nc',
+    title: 'Key Turns but the Door Won’t Unlock? What That Symptom Can Mean',
+    excerpt: 'A turning key does not always move the latch or bolt. Learn what the symptom can reveal, which safe checks help, and when to stop forcing the lock.',
+    publishedDate: 'September 12, 2026',
+    datePublished: '2026-09-12',
+    readingTime: '8 min read',
+    category: 'Lock Troubleshooting',
+    image: '/images/residential-rekey-good-locksmith.webp',
+    imageAlt: 'A Good Locksmith evaluating a residential door lock that does not unlock with the key',
+    seoTitle: 'Key Turns but Door Won’t Unlock? | Harnett County, NC',
+    seoDescription: 'If your key turns but the door will not unlock, stop forcing it. Learn what the symptom may mean, safe checks to make, and when to call a locksmith.',
+    about: ['Key turns but door will not unlock', 'Spinning lock cylinder', 'Door lock repair', 'Lock tailpiece', 'Harnett County locksmith'],
+  },
+  {
     slug: 'will-smart-lock-fit-existing-door-nc',
     title: 'Will a Smart Lock Fit Your Existing Door? What to Check Before You Buy',
     excerpt: 'Before buying a smart lock, check the door preparation, thickness, backset, bolt alignment, inside clearance, connectivity, and backup entry method.',

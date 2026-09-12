@@ -34,6 +34,7 @@ import TwoKeyProgrammingGuidePost from './TwoKeyProgrammingGuidePost';
 import DoorLockLubricantGuidePost from './DoorLockLubricantGuidePost';
 import EvictionLockChangeGuidePost from './EvictionLockChangeGuidePost';
 import SmartLockFitGuidePost from './SmartLockFitGuidePost';
+import KeyTurnsNoUnlockGuidePost from './KeyTurnsNoUnlockGuidePost';
 import { getBlogPost } from '../data/blogPosts';
 import { phoneLink } from '../data/cities';
 import './Blog.css';
@@ -98,6 +99,10 @@ const BlogPostPage = () => {
   }, [post]);
 
   if (!post) return <Navigate to="/blog" replace />;
+
+  if (post.slug === 'key-turns-but-door-wont-unlock-nc') {
+    return <KeyTurnsNoUnlockGuidePost post={post} />;
+  }
 
   if (post.slug === 'will-smart-lock-fit-existing-door-nc') {
     return <SmartLockFitGuidePost post={post} />;
