@@ -1,5 +1,19 @@
 export const blogPosts = [
   {
+    slug: 'add-deadbolt-to-door-no-existing-hole-nc',
+    title: 'Can You Add a Deadbolt to a Door That Doesn’t Have One?',
+    excerpt: 'Many compatible doors can be prepared for a new deadbolt. Learn what door construction, measurements, placement, strike support, and safe-exit requirements affect the installation.',
+    publishedDate: 'September 13, 2026',
+    datePublished: '2026-09-13',
+    readingTime: '8 min read',
+    category: 'Deadbolt Installation',
+    image: '/images/residential-rekey-good-locksmith.webp',
+    imageAlt: 'A Good Locksmith evaluating a residential door and frame for a new deadbolt installation',
+    seoTitle: 'Add a Deadbolt to an Existing Door | Harnett County, NC',
+    seoDescription: 'Can you add a deadbolt to a door with no existing hole? Learn how door construction, measurements, placement, strike support, and safe exit affect installation.',
+    about: ['Deadbolt installation', 'Add a deadbolt to an existing door', 'Door preparation', 'Deadbolt backset', 'Harnett County locksmith'],
+  },
+  {
     slug: 'key-turns-but-door-wont-unlock-nc',
     title: 'Key Turns but the Door Won’t Unlock? What That Symptom Can Mean',
     excerpt: 'A turning key does not always move the latch or bolt. Learn what the symptom can reveal, which safe checks help, and when to stop forcing the lock.',
