@@ -36,6 +36,7 @@ import EvictionLockChangeGuidePost from './EvictionLockChangeGuidePost';
 import SmartLockFitGuidePost from './SmartLockFitGuidePost';
 import KeyTurnsNoUnlockGuidePost from './KeyTurnsNoUnlockGuidePost';
 import AddDeadboltExistingDoorGuidePost from './AddDeadboltExistingDoorGuidePost';
+import CommercialDoorCloserGuidePost from './CommercialDoorCloserGuidePost';
 import { getBlogPost } from '../data/blogPosts';
 import { phoneLink } from '../data/cities';
 import './Blog.css';
@@ -100,6 +101,10 @@ const BlogPostPage = () => {
   }, [post]);
 
   if (!post) return <Navigate to="/blog" replace />;
+
+  if (post.slug === 'commercial-door-closer-slams-wont-latch-nc') {
+    return <CommercialDoorCloserGuidePost post={post} />;
+  }
 
   if (post.slug === 'add-deadbolt-to-door-no-existing-hole-nc') {
     return <AddDeadboltExistingDoorGuidePost post={post} />;

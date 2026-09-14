@@ -1,5 +1,19 @@
 export const blogPosts = [
   {
+    slug: 'commercial-door-closer-slams-wont-latch-nc',
+    title: 'Commercial Door Closer Slamming or Not Latching? What to Check',
+    excerpt: 'A closer may slam, creep, or stop short because of adjustment, leakage, mounting, alignment, weather, or the wrong hardware. Learn what each symptom can mean.',
+    publishedDate: 'September 14, 2026',
+    datePublished: '2026-09-14',
+    readingTime: '9 min read',
+    category: 'Commercial Door Hardware',
+    image: '/images/commercial-rekey-good-locksmith.webp',
+    imageAlt: 'A Good Locksmith evaluating commercial door hardware and closer operation',
+    seoTitle: 'Commercial Door Closer Repair | Harnett County, NC',
+    seoDescription: 'Commercial door closer slamming or not latching? Learn how speed, spring power, alignment, leaks, mounting, weather, and door function affect the solution.',
+    about: ['Commercial door closer repair', 'Door closer slamming', 'Door will not latch', 'Commercial door hardware', 'Harnett County locksmith'],
+  },
+  {
     slug: 'add-deadbolt-to-door-no-existing-hole-nc',
     title: 'Can You Add a Deadbolt to a Door That Doesn’t Have One?',
     excerpt: 'Many compatible doors can be prepared for a new deadbolt. Learn what door construction, measurements, placement, strike support, and safe-exit requirements affect the installation.',
