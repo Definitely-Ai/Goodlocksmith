@@ -2,6 +2,7 @@ import { mkdir, readFile, writeFile } from 'node:fs/promises';
 import { resolve } from 'node:path';
 import { cities, phoneLink, phoneNumber, services } from '../src/data/cities.js';
 import { businessFacts } from '../src/data/businessFacts.js';
+import { cityMarketDetails, securityGuides } from '../src/data/cityMarketDetails.js';
 import {
     getCityCanonicalUrl,
     getCityFaqs,
@@ -33,6 +34,47 @@ const renderFaqs = (city) => getCityFaqs(city).map(({ question, answer }) => `
       <dt>${escapeHtml(question)}</dt>
       <dd>${escapeHtml(answer)}</dd>
     </div>`).join('');
+
+const renderMarketDetails = (city) => {
+    const details = cityMarketDetails[city.slug];
+    if (!details) return '';
+    return `
+      <section class="city-market-details">
+        <div class="container city-market-grid">
+          <div>
+            <h2>Local Locksmith Needs in ${escapeHtml(city.name)}</h2>
+            <p>${escapeHtml(details.summary)}</p>
+            <h3>Common Reasons Customers Call</h3>
+            <ul>${details.requests.map((request) => `<li>✓ ${escapeHtml(request)}</li>`).join('')}</ul>
+          </div>
+          <figure class="city-owner-proof">
+            <img src="/images/Pictrureofownerwithtruck.jpg" alt="Michael Galdine of A Good Locksmith with his mobile locksmith vehicle in North Carolina" loading="lazy" decoding="async" />
+            <figcaption>Owner-operated service from licensed locksmith Michael Galdine, ${escapeHtml(businessFacts.licenseNumber)}.</figcaption>
+          </figure>
+        </div>
+      </section>`;
+};
+
+const renderHelpfulLinks = (city) => {
+    const details = cityMarketDetails[city.slug];
+    if (!details) return '';
+    const related = details.relatedSlugs
+        .map((slug) => cities[slug])
+        .filter(Boolean);
+    return `
+      <section class="city-helpful-links">
+        <div class="container city-links-grid">
+          <div>
+            <h2>Nearby Service Areas</h2>
+            <div class="city-link-list">${related.map((relatedCity) => `<a href="/${escapeHtml(relatedCity.slug)}">${escapeHtml(relatedCity.name)} locksmith service</a>`).join('')}</div>
+          </div>
+          <div>
+            <h2>Helpful Security Guides</h2>
+            <div class="city-link-list">${securityGuides.map((guide) => `<a href="${escapeHtml(guide.path)}">${escapeHtml(guide.title)}</a>`).join('')}</div>
+          </div>
+        </div>
+      </section>`;
+};
 
 const renderStaticCityContent = (city) => `
   <div class="app">
@@ -78,6 +120,8 @@ const renderStaticCityContent = (city) => `
         </div>
       </section>
 
+      ${renderMarketDetails(city)}
+
       <section class="city-services">
         <div class="container">
           <h2>Locksmith Services in ${escapeHtml(city.name)}</h2>
@@ -91,6 +135,8 @@ const renderStaticCityContent = (city) => `
           <dl class="city-faq-list">${renderFaqs(city)}</dl>
         </div>
       </section>
+
+      ${renderHelpfulLinks(city)}
 
       <section class="city-cta-section">
         <div class="container">

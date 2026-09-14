@@ -43,6 +43,8 @@
     { "source": "/Sanford", "destination": "/city-pages/Sanford.html" },
     { "source": "/Harnett-County", "destination": "/city-pages/Harnett-County.html" },
     { "source": "/Wake-County", "destination": "/city-pages/Wake-County.html" },
+    { "source": "/blog", "destination": "/blog-pages/index.html" },
+    { "source": "/blog/:postSlug", "destination": "/blog-pages/:postSlug.html" },
     { "source": "/(.*)", "destination": "/index.html" }
   ]
 }

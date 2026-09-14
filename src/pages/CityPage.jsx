@@ -4,6 +4,7 @@ import { motion as Motion } from 'framer-motion';
 import { FaPhone, FaMapMarkerAlt, FaCheckCircle, FaClock, FaArrowLeft, FaHome, FaCar, FaBuilding, FaMobileAlt } from 'react-icons/fa';
 import { cities, services, phoneNumber, phoneLink } from '../data/cities';
 import { businessFacts } from '../data/businessFacts';
+import { cityMarketDetails, securityGuides } from '../data/cityMarketDetails';
 import {
     getCityCanonicalUrl,
     getCityFaqs,
@@ -17,6 +18,10 @@ const CityPage = () => {
     const { citySlug } = useParams();
     const city = cities[citySlug];
     const cityFaqs = city ? getCityFaqs(city) : [];
+    const marketDetails = city ? cityMarketDetails[city.slug] : null;
+    const relatedCities = marketDetails
+        ? marketDetails.relatedSlugs.map((slug) => cities[slug]).filter(Boolean)
+        : [];
 
     useEffect(() => {
         if (!city) return;
@@ -168,6 +173,38 @@ const CityPage = () => {
                 </div>
             </section>
 
+            {marketDetails && (
+                <section className="city-market-details">
+                    <div className="container city-market-grid">
+                        <Motion.div
+                            initial={{ opacity: 0, y: 20 }}
+                            whileInView={{ opacity: 1, y: 0 }}
+                            transition={{ duration: 0.5 }}
+                            viewport={{ once: true }}
+                        >
+                            <h2>Local Locksmith Needs in {city.name}</h2>
+                            <p>{marketDetails.summary}</p>
+                            <h3>Common Reasons Customers Call</h3>
+                            <ul>
+                                {marketDetails.requests.map((request) => (
+                                    <li key={request}><FaCheckCircle /> {request}</li>
+                                ))}
+                            </ul>
+                        </Motion.div>
+                        <Motion.figure
+                            className="city-owner-proof"
+                            initial={{ opacity: 0, y: 20 }}
+                            whileInView={{ opacity: 1, y: 0 }}
+                            transition={{ duration: 0.5, delay: 0.1 }}
+                            viewport={{ once: true }}
+                        >
+                            <img src="/images/Pictrureofownerwithtruck.jpg" loading="lazy" decoding="async" alt="Michael Galdine of A Good Locksmith with his mobile locksmith vehicle in North Carolina" />
+                            <figcaption>Owner-operated service from licensed locksmith Michael Galdine, {businessFacts.licenseNumber}.</figcaption>
+                        </Motion.figure>
+                    </div>
+                </section>
+            )}
+
             {/* Services Section */}
             <section className="city-services">
                 <div className="container">
@@ -211,6 +248,29 @@ const CityPage = () => {
                     </dl>
                 </div>
             </section>
+
+            {marketDetails && (
+                <section className="city-helpful-links">
+                    <div className="container city-links-grid">
+                        <div>
+                            <h2>Nearby Service Areas</h2>
+                            <div className="city-link-list">
+                                {relatedCities.map((relatedCity) => (
+                                    <Link key={relatedCity.slug} to={`/${relatedCity.slug}`}>{relatedCity.name} locksmith service</Link>
+                                ))}
+                            </div>
+                        </div>
+                        <div>
+                            <h2>Helpful Security Guides</h2>
+                            <div className="city-link-list">
+                                {securityGuides.map((guide) => (
+                                    <Link key={guide.path} to={guide.path}>{guide.title}</Link>
+                                ))}
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            )}
 
             {/* CTA Section */}
             <section className="city-cta-section">

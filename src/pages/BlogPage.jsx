@@ -7,8 +7,8 @@ import './Blog.css';
 
 const BlogPage = () => {
   useEffect(() => {
-    document.title = 'Security Blog | Home & Business Security Tips | A Good Locksmith';
-    const description = 'Practical lock, key, and property security guidance for Harnett County and Wake County homeowners, landlords, realtors, rental agents, and businesses.';
+    document.title = 'North Carolina Locksmith Security Blog | A Good Locksmith';
+    const description = 'Lock, key, rekeying, smart-lock and door-security guidance from Michael Galdine, a licensed North Carolina locksmith with 35+ years of experience.';
     let meta = document.querySelector('meta[name="description"]');
     if (meta) meta.setAttribute('content', description);
     const canonical = document.querySelector('link[rel="canonical"]');
