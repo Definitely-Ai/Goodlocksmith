@@ -43,3 +43,9 @@ test('links Bunnlevel from the homepage and footer service-area lists', () => {
   assert.match(read('src/components/Footer.jsx'), /path: '\/Bunnlevel'/);
 });
 
+test('homepage entity schema includes every published service area and chamber corroboration', () => {
+  const homepage = read('index.html');
+  for (const city of Object.values(cities)) assert.ok(homepage.includes(`${city.name}, NC`));
+  assert.match(homepage, /angierchamber\.org\/business-directory\/30583\/a-good-locksmith-llc/);
+  assert.match(homepage, /"contactPoint"/);
+});

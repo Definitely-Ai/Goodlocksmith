@@ -8,10 +8,12 @@ import {
   getCityTitle,
 } from '../src/data/citySeo.js';
 import { buildCityHtml } from '../scripts/generate-city-pages.mjs';
+import { cityMarketDetails, securityGuides } from '../src/data/cityMarketDetails.js';
 
 const projectFile = (path) => readFileSync(new URL(`../${path}`, import.meta.url), 'utf8');
 const vercel = JSON.parse(projectFile('vercel.json'));
 const baseHtml = projectFile('index.html');
+const escapeHtml = (value) => value.replaceAll('&', '&amp;');
 
 const cityDomains = {
   'angierlocksmith.com': 'Angier',
@@ -42,10 +44,13 @@ test('serves a pre-rendered HTML document for every city URL', () => {
     assert.equal(rewrite?.destination, `/city-pages/${city.slug}.html`);
 
     const html = buildCityHtml(baseHtml, city);
-    assert.match(html, new RegExp(`<title>${getCityTitle(city).replace(/[.*+?^${}()|[\]\\]/g, '\\$&')}</title>`));
+    assert.match(html, new RegExp(`<title>${escapeHtml(getCityTitle(city)).replace(/[.*+?^${}()|[\]\\]/g, '\\$&')}</title>`));
     assert.ok(html.includes(`<link rel="canonical" href="${getCityCanonicalUrl(city)}" />`));
     assert.ok(html.includes(city.localContext));
     assert.ok(html.includes(city.serviceFocus));
+    assert.ok(html.includes(cityMarketDetails[city.slug].summary));
+    assert.ok(cityMarketDetails[city.slug].relatedSlugs.some((slug) => html.includes(`href="/${slug}"`)));
+    assert.ok(securityGuides.some((guide) => html.includes(`href="${guide.path}"`)));
     assert.doesNotMatch(html, /<div\s+id="root"><\/div>/i);
 
     const schemaText = html.match(/<script id="city-page-schema" type="application\/ld\+json">([\s\S]*?)<\/script>/)?.[1];
@@ -65,5 +70,5 @@ test('gives every city a unique search description and local explanation', () =>
 
 test('build creates the pre-rendered documents after Vite compiles the app', () => {
   const packageJson = JSON.parse(projectFile('package.json'));
-  assert.equal(packageJson.scripts.build, 'vite build && node scripts/generate-city-pages.mjs');
+  assert.equal(packageJson.scripts.build, 'vite build && node scripts/generate-city-pages.mjs && node scripts/generate-blog-pages.mjs && node scripts/generate-homepage.mjs');
 });
