@@ -1,5 +1,19 @@
 export const blogPosts = [
   {
+    slug: 'rekey-business-locks-after-employee-leaves-nc',
+    title: 'Employee Left the Business—Should You Rekey the Locks?',
+    excerpt: 'A returned key does not settle every access question. Learn how key scope, copy control, master-key hierarchy, records, codes, and hardware condition shape a sensible response.',
+    publishedDate: 'September 15, 2026',
+    datePublished: '2026-09-15',
+    readingTime: '9 min read',
+    category: 'Commercial Rekeying',
+    image: '/images/commercial-rekey-good-locksmith.webp',
+    imageAlt: 'A Good Locksmith reviewing commercial keys and door locks during an access change',
+    seoTitle: 'Rekey Business Locks After an Employee Leaves | Harnett NC',
+    seoDescription: 'Should you rekey business locks after an employee leaves? Learn how missing keys, master-key scope, records, codes, and hardware condition affect the decision.',
+    about: ['Rekey business locks after an employee leaves', 'Commercial rekeying', 'Employee key offboarding', 'Master key control', 'Harnett County locksmith'],
+  },
+  {
     slug: 'commercial-door-closer-slams-wont-latch-nc',
     title: 'Commercial Door Closer Slamming or Not Latching? What to Check',
     excerpt: 'A closer may slam, creep, or stop short because of adjustment, leakage, mounting, alignment, weather, or the wrong hardware. Learn what each symptom can mean.',

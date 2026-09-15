@@ -37,6 +37,7 @@ import SmartLockFitGuidePost from './SmartLockFitGuidePost';
 import KeyTurnsNoUnlockGuidePost from './KeyTurnsNoUnlockGuidePost';
 import AddDeadboltExistingDoorGuidePost from './AddDeadboltExistingDoorGuidePost';
 import CommercialDoorCloserGuidePost from './CommercialDoorCloserGuidePost';
+import EmployeeKeyOffboardingGuidePost from './EmployeeKeyOffboardingGuidePost';
 import { getBlogPost } from '../data/blogPosts';
 import { phoneLink } from '../data/cities';
 import './Blog.css';
@@ -101,6 +102,10 @@ const BlogPostPage = () => {
   }, [post]);
 
   if (!post) return <Navigate to="/blog" replace />;
+
+  if (post.slug === 'rekey-business-locks-after-employee-leaves-nc') {
+    return <EmployeeKeyOffboardingGuidePost post={post} />;
+  }
 
   if (post.slug === 'commercial-door-closer-slams-wont-latch-nc') {
     return <CommercialDoorCloserGuidePost post={post} />;
