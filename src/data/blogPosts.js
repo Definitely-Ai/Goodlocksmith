@@ -1,5 +1,19 @@
 export const blogPosts = [
   {
+    slug: 'commercial-door-lock-functions-storeroom-classroom-office-nc',
+    title: 'Storeroom, Classroom, or Office Lock? Choosing a Commercial Door Function',
+    excerpt: 'Commercial levers can look alike while operating very differently. Learn how passage, privacy, office, classroom, storeroom, and exit functions affect entry and egress.',
+    publishedDate: 'September 16, 2026',
+    datePublished: '2026-09-16',
+    readingTime: '9 min read',
+    category: 'Commercial Door Hardware',
+    image: '/images/commercial-rekey-good-locksmith.webp',
+    imageAlt: 'A Good Locksmith evaluating commercial lever locks and door hardware',
+    seoTitle: 'Commercial Door Lock Functions | Harnett County, NC',
+    seoDescription: 'Which commercial door lock function do you need? Compare passage, privacy, office, classroom, storeroom, and exit functions before choosing hardware.',
+    about: ['Commercial door lock functions', 'Storeroom lock function', 'Classroom lock function', 'Office lock function', 'Harnett County locksmith'],
+  },
+  {
     slug: 'rekey-business-locks-after-employee-leaves-nc',
     title: 'Employee Left the Business—Should You Rekey the Locks?',
     excerpt: 'A returned key does not settle every access question. Learn how key scope, copy control, master-key hierarchy, records, codes, and hardware condition shape a sensible response.',
