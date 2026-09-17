@@ -1,5 +1,19 @@
 export const blogPosts = [
   {
+    slug: 'door-latches-but-can-be-pushed-open-nc',
+    title: 'Door Latches but Can Be Pushed Open? Check the Latch and Strike',
+    excerpt: 'A click does not prove a door is secure. Learn how latch engagement, strike alignment, the auxiliary deadlatch, hinges, and worn hardware affect the opening.',
+    publishedDate: 'September 17, 2026',
+    datePublished: '2026-09-17',
+    readingTime: '8 min read',
+    category: 'Door Latch Repair',
+    image: '/images/residential-rekey-good-locksmith.webp',
+    imageAlt: 'A Good Locksmith evaluating a door latch and strike for secure engagement',
+    seoTitle: 'Door Latches but Can Be Pushed Open? | Harnett County, NC',
+    seoDescription: 'Door latches but can still be pushed open? Learn how the latch, strike, auxiliary deadlatch, hinges, alignment, and worn hardware affect security.',
+    about: ['Door latch repair', 'Door latches but can be pushed open', 'Deadlatch and strike alignment', 'Door will not stay secured', 'Harnett County locksmith'],
+  },
+  {
     slug: 'commercial-door-lock-functions-storeroom-classroom-office-nc',
     title: 'Storeroom, Classroom, or Office Lock? Choosing a Commercial Door Function',
     excerpt: 'Commercial levers can look alike while operating very differently. Learn how passage, privacy, office, classroom, storeroom, and exit functions affect entry and egress.',

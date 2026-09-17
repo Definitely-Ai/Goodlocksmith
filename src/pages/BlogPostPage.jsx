@@ -39,6 +39,7 @@ import AddDeadboltExistingDoorGuidePost from './AddDeadboltExistingDoorGuidePost
 import CommercialDoorCloserGuidePost from './CommercialDoorCloserGuidePost';
 import EmployeeKeyOffboardingGuidePost from './EmployeeKeyOffboardingGuidePost';
 import CommercialLockFunctionsGuidePost from './CommercialLockFunctionsGuidePost';
+import DoorLatchSecurityGuidePost from './DoorLatchSecurityGuidePost';
 import { getBlogPost } from '../data/blogPosts';
 import { phoneLink } from '../data/cities';
 import './Blog.css';
@@ -103,6 +104,10 @@ const BlogPostPage = () => {
   }, [post]);
 
   if (!post) return <Navigate to="/blog" replace />;
+
+  if (post.slug === 'door-latches-but-can-be-pushed-open-nc') {
+    return <DoorLatchSecurityGuidePost post={post} />;
+  }
 
   if (post.slug === 'commercial-door-lock-functions-storeroom-classroom-office-nc') {
     return <CommercialLockFunctionsGuidePost post={post} />;
