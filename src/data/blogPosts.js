@@ -1,5 +1,19 @@
 export const blogPosts = [
   {
+    slug: 'transponder-key-vs-key-fob-car-key-types-nc',
+    title: 'Transponder Key, Remote-Head Key, or Fob? How to Tell What Your Car Uses',
+    excerpt: 'A blade, transponder, remote buttons, and proximity credential can perform different jobs. Learn the common car-key types and what details identify the right replacement.',
+    publishedDate: 'September 18, 2026',
+    datePublished: '2026-09-18',
+    readingTime: '9 min read',
+    category: 'Automotive Key Advice',
+    image: '/images/local-car-lockout-good-locksmith.webp',
+    imageAlt: 'Automotive locksmith key and vehicle service illustration for A Good Locksmith',
+    seoTitle: 'Transponder Key vs. Key Fob | Harnett County, NC',
+    seoDescription: 'Is it a transponder key, remote-head key, or proximity fob? Learn what each part does and what details a locksmith needs before making a replacement.',
+    about: ['Transponder key vs key fob', 'Chipped car key', 'Remote-head key', 'Proximity key fob', 'Harnett County automotive locksmith'],
+  },
+  {
     slug: 'door-latches-but-can-be-pushed-open-nc',
     title: 'Door Latches but Can Be Pushed Open? Check the Latch and Strike',
     excerpt: 'A click does not prove a door is secure. Learn how latch engagement, strike alignment, the auxiliary deadlatch, hinges, and worn hardware affect the opening.',

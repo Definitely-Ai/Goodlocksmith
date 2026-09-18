@@ -40,6 +40,7 @@ import CommercialDoorCloserGuidePost from './CommercialDoorCloserGuidePost';
 import EmployeeKeyOffboardingGuidePost from './EmployeeKeyOffboardingGuidePost';
 import CommercialLockFunctionsGuidePost from './CommercialLockFunctionsGuidePost';
 import DoorLatchSecurityGuidePost from './DoorLatchSecurityGuidePost';
+import CarKeyTypesGuidePost from './CarKeyTypesGuidePost';
 import { getBlogPost } from '../data/blogPosts';
 import { phoneLink } from '../data/cities';
 import './Blog.css';
@@ -104,6 +105,10 @@ const BlogPostPage = () => {
   }, [post]);
 
   if (!post) return <Navigate to="/blog" replace />;
+
+  if (post.slug === 'transponder-key-vs-key-fob-car-key-types-nc') {
+    return <CarKeyTypesGuidePost post={post} />;
+  }
 
   if (post.slug === 'door-latches-but-can-be-pushed-open-nc') {
     return <DoorLatchSecurityGuidePost post={post} />;
