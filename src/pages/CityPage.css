@@ -2,6 +2,17 @@
     padding-top: 80px;
 }
 
+.standalone-city-page { padding-top: 0; }
+.domain-header { background: var(--white); border-bottom: 1px solid var(--gray-light); }
+.domain-header .container { display: flex; align-items: center; justify-content: space-between; gap: 20px; padding-top: 12px; padding-bottom: 12px; }
+.domain-brand { display: flex; align-items: center; gap: 12px; color: var(--blue-primary); font-weight: 800; text-decoration: none; }
+.domain-brand img { object-fit: contain; }
+.domain-brand small { font-size: .875rem; font-weight: 500; }
+.domain-home { color: var(--blue-primary); font-weight: 700; padding: 12px; }
+.domain-footer { background: var(--navy-dark); color: var(--white); padding: 28px 0; line-height: 1.7; }
+.domain-footer a { color: var(--white); text-decoration: underline; }
+.city-cta-section .btn { margin: 6px; }
+
 .city-page.not-found {
     min-height: 100vh;
     display: flex;

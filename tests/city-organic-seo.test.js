@@ -9,38 +9,45 @@ import {
 } from '../src/data/citySeo.js';
 import { buildCityHtml } from '../scripts/generate-city-pages.mjs';
 import { cityMarketDetails, securityGuides } from '../src/data/cityMarketDetails.js';
+import { cityDomains, getDomainCanonicalUrl } from '../src/data/cityDomains.js';
 
 const projectFile = (path) => readFileSync(new URL(`../${path}`, import.meta.url), 'utf8');
 const vercel = JSON.parse(projectFile('vercel.json'));
 const baseHtml = projectFile('index.html');
 const escapeHtml = (value) => value.replaceAll('&', '&amp;');
 
-const cityDomains = {
-  'angierlocksmith.com': 'Angier',
-  'dunnlocksmith.com': 'Dunn',
-  'harnettcountylocksmith.com': 'Harnett-County',
-  'wakecountylocksmith.com': 'Wake-County',
-  'locksmithfuquay.com': 'Fuquay-Varina',
-  'lillingtonlocksmith.com': 'Lillington',
-  'erwinlocksmith.com': 'Erwin',
-  'bunnlevellocksmith.com': 'Bunnlevel',
-  'coatslocksmith.com': 'Coats',
-};
-
 for (const [domain, slug] of Object.entries(cityDomains)) {
   for (const hostname of [domain, `www.${domain}`]) {
-    test(`${hostname} permanently consolidates into the ${slug} city page`, () => {
-      const rule = vercel.redirects.find((candidate) => candidate.source === '/'
-        && candidate.has?.some((condition) => condition.type === 'host' && condition.value === hostname));
-      assert.equal(rule?.destination, `https://www.goodlocksmith.com/${slug}`);
-      assert.equal(rule?.permanent, true);
+    test(`${hostname} serves its own complete ${slug} landing without forwarding`, () => {
+      const appliesToHost = (rule) => !rule.has || rule.has.every((condition) => condition.type === 'host' && condition.value === hostname);
+      assert.equal(vercel.redirects.filter(appliesToHost).length, 0);
+      for (const source of ['/', `/${slug}`, `/${slug}/`, '/robots.txt', '/sitemap.xml']) {
+        const rule = vercel.rewrites.find((candidate) => candidate.source === source && appliesToHost(candidate));
+        const suffix = source === '/robots.txt' ? 'robots.txt' : source === '/sitemap.xml' ? 'sitemap.xml' : 'html';
+        assert.equal(rule?.destination, `/domain-pages/${slug}.${suffix}`);
+      }
+
+      const canonicalUrl = getDomainCanonicalUrl(domain);
+      const html = buildCityHtml(baseHtml, cities[slug], { canonicalUrl, standalone: true });
+      assert.ok(html.includes(`<link rel="canonical" href="${canonicalUrl}" />`));
+      assert.ok(html.includes(`<meta property="og:url" content="${canonicalUrl}" />`));
+      assert.match(html, /href="https:\/\/www\.goodlocksmith\.com\/">← Back to Home/);
+      assert.match(html, /href="tel:984-480-5397"/);
+      assert.match(html, /href="sms:\+19844805397"/);
+      assert.match(html, /<h1>[\s\S]*?Locksmith/);
+      assert.doesNotMatch(html, /<script[^>]*type="module"|history\.replaceState|location\.(?:href|replace)|http-equiv="refresh"/i);
+      assert.doesNotMatch(html, /href="\/(?:blog|Lillington|Dunn|Angier)/);
+      const schema = JSON.parse(html.match(/<script id="city-page-schema" type="application\/ld\+json">([\s\S]*?)<\/script>/)[1]);
+      assert.equal(schema['@graph'].find(item => item['@type'] === 'WebPage').url, canonicalUrl);
+      assert.equal(schema['@graph'].find(item => item['@type'] === 'WebSite').url, canonicalUrl);
+      assert.equal(schema['@graph'].find(item => item['@type'] === 'Locksmith').address.addressLocality, 'Lillington');
     });
   }
 }
 
 test('serves a pre-rendered HTML document for every city URL', () => {
   for (const city of Object.values(cities)) {
-    const rewrite = vercel.rewrites.find((candidate) => candidate.source === `/${city.slug}`);
+    const rewrite = vercel.rewrites.find((candidate) => candidate.source === `/${city.slug}` && !candidate.has);
     assert.equal(rewrite?.destination, `/city-pages/${city.slug}.html`);
 
     const html = buildCityHtml(baseHtml, city);

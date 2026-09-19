@@ -120,6 +120,7 @@ const CityPage = () => {
                             <a href={phoneLink} className="btn btn-primary">
                                 <FaPhone /> Call Now: {phoneNumber}
                             </a>
+                            <a href="sms:+19844805397" className="btn btn-secondary">Text Mike</a>
                         </div>
                     </Motion.div>
                 </div>
@@ -288,6 +289,7 @@ const CityPage = () => {
                         <a href={phoneLink} className="btn btn-primary btn-large">
                             <FaPhone /> Call {phoneNumber}
                         </a>
+                        <a href="sms:+19844805397" className="btn btn-secondary btn-large">Text Mike</a>
                     </Motion.div>
                 </div>
             </section>

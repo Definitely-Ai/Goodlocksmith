@@ -3,6 +3,7 @@ import { resolve } from 'node:path';
 import { cities, phoneLink, phoneNumber, services } from '../src/data/cities.js';
 import { businessFacts } from '../src/data/businessFacts.js';
 import { cityMarketDetails, securityGuides } from '../src/data/cityMarketDetails.js';
+import { cityDomains, getDomainCanonicalUrl } from '../src/data/cityDomains.js';
 import {
     getCityCanonicalUrl,
     getCityFaqs,
@@ -55,7 +56,7 @@ const renderMarketDetails = (city) => {
       </section>`;
 };
 
-const renderHelpfulLinks = (city) => {
+const renderHelpfulLinks = (city, standalone = false) => {
     const details = cityMarketDetails[city.slug];
     if (!details) return '';
     const related = details.relatedSlugs
@@ -66,28 +67,29 @@ const renderHelpfulLinks = (city) => {
         <div class="container city-links-grid">
           <div>
             <h2>Nearby Service Areas</h2>
-            <div class="city-link-list">${related.map((relatedCity) => `<a href="/${escapeHtml(relatedCity.slug)}">${escapeHtml(relatedCity.name)} locksmith service</a>`).join('')}</div>
+            <div class="city-link-list">${related.map((relatedCity) => `<a href="${standalone ? 'https://www.goodlocksmith.com' : ''}/${escapeHtml(relatedCity.slug)}">${escapeHtml(relatedCity.name)} locksmith service</a>`).join('')}</div>
           </div>
           <div>
             <h2>Helpful Security Guides</h2>
-            <div class="city-link-list">${securityGuides.map((guide) => `<a href="${escapeHtml(guide.path)}">${escapeHtml(guide.title)}</a>`).join('')}</div>
+            <div class="city-link-list">${securityGuides.map((guide) => `<a href="${standalone ? 'https://www.goodlocksmith.com' : ''}${escapeHtml(guide.path)}">${escapeHtml(guide.title)}</a>`).join('')}</div>
           </div>
         </div>
       </section>`;
 };
 
-const renderStaticCityContent = (city) => `
+const renderStaticCityContent = (city, standalone = false) => `
   <div class="app">
-    <main class="city-page">
+    ${standalone ? `<header class="domain-header"><div class="container"><a class="domain-brand" href="https://www.goodlocksmith.com/"><img src="/logo.png" width="64" height="64" alt="A Good Locksmith" /><span>A Good Locksmith, LLC<br /><small>${escapeHtml(businessFacts.licenseNumber)}</small></span></a><a class="domain-home" href="https://www.goodlocksmith.com/">Home</a></div></header>` : ''}
+    <main class="city-page${standalone ? ' standalone-city-page' : ''}">
       <section class="city-hero">
         <div class="city-hero-bg"></div>
         <div class="container">
-          <a class="back-link" href="/">← Back to Home</a>
+          <a class="back-link" href="${standalone ? 'https://www.goodlocksmith.com/' : '/'}">← Back to Home</a>
           <div class="city-badge">${escapeHtml(city.county)}, NC</div>
           <h1><span class="red">${escapeHtml(city.name)}</span> Locksmith — Licensed Mobile Service${city.isHomeBase ? '<span class="home-badge">Home Base</span>' : ''}</h1>
           <p class="city-tagline">${escapeHtml(city.tagline)}</p>
           <p class="city-subtitle">Fast Mobile Service • ${escapeHtml(phoneNumber)}</p>
-          <div class="city-cta"><a class="btn btn-primary" href="${phoneLink}">Call Now: ${escapeHtml(phoneNumber)}</a></div>
+          <div class="city-cta"><a class="btn btn-primary" href="${phoneLink}">Call Now: ${escapeHtml(phoneNumber)}</a><a class="btn btn-secondary" href="sms:+19844805397">Text Mike</a></div>
         </div>
       </section>
 
@@ -136,7 +138,7 @@ const renderStaticCityContent = (city) => `
         </div>
       </section>
 
-      ${renderHelpfulLinks(city)}
+      ${renderHelpfulLinks(city, standalone)}
 
       <section class="city-cta-section">
         <div class="container">
@@ -144,10 +146,12 @@ const renderStaticCityContent = (city) => `
             <h2>Need a Locksmith in ${escapeHtml(city.name)}?</h2>
             <p>Call ${escapeHtml(businessFacts.publicName)} to discuss the job location, service needed and current availability.</p>
             <a class="btn btn-primary btn-large" href="${phoneLink}">Call ${escapeHtml(phoneNumber)}</a>
+            <a class="btn btn-secondary btn-large" href="sms:+19844805397">Text Mike</a>
           </div>
         </div>
       </section>
     </main>
+    ${standalone ? `<footer class="domain-footer"><div class="container"><p>${escapeHtml(businessFacts.legalName)} · ${escapeHtml(businessFacts.licenseNumber)} · Mobile service from Lillington, NC</p><a href="https://www.goodlocksmith.com/">Home — GoodLocksmith.com</a></div></footer>` : ''}
   </div>`;
 
 const replaceRequired = (html, pattern, replacement, label) => {
@@ -155,11 +159,18 @@ const replaceRequired = (html, pattern, replacement, label) => {
     return html.replace(pattern, replacement);
 };
 
-export const buildCityHtml = (baseHtml, city) => {
-    const canonicalUrl = getCityCanonicalUrl(city);
+export const buildCityHtml = (baseHtml, city, { canonicalUrl = getCityCanonicalUrl(city), standalone = false } = {}) => {
     const title = getCityTitle(city);
     const description = getCityMetaDescription(city);
-    const encodedSchema = JSON.stringify(getCitySchema(city)).replaceAll('<', '\\u003c');
+    const schema = getCitySchema(city, canonicalUrl);
+    if (standalone) {
+        schema['@graph'].push({
+            '@type': 'WebSite', '@id': `${canonicalUrl}#website`, url: canonicalUrl,
+            name: `${businessFacts.publicName} — ${city.name}`, publisher: { '@id': 'https://www.goodlocksmith.com/#business' },
+        });
+        schema['@graph'][0].isPartOf = { '@id': `${canonicalUrl}#website` };
+    }
+    const encodedSchema = JSON.stringify(schema).replaceAll('<', '\\u003c');
 
     let html = replaceRequired(
         baseHtml,
@@ -206,9 +217,16 @@ export const buildCityHtml = (baseHtml, city) => {
     html = replaceRequired(
         html,
         /<div\s+id="root"><\/div>/i,
-        `<div id="root">${renderStaticCityContent(city)}</div>`,
+        `<div id="root">${renderStaticCityContent(city, standalone)}</div>`,
         'application root',
     );
+
+    // The standalone page is complete HTML. Do not boot the primary-site router
+    // at /, which would replace this landing page with the main homepage.
+    if (standalone) {
+        html = html.replace(/<script\b(?=[^>]*type=["']module["'])[^>]*>[\s\S]*?<\/script>/gi, '');
+        html = html.replace(/<link\b(?=[^>]*rel=["']modulepreload["'])[^>]*>/gi, '');
+    }
 
     for (const required of [canonicalUrl, title, city.localContext, businessFacts.licenseNumber]) {
         if (!html.includes(required)) throw new Error(`${city.name} output is missing: ${required}`);
@@ -226,7 +244,17 @@ const main = async () => {
         await writeFile(resolve(outputDirectory, `${city.slug}.html`), output, 'utf8');
     }));
 
+    const domainsDirectory = resolve(distDirectory, 'domain-pages');
+    await mkdir(domainsDirectory, { recursive: true });
+    await Promise.all(Object.entries(cityDomains).map(async ([domain, slug]) => {
+        const canonicalUrl = getDomainCanonicalUrl(domain);
+        await writeFile(resolve(domainsDirectory, `${slug}.html`), buildCityHtml(baseHtml, cities[slug], { canonicalUrl, standalone: true }), 'utf8');
+        await writeFile(resolve(domainsDirectory, `${slug}.robots.txt`), `User-agent: *\nAllow: /\n\nSitemap: ${canonicalUrl}sitemap.xml\n`, 'utf8');
+        await writeFile(resolve(domainsDirectory, `${slug}.sitemap.xml`), `<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"><url><loc>${canonicalUrl}</loc></url></urlset>\n`, 'utf8');
+    }));
+
     console.log(`Generated ${Object.keys(cities).length} pre-rendered city pages.`);
+    console.log(`Generated ${Object.keys(cityDomains).length} independent domain landings with individual robots.txt and sitemaps.`);
 };
 
 if (process.argv[1] && resolve(process.argv[1]) === resolve(import.meta.filename)) {

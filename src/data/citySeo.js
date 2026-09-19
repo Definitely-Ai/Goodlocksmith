@@ -14,8 +14,7 @@ export const getCityFaqs = (city) => [
     { question: `What locksmith services are available in ${city.name}?`, answer: `${city.serviceFocus} Services are confirmed for the specific job and location when the customer calls.` },
 ];
 
-export const getCitySchema = (city) => {
-    const canonicalUrl = getCityCanonicalUrl(city);
+export const getCitySchema = (city, canonicalUrl = getCityCanonicalUrl(city)) => {
     const areaType = city.isCounty ? 'AdministrativeArea' : 'City';
     const areaName = `${city.name}, NC`;
     return { '@context': 'https://schema.org', '@graph': [
