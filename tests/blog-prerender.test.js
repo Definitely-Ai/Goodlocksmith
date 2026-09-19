@@ -30,6 +30,6 @@ test('pre-renders every article with unique metadata, content and Article schema
 });
 
 test('routes the blog index and article slugs to pre-rendered documents', () => {
-  assert.ok(vercel.rewrites.some((rule) => rule.source === '/blog' && rule.destination === '/blog-pages/index.html'));
-  assert.ok(vercel.rewrites.some((rule) => rule.source === '/blog/:postSlug' && rule.destination === '/blog-pages/:postSlug.html'));
+  assert.ok(vercel.routes.some((rule) => rule.src === '^/blog$' && rule.dest === '/blog-pages/index.html'));
+  assert.ok(vercel.routes.some((rule) => rule.src === '^/blog/([^/]+)$' && rule.dest === '/blog-pages/$1.html'));
 });

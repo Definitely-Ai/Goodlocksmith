@@ -20,11 +20,14 @@ for (const [domain, slug] of Object.entries(cityDomains)) {
   for (const hostname of [domain, `www.${domain}`]) {
     test(`${hostname} serves its own complete ${slug} landing without forwarding`, () => {
       const appliesToHost = (rule) => !rule.has || rule.has.every((condition) => condition.type === 'host' && condition.value === hostname);
-      assert.equal(vercel.redirects.filter(appliesToHost).length, 0);
+      assert.equal(vercel.routes.filter(rule => rule.headers?.Location && appliesToHost(rule)).length, 0);
       for (const source of ['/', `/${slug}`, `/${slug}/`, '/robots.txt', '/sitemap.xml']) {
-        const rule = vercel.rewrites.find((candidate) => candidate.source === source && appliesToHost(candidate));
+        const position = vercel.routes.findIndex((candidate) => candidate.src && new RegExp(candidate.src).test(source) && appliesToHost(candidate));
+        const rule = vercel.routes[position];
         const suffix = source === '/robots.txt' ? 'robots.txt' : source === '/sitemap.xml' ? 'sitemap.xml' : 'html';
-        assert.equal(rule?.destination, `/domain-pages/${slug}.${suffix}`);
+        assert.equal(rule?.dest, `/domain-pages/${slug}.${suffix}`);
+        // Existing index.html, robots.txt and sitemap.xml would otherwise win.
+        assert.ok(position < vercel.routes.findIndex(candidate => candidate.handle === 'filesystem'));
       }
 
       const canonicalUrl = getDomainCanonicalUrl(domain);
@@ -47,8 +50,8 @@ for (const [domain, slug] of Object.entries(cityDomains)) {
 
 test('serves a pre-rendered HTML document for every city URL', () => {
   for (const city of Object.values(cities)) {
-    const rewrite = vercel.rewrites.find((candidate) => candidate.source === `/${city.slug}` && !candidate.has);
-    assert.equal(rewrite?.destination, `/city-pages/${city.slug}.html`);
+    const rewrite = vercel.routes.find((candidate) => candidate.src === `^/${city.slug}$` && !candidate.has);
+    assert.equal(rewrite?.dest, `/city-pages/${city.slug}.html`);
 
     const html = buildCityHtml(baseHtml, city);
     assert.match(html, new RegExp(`<title>${escapeHtml(getCityTitle(city)).replace(/[.*+?^${}()|[\]\\]/g, '\\$&')}</title>`));

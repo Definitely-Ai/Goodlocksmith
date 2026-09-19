@@ -16,7 +16,7 @@ The city domains serve complete, pre-rendered landing pages while keeping the ci
 
 ## Build and hosting
 
-`npm run build` writes each landing to `dist/domain-pages/<city>.html` and generates its own robots.txt and sitemap. Host-specific rewrites in vercel.json serve these files at the city domain's root. Canonical and Open Graph URLs use `https://www.<city-domain>/`, and the sitemap contains that URL. The business entity remains A Good Locksmith in Lillington; the pages do not claim separate staffed city locations.
+`npm run build` writes each landing to `dist/domain-pages/<city>.html` and generates its own robots.txt and sitemap. Host-specific routes in vercel.json serve these files at the city domain's root **before the filesystem phase**. This order is required: ordinary rewrites run after the existing main-site index.html, robots.txt and sitemap.xml have already matched. Canonical and Open Graph URLs use `https://www.<city-domain>/`, and the sitemap contains that URL. The business entity remains A Good Locksmith in Lillington; the pages do not claim separate staffed city locations.
 
 The standalone pages use the built site's CSS and images. They do not load the primary React router, which would otherwise replace a domain-root landing with the main homepage. Calls, texts, Home, and reading links work without JavaScript. Main-site city URLs remain available.
 
