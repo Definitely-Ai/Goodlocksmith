@@ -1,5 +1,19 @@
 export const blogPosts = [
   {
+    slug: 'can-locksmith-make-car-key-from-vin-nc',
+    title: 'Can a Locksmith Make a Car Key From the VIN?',
+    excerpt: 'A VIN identifies the vehicle, but it is not a key-cutting instruction by itself. Learn when it may help, what else a locksmith needs, and why authorization matters.',
+    publishedDate: 'September 20, 2026',
+    datePublished: '2026-09-20',
+    readingTime: '8 min read',
+    category: 'Automotive Key Advice',
+    image: '/images/local-car-lockout-good-locksmith.webp',
+    imageAlt: 'Mobile automotive locksmith service illustration for car-key identification',
+    seoTitle: 'Can a Locksmith Make a Car Key From the VIN? | Harnett NC',
+    seoDescription: 'Can a locksmith make a car key from the VIN? Learn what the VIN identifies, why authorization matters, and what else is needed for a replacement key.',
+    about: ['Make a car key from the VIN', 'VIN key replacement', 'All keys lost', 'Automotive key cutting', 'Harnett County automotive locksmith'],
+  },
+  {
     slug: 'transponder-key-vs-key-fob-car-key-types-nc',
     title: 'Transponder Key, Remote-Head Key, or Fob? How to Tell What Your Car Uses',
     excerpt: 'A blade, transponder, remote buttons, and proximity credential can perform different jobs. Learn the common car-key types and what details identify the right replacement.',

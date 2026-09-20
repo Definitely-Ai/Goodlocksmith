@@ -41,6 +41,7 @@ import EmployeeKeyOffboardingGuidePost from './EmployeeKeyOffboardingGuidePost';
 import CommercialLockFunctionsGuidePost from './CommercialLockFunctionsGuidePost';
 import DoorLatchSecurityGuidePost from './DoorLatchSecurityGuidePost';
 import CarKeyTypesGuidePost from './CarKeyTypesGuidePost';
+import CarKeyFromVinGuidePost from './CarKeyFromVinGuidePost';
 import { getBlogPost } from '../data/blogPosts';
 import { phoneLink } from '../data/cities';
 import './Blog.css';
@@ -105,6 +106,10 @@ const BlogPostPage = () => {
   }, [post]);
 
   if (!post) return <Navigate to="/blog" replace />;
+
+  if (post.slug === 'can-locksmith-make-car-key-from-vin-nc') {
+    return <CarKeyFromVinGuidePost post={post} />;
+  }
 
   if (post.slug === 'transponder-key-vs-key-fob-car-key-types-nc') {
     return <CarKeyTypesGuidePost post={post} />;
