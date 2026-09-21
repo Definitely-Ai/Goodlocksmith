@@ -42,6 +42,7 @@ import CommercialLockFunctionsGuidePost from './CommercialLockFunctionsGuidePost
 import DoorLatchSecurityGuidePost from './DoorLatchSecurityGuidePost';
 import CarKeyTypesGuidePost from './CarKeyTypesGuidePost';
 import CarKeyFromVinGuidePost from './CarKeyFromVinGuidePost';
+import LooseDoorKnobLeverGuidePost from './LooseDoorKnobLeverGuidePost';
 import { getBlogPost } from '../data/blogPosts';
 import { phoneLink } from '../data/cities';
 import './Blog.css';
@@ -106,6 +107,10 @@ const BlogPostPage = () => {
   }, [post]);
 
   if (!post) return <Navigate to="/blog" replace />;
+
+  if (post.slug === 'loose-door-knob-lever-repair-nc') {
+    return <LooseDoorKnobLeverGuidePost post={post} />;
+  }
 
   if (post.slug === 'can-locksmith-make-car-key-from-vin-nc') {
     return <CarKeyFromVinGuidePost post={post} />;

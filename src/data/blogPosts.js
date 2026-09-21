@@ -1,5 +1,19 @@
 export const blogPosts = [
   {
+    slug: 'loose-door-knob-lever-repair-nc',
+    title: 'Loose Door Knob or Lever? What to Check Before It Fails',
+    excerpt: 'A wobbling knob, lever, or trim plate may involve mounting screws, the chassis, spindle, latch, door preparation, or worn internal parts. Learn what to check safely.',
+    publishedDate: 'September 21, 2026',
+    datePublished: '2026-09-21',
+    readingTime: '8 min read',
+    category: 'Door Hardware Repair',
+    image: '/images/residential-rekey-good-locksmith.webp',
+    imageAlt: 'A Good Locksmith evaluating a loose residential door knob and latch assembly',
+    seoTitle: 'Loose Door Knob or Lever? | Harnett County, NC',
+    seoDescription: 'Loose door knob or lever? Learn what movement can mean, which checks are safe, why overtightening can cause trouble, and when to call a locksmith.',
+    about: ['Loose door knob repair', 'Loose door lever', 'Door lock mounting screws', 'Lockset and latch repair', 'Harnett County locksmith'],
+  },
+  {
     slug: 'can-locksmith-make-car-key-from-vin-nc',
     title: 'Can a Locksmith Make a Car Key From the VIN?',
     excerpt: 'A VIN identifies the vehicle, but it is not a key-cutting instruction by itself. Learn when it may help, what else a locksmith needs, and why authorization matters.',
