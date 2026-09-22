@@ -1,5 +1,19 @@
 export const blogPosts = [
   {
+    slug: 'door-lock-sticks-after-rain-moisture-nc',
+    title: 'Door Lock Sticks After Rain? Check the Door Before Blaming the Lock',
+    excerpt: 'Rain and seasonal moisture can change how a door fits, but a sticking lock may also involve hinges, weatherstripping, the strike, corrosion, or worn hardware. Learn how to tell the difference.',
+    publishedDate: 'September 22, 2026',
+    datePublished: '2026-09-22',
+    readingTime: '8 min read',
+    category: 'Seasonal Lock Care',
+    image: '/images/residential-rekey-good-locksmith.webp',
+    imageAlt: 'A Good Locksmith evaluating an exterior door lock and strike after wet weather',
+    seoTitle: 'Door Lock Sticks After Rain? | Harnett County, NC',
+    seoDescription: 'Door lock sticking after rain? Learn how door movement, hinges, weatherstripping, the strike, corrosion, and the lock itself can cause binding.',
+    about: ['Door lock sticks after rain', 'Door lock moisture problems', 'Door and strike alignment', 'Exterior lock inspection', 'Harnett County locksmith'],
+  },
+  {
     slug: 'loose-door-knob-lever-repair-nc',
     title: 'Loose Door Knob or Lever? What to Check Before It Fails',
     excerpt: 'A wobbling knob, lever, or trim plate may involve mounting screws, the chassis, spindle, latch, door preparation, or worn internal parts. Learn what to check safely.',

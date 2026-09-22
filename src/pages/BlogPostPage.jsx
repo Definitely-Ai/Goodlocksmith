@@ -43,6 +43,7 @@ import DoorLatchSecurityGuidePost from './DoorLatchSecurityGuidePost';
 import CarKeyTypesGuidePost from './CarKeyTypesGuidePost';
 import CarKeyFromVinGuidePost from './CarKeyFromVinGuidePost';
 import LooseDoorKnobLeverGuidePost from './LooseDoorKnobLeverGuidePost';
+import RainMoistureDoorLockGuidePost from './RainMoistureDoorLockGuidePost';
 import { getBlogPost } from '../data/blogPosts';
 import { phoneLink } from '../data/cities';
 import './Blog.css';
@@ -107,6 +108,10 @@ const BlogPostPage = () => {
   }, [post]);
 
   if (!post) return <Navigate to="/blog" replace />;
+
+  if (post.slug === 'door-lock-sticks-after-rain-moisture-nc') {
+    return <RainMoistureDoorLockGuidePost post={post} />;
+  }
 
   if (post.slug === 'loose-door-knob-lever-repair-nc') {
     return <LooseDoorKnobLeverGuidePost post={post} />;
