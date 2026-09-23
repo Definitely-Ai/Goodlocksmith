@@ -44,6 +44,7 @@ import CarKeyTypesGuidePost from './CarKeyTypesGuidePost';
 import CarKeyFromVinGuidePost from './CarKeyFromVinGuidePost';
 import LooseDoorKnobLeverGuidePost from './LooseDoorKnobLeverGuidePost';
 import RainMoistureDoorLockGuidePost from './RainMoistureDoorLockGuidePost';
+import SpareHouseKeyPlanningPost from './SpareHouseKeyPlanningPost';
 import { getBlogPost } from '../data/blogPosts';
 import { phoneLink } from '../data/cities';
 import './Blog.css';
@@ -108,6 +109,10 @@ const BlogPostPage = () => {
   }, [post]);
 
   if (!post) return <Navigate to="/blog" replace />;
+
+  if (post.slug === 'where-to-keep-spare-house-key-nc') {
+    return <SpareHouseKeyPlanningPost post={post} />;
+  }
 
   if (post.slug === 'door-lock-sticks-after-rain-moisture-nc') {
     return <RainMoistureDoorLockGuidePost post={post} />;

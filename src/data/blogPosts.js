@@ -1,5 +1,19 @@
 export const blogPosts = [
   {
+    slug: 'where-to-keep-spare-house-key-nc',
+    title: 'Where Should You Keep a Spare House Key? Safer Backup Access Options',
+    excerpt: 'A spare key helps only if it works and remains under deliberate control. Compare a trusted key holder, secured key container, and managed keypad code before choosing a backup plan.',
+    publishedDate: 'September 23, 2026',
+    datePublished: '2026-09-23',
+    readingTime: '8 min read',
+    category: 'Spare Key Planning',
+    image: '/images/locksmith-customer-key-handoff.webp',
+    imageAlt: 'A Good Locksmith handing a tested spare house key to an authorized homeowner',
+    seoTitle: 'Where to Keep a Spare House Key | Harnett County, NC',
+    seoDescription: 'Where should you keep a spare house key? Compare a trusted key holder, secured key container, and managed keypad code for safer backup access.',
+    about: ['Where to keep a spare house key', 'Spare key holder', 'Residential key control', 'Backup home access', 'Harnett County locksmith'],
+  },
+  {
     slug: 'door-lock-sticks-after-rain-moisture-nc',
     title: 'Door Lock Sticks After Rain? Check the Door Before Blaming the Lock',
     excerpt: 'Rain and seasonal moisture can change how a door fits, but a sticking lock may also involve hinges, weatherstripping, the strike, corrosion, or worn hardware. Learn how to tell the difference.',
