@@ -1,5 +1,19 @@
 export const blogPosts = [
   {
+    slug: 'program-car-key-without-vehicle-present-nc',
+    title: 'Can a Locksmith Program a Car Key Without the Vehicle Present?',
+    excerpt: 'Cutting, cloning, pre-coding, and programming are different steps. Learn why most vehicle-learning procedures require the car, even when part of the key preparation happens elsewhere.',
+    publishedDate: 'September 24, 2026',
+    datePublished: '2026-09-24',
+    readingTime: '8 min read',
+    category: 'Automotive Key Programming',
+    image: '/images/local-car-lockout-good-locksmith.webp',
+    imageAlt: 'A Good Locksmith mobile automotive key service beside a customer vehicle',
+    seoTitle: 'Program a Car Key Without the Vehicle? | Harnett County, NC',
+    seoDescription: 'Can a locksmith program a car key without the vehicle present? Learn the difference between cutting, cloning, pre-coding, and vehicle-side programming.',
+    about: ['Program car key without vehicle present', 'Transponder key programming', 'Key cloning', 'Proximity key programming', 'Harnett County automotive locksmith'],
+  },
+  {
     slug: 'where-to-keep-spare-house-key-nc',
     title: 'Where Should You Keep a Spare House Key? Safer Backup Access Options',
     excerpt: 'A spare key helps only if it works and remains under deliberate control. Compare a trusted key holder, secured key container, and managed keypad code before choosing a backup plan.',

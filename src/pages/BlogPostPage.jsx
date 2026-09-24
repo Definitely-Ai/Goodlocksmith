@@ -45,6 +45,7 @@ import CarKeyFromVinGuidePost from './CarKeyFromVinGuidePost';
 import LooseDoorKnobLeverGuidePost from './LooseDoorKnobLeverGuidePost';
 import RainMoistureDoorLockGuidePost from './RainMoistureDoorLockGuidePost';
 import SpareHouseKeyPlanningPost from './SpareHouseKeyPlanningPost';
+import CarKeyProgrammingVehiclePresentGuidePost from './CarKeyProgrammingVehiclePresentGuidePost';
 import { getBlogPost } from '../data/blogPosts';
 import { phoneLink } from '../data/cities';
 import './Blog.css';
@@ -109,6 +110,10 @@ const BlogPostPage = () => {
   }, [post]);
 
   if (!post) return <Navigate to="/blog" replace />;
+
+  if (post.slug === 'program-car-key-without-vehicle-present-nc') {
+    return <CarKeyProgrammingVehiclePresentGuidePost post={post} />;
+  }
 
   if (post.slug === 'where-to-keep-spare-house-key-nc') {
     return <SpareHouseKeyPlanningPost post={post} />;
