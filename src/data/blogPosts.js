@@ -1,5 +1,19 @@
 export const blogPosts = [
   {
+    slug: 'erase-lost-car-key-fob-from-vehicle-nc',
+    title: 'Lost Car Key or Fob: Can It Be Erased From the Vehicle?',
+    excerpt: 'A replacement key does not automatically disable the missing one. Learn what electronic key-code erasure can address, why the mechanical blade is separate, and what to have ready.',
+    publishedDate: 'September 25, 2026',
+    datePublished: '2026-09-25',
+    readingTime: '8 min read',
+    category: 'Automotive Key Security',
+    image: '/images/local-car-lockout-good-locksmith.webp',
+    imageAlt: 'A Good Locksmith mobile automotive key service beside a secured customer vehicle',
+    seoTitle: 'Erase a Lost Car Key or Fob? | Harnett County, NC',
+    seoDescription: 'Can a lost car key or fob be erased from the vehicle? Learn what key-code deletion can address, why the mechanical blade is separate, and what to do next.',
+    about: ['Erase a lost car key from the vehicle', 'Delete lost key fob', 'Stolen transponder key', 'Immobilizer key memory', 'Harnett County automotive locksmith'],
+  },
+  {
     slug: 'program-car-key-without-vehicle-present-nc',
     title: 'Can a Locksmith Program a Car Key Without the Vehicle Present?',
     excerpt: 'Cutting, cloning, pre-coding, and programming are different steps. Learn why most vehicle-learning procedures require the car, even when part of the key preparation happens elsewhere.',

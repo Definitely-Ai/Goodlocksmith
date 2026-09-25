@@ -46,6 +46,7 @@ import LooseDoorKnobLeverGuidePost from './LooseDoorKnobLeverGuidePost';
 import RainMoistureDoorLockGuidePost from './RainMoistureDoorLockGuidePost';
 import SpareHouseKeyPlanningPost from './SpareHouseKeyPlanningPost';
 import CarKeyProgrammingVehiclePresentGuidePost from './CarKeyProgrammingVehiclePresentGuidePost';
+import LostCarKeyFobEraseGuidePost from './LostCarKeyFobEraseGuidePost';
 import { getBlogPost } from '../data/blogPosts';
 import { phoneLink } from '../data/cities';
 import './Blog.css';
@@ -110,6 +111,10 @@ const BlogPostPage = () => {
   }, [post]);
 
   if (!post) return <Navigate to="/blog" replace />;
+
+  if (post.slug === 'erase-lost-car-key-fob-from-vehicle-nc') {
+    return <LostCarKeyFobEraseGuidePost post={post} />;
+  }
 
   if (post.slug === 'program-car-key-without-vehicle-present-nc') {
     return <CarKeyProgrammingVehiclePresentGuidePost post={post} />;
