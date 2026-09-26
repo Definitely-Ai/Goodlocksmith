@@ -1,5 +1,19 @@
 export const blogPosts = [
   {
+    slug: 'rekey-smart-lock-match-house-key-nc',
+    title: 'Can a Smart Lock Be Rekeyed to Match Your House Key?',
+    excerpt: 'Many smart locks with a physical cylinder can be rekeyed, but keyway compatibility matters. Learn why the backup key, keypad codes, and app users must be managed separately.',
+    publishedDate: 'September 26, 2026',
+    datePublished: '2026-09-26',
+    readingTime: '8 min read',
+    category: 'Smart Lock Rekeying',
+    image: '/images/residential-rekey-good-locksmith.webp',
+    imageAlt: 'A Good Locksmith evaluating a keyed smart deadbolt and matching house key',
+    seoTitle: 'Can a Smart Lock Be Rekeyed? | Harnett County, NC',
+    seoDescription: 'Can a smart lock be rekeyed to match your house key? Learn how cylinders, keyways, access codes, app users, and backup entry affect the answer.',
+    about: ['Rekey a smart lock', 'Match a smart lock to a house key', 'Smart lock keyway compatibility', 'Keyed alike smart locks', 'Harnett County locksmith'],
+  },
+  {
     slug: 'erase-lost-car-key-fob-from-vehicle-nc',
     title: 'Lost Car Key or Fob: Can It Be Erased From the Vehicle?',
     excerpt: 'A replacement key does not automatically disable the missing one. Learn what electronic key-code erasure can address, why the mechanical blade is separate, and what to have ready.',
