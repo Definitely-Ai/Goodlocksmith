@@ -1,5 +1,19 @@
 export const blogPosts = [
   {
+    slug: 'mortise-lock-vs-cylindrical-commercial-door-nc',
+    title: 'Mortise Lock or Cylindrical Lock? How to Tell What Your Business Door Has',
+    excerpt: 'Commercial levers can look similar from the hallway while using very different lock bodies and door preparation. Learn the clues, why identification matters, and what to document before service.',
+    publishedDate: 'September 27, 2026',
+    datePublished: '2026-09-27',
+    readingTime: '9 min read',
+    category: 'Commercial Door Hardware',
+    image: '/images/commercial-rekey-good-locksmith.webp',
+    imageAlt: 'A Good Locksmith evaluating commercial lever lock hardware on a business door',
+    seoTitle: 'Mortise Lock vs. Cylindrical Lock | Harnett County, NC',
+    seoDescription: 'Mortise lock or cylindrical lock? Learn the visible clues, door-preparation differences, repair questions, and safety checks for commercial doors.',
+    about: ['Mortise lock vs cylindrical lock', 'Commercial door lock identification', 'Mortise lock repair', 'Cylindrical lock repair', 'Harnett County commercial locksmith'],
+  },
+  {
     slug: 'rekey-smart-lock-match-house-key-nc',
     title: 'Can a Smart Lock Be Rekeyed to Match Your House Key?',
     excerpt: 'Many smart locks with a physical cylinder can be rekeyed, but keyway compatibility matters. Learn why the backup key, keypad codes, and app users must be managed separately.',

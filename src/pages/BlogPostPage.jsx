@@ -48,6 +48,7 @@ import SpareHouseKeyPlanningPost from './SpareHouseKeyPlanningPost';
 import CarKeyProgrammingVehiclePresentGuidePost from './CarKeyProgrammingVehiclePresentGuidePost';
 import LostCarKeyFobEraseGuidePost from './LostCarKeyFobEraseGuidePost';
 import SmartLockRekeyHouseKeyGuidePost from './SmartLockRekeyHouseKeyGuidePost';
+import MortiseCylindricalCommercialLockGuidePost from './MortiseCylindricalCommercialLockGuidePost';
 import { getBlogPost } from '../data/blogPosts';
 import { phoneLink } from '../data/cities';
 import './Blog.css';
@@ -112,6 +113,10 @@ const BlogPostPage = () => {
   }, [post]);
 
   if (!post) return <Navigate to="/blog" replace />;
+
+  if (post.slug === 'mortise-lock-vs-cylindrical-commercial-door-nc') {
+    return <MortiseCylindricalCommercialLockGuidePost post={post} />;
+  }
 
   if (post.slug === 'rekey-smart-lock-match-house-key-nc') {
     return <SmartLockRekeyHouseKeyGuidePost post={post} />;
