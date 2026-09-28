@@ -49,6 +49,7 @@ import CarKeyProgrammingVehiclePresentGuidePost from './CarKeyProgrammingVehicle
 import LostCarKeyFobEraseGuidePost from './LostCarKeyFobEraseGuidePost';
 import SmartLockRekeyHouseKeyGuidePost from './SmartLockRekeyHouseKeyGuidePost';
 import MortiseCylindricalCommercialLockGuidePost from './MortiseCylindricalCommercialLockGuidePost';
+import KeyStuckDoorLockGuidePost from './KeyStuckDoorLockGuidePost';
 import { getBlogPost } from '../data/blogPosts';
 import { phoneLink } from '../data/cities';
 import './Blog.css';
@@ -113,6 +114,10 @@ const BlogPostPage = () => {
   }, [post]);
 
   if (!post) return <Navigate to="/blog" replace />;
+
+  if (post.slug === 'key-stuck-door-lock-wont-come-out-nc') {
+    return <KeyStuckDoorLockGuidePost post={post} />;
+  }
 
   if (post.slug === 'mortise-lock-vs-cylindrical-commercial-door-nc') {
     return <MortiseCylindricalCommercialLockGuidePost post={post} />;

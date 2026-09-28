@@ -1,5 +1,19 @@
 export const blogPosts = [
   {
+    slug: 'key-stuck-door-lock-wont-come-out-nc',
+    title: 'Key Stuck in the Door Lock? What to Do Before It Breaks',
+    excerpt: 'A key that turns but will not come out may be off its neutral position, loaded by door pressure, affected by installation timing, or caught in a worn cylinder. Learn the safe first checks.',
+    publishedDate: 'September 28, 2026',
+    datePublished: '2026-09-28',
+    readingTime: '8 min read',
+    category: 'Stuck Key Troubleshooting',
+    image: '/images/residential-rekey-good-locksmith.webp',
+    imageAlt: 'A Good Locksmith evaluating a key that is stuck in a residential door lock',
+    seoTitle: 'Key Stuck in Door Lock? | Harnett County, NC',
+    seoDescription: 'Key stuck in a door lock and will not come out? Learn safe first checks, common causes, what not to force, and when to call a locksmith.',
+    about: ['Key stuck in door lock', 'Key will not come out of lock', 'Stuck lock cylinder', 'Door lock repair', 'Harnett County locksmith'],
+  },
+  {
     slug: 'mortise-lock-vs-cylindrical-commercial-door-nc',
     title: 'Mortise Lock or Cylindrical Lock? How to Tell What Your Business Door Has',
     excerpt: 'Commercial levers can look similar from the hallway while using very different lock bodies and door preparation. Learn the clues, why identification matters, and what to document before service.',
