@@ -1,5 +1,19 @@
 export const blogPosts = [
   {
+    slug: 'door-knob-turns-latch-wont-retract-nc',
+    title: 'Door Knob Turns but the Latch Won’t Retract? What to Check',
+    excerpt: 'A knob or lever can move while the latch barely moves—or does not move at all. Learn how an open-door test separates alignment trouble from loose, worn, or incorrectly installed hardware.',
+    publishedDate: 'September 29, 2026',
+    datePublished: '2026-09-29',
+    readingTime: '9 min read',
+    category: 'Door Latch Repair',
+    image: '/images/residential-rekey-good-locksmith.webp',
+    imageAlt: 'A Good Locksmith evaluating a door knob and latch that will not retract correctly',
+    seoTitle: 'Door Knob Turns but Latch Won’t Retract | Harnett County',
+    seoDescription: 'Door knob or lever turns but the latch will not retract? Learn safe tests, likely causes, alignment clues, and when to call a locksmith.',
+    about: ['Door knob turns but latch will not retract', 'Door latch repair', 'Door lever not retracting latch', 'Stuck door latch', 'Harnett County locksmith'],
+  },
+  {
     slug: 'key-stuck-door-lock-wont-come-out-nc',
     title: 'Key Stuck in the Door Lock? What to Do Before It Breaks',
     excerpt: 'A key that turns but will not come out may be off its neutral position, loaded by door pressure, affected by installation timing, or caught in a worn cylinder. Learn the safe first checks.',

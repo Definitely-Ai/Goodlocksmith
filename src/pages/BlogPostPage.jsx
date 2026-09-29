@@ -50,6 +50,7 @@ import LostCarKeyFobEraseGuidePost from './LostCarKeyFobEraseGuidePost';
 import SmartLockRekeyHouseKeyGuidePost from './SmartLockRekeyHouseKeyGuidePost';
 import MortiseCylindricalCommercialLockGuidePost from './MortiseCylindricalCommercialLockGuidePost';
 import KeyStuckDoorLockGuidePost from './KeyStuckDoorLockGuidePost';
+import DoorKnobTurnsLatchWontRetractGuidePost from './DoorKnobTurnsLatchWontRetractGuidePost';
 import { getBlogPost } from '../data/blogPosts';
 import { phoneLink } from '../data/cities';
 import './Blog.css';
@@ -114,6 +115,10 @@ const BlogPostPage = () => {
   }, [post]);
 
   if (!post) return <Navigate to="/blog" replace />;
+
+  if (post.slug === 'door-knob-turns-latch-wont-retract-nc') {
+    return <DoorKnobTurnsLatchWontRetractGuidePost post={post} />;
+  }
 
   if (post.slug === 'key-stuck-door-lock-wont-come-out-nc') {
     return <KeyStuckDoorLockGuidePost post={post} />;
