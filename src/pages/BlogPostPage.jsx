@@ -51,6 +51,7 @@ import SmartLockRekeyHouseKeyGuidePost from './SmartLockRekeyHouseKeyGuidePost';
 import MortiseCylindricalCommercialLockGuidePost from './MortiseCylindricalCommercialLockGuidePost';
 import KeyStuckDoorLockGuidePost from './KeyStuckDoorLockGuidePost';
 import DoorKnobTurnsLatchWontRetractGuidePost from './DoorKnobTurnsLatchWontRetractGuidePost';
+import CarKeyRemoteUnlockNoStartGuidePost from './CarKeyRemoteUnlockNoStartGuidePost';
 import { getBlogPost } from '../data/blogPosts';
 import { phoneLink } from '../data/cities';
 import './Blog.css';
@@ -115,6 +116,10 @@ const BlogPostPage = () => {
   }, [post]);
 
   if (!post) return <Navigate to="/blog" replace />;
+
+  if (post.slug === 'key-fob-unlocks-car-wont-start-nc') {
+    return <CarKeyRemoteUnlockNoStartGuidePost post={post} />;
+  }
 
   if (post.slug === 'door-knob-turns-latch-wont-retract-nc') {
     return <DoorKnobTurnsLatchWontRetractGuidePost post={post} />;
