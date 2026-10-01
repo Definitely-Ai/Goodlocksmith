@@ -52,6 +52,7 @@ import MortiseCylindricalCommercialLockGuidePost from './MortiseCylindricalComme
 import KeyStuckDoorLockGuidePost from './KeyStuckDoorLockGuidePost';
 import DoorKnobTurnsLatchWontRetractGuidePost from './DoorKnobTurnsLatchWontRetractGuidePost';
 import CarKeyRemoteUnlockNoStartGuidePost from './CarKeyRemoteUnlockNoStartGuidePost';
+import BedroomDoorLockFunctionsGuidePost from './BedroomDoorLockFunctionsGuidePost';
 import { getBlogPost } from '../data/blogPosts';
 import { phoneLink } from '../data/cities';
 import './Blog.css';
@@ -116,6 +117,10 @@ const BlogPostPage = () => {
   }, [post]);
 
   if (!post) return <Navigate to="/blog" replace />;
+
+  if (post.slug === 'bedroom-door-lock-privacy-vs-keyed-nc') {
+    return <BedroomDoorLockFunctionsGuidePost post={post} />;
+  }
 
   if (post.slug === 'key-fob-unlocks-car-wont-start-nc') {
     return <CarKeyRemoteUnlockNoStartGuidePost post={post} />;

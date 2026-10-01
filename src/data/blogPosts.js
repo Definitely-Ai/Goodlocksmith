@@ -1,5 +1,19 @@
 export const blogPosts = [
   {
+    slug: 'bedroom-door-lock-privacy-vs-keyed-nc',
+    title: 'Should a Bedroom Door Have a Keyed Lock? Privacy vs. Entry Hardware',
+    excerpt: 'A privacy lock, passage latch, and keyed-entry lock solve different problems. Learn how emergency access, household needs, door preparation, and safe exit affect the right choice.',
+    publishedDate: 'October 1, 2026',
+    datePublished: '2026-10-01',
+    readingTime: '8 min read',
+    category: 'Interior Door Hardware',
+    image: '/images/residential-rekey-good-locksmith.webp',
+    imageAlt: 'A Good Locksmith evaluating a residential bedroom door knob and latch',
+    seoTitle: 'Bedroom Door Lock: Privacy vs. Keyed | Harnett County',
+    seoDescription: 'Should a bedroom door have a keyed lock? Compare privacy, passage, and keyed-entry hardware, emergency access, safe exit, and installation needs.',
+    about: ['Bedroom door lock', 'Privacy lock vs keyed lock', 'Bed and bath lock', 'Interior door hardware', 'Harnett County locksmith'],
+  },
+  {
     slug: 'key-fob-unlocks-car-wont-start-nc',
     title: 'Key Fob Unlocks the Car but It Won’t Start? What That Can Mean',
     excerpt: 'A working unlock button does not prove the vehicle recognizes the key for starting. Learn how remote entry, the transponder or smart-key credential, and the vehicle itself can produce different symptoms.',
