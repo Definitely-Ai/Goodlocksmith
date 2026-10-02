@@ -1,5 +1,19 @@
 export const blogPosts = [
   {
+    slug: 'lost-house-key-rekey-every-lock-nc',
+    title: 'Lost a House Key: Do You Need to Rekey Every Lock?',
+    excerpt: 'A missing key does not automatically mean every lock must be replaced. Learn how keying, door access, labels, smart-lock credentials, and uncertainty determine the sensible rekeying scope.',
+    publishedDate: 'October 2, 2026',
+    datePublished: '2026-10-02',
+    readingTime: '8 min read',
+    category: 'Lost Key Security',
+    image: '/images/rekey-property-handoff.webp',
+    imageAlt: 'A Good Locksmith handing an authorized homeowner newly rekeyed house keys',
+    seoTitle: 'Lost House Key: Rekey Every Lock? | Harnett County',
+    seoDescription: 'Lost a house key? Learn which locks may need rekeying, when one missing key affects several doors, and what to check before calling a locksmith.',
+    about: ['Lost house key', 'Rekey every lock after losing a key', 'Residential rekeying', 'Key control', 'Harnett County locksmith'],
+  },
+  {
     slug: 'bedroom-door-lock-privacy-vs-keyed-nc',
     title: 'Should a Bedroom Door Have a Keyed Lock? Privacy vs. Entry Hardware',
     excerpt: 'A privacy lock, passage latch, and keyed-entry lock solve different problems. Learn how emergency access, household needs, door preparation, and safe exit affect the right choice.',
