@@ -54,6 +54,7 @@ import DoorKnobTurnsLatchWontRetractGuidePost from './DoorKnobTurnsLatchWontRetr
 import CarKeyRemoteUnlockNoStartGuidePost from './CarKeyRemoteUnlockNoStartGuidePost';
 import BedroomDoorLockFunctionsGuidePost from './BedroomDoorLockFunctionsGuidePost';
 import LostHouseKeyRekeyScopeGuidePost from './LostHouseKeyRekeyScopeGuidePost';
+import SmartLockFactoryResetGuidePost from './SmartLockFactoryResetGuidePost';
 import { getBlogPost } from '../data/blogPosts';
 import { phoneLink } from '../data/cities';
 import './Blog.css';
@@ -118,6 +119,10 @@ const BlogPostPage = () => {
   }, [post]);
 
   if (!post) return <Navigate to="/blog" replace />;
+
+  if (post.slug === 'factory-reset-smart-lock-what-it-changes-nc') {
+    return <SmartLockFactoryResetGuidePost post={post} />;
+  }
 
   if (post.slug === 'lost-house-key-rekey-every-lock-nc') {
     return <LostHouseKeyRekeyScopeGuidePost post={post} />;

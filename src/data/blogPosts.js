@@ -1,5 +1,19 @@
 export const blogPosts = [
   {
+    slug: 'factory-reset-smart-lock-what-it-changes-nc',
+    title: 'Factory Reset a Smart Lock: What It Changes—and What It Doesn’t',
+    excerpt: 'A factory reset can erase codes, pairings, and settings, but it does not rekey a mechanical backup cylinder. Learn what to identify, preserve, and test before resetting a smart lock.',
+    publishedDate: 'October 3, 2026',
+    datePublished: '2026-10-03',
+    readingTime: '8 min read',
+    category: 'Smart Lock Reset',
+    image: '/images/residential-rekey-good-locksmith.webp',
+    imageAlt: 'A Good Locksmith evaluating a residential smart deadbolt and its mechanical backup key',
+    seoTitle: 'Factory Reset a Smart Lock | Harnett County, NC',
+    seoDescription: 'Factory resetting a smart lock may erase codes, pairings, and settings—but not physical keys. Learn what to check before and after a reset.',
+    about: ['Factory reset a smart lock', 'Smart lock reset', 'Delete smart lock codes', 'Smart lock owner transfer', 'Harnett County locksmith'],
+  },
+  {
     slug: 'lost-house-key-rekey-every-lock-nc',
     title: 'Lost a House Key: Do You Need to Rekey Every Lock?',
     excerpt: 'A missing key does not automatically mean every lock must be replaced. Learn how keying, door access, labels, smart-lock credentials, and uncertainty determine the sensible rekeying scope.',
