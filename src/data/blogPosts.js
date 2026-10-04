@@ -1,5 +1,19 @@
 export const blogPosts = [
   {
+    slug: 'smart-lock-batteries-draining-fast-nc',
+    title: 'Smart Lock Batteries Draining Fast? Check These Causes First',
+    excerpt: 'Frequent battery changes can point to door friction, installation trouble, weak wireless signal, heavy use, or the wrong battery type. Learn what to check before resetting or replacing the lock.',
+    publishedDate: 'October 4, 2026',
+    datePublished: '2026-10-04',
+    readingTime: '8 min read',
+    category: 'Smart Lock Troubleshooting',
+    image: '/images/residential-rekey-good-locksmith.webp',
+    imageAlt: 'A Good Locksmith evaluating a residential smart deadbolt and its battery-powered interior assembly',
+    seoTitle: 'Smart Lock Batteries Draining Fast? | Harnett County',
+    seoDescription: 'Smart-lock batteries draining fast? Learn how door alignment, installation, wireless signal, usage, and battery choice can affect battery life.',
+    about: ['Smart lock batteries draining fast', 'Smart lock battery life', 'Deadbolt alignment', 'Smart lock troubleshooting', 'Harnett County locksmith'],
+  },
+  {
     slug: 'factory-reset-smart-lock-what-it-changes-nc',
     title: 'Factory Reset a Smart Lock: What It Changes—and What It Doesn’t',
     excerpt: 'A factory reset can erase codes, pairings, and settings, but it does not rekey a mechanical backup cylinder. Learn what to identify, preserve, and test before resetting a smart lock.',

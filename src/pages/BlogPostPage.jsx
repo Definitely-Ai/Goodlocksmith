@@ -55,6 +55,7 @@ import CarKeyRemoteUnlockNoStartGuidePost from './CarKeyRemoteUnlockNoStartGuide
 import BedroomDoorLockFunctionsGuidePost from './BedroomDoorLockFunctionsGuidePost';
 import LostHouseKeyRekeyScopeGuidePost from './LostHouseKeyRekeyScopeGuidePost';
 import SmartLockFactoryResetGuidePost from './SmartLockFactoryResetGuidePost';
+import SmartLockBatteryDrainGuidePost from './SmartLockBatteryDrainGuidePost';
 import { getBlogPost } from '../data/blogPosts';
 import { phoneLink } from '../data/cities';
 import './Blog.css';
@@ -119,6 +120,10 @@ const BlogPostPage = () => {
   }, [post]);
 
   if (!post) return <Navigate to="/blog" replace />;
+
+  if (post.slug === 'smart-lock-batteries-draining-fast-nc') {
+    return <SmartLockBatteryDrainGuidePost post={post} />;
+  }
 
   if (post.slug === 'factory-reset-smart-lock-what-it-changes-nc') {
     return <SmartLockFactoryResetGuidePost post={post} />;
