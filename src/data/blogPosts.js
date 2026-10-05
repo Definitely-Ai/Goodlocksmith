@@ -1,5 +1,19 @@
 export const blogPosts = [
   {
+    slug: 'left-right-door-lock-handing-guide-nc',
+    title: 'Left-Hand or Right-Hand Door? Why Lock Handing Matters',
+    excerpt: 'Door handing affects lever orientation, latch bevel, lock function, closers, and some electronic-lock setup. Learn a reliable way to describe the opening before ordering hardware.',
+    publishedDate: 'October 5, 2026',
+    datePublished: '2026-10-05',
+    readingTime: '8 min read',
+    category: 'Door Hardware Planning',
+    image: '/images/commercial-rekey-good-locksmith.webp',
+    imageAlt: 'A Good Locksmith evaluating the hinge side and swing of a commercial door before servicing its lock hardware',
+    seoTitle: 'Left- or Right-Hand Door Lock? | Harnett County',
+    seoDescription: 'Need a left- or right-hand door lock? Learn how hinge side, secure side, swing direction, and reversible hardware affect the correct choice.',
+    about: ['Door lock handing', 'Left hand vs right hand door', 'Reverse bevel door', 'Handed door hardware', 'Harnett County locksmith'],
+  },
+  {
     slug: 'smart-lock-batteries-draining-fast-nc',
     title: 'Smart Lock Batteries Draining Fast? Check These Causes First',
     excerpt: 'Frequent battery changes can point to door friction, installation trouble, weak wireless signal, heavy use, or the wrong battery type. Learn what to check before resetting or replacing the lock.',
