@@ -57,6 +57,7 @@ import LostHouseKeyRekeyScopeGuidePost from './LostHouseKeyRekeyScopeGuidePost';
 import SmartLockFactoryResetGuidePost from './SmartLockFactoryResetGuidePost';
 import SmartLockBatteryDrainGuidePost from './SmartLockBatteryDrainGuidePost';
 import DoorLockHandingGuidePost from './DoorLockHandingGuidePost';
+import LockCylinderReplacementGuidePost from './LockCylinderReplacementGuidePost';
 import { getBlogPost } from '../data/blogPosts';
 import { phoneLink } from '../data/cities';
 import './Blog.css';
@@ -121,6 +122,10 @@ const BlogPostPage = () => {
   }, [post]);
 
   if (!post) return <Navigate to="/blog" replace />;
+
+  if (post.slug === 'replace-lock-cylinder-keep-existing-lock-nc') {
+    return <LockCylinderReplacementGuidePost post={post} />;
+  }
 
   if (post.slug === 'left-right-door-lock-handing-guide-nc') {
     return <DoorLockHandingGuidePost post={post} />;

@@ -1,5 +1,19 @@
 export const blogPosts = [
   {
+    slug: 'replace-lock-cylinder-keep-existing-lock-nc',
+    title: 'Can You Replace a Lock Cylinder Without Replacing the Whole Lock?',
+    excerpt: 'Sometimes the keyed cylinder can be replaced while the lock body and trim stay in place. Learn when a rekey, cylinder change, interchangeable core, or complete lock replacement makes sense.',
+    publishedDate: 'October 6, 2026',
+    datePublished: '2026-10-06',
+    readingTime: '8 min read',
+    category: 'Lock Cylinder Replacement',
+    image: '/images/commercial-rekey-good-locksmith.webp',
+    imageAlt: 'A Good Locksmith evaluating a removable keyed cylinder in existing commercial door hardware',
+    seoTitle: 'Replace a Lock Cylinder Only? | Harnett County, NC',
+    seoDescription: 'Can you replace a lock cylinder without replacing the whole lock? Learn how rekeying, removable cylinders, interchangeable cores, and damaged hardware differ.',
+    about: ['Replace lock cylinder only', 'Lock cylinder replacement', 'Rekey vs replace cylinder', 'Interchangeable core', 'Harnett County locksmith'],
+  },
+  {
     slug: 'left-right-door-lock-handing-guide-nc',
     title: 'Left-Hand or Right-Hand Door? Why Lock Handing Matters',
     excerpt: 'Door handing affects lever orientation, latch bevel, lock function, closers, and some electronic-lock setup. Learn a reliable way to describe the opening before ordering hardware.',
