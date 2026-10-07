@@ -1,5 +1,19 @@
 export const blogPosts = [
   {
+    slug: 'fail-safe-vs-fail-secure-electronic-locks-nc',
+    title: 'Fail Safe or Fail Secure? What Businesses Should Know About Electronic Locks',
+    excerpt: 'Fail safe and fail secure describe what the secure side does when power is removed—not whether people can exit. Learn how lock type, egress, fire doors, and power-loss plans affect the choice.',
+    publishedDate: 'October 7, 2026',
+    datePublished: '2026-10-07',
+    readingTime: '9 min read',
+    category: 'Electronic Lock Planning',
+    image: '/images/commercial-rekey-good-locksmith.webp',
+    imageAlt: 'A Good Locksmith evaluating electronic locking hardware on a commercial door',
+    seoTitle: 'Fail Safe vs. Fail Secure Locks | Harnett County, NC',
+    seoDescription: 'Fail safe or fail secure electronic lock? Learn what happens during power loss, why free egress is separate, and what businesses should document.',
+    about: ['Fail safe vs fail secure locks', 'Electronic door locks', 'Electric strikes', 'Access control egress', 'Harnett County commercial locksmith'],
+  },
+  {
     slug: 'replace-lock-cylinder-keep-existing-lock-nc',
     title: 'Can You Replace a Lock Cylinder Without Replacing the Whole Lock?',
     excerpt: 'Sometimes the keyed cylinder can be replaced while the lock body and trim stay in place. Learn when a rekey, cylinder change, interchangeable core, or complete lock replacement makes sense.',

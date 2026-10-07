@@ -58,6 +58,7 @@ import SmartLockFactoryResetGuidePost from './SmartLockFactoryResetGuidePost';
 import SmartLockBatteryDrainGuidePost from './SmartLockBatteryDrainGuidePost';
 import DoorLockHandingGuidePost from './DoorLockHandingGuidePost';
 import LockCylinderReplacementGuidePost from './LockCylinderReplacementGuidePost';
+import FailSafeFailSecureLocksGuidePost from './FailSafeFailSecureLocksGuidePost';
 import { getBlogPost } from '../data/blogPosts';
 import { phoneLink } from '../data/cities';
 import './Blog.css';
@@ -122,6 +123,10 @@ const BlogPostPage = () => {
   }, [post]);
 
   if (!post) return <Navigate to="/blog" replace />;
+
+  if (post.slug === 'fail-safe-vs-fail-secure-electronic-locks-nc') {
+    return <FailSafeFailSecureLocksGuidePost post={post} />;
+  }
 
   if (post.slug === 'replace-lock-cylinder-keep-existing-lock-nc') {
     return <LockCylinderReplacementGuidePost post={post} />;
