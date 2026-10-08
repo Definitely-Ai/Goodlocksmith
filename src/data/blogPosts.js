@@ -1,5 +1,19 @@
 export const blogPosts = [
   {
+    slug: 'do-not-duplicate-key-can-it-be-copied-nc',
+    title: 'Does “Do Not Duplicate” Mean a Key Cannot Be Copied?',
+    excerpt: 'The words stamped on a key do not reveal the whole key-control system. Learn how ordinary keyways, restricted blanks, patents, authorization records, and locksmith verification affect duplication.',
+    publishedDate: 'October 8, 2026',
+    datePublished: '2026-10-08',
+    readingTime: '8 min read',
+    category: 'Key Duplication and Control',
+    image: '/images/locksmith-customer-key-handoff.webp',
+    imageAlt: 'A Good Locksmith handing an authorized customer a properly identified duplicate key',
+    seoTitle: 'Can a “Do Not Duplicate” Key Be Copied? | Harnett County',
+    seoDescription: 'Can a “Do Not Duplicate” key be copied? Learn why the stamp differs from a restricted keyway and what authorization a locksmith may need.',
+    about: ['Do Not Duplicate key', 'Restricted key duplication', 'Keyway authorization', 'Patented key system', 'Harnett County locksmith'],
+  },
+  {
     slug: 'fail-safe-vs-fail-secure-electronic-locks-nc',
     title: 'Fail Safe or Fail Secure? What Businesses Should Know About Electronic Locks',
     excerpt: 'Fail safe and fail secure describe what the secure side does when power is removed—not whether people can exit. Learn how lock type, egress, fire doors, and power-loss plans affect the choice.',
