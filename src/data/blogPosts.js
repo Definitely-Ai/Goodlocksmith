@@ -1,5 +1,19 @@
 export const blogPosts = [
   {
+    slug: 'car-battery-dead-doors-locked-emergency-key-nc',
+    title: 'Car Battery Dead and Doors Locked? How the Emergency Key Blade Works',
+    excerpt: 'A dead 12-volt battery can disable power door locks, but many vehicles provide a mechanical backup key. Learn where to look, why instructions vary, and when to call for help.',
+    publishedDate: 'October 9, 2026',
+    datePublished: '2026-10-09',
+    readingTime: '8 min read',
+    category: 'Automotive Lockout Help',
+    image: '/images/local-car-lockout-good-locksmith.webp',
+    imageAlt: 'A Good Locksmith providing authorized automotive lockout help beside a customer vehicle',
+    seoTitle: 'Car Battery Dead and Doors Locked? | Harnett County',
+    seoDescription: 'Car battery dead and doors locked? Learn how emergency key blades and hidden door cylinders work, what varies by vehicle, and when to call a locksmith.',
+    about: ['Car battery dead and doors locked', 'Emergency key blade', 'Mechanical car door key', 'Dead vehicle battery lockout', 'Harnett County automotive locksmith'],
+  },
+  {
     slug: 'do-not-duplicate-key-can-it-be-copied-nc',
     title: 'Does “Do Not Duplicate” Mean a Key Cannot Be Copied?',
     excerpt: 'The words stamped on a key do not reveal the whole key-control system. Learn how ordinary keyways, restricted blanks, patents, authorization records, and locksmith verification affect duplication.',
