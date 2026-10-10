@@ -1,5 +1,19 @@
 export const blogPosts = [
   {
+    slug: 'repair-rekey-or-replace-door-lock-nc',
+    title: 'Repair, Rekey, or Replace a Door Lock? How to Choose the Right Fix',
+    excerpt: 'A lock problem does not always require new hardware. Learn when repair addresses a fault, rekeying changes access, and replacement is the better long-term choice.',
+    publishedDate: 'October 10, 2026',
+    datePublished: '2026-10-10',
+    readingTime: '9 min read',
+    category: 'Door Lock Decisions',
+    image: '/images/residential-rekey-good-locksmith.webp',
+    imageAlt: 'A Good Locksmith evaluating a residential deadbolt to determine whether it should be repaired, rekeyed, or replaced',
+    seoTitle: 'Repair, Rekey, or Replace a Door Lock? | Harnett County',
+    seoDescription: 'Should you repair, rekey, or replace a door lock? Learn what each service changes and how condition, key control, alignment, and compatibility affect the choice.',
+    about: ['Repair rekey or replace a door lock', 'Door lock repair', 'Lock rekeying', 'Lock replacement', 'Harnett County locksmith'],
+  },
+  {
     slug: 'car-battery-dead-doors-locked-emergency-key-nc',
     title: 'Car Battery Dead and Doors Locked? How the Emergency Key Blade Works',
     excerpt: 'A dead 12-volt battery can disable power door locks, but many vehicles provide a mechanical backup key. Learn where to look, why instructions vary, and when to call for help.',
