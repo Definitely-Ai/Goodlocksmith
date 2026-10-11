@@ -62,6 +62,7 @@ import FailSafeFailSecureLocksGuidePost from './FailSafeFailSecureLocksGuidePost
 import DoNotDuplicateKeyGuidePost from './DoNotDuplicateKeyGuidePost';
 import DeadVehicleBatteryLockoutGuidePost from './DeadVehicleBatteryLockoutGuidePost';
 import RepairRekeyReplaceGuidePost from './RepairRekeyReplaceGuidePost';
+import LatchDeadlatchDeadboltGuidePost from './LatchDeadlatchDeadboltGuidePost';
 import { getBlogPost } from '../data/blogPosts';
 import { phoneLink } from '../data/cities';
 import './Blog.css';
@@ -126,6 +127,10 @@ const BlogPostPage = () => {
   }, [post]);
 
   if (!post) return <Navigate to="/blog" replace />;
+
+  if (post.slug === 'latch-vs-deadbolt-door-lock-parts-nc') {
+    return <LatchDeadlatchDeadboltGuidePost post={post} />;
+  }
 
   if (post.slug === 'repair-rekey-or-replace-door-lock-nc') {
     return <RepairRekeyReplaceGuidePost post={post} />;

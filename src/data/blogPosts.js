@@ -1,5 +1,19 @@
 export const blogPosts = [
   {
+    slug: 'latch-vs-deadbolt-door-lock-parts-nc',
+    title: 'Latch Bolt, Deadlatch, or Deadbolt? What Each Part Does',
+    excerpt: 'A latch holds a door closed, a deadlatch resists simple latch retraction when aligned correctly, and a deadbolt is deliberately thrown for security. Learn which symptom belongs to which part.',
+    publishedDate: 'October 11, 2026',
+    datePublished: '2026-10-11',
+    readingTime: '8 min read',
+    category: 'Door Lock Basics',
+    image: '/images/residential-rekey-good-locksmith.webp',
+    imageAlt: 'A Good Locksmith identifying the latch bolt and deadbolt on the edge of a residential entry door',
+    seoTitle: 'Latch vs. Deadbolt: What Each Part Does | Harnett County',
+    seoDescription: 'Latch vs. deadbolt: learn how latch bolts, deadlatches, and deadbolts differ, which part may be failing, and what to describe when calling a locksmith.',
+    about: ['Latch vs deadbolt', 'Door latch bolt', 'Deadlatch', 'Residential deadbolt', 'Harnett County locksmith'],
+  },
+  {
     slug: 'repair-rekey-or-replace-door-lock-nc',
     title: 'Repair, Rekey, or Replace a Door Lock? How to Choose the Right Fix',
     excerpt: 'A lock problem does not always require new hardware. Learn when repair addresses a fault, rekeying changes access, and replacement is the better long-term choice.',
