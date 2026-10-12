@@ -44,7 +44,7 @@ const LockKeywayGuidePost = ({ post }) => (
             <h2>Is a keyway the same as a brand?</h2>
             <p>No. A manufacturer's name on the key or lock is useful identification, but it is not a complete compatibility specification. Manufacturers can offer multiple keyway families, and a family may include several sections or formats. Schlage, for example, publishes distinct Classic Obverse and Everest 29 families, with different options within those families.</p>
 
-            <p>Do not buy blanks or replacement cylinders from the logo alone. A locksmith can compare the blade profile, shoulder or tip reference, length, pin count, markings, and the cylinder itself. That matters when trying to make several doors <Link to="/blog/can-one-key-open-every-door-keyed-alike-nc">work with one keyed-alike key</Link> or when deciding whether a <Link to="/blog/replace-lock-cylinder-keep-existing-lock-nc">cylinder can be replaced without replacing the whole lock</Link>.</p>
+            <p>Do not buy blanks or replacement cylinders from the logo alone. A locksmith can compare the blade profile, shoulder or tip reference, length, pin count, markings, and the cylinder itself. That matters when trying to make several doors <Link to="/blog/keyed-alike-home-locks-one-key-nc">work with one keyed-alike key</Link> or when deciding whether a <Link to="/blog/replace-lock-cylinder-keep-existing-lock-nc">cylinder can be replaced without replacing the whole lock</Link>.</p>
 
             <h2>Why will one key enter but another will not?</h2>
             <ul className="article-checklist">
@@ -55,7 +55,7 @@ const LockKeywayGuidePost = ({ post }) => (
               <li><FaCheckCircle aria-hidden="true" /> <strong>Incorrectly copied key:</strong> the blank may fit, but the bitting or spacing does not operate the cylinder</li>
             </ul>
 
-            <p>Never force a key that stops or binds. Forcing can bend or break the key and may complicate the original problem. Compare it with a known working key without sharing clear close-up photos of the cuts publicly. If a newly copied key enters normally but does not work, see our <Link to="/blog/new-duplicate-house-key-wont-work-nc">duplicate-key troubleshooting guide</Link>.</p>
+            <p>Never force a key that stops or binds. Forcing can bend or break the key and may complicate the original problem. Compare it with a known working key without sharing clear close-up photos of the cuts publicly. If a newly copied key enters normally but does not work, see our <Link to="/blog/duplicate-house-key-wont-work-nc">duplicate-key troubleshooting guide</Link>.</p>
 
             <h2>How does the keyway affect rekeying?</h2>
             <p>Rekeying changes the cylinder's internal pinning so a new bitting operates it. It does not automatically change the keyway profile. If several compatible cylinders already share a suitable keyway, a locksmith may be able to key them alike. If their keyways or cylinder formats are incompatible, the plan may require different cylinders or hardware.</p>
