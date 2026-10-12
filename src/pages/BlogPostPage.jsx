@@ -63,6 +63,7 @@ import DoNotDuplicateKeyGuidePost from './DoNotDuplicateKeyGuidePost';
 import DeadVehicleBatteryLockoutGuidePost from './DeadVehicleBatteryLockoutGuidePost';
 import RepairRekeyReplaceGuidePost from './RepairRekeyReplaceGuidePost';
 import LatchDeadlatchDeadboltGuidePost from './LatchDeadlatchDeadboltGuidePost';
+import LockKeywayGuidePost from './LockKeywayGuidePost';
 import { getBlogPost } from '../data/blogPosts';
 import { phoneLink } from '../data/cities';
 import './Blog.css';
@@ -127,6 +128,10 @@ const BlogPostPage = () => {
   }, [post]);
 
   if (!post) return <Navigate to="/blog" replace />;
+
+  if (post.slug === 'what-is-lock-keyway-key-compatibility-nc') {
+    return <LockKeywayGuidePost post={post} />;
+  }
 
   if (post.slug === 'latch-vs-deadbolt-door-lock-parts-nc') {
     return <LatchDeadlatchDeadboltGuidePost post={post} />;

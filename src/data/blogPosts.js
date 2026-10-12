@@ -1,5 +1,19 @@
 export const blogPosts = [
   {
+    slug: 'what-is-lock-keyway-key-compatibility-nc',
+    title: 'What Is a Lock Keyway—and Why Won’t Every Key Fit?',
+    excerpt: 'A key needs the right blade profile to enter a cylinder before its cuts can operate the pins. Learn how keyways, blanks, and bitting affect copies, rekeying, and replacement.',
+    publishedDate: 'October 12, 2026',
+    datePublished: '2026-10-12',
+    readingTime: '8 min read',
+    category: 'Keys and Lock Cylinders',
+    image: '/images/locksmith-customer-key-handoff.webp',
+    imageAlt: 'A Good Locksmith identifying an authorized customer key before matching it to a lock cylinder keyway',
+    seoTitle: 'What Is a Lock Keyway? Key Compatibility | Harnett County',
+    seoDescription: 'What is a lock keyway? Learn why the key profile, blank, and cuts must match, and how compatibility affects copying, rekeying, and cylinder replacement.',
+    about: ['What is a lock keyway', 'Key blank compatibility', 'Key bitting', 'Lock rekeying', 'Harnett County locksmith'],
+  },
+  {
     slug: 'latch-vs-deadbolt-door-lock-parts-nc',
     title: 'Latch Bolt, Deadlatch, or Deadbolt? What Each Part Does',
     excerpt: 'A latch holds a door closed, a deadlatch resists simple latch retraction when aligned correctly, and a deadbolt is deliberately thrown for security. Learn which symptom belongs to which part.',
