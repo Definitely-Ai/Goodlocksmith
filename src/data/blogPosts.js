@@ -1,5 +1,19 @@
 export const blogPosts = [
   {
+    slug: 'what-is-door-lock-backset-measurement-nc',
+    title: 'What Is Door Lock Backset—and Why Does It Matter?',
+    excerpt: 'Backset is the distance from the door edge to the center of the lock bore. Learn how it affects latch length, replacement-lock fit, and smart-lock installation.',
+    publishedDate: 'October 13, 2026',
+    datePublished: '2026-10-13',
+    readingTime: '8 min read',
+    category: 'Door Hardware Measurements',
+    image: '/images/residential-rekey-good-locksmith.webp',
+    imageAlt: 'A Good Locksmith measuring a residential door preparation before selecting compatible lock hardware',
+    seoTitle: 'What Is Door Lock Backset? | Harnett County, NC',
+    seoDescription: 'What is door lock backset? Learn how to measure from the door edge to the bore center and why it affects latch, deadbolt, and smart-lock compatibility.',
+    about: ['Door lock backset', 'Measure lock backset', 'Replacement lock compatibility', 'Smart lock installation', 'Harnett County locksmith'],
+  },
+  {
     slug: 'what-is-lock-keyway-key-compatibility-nc',
     title: 'What Is a Lock Keyway—and Why Won’t Every Key Fit?',
     excerpt: 'A key needs the right blade profile to enter a cylinder before its cuts can operate the pins. Learn how keyways, blanks, and bitting affect copies, rekeying, and replacement.',
