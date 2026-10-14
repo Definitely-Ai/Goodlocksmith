@@ -1,5 +1,19 @@
 export const blogPosts = [
   {
+    slug: 'square-round-drive-in-latch-faceplate-nc',
+    title: 'Square-Corner, Round-Corner, or Drive-In Latch: Which Do You Need?',
+    excerpt: 'The latch face must match the door-edge preparation. Learn how square-corner, round-corner, and drive-in styles differ before ordering replacement hardware.',
+    publishedDate: 'October 14, 2026',
+    datePublished: '2026-10-14',
+    readingTime: '8 min read',
+    category: 'Door Hardware Fit',
+    image: '/images/residential-rekey-good-locksmith.webp',
+    imageAlt: 'A Good Locksmith inspecting the latch faceplate and preparation on the edge of a residential door',
+    seoTitle: 'Square, Round, or Drive-In Latch? | Harnett County',
+    seoDescription: 'Square-corner, round-corner, or drive-in latch? Learn how faceplate styles differ, what your door preparation needs, and when parts can be changed.',
+    about: ['Door latch faceplate', 'Square corner latch', 'Round corner latch', 'Drive-in latch', 'Harnett County locksmith'],
+  },
+  {
     slug: 'what-is-door-lock-backset-measurement-nc',
     title: 'What Is Door Lock Backset—and Why Does It Matter?',
     excerpt: 'Backset is the distance from the door edge to the center of the lock bore. Learn how it affects latch length, replacement-lock fit, and smart-lock installation.',

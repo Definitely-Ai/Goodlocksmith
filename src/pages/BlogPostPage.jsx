@@ -65,6 +65,7 @@ import RepairRekeyReplaceGuidePost from './RepairRekeyReplaceGuidePost';
 import LatchDeadlatchDeadboltGuidePost from './LatchDeadlatchDeadboltGuidePost';
 import LockKeywayGuidePost from './LockKeywayGuidePost';
 import DoorLockBacksetGuidePost from './DoorLockBacksetGuidePost';
+import DoorLatchFaceplateGuidePost from './DoorLatchFaceplateGuidePost';
 import { getBlogPost } from '../data/blogPosts';
 import { phoneLink } from '../data/cities';
 import './Blog.css';
@@ -129,6 +130,10 @@ const BlogPostPage = () => {
   }, [post]);
 
   if (!post) return <Navigate to="/blog" replace />;
+
+  if (post.slug === 'square-round-drive-in-latch-faceplate-nc') {
+    return <DoorLatchFaceplateGuidePost post={post} />;
+  }
 
   if (post.slug === 'what-is-door-lock-backset-measurement-nc') {
     return <DoorLockBacksetGuidePost post={post} />;
