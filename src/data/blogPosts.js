@@ -1,5 +1,19 @@
 export const blogPosts = [
   {
+    slug: 'replace-door-knob-keep-deadbolt-nc',
+    title: 'Can You Replace a Door Knob Without Replacing the Deadbolt?',
+    excerpt: 'Many knobs or levers and deadbolts are separate assemblies. Learn when one can stay, what must fit, and how to plan for one key or two.',
+    publishedDate: 'October 15, 2026',
+    datePublished: '2026-10-15',
+    readingTime: '8 min read',
+    category: 'Residential Lock Replacement',
+    image: '/images/residential-rekey-good-locksmith.webp',
+    imageAlt: 'A Good Locksmith evaluating a separate residential entry knob and deadbolt before replacing hardware',
+    seoTitle: 'Replace a Door Knob but Keep the Deadbolt? | Harnett County',
+    seoDescription: 'Can you replace a door knob without replacing the deadbolt? Learn when the locks are separate, what must fit, and how key matching affects the plan.',
+    about: ['Replace door knob without deadbolt', 'Keep existing deadbolt', 'Keyed alike locks', 'Entry knob replacement', 'Harnett County locksmith'],
+  },
+  {
     slug: 'square-round-drive-in-latch-faceplate-nc',
     title: 'Square-Corner, Round-Corner, or Drive-In Latch: Which Do You Need?',
     excerpt: 'The latch face must match the door-edge preparation. Learn how square-corner, round-corner, and drive-in styles differ before ordering replacement hardware.',
