@@ -67,6 +67,7 @@ import LockKeywayGuidePost from './LockKeywayGuidePost';
 import DoorLockBacksetGuidePost from './DoorLockBacksetGuidePost';
 import DoorLatchFaceplateGuidePost from './DoorLatchFaceplateGuidePost';
 import ReplaceKnobKeepDeadboltGuidePost from './ReplaceKnobKeepDeadboltGuidePost';
+import DoorLockServiceLifeGuidePost from './DoorLockServiceLifeGuidePost';
 import { getBlogPost } from '../data/blogPosts';
 import { phoneLink } from '../data/cities';
 import './Blog.css';
@@ -131,6 +132,10 @@ const BlogPostPage = () => {
   }, [post]);
 
   if (!post) return <Navigate to="/blog" replace />;
+
+  if (post.slug === 'how-long-do-door-locks-last-replace-nc') {
+    return <DoorLockServiceLifeGuidePost post={post} />;
+  }
 
   if (post.slug === 'replace-door-knob-keep-deadbolt-nc') {
     return <ReplaceKnobKeepDeadboltGuidePost post={post} />;

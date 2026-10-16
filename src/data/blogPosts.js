@@ -1,5 +1,19 @@
 export const blogPosts = [
   {
+    slug: 'how-long-do-door-locks-last-replace-nc',
+    title: 'How Long Do Door Locks Last? Replace by Condition, Not a Calendar',
+    excerpt: 'Door locks do not share one expiration date. Learn which wear, operation, alignment, maintenance, and key-control signs matter more than age alone.',
+    publishedDate: 'October 16, 2026',
+    datePublished: '2026-10-16',
+    readingTime: '8 min read',
+    category: 'Lock Maintenance and Replacement',
+    image: '/images/residential-rekey-good-locksmith.webp',
+    imageAlt: 'A Good Locksmith inspecting the condition and operation of a residential entry lock',
+    seoTitle: 'How Long Do Door Locks Last? | Harnett County, NC',
+    seoDescription: 'How long do door locks last? Learn why condition, use, alignment, maintenance, damage, and key control matter more than a fixed replacement schedule.',
+    about: ['How long door locks last', 'When to replace door locks', 'Worn door lock signs', 'Door lock maintenance', 'Harnett County locksmith'],
+  },
+  {
     slug: 'replace-door-knob-keep-deadbolt-nc',
     title: 'Can You Replace a Door Knob Without Replacing the Deadbolt?',
     excerpt: 'Many knobs or levers and deadbolts are separate assemblies. Learn when one can stay, what must fit, and how to plan for one key or two.',
