@@ -68,6 +68,7 @@ import DoorLockBacksetGuidePost from './DoorLockBacksetGuidePost';
 import DoorLatchFaceplateGuidePost from './DoorLatchFaceplateGuidePost';
 import ReplaceKnobKeepDeadboltGuidePost from './ReplaceKnobKeepDeadboltGuidePost';
 import DoorLockServiceLifeGuidePost from './DoorLockServiceLifeGuidePost';
+import InsideHandleAutoUnlockGuidePost from './InsideHandleAutoUnlockGuidePost';
 import { getBlogPost } from '../data/blogPosts';
 import { phoneLink } from '../data/cities';
 import './Blog.css';
@@ -132,6 +133,10 @@ const BlogPostPage = () => {
   }, [post]);
 
   if (!post) return <Navigate to="/blog" replace />;
+
+  if (post.slug === 'inside-door-handle-unlocks-when-turned-nc') {
+    return <InsideHandleAutoUnlockGuidePost post={post} />;
+  }
 
   if (post.slug === 'how-long-do-door-locks-last-replace-nc') {
     return <DoorLockServiceLifeGuidePost post={post} />;

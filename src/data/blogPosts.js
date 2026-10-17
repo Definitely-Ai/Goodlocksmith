@@ -1,5 +1,19 @@
 export const blogPosts = [
   {
+    slug: 'inside-door-handle-unlocks-when-turned-nc',
+    title: 'Why Does the Inside Door Handle Unlock the Door Automatically?',
+    excerpt: 'Some entry locks intentionally unlock when the inside handle turns; others require a separate unlocking step. Learn how function, model, and safe testing determine what is normal.',
+    publishedDate: 'October 17, 2026',
+    datePublished: '2026-10-17',
+    readingTime: '8 min read',
+    category: 'Door Lock Functions',
+    image: '/images/residential-rekey-good-locksmith.webp',
+    imageAlt: 'A Good Locksmith checking the inside and outside operation of a residential entry lever',
+    seoTitle: 'Inside Door Handle Unlocks Automatically? | Harnett County',
+    seoDescription: 'Why does an inside door handle unlock the door? Learn which entry locks release when turned, which stay locked, and how to test the outside safely.',
+    about: ['Inside door handle unlocks automatically', 'Keyed entry lever function', 'Free interior door handle', 'Door lock troubleshooting', 'Harnett County locksmith'],
+  },
+  {
     slug: 'how-long-do-door-locks-last-replace-nc',
     title: 'How Long Do Door Locks Last? Replace by Condition, Not a Calendar',
     excerpt: 'Door locks do not share one expiration date. Learn which wear, operation, alignment, maintenance, and key-control signs matter more than age alone.',
