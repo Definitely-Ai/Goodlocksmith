@@ -1,5 +1,19 @@
 export const blogPosts = [
   {
+    slug: 'where-find-fcc-id-key-fob-compatibility-nc',
+    title: 'Where Is the FCC ID on a Key Fob—and Does It Prove Compatibility?',
+    excerpt: 'An FCC ID can help identify radio equipment inside a car remote, but it does not prove the blade, transponder, buttons, or programming will match your vehicle.',
+    publishedDate: 'October 18, 2026',
+    datePublished: '2026-10-18',
+    readingTime: '8 min read',
+    category: 'Automotive Key Identification',
+    image: '/images/local-car-lockout-good-locksmith.webp',
+    imageAlt: 'A Good Locksmith identifying an automotive key fob before supported replacement-key service',
+    seoTitle: 'Where Is the FCC ID on a Key Fob? | Harnett County',
+    seoDescription: 'Where is the FCC ID on a key fob? Learn what the identifier means, where to look, and why it cannot by itself prove vehicle compatibility.',
+    about: ['Where to find FCC ID on key fob', 'Key fob compatibility', 'Automotive key identification', 'Replacement car key', 'Harnett County automotive locksmith'],
+  },
+  {
     slug: 'inside-door-handle-unlocks-when-turned-nc',
     title: 'Why Does the Inside Door Handle Unlock the Door Automatically?',
     excerpt: 'Some entry locks intentionally unlock when the inside handle turns; others require a separate unlocking step. Learn how function, model, and safe testing determine what is normal.',
