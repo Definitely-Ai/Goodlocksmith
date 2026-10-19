@@ -1,5 +1,19 @@
 export const blogPosts = [
   {
+    slug: 'cyber-trust-mark-smart-lock-security-nc',
+    title: 'What Does the U.S. Cyber Trust Mark Mean on a Smart Lock?',
+    excerpt: 'The Cyber Trust Mark addresses connected-product cybersecurity—not physical lock strength or door fit. Learn what its QR code can tell smart-lock shoppers.',
+    publishedDate: 'October 19, 2026',
+    datePublished: '2026-10-19',
+    readingTime: '9 min read',
+    category: 'Smart Lock Cybersecurity',
+    image: '/images/residential-rekey-good-locksmith.webp',
+    imageAlt: 'A Good Locksmith evaluating the physical and connected-security requirements of a residential smart lock',
+    seoTitle: 'Cyber Trust Mark for Smart Locks | Harnett County, NC',
+    seoDescription: 'What does the U.S. Cyber Trust Mark mean on a smart lock? Learn what its QR code covers—and why physical security, fit, and installation remain separate.',
+    about: ['Cyber Trust Mark smart lock', 'Smart lock cybersecurity label', 'Connected lock security', 'Smart lock installation', 'Harnett County locksmith'],
+  },
+  {
     slug: 'where-find-fcc-id-key-fob-compatibility-nc',
     title: 'Where Is the FCC ID on a Key Fob—and Does It Prove Compatibility?',
     excerpt: 'An FCC ID can help identify radio equipment inside a car remote, but it does not prove the blade, transponder, buttons, or programming will match your vehicle.',

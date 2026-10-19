@@ -70,6 +70,7 @@ import ReplaceKnobKeepDeadboltGuidePost from './ReplaceKnobKeepDeadboltGuidePost
 import DoorLockServiceLifeGuidePost from './DoorLockServiceLifeGuidePost';
 import InsideHandleAutoUnlockGuidePost from './InsideHandleAutoUnlockGuidePost';
 import KeyFobFccIdGuidePost from './KeyFobFccIdGuidePost';
+import SmartLockCyberTrustMarkGuidePost from './SmartLockCyberTrustMarkGuidePost';
 import { getBlogPost } from '../data/blogPosts';
 import { phoneLink } from '../data/cities';
 import './Blog.css';
@@ -134,6 +135,10 @@ const BlogPostPage = () => {
   }, [post]);
 
   if (!post) return <Navigate to="/blog" replace />;
+
+  if (post.slug === 'cyber-trust-mark-smart-lock-security-nc') {
+    return <SmartLockCyberTrustMarkGuidePost post={post} />;
+  }
 
   if (post.slug === 'where-find-fcc-id-key-fob-compatibility-nc') {
     return <KeyFobFccIdGuidePost post={post} />;
