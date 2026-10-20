@@ -1,5 +1,19 @@
 export const blogPosts = [
   {
+    slug: 'interchangeable-core-locks-business-key-system-nc',
+    title: 'What Is an Interchangeable-Core Lock—and When Is It Useful?',
+    excerpt: 'An interchangeable core can be removed with a control key without taking the lock apart. Learn when that flexibility helps—and what must be planned first.',
+    publishedDate: 'October 20, 2026',
+    datePublished: '2026-10-20',
+    readingTime: '9 min read',
+    category: 'Commercial Key Systems',
+    image: '/images/commercial-rekey-good-locksmith.webp',
+    imageAlt: 'A Good Locksmith evaluating commercial lock cylinders and key-system needs at a business door',
+    seoTitle: 'Interchangeable-Core Locks | Harnett County, NC',
+    seoDescription: 'What is an interchangeable-core lock? Learn how control keys and removable cores work, when they help a business, and what compatibility requires.',
+    about: ['Interchangeable core locks', 'Small format interchangeable core', 'Control key', 'Commercial key system', 'Harnett County locksmith'],
+  },
+  {
     slug: 'cyber-trust-mark-smart-lock-security-nc',
     title: 'What Does the U.S. Cyber Trust Mark Mean on a Smart Lock?',
     excerpt: 'The Cyber Trust Mark addresses connected-product cybersecurity—not physical lock strength or door fit. Learn what its QR code can tell smart-lock shoppers.',

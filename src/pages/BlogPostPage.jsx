@@ -71,6 +71,7 @@ import DoorLockServiceLifeGuidePost from './DoorLockServiceLifeGuidePost';
 import InsideHandleAutoUnlockGuidePost from './InsideHandleAutoUnlockGuidePost';
 import KeyFobFccIdGuidePost from './KeyFobFccIdGuidePost';
 import SmartLockCyberTrustMarkGuidePost from './SmartLockCyberTrustMarkGuidePost';
+import InterchangeableCoreLocksGuidePost from './InterchangeableCoreLocksGuidePost';
 import { getBlogPost } from '../data/blogPosts';
 import { phoneLink } from '../data/cities';
 import './Blog.css';
@@ -135,6 +136,10 @@ const BlogPostPage = () => {
   }, [post]);
 
   if (!post) return <Navigate to="/blog" replace />;
+
+  if (post.slug === 'interchangeable-core-locks-business-key-system-nc') {
+    return <InterchangeableCoreLocksGuidePost post={post} />;
+  }
 
   if (post.slug === 'cyber-trust-mark-smart-lock-security-nc') {
     return <SmartLockCyberTrustMarkGuidePost post={post} />;
