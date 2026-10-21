@@ -1,5 +1,19 @@
 export const blogPosts = [
   {
+    slug: 'ansi-bhma-lock-grades-1-2-3-explained-nc',
+    title: 'What Do Grade 1, Grade 2, and Grade 3 Lock Ratings Mean?',
+    excerpt: 'Lock grades describe progressive performance within an applicable ANSI/BHMA standard. Learn what the numbers cover, how residential A/B/C labels differ, and what a grade cannot prove.',
+    publishedDate: 'October 21, 2026',
+    datePublished: '2026-10-21',
+    readingTime: '9 min read',
+    category: 'Lock Standards and Selection',
+    image: '/images/residential-rekey-good-locksmith.webp',
+    imageAlt: 'A Good Locksmith comparing residential and commercial lock hardware for the correct door and performance requirements',
+    seoTitle: 'ANSI/BHMA Lock Grades Explained | Harnett County',
+    seoDescription: 'What do Grade 1, 2, and 3 lock ratings mean? Learn how ANSI/BHMA grades work, how residential A/B/C labels differ, and what a grade cannot prove.',
+    about: ['ANSI/BHMA lock grades', 'Grade 1 lock', 'Grade 2 lock', 'Grade 3 lock', 'Harnett County locksmith'],
+  },
+  {
     slug: 'interchangeable-core-locks-business-key-system-nc',
     title: 'What Is an Interchangeable-Core Lock—and When Is It Useful?',
     excerpt: 'An interchangeable core can be removed with a control key without taking the lock apart. Learn when that flexibility helps—and what must be planned first.',

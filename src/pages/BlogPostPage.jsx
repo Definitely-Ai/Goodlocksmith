@@ -72,6 +72,7 @@ import InsideHandleAutoUnlockGuidePost from './InsideHandleAutoUnlockGuidePost';
 import KeyFobFccIdGuidePost from './KeyFobFccIdGuidePost';
 import SmartLockCyberTrustMarkGuidePost from './SmartLockCyberTrustMarkGuidePost';
 import InterchangeableCoreLocksGuidePost from './InterchangeableCoreLocksGuidePost';
+import LockGradeRatingsGuidePost from './LockGradeRatingsGuidePost';
 import { getBlogPost } from '../data/blogPosts';
 import { phoneLink } from '../data/cities';
 import './Blog.css';
@@ -136,6 +137,10 @@ const BlogPostPage = () => {
   }, [post]);
 
   if (!post) return <Navigate to="/blog" replace />;
+
+  if (post.slug === 'ansi-bhma-lock-grades-1-2-3-explained-nc') {
+    return <LockGradeRatingsGuidePost post={post} />;
+  }
 
   if (post.slug === 'interchangeable-core-locks-business-key-system-nc') {
     return <InterchangeableCoreLocksGuidePost post={post} />;
