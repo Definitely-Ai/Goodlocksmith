@@ -1,5 +1,19 @@
 export const blogPosts = [
   {
+    slug: 'rim-cylinder-vs-mortise-cylinder-commercial-lock-nc',
+    title: 'Rim Cylinder or Mortise Cylinder? How to Identify the Right Commercial Lock Part',
+    excerpt: 'Rim and mortise cylinders can look similar from the key side but use different mounting and actuation. Learn which measurements, cams, tailpieces, and key-system details matter.',
+    publishedDate: 'October 22, 2026',
+    datePublished: '2026-10-22',
+    readingTime: '9 min read',
+    category: 'Commercial Lock Cylinders',
+    image: '/images/commercial-rekey-good-locksmith.webp',
+    imageAlt: 'A Good Locksmith identifying a commercial door cylinder and compatible key-system hardware',
+    seoTitle: 'Rim vs. Mortise Cylinder | Harnett County, NC',
+    seoDescription: 'Rim cylinder or mortise cylinder? Learn how mounting, cams, tailpieces, dimensions, and key-system compatibility determine the right commercial lock part.',
+    about: ['Rim cylinder vs mortise cylinder', 'Commercial lock cylinder', 'Mortise cylinder cam', 'Rim cylinder tailpiece', 'Harnett County locksmith'],
+  },
+  {
     slug: 'ansi-bhma-lock-grades-1-2-3-explained-nc',
     title: 'What Do Grade 1, Grade 2, and Grade 3 Lock Ratings Mean?',
     excerpt: 'Lock grades describe progressive performance within an applicable ANSI/BHMA standard. Learn what the numbers cover, how residential A/B/C labels differ, and what a grade cannot prove.',
