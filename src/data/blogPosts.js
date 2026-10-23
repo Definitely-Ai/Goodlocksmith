@@ -1,5 +1,19 @@
 export const blogPosts = [
   {
+    slug: 'panic-bar-dogging-fire-exit-hardware-nc',
+    title: 'What Does Dogging a Panic Bar Mean—and When Should You Not Use It?',
+    excerpt: 'Dogging holds a compatible exit-device latch retracted for push/pull traffic. Learn why fire exit hardware is different and why improvised hold-open methods are unsafe.',
+    publishedDate: 'October 23, 2026',
+    datePublished: '2026-10-23',
+    readingTime: '9 min read',
+    category: 'Commercial Panic Hardware',
+    image: '/images/commercial-rekey-good-locksmith.webp',
+    imageAlt: 'A Good Locksmith inspecting a commercial panic bar and exit-door hardware before service',
+    seoTitle: 'Panic Bar Dogging Explained | Harnett County, NC',
+    seoDescription: 'What does dogging a panic bar mean? Learn when it holds a latch retracted, why fire exit hardware differs, and when a commercial door needs service.',
+    about: ['Panic bar dogging', 'Exit device dogging', 'Fire exit hardware', 'Commercial door hardware', 'Harnett County locksmith'],
+  },
+  {
     slug: 'rim-cylinder-vs-mortise-cylinder-commercial-lock-nc',
     title: 'Rim Cylinder or Mortise Cylinder? How to Identify the Right Commercial Lock Part',
     excerpt: 'Rim and mortise cylinders can look similar from the key side but use different mounting and actuation. Learn which measurements, cams, tailpieces, and key-system details matter.',

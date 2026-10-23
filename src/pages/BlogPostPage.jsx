@@ -74,6 +74,7 @@ import SmartLockCyberTrustMarkGuidePost from './SmartLockCyberTrustMarkGuidePost
 import InterchangeableCoreLocksGuidePost from './InterchangeableCoreLocksGuidePost';
 import LockGradeRatingsGuidePost from './LockGradeRatingsGuidePost';
 import RimMortiseCylinderGuidePost from './RimMortiseCylinderGuidePost';
+import PanicBarDoggingGuidePost from './PanicBarDoggingGuidePost';
 import { getBlogPost } from '../data/blogPosts';
 import { phoneLink } from '../data/cities';
 import './Blog.css';
@@ -138,6 +139,10 @@ const BlogPostPage = () => {
   }, [post]);
 
   if (!post) return <Navigate to="/blog" replace />;
+
+  if (post.slug === 'panic-bar-dogging-fire-exit-hardware-nc') {
+    return <PanicBarDoggingGuidePost post={post} />;
+  }
 
   if (post.slug === 'rim-cylinder-vs-mortise-cylinder-commercial-lock-nc') {
     return <RimMortiseCylinderGuidePost post={post} />;
