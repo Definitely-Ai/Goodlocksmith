@@ -75,6 +75,7 @@ import InterchangeableCoreLocksGuidePost from './InterchangeableCoreLocksGuidePo
 import LockGradeRatingsGuidePost from './LockGradeRatingsGuidePost';
 import RimMortiseCylinderGuidePost from './RimMortiseCylinderGuidePost';
 import PanicBarDoggingGuidePost from './PanicBarDoggingGuidePost';
+import LocksmithOrDoorRepairGuidePost from './LocksmithOrDoorRepairGuidePost';
 import { getBlogPost } from '../data/blogPosts';
 import { phoneLink } from '../data/cities';
 import './Blog.css';
@@ -139,6 +140,10 @@ const BlogPostPage = () => {
   }, [post]);
 
   if (!post) return <Navigate to="/blog" replace />;
+
+  if (post.slug === 'locksmith-or-door-repair-company-nc') {
+    return <LocksmithOrDoorRepairGuidePost post={post} />;
+  }
 
   if (post.slug === 'panic-bar-dogging-fire-exit-hardware-nc') {
     return <PanicBarDoggingGuidePost post={post} />;

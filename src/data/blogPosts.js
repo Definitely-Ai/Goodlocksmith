@@ -1,5 +1,19 @@
 export const blogPosts = [
   {
+    slug: 'locksmith-or-door-repair-company-nc',
+    title: 'Locksmith or Door Company? Who Should Fix a Sticking or Damaged Door?',
+    excerpt: 'A failed lock and a damaged door can create the same symptom. Learn when to call a locksmith, when the slab or frame needs a door specialist, and when both trades may be involved.',
+    publishedDate: 'October 24, 2026',
+    datePublished: '2026-10-24',
+    readingTime: '9 min read',
+    category: 'Lock and Door Diagnosis',
+    image: '/images/residential-rekey-good-locksmith.webp',
+    imageAlt: 'A Good Locksmith evaluating a lock, strike, door, and frame to identify the source of an access problem',
+    seoTitle: 'Locksmith or Door Repair? | Harnett County, NC',
+    seoDescription: 'Locksmith or door company? Learn which key, lock, latch, frame, slab, hinge, and exit-door problems belong to each trade—and when you may need both.',
+    about: ['Locksmith or door repair', 'Door lock diagnosis', 'Damaged door frame', 'Lock and latch repair', 'Harnett County locksmith'],
+  },
+  {
     slug: 'panic-bar-dogging-fire-exit-hardware-nc',
     title: 'What Does Dogging a Panic Bar Mean—and When Should You Not Use It?',
     excerpt: 'Dogging holds a compatible exit-device latch retracted for push/pull traffic. Learn why fire exit hardware is different and why improvised hold-open methods are unsafe.',
