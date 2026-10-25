@@ -76,6 +76,7 @@ import LockGradeRatingsGuidePost from './LockGradeRatingsGuidePost';
 import RimMortiseCylinderGuidePost from './RimMortiseCylinderGuidePost';
 import PanicBarDoggingGuidePost from './PanicBarDoggingGuidePost';
 import LocksmithOrDoorRepairGuidePost from './LocksmithOrDoorRepairGuidePost';
+import LaserEdgeCutCarKeyGuidePost from './LaserEdgeCutCarKeyGuidePost';
 import { getBlogPost } from '../data/blogPosts';
 import { phoneLink } from '../data/cities';
 import './Blog.css';
@@ -140,6 +141,10 @@ const BlogPostPage = () => {
   }, [post]);
 
   if (!post) return <Navigate to="/blog" replace />;
+
+  if (post.slug === 'laser-cut-vs-edge-cut-car-key-nc') {
+    return <LaserEdgeCutCarKeyGuidePost post={post} />;
+  }
 
   if (post.slug === 'locksmith-or-door-repair-company-nc') {
     return <LocksmithOrDoorRepairGuidePost post={post} />;

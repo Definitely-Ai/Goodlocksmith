@@ -1,5 +1,19 @@
 export const blogPosts = [
   {
+    slug: 'laser-cut-vs-edge-cut-car-key-nc',
+    title: 'Laser-Cut or Edge-Cut Car Key? How to Tell What Your Vehicle Uses',
+    excerpt: 'Edge-cut keys carry their pattern along the blade edge; laser-cut or sidewinder keys use a milled track in the blade face. Learn what that tells you—and what it does not.',
+    publishedDate: 'October 25, 2026',
+    datePublished: '2026-10-25',
+    readingTime: '9 min read',
+    category: 'Automotive Key Identification',
+    image: '/images/local-car-lockout-good-locksmith.webp',
+    imageAlt: 'A Good Locksmith identifying the blade and electronic requirements of an automotive key before replacement',
+    seoTitle: 'Laser-Cut vs. Edge-Cut Car Keys | Harnett County, NC',
+    seoDescription: 'Laser-cut or edge-cut car key? Learn how blade styles differ, why the cut does not identify the transponder, and what details a locksmith needs.',
+    about: ['Laser-cut vs edge-cut car keys', 'Sidewinder car key', 'Automotive key cutting', 'Replacement car key', 'Harnett County automotive locksmith'],
+  },
+  {
     slug: 'locksmith-or-door-repair-company-nc',
     title: 'Locksmith or Door Company? Who Should Fix a Sticking or Damaged Door?',
     excerpt: 'A failed lock and a damaged door can create the same symptom. Learn when to call a locksmith, when the slab or frame needs a door specialist, and when both trades may be involved.',
