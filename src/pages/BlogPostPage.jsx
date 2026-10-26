@@ -77,6 +77,7 @@ import RimMortiseCylinderGuidePost from './RimMortiseCylinderGuidePost';
 import PanicBarDoggingGuidePost from './PanicBarDoggingGuidePost';
 import LocksmithOrDoorRepairGuidePost from './LocksmithOrDoorRepairGuidePost';
 import LaserEdgeCutCarKeyGuidePost from './LaserEdgeCutCarKeyGuidePost';
+import ValetKeyModeGuidePost from './ValetKeyModeGuidePost';
 import { getBlogPost } from '../data/blogPosts';
 import { phoneLink } from '../data/cities';
 import './Blog.css';
@@ -141,6 +142,10 @@ const BlogPostPage = () => {
   }, [post]);
 
   if (!post) return <Navigate to="/blog" replace />;
+
+  if (post.slug === 'what-is-valet-key-vs-valet-mode-nc') {
+    return <ValetKeyModeGuidePost post={post} />;
+  }
 
   if (post.slug === 'laser-cut-vs-edge-cut-car-key-nc') {
     return <LaserEdgeCutCarKeyGuidePost post={post} />;

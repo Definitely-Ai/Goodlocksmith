@@ -1,5 +1,19 @@
 export const blogPosts = [
   {
+    slug: 'what-is-valet-key-vs-valet-mode-nc',
+    title: 'What Is a Valet Key—and Is It the Same as Valet Mode?',
+    excerpt: 'A physical valet key and a vehicle’s electronic Valet Mode can restrict different things. Learn what each may control, why designs vary, and what to verify before replacing a key.',
+    publishedDate: 'October 26, 2026',
+    datePublished: '2026-10-26',
+    readingTime: '9 min read',
+    category: 'Automotive Key Identification',
+    image: '/images/local-car-lockout-good-locksmith.webp',
+    imageAlt: 'A Good Locksmith identifying an automotive valet key and the vehicle-specific functions it operates',
+    seoTitle: 'Valet Key vs. Valet Mode | Harnett County, NC',
+    seoDescription: 'What is a valet key, and is it the same as Valet Mode? Learn how physical keys, smart-key inserts, and software restrictions vary by vehicle.',
+    about: ['What is a valet key', 'Valet key vs valet mode', 'Automotive key identification', 'Replacement car key', 'Harnett County automotive locksmith'],
+  },
+  {
     slug: 'laser-cut-vs-edge-cut-car-key-nc',
     title: 'Laser-Cut or Edge-Cut Car Key? How to Tell What Your Vehicle Uses',
     excerpt: 'Edge-cut keys carry their pattern along the blade edge; laser-cut or sidewinder keys use a milled track in the blade face. Learn what that tells you—and what it does not.',
