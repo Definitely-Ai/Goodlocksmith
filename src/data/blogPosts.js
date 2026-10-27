@@ -1,5 +1,19 @@
 export const blogPosts = [
   {
+    slug: 'smart-lock-cold-weather-winter-nc',
+    title: 'Will a Smart Lock Work in Cold Weather? What to Check Before Winter',
+    excerpt: 'Cold weather can affect batteries, door alignment, touchscreens, and fingerprint readers differently. Learn what to verify before relying on a smart lock this winter.',
+    publishedDate: 'October 27, 2026',
+    datePublished: '2026-10-27',
+    readingTime: '9 min read',
+    category: 'Smart Lock Reliability',
+    image: '/images/residential-rekey-good-locksmith.webp',
+    imageAlt: 'A Good Locksmith checking a residential smart deadbolt and backup key before cold weather',
+    seoTitle: 'Smart Locks in Cold Weather | Harnett County, NC',
+    seoDescription: 'Will a smart lock work in cold weather? Check model temperature ratings, batteries, door alignment, backup entry, and winter warning signs.',
+    about: ['Smart lock cold weather', 'Smart lock winter preparation', 'Smart lock batteries in cold weather', 'Electronic deadbolt reliability', 'Harnett County smart-lock service'],
+  },
+  {
     slug: 'what-is-valet-key-vs-valet-mode-nc',
     title: 'What Is a Valet Keyâ€”and Is It the Same as Valet Mode?',
     excerpt: 'A physical valet key and a vehicleâ€™s electronic Valet Mode can restrict different things. Learn what each may control, why designs vary, and what to verify before replacing a key.',
@@ -679,390 +693,8 @@ export const blogPosts = [
     datePublished: '2026-09-07',
     readingTime: '6 min read',
     category: 'Keypad Lock Security',
-    image: '/images/residential-rekey-good-locksmith.webp',
-    imageAlt: 'A Good Locksmith evaluating residential door and lock security',
-    seoTitle: 'When to Change a Keypad Lock Code | Harnett County, NC',
-    seoDescription: 'Learn when to change a keypad lock code, remove former users, preserve backup entry, and avoid programming mistakes in Harnett County and nearby areas.',
-    about: ['Change keypad lock code', 'Delete door lock code', 'Keypad lock programming', 'Smart lock access control', 'Harnett County locksmith'],
-  },
-  {
-    slug: 'rekey-lock-without-original-key-nc',
-    title: 'Can a Locksmith Rekey a Lock Without the Original Key?',
-    excerpt: 'A missing original key does not always mean the entire lock must be replaced. Learn what determines whether an authorized locksmith can rekey the existing cylinder.',
-    publishedDate: 'September 6, 2026',
-    datePublished: '2026-09-06',
-    readingTime: '6 min read',
-    category: 'Lock Rekeying Advice',
-    image: '/images/rekey-property-handoff.webp',
-    imageAlt: 'Professional handoff of newly rekeyed property keys',
-    seoTitle: 'Rekey a Lock Without the Original Key | Harnett County, NC',
-    seoDescription: 'Can a locksmith rekey a lock without the original key? Learn how authorization, lock type, access, and hardware condition affect the answer in Harnett County.',
-    about: ['Rekey lock without original key', 'Lost house key', 'Lock rekeying', 'Rekey versus replace', 'Harnett County locksmith'],
-  },
-  {
-    slug: 'locked-out-of-business-commercial-lockout-nc',
-    title: 'Locked Out of Your Business? What to Have Ready Before You Call',
-    excerpt: 'A commercial lockout call goes more smoothly when the decision-maker, authorization, exact location, door type, and access-system details are ready before dispatch.',
-    publishedDate: 'September 5, 2026',
-    datePublished: '2026-09-05',
-    readingTime: '6 min read',
-    category: 'Commercial Locksmith Advice',
-    image: '/images/commercial-rekey-good-locksmith.webp',
-    imageAlt: 'A Good Locksmith providing commercial door and lock service',
-    seoTitle: 'Business Lockout Locksmith | Harnett County, NC',
-    seoDescription: 'Locked out of your business? Prepare authorization, the exact location, door and lock details, and a safe access plan before calling a Harnett County locksmith.',
-    about: ['Business lockout locksmith', 'Commercial lockout service', 'Commercial door access', 'Customer authorization', 'Harnett County locksmith'],
-  },
-  {
-    slug: 'north-carolina-tenant-lock-change-safety-rights',
-    title: 'Can a North Carolina Tenant Request a Lock Change for Safety?',
-    excerpt: 'North Carolina law gives certain tenants affected by domestic violence, sexual assault, or stalking a specific process for requesting a lock change. Learn the timelines and authorization steps.',
-    publishedDate: 'September 4, 2026',
-    datePublished: '2026-09-04',
-    readingTime: '6 min read',
-    category: 'Tenant Safety & Lock Authorization',
-    image: '/images/rekey-property-handoff.webp',
-    imageAlt: 'Professional handoff of newly rekeyed property keys',
-    seoTitle: 'NC Tenant Lock-Change Rights | Safety Guide',
-    seoDescription: 'Learn North Carolina tenant lock-change rights for domestic violence, sexual assault, or stalking, including notice, authorization, and statutory timelines.',
-    about: ['North Carolina tenant lock change rights', 'Domestic violence lock change', 'Rental property rekeying', 'Landlord lock authorization', 'Licensed North Carolina locksmith'],
-  },
-  {
-    slug: 'key-fob-not-working-after-battery-change-nc',
-    title: 'Key Fob Not Working After a Battery Change?',
-    excerpt: 'A fresh battery does not automatically solve every key-fob problem. Check the correct battery, installation, spare key, and vehicle symptoms before assuming programming is needed.',
-    publishedDate: 'September 3, 2026',
-    datePublished: '2026-09-03',
-    readingTime: '5 min read',
-    category: 'Automotive Key Care',
-    image: '/images/local-car-lockout-good-locksmith.webp',
-    imageAlt: 'Mobile automotive locksmith service illustration',
-    seoTitle: 'Key Fob Not Working After Battery Change? | Harnett NC',
-    seoDescription: 'Key fob still not working after a battery change? Check installation and vehicle symptoms before reprogramming. Automotive key help in Harnett County, NC.',
-    about: ['Key fob not working after battery change', 'Key fob battery replacement', 'Car remote troubleshooting', 'Automotive key programming', 'Mobile automotive locksmith'],
-  },
-  {
-    slug: 'replace-door-knob-with-lever-handle-nc',
-    title: 'Door Knob Hard to Grip? What to Know Before Switching to a Lever',
-    excerpt: 'Lever handles can make doors easier to use. Check the lock function, deadbolt, door fit, and household needs before replacing a hard-to-grip knob.',
-    publishedDate: 'September 2, 2026',
-    datePublished: '2026-09-02',
-    readingTime: '5 min read',
-    category: 'Everyday Door Access',
-    image: '/images/residential-rekey-good-locksmith.webp',
-    imageAlt: 'Residential locksmith service illustration',
-    seoTitle: 'Replace a Door Knob With a Lever | Harnett County, NC',
-    seoDescription: 'Thinking about replacing a door knob with a lever? Check grip, lock function, door fit, and security with A Good Locksmith in Harnett County, NC.',
-    about: ['Replace door knob with lever', 'Lever handle installation', 'Easy-to-use door hardware', 'Residential lock installation', 'Door hardware compatibility'],
-  },
-  {
-    slug: 'smart-lock-power-outage-battery-backup-nc',
-    title: 'Will Your Smart Lock Work During a Power Outage?',
-    excerpt: 'A power outage, lost internet connection, and dead lock batteries are different problems. Learn what to check and how to prepare a reliable backup entry plan.',
-    publishedDate: 'September 1, 2026',
-    datePublished: '2026-09-01',
-    readingTime: '6 min read',
-    category: 'Smart Lock Preparedness',
-    image: '/images/residential-rekey-good-locksmith.webp',
-    imageAlt: 'Residential locksmith service illustration',
-    seoTitle: 'Smart Locks During Power Outages | Harnett County, NC',
-    seoDescription: 'Will your smart lock work during a power outage? Learn about offline entry, dead batteries, and backup access for Harnett County and nearby Wake County homes.',
-    about: ['Smart lock power outage', 'Smart lock offline entry', 'Dead keypad lock batteries', 'Backup entry methods', 'Harnett County storm preparedness'],
-  },
-  {
-    slug: 'keyed-alike-home-locks-one-key-nc',
-    title: 'Can One Key Open Every Door? Keyed-Alike Home Locks Explained',
-    excerpt: 'Learn when compatible home locks can use one key, how keyed-alike locks differ from a master-key system, and what happens if that shared key is lost.',
-    publishedDate: 'August 31, 2026',
-    datePublished: '2026-08-31',
-    readingTime: '9 min read',
-    category: 'Residential Key Planning',
-    image: '/images/locksmith-customer-key-handoff.webp',
-    imageAlt: 'A Good Locksmith handing one properly planned residential key to a North Carolina homeowner',
-    seoTitle: 'Keyed-Alike Locks in Harnett County, NC | One-Key Guide',
-    seoDescription: 'Can one key open every exterior door? Learn about compatibility, rekeying locks alike, key control, and master-key differences in Harnett County, NC.',
-    about: ['Keyed-alike locks', 'One key for multiple doors', 'Rekey locks to same key', 'Residential key planning', 'Lock rekeying'],
-  },
-  {
-    slug: 'sliding-patio-door-wont-lock-nc',
-    title: 'Sliding Patio Door Wonâ€™t Lock? Check the Latch, Alignment, and Backup Security',
-    excerpt: 'Learn how to separate a patio-door latch problem from panel alignment, roller, keeper, or handle troubleâ€”and how secondary security should support, not hide, a failed primary lock.',
-    publishedDate: 'August 30, 2026',
-    datePublished: '2026-08-30',
-    readingTime: '9 min read',
-    category: 'Patio Door Security',
-    image: '/images/residential-rekey-good-locksmith.webp',
-    imageAlt: 'A Good Locksmith evaluating exterior door and lock security at a North Carolina home',
-    seoTitle: 'Sliding Patio Door Wonâ€™t Lock? | Harnett County, NC',
-    seoDescription: 'Sliding patio door wonâ€™t lock? Learn how latch, keeper, panel alignment, rollers, and secondary security are evaluated in Harnett County, NC.',
-    about: ['Sliding patio door lock', 'Patio door latch', 'Sliding door alignment', 'Patio door security bar', 'Residential locksmith'],
-  },
-  {
-    slug: 'duplicate-house-key-wont-work-nc',
-    title: 'New Duplicate House Key Wonâ€™t Work? Hereâ€™s What to Check',
-    excerpt: 'A fresh-looking copy can still fail because of the blank, cutting reference, wear in the source key, burrs, or the lock itself. Learn what to test without forcing it.',
-    publishedDate: 'August 29, 2026',
-    datePublished: '2026-08-29',
-    readingTime: '8 min read',
-    category: 'Key Cutting & Lock Advice',
-    image: '/images/locksmith-customer-key-handoff.webp',
-    imageAlt: 'A Good Locksmith handing a properly cut duplicate house key to a North Carolina customer',
-    seoTitle: 'Duplicate House Key Wonâ€™t Work? | Harnett County, NC',
-    seoDescription: 'New duplicate house key wonâ€™t work? Learn how worn originals, key blanks, cutting errors, burrs, and lock problems are diagnosed in Harnett County, NC.',
-    about: ['Duplicate house key', 'Key cutting', 'Worn house key', 'Key blank identification', 'Residential locksmith'],
-  },
-  {
-    slug: 'double-cylinder-deadbolt-egress-safety-nc',
-    title: 'Double-Cylinder Deadbolt Near Door Glass? Balance Security With Safe Exit',
-    excerpt: 'A lock keyed on both sides can limit reach-through unlocking near glass, but it can also require a key to exit. Learn the safety and code questions to answer first.',
-    publishedDate: 'August 28, 2026',
-    datePublished: '2026-08-28',
-    readingTime: '9 min read',
-    category: 'Residential Lock Safety',
-    image: '/images/residential-rekey-good-locksmith.webp',
-    imageAlt: 'A Good Locksmith evaluating residential deadbolt and exterior door security in North Carolina',
-    seoTitle: 'Double-Cylinder Deadbolt Safety | Harnett County, NC',
-    seoDescription: 'Considering a double-cylinder deadbolt near door glass? Compare reach-through security with emergency-egress requirements in Harnett County, NC.',
-    about: ['Double-cylinder deadbolt', 'Keyed-both-sides deadbolt', 'Egress door locks', 'Single-cylinder deadbolt', 'Deadbolt installation'],
-  },
-  {
-    slug: 'deadbolt-wont-lock-door-alignment-nc',
-    title: 'Deadbolt Wonâ€™t Lock Unless You Push the Door? What That Usually Means',
-    excerpt: 'Learn how to tell whether a sticking deadbolt points to door alignment, strike placement, loose hardware, or a lock problemâ€”and why forcing the key can make matters worse.',
-    publishedDate: 'August 27, 2026',
-    datePublished: '2026-08-27',
-    readingTime: '8 min read',
-    category: 'Lock & Door Maintenance',
-    image: '/images/residential-rekey-good-locksmith.webp',
-    imageAlt: 'A Good Locksmith checking deadbolt and door alignment at a North Carolina home',
-    seoTitle: 'Deadbolt Wonâ€™t Lock? Door Alignment Guide | Harnett County, NC',
-    seoDescription: 'Deadbolt wonâ€™t lock unless you push or pull the door? Learn what to check and when to call a locksmith for door lock alignment in Harnett County, NC.',
-    about: ['Deadbolt wonâ€™t lock', 'Door lock alignment', 'Strike plate alignment', 'Sticking deadbolt', 'Residential locksmith'],
-  },
-  {
-    slug: 'vacation-home-lock-security-checklist-nc',
-    title: 'Leaving Town? A Lock-and-Key Vacation Security Checklist',
-    excerpt: 'Before a trip, test exterior locks, account for keys, plan trusted access, secure smart-lock accounts, and avoid obvious signs that your home is vacant.',
-    publishedDate: 'August 26, 2026',
-    datePublished: '2026-08-26',
-    readingTime: '9 min read',
-    category: 'Residential Security',
-    image: '/images/residential-rekey-good-locksmith.webp',
-    imageAlt: 'A Good Locksmith checking residential door and lock security at a North Carolina home',
-    seoTitle: 'Vacation Home Security Checklist | Harnett County, NC',
-    seoDescription: 'Use this vacation home security checklist to test locks, control spare keys, plan trusted access, and prepare your Harnett County, NC home before travel.',
-    about: ['Vacation home security checklist', 'Lock checklist before vacation', 'Spare key security', 'Smart lock security', 'Residential locksmith'],
-  },
-  {
-    slug: 'key-photo-bitting-code-security-nc',
-    title: 'Your Key Could Reveal More Than You Think: The Security Risks of Mishandling Keys',
-    excerpt: 'Learn how exposed key photos, direct bitting numbers, blind codes, and poor key-control habits can create a serious property-security risk.',
-    publishedDate: 'August 25, 2026',
-    datePublished: '2026-08-25',
-    readingTime: '8 min read',
-    category: 'Key Control & Property Security',
-    image: '/images/schlage-key-direct-bitting-example.png',
-    imageAlt: 'AI-created Schlage house key showing a visible direct bitting number as a key-security example',
-    seoTitle: 'Can Someone Copy a Key From a Photo? Key Security Tips',
-    seoDescription: 'Numbers and visible cuts on a key may reveal enough information to create a duplicate. Learn when to rekey your Harnett County, NC property.',
-    about: ['Key security', 'Key bitting', 'Blind key codes', 'Key duplication risk', 'Lock rekeying'],
-  },
-  {
-    slug: 'locks-after-break-in-forced-entry-nc',
-    title: 'Door or Lock Damaged After a Break-In? What to Do First',
-    excerpt: 'Learn how to prioritize safety, preserve possible evidence, document forced-entry damage, coordinate temporary security, and evaluate whether locks should be rekeyed or replaced.',
-    publishedDate: 'August 25, 2026',
-    datePublished: '2026-08-25',
-    readingTime: '10 min read',
-    category: 'Property Security',
-    image: '/images/residential-rekey-good-locksmith.webp',
-    imageAlt: 'A Good Locksmith evaluating residential door and lock security in North Carolina',
-    seoTitle: 'Locks After a Break-In in Harnett County, NC | Next Steps',
-    seoDescription: 'Door or lock damaged by forced entry? Learn the safe next steps before rekeying or replacing locks after a break-in in Harnett County, NC.',
-    about: ['Locks after a break-in', 'Forced-entry door damage', 'Lock replacement', 'Lock rekeying', 'Property security assessment'],
-  },
-  {
-    slug: 'locked-out-of-house-safe-next-steps-nc',
-    title: 'Locked Out of Your House? Safe Next Steps Before Calling a Locksmith',
-    excerpt: 'Learn when a home lockout is a 911 emergency, which safe access options to check, what authorization to prepare, and how to avoid unnecessary door damage.',
-    publishedDate: 'August 24, 2026',
-    datePublished: '2026-08-24',
-    readingTime: '9 min read',
-    category: 'Residential Locksmith Advice',
-    image: '/images/residential-rekey-good-locksmith.webp',
-    imageAlt: 'A Good Locksmith providing professional residential lock service at a North Carolina home',
-    seoTitle: 'House Lockout Locksmith in Harnett County, NC | Safe Steps',
-    seoDescription: 'Locked out of your house? Learn safe next steps, when to call 911, what ID to prepare, and when to call a house lockout locksmith in Harnett County, NC.',
-    about: ['House lockout locksmith', 'Locked out of house', 'Residential lockout service', 'Emergency lockout safety', 'Licensed locksmith'],
-  },
-  {
-    slug: 'motorcycle-key-replacement-no-original-nc',
-    title: 'Can a Locksmith Make a Motorcycle Key Without the Original?',
-    excerpt: 'Learn when an experienced locksmith may be able to originate a supported mechanical motorcycle key and what identification, VIN, ownership, and lock details to prepare.',
-    publishedDate: 'August 23, 2026',
-    datePublished: '2026-08-23',
-    readingTime: '9 min read',
-    category: 'Motorcycle Key Advice',
-    image: '/images/professional-locksmith-key-handoff.webp',
-    imageAlt: 'A Good Locksmith providing professional mechanical key service in North Carolina',
-    seoTitle: 'Motorcycle Key Replacement in Harnett County, NC | Guide',
-    seoDescription: 'Lost the only mechanical motorcycle key? Learn what a locksmith needs for motorcycle key replacement in Harnett County, NC. No transponder programming.',
-    about: ['Motorcycle key replacement', 'Lost motorcycle key', 'Mechanical motorcycle keys', 'Motorcycle key duplication', 'Mobile locksmith'],
-  },
-  {
-    slug: 'high-security-locks-key-control-guide-nc',
-    title: 'What Makes a Lock â€œHigh Securityâ€? A Practical Buyerâ€™s Guide',
-    excerpt: 'Learn how independent certification, cylinder security levels, hardware grades, key control, and the complete door opening affect a meaningful security upgrade.',
-    publishedDate: 'August 22, 2026',
-    datePublished: '2026-08-22',
-    readingTime: '9 min read',
-    category: 'Home & Business Security',
-    image: '/images/locksmith-customer-key-handoff.webp',
-    imageAlt: 'A Good Locksmith discussing professional lock and key options with a North Carolina customer',
-    seoTitle: 'High-Security Locks in Harnett County, NC | Buyerâ€™s Guide',
-    seoDescription: 'What makes a lock high security? Compare certification, cylinder levels, hardware grades, key control, and installation for Harnett County, NC properties.',
-    about: ['High-security locks', 'Restricted key control', 'High-security cylinders', 'BHMA certified locks', 'Lock upgrades'],
-  },
-  {
-    slug: 'commercial-panic-hardware-exit-door-safety-nc',
-    title: 'Panic Hardware and Commercial Exit Doors: A Safety Checklist',
-    excerpt: 'Learn how panic bars, latches, closers, hinges, frames, and exit routes work togetherâ€”and which warning signs call for professional attention.',
-    publishedDate: 'August 21, 2026',
-    datePublished: '2026-08-21',
-    readingTime: '9 min read',
-    category: 'Commercial Security',
-    image: '/images/commercial-rekey-good-locksmith.webp',
-    imageAlt: 'A Good Locksmith providing commercial door and lock service at a North Carolina business',
-    seoTitle: 'Panic Hardware in Harnett County, NC | Exit Door Guide',
-    seoDescription: 'Commercial exit door sticking or not latching? Use this panic hardware safety checklist for Harnett County, NC businesses and learn when to call a locksmith.',
-    about: ['Panic hardware', 'Commercial exit doors', 'Exit devices', 'Push bars', 'Commercial locksmith'],
-  },
-  {
-    slug: 'verify-licensed-locksmith-north-carolina',
-    title: 'How to Verify a Licensed North Carolina Locksmith Before You Hire One',
-    excerpt: 'Use this practical checklist to verify a North Carolina locksmithâ€™s license, identity, proposed work, pricing, authorization process, and invoice.',
-    publishedDate: 'August 20, 2026',
-    datePublished: '2026-08-20',
-    readingTime: '9 min read',
-    category: 'Consumer Protection',
-    image: '/images/professional-locksmith-key-handoff.webp',
-    imageAlt: 'A Good Locksmith returning keys after professional licensed locksmith service in North Carolina',
-    seoTitle: 'Licensed Locksmith in Harnett County, NC | Verify First',
-    seoDescription: 'Learn how to verify a licensed locksmith in Harnett County, NC, including state license records, photo ID, authorization, pricing, and invoice checks.',
-    about: ['Licensed locksmith', 'North Carolina locksmith license', 'Locksmith verification', 'Consumer protection', 'Local locksmith'],
-  },
-  {
-    slug: 'key-hard-to-turn-broken-key-extraction-nc',
-    title: 'Key Hard to Turn? Signs It May Breakâ€”and What to Do Next',
-    excerpt: 'Learn how to recognize key wear, door misalignment, and lock resistance before the key snaps, plus safe next steps when a key is already broken.',
-    publishedDate: 'August 19, 2026',
-    datePublished: '2026-08-19',
-    readingTime: '9 min read',
-    category: 'Lock & Key Maintenance',
-    image: '/images/locksmith-customer-key-handoff.webp',
-    imageAlt: 'A Good Locksmith handing a properly working key to a North Carolina customer',
-    seoTitle: 'Broken Key Extraction in Harnett County, NC | What to Do',
-    seoDescription: 'Key hard to turn or broken in a lock? Learn safe next steps, common warning signs, and when to call for broken key extraction in Harnett County, NC.',
-    about: ['Broken key extraction', 'Key stuck in lock', 'Lock repair', 'Door alignment', 'Professional key cutting'],
-  },
-  {
-    slug: 'commercial-master-key-system-guide-nc',
-    title: 'Master Key Systems for Small Businesses: A Practical Planning Guide',
-    excerpt: 'Learn how mechanical master key systems organize access, why key-control records matter, and what business owners should plan before changing commercial locks.',
-    publishedDate: 'August 18, 2026',
-    datePublished: '2026-08-18',
-    readingTime: '9 min read',
-    category: 'Commercial Security',
-    image: '/images/commercial-rekey-good-locksmith.webp',
-    imageAlt: 'A Good Locksmith providing commercial lock service at a North Carolina business',
-    seoTitle: 'Master Key Systems in Harnett County, NC | Business Guide',
-    seoDescription: 'Planning a commercial master key system in Harnett County, NC? Learn about access levels, key control, lost-key planning, door hardware, and safe egress.',
-    about: ['Commercial master key systems', 'Business key control', 'Commercial locksmith', 'Access control', 'Panic hardware'],
-  },
-  {
-    slug: 'car-key-replacement-what-to-have-ready-nc',
-    title: 'Need a Replacement Car Key? What to Have Ready Before You Call',
-    excerpt: 'Learn which vehicle details and authorization documents to gather before requesting a replacement or spare car key from a mobile locksmith.',
-    publishedDate: 'August 17, 2026',
-    datePublished: '2026-08-17',
-    readingTime: '8 min read',
-    category: 'Automotive Locksmith Advice',
-    image: '/images/professional-locksmith-key-handoff.webp',
-    imageAlt: 'A Good Locksmith returning keys after professional automotive locksmith service in North Carolina',
-    seoTitle: 'Car Key Replacement in Harnett County, NC | What You Need',
-    seoDescription: 'Need car key replacement in Harnett County, NC? Learn which vehicle details, VIN, key information, and authorization documents to have ready before calling.',
-    about: ['Car key replacement', 'Spare car keys', 'Automotive key cutting', 'Transponder keys', 'Mobile automotive locksmith'],
-  },
-  {
-    slug: 'smart-lock-vs-traditional-deadbolt-nc',
-    title: 'Smart Lock or Traditional Deadbolt? A North Carolina Homeownerâ€™s Guide',
-    excerpt: 'Compare smart locks and traditional deadbolts, including door fit, backup access, batteries, cybersecurity, product testing, and professional installation.',
-    publishedDate: 'August 16, 2026',
-    datePublished: '2026-08-16',
-    readingTime: '8 min read',
-    category: 'Smart Home Security',
-    image: '/images/residential-rekey-good-locksmith.webp',
-    imageAlt: 'A Good Locksmith providing residential lock service at a North Carolina home',
-    seoTitle: 'Smart Lock Installation in Harnett County, NC | Guide',
-    seoDescription: 'Compare smart locks and traditional deadbolts, including door fit, backup access, batteries, cybersecurity, and installation in Harnett County, NC.',
-    about: ['Smart lock installation', 'Smart locks versus deadbolts', 'Keyless entry', 'Residential locksmith', 'Connected home security'],
-  },
-  {
-    slug: 'locked-keys-in-car-safe-next-steps-nc',
-    title: 'Locked Keys in the Car? Safe Next Steps in North Carolina',
-    excerpt: 'A calm, safety-first guide to vehicle lockouts: when to call 911, what to check, what information a locksmith needs, and why improvised entry can cause expensive damage.',
-    publishedDate: 'August 15, 2026',
-    datePublished: '2026-08-15',
-    readingTime: '7 min read',
-    category: 'Automotive Locksmith Advice',
-    image: '/images/local-car-lockout-good-locksmith.webp',
-    imageAlt: 'A Good Locksmith service vehicle providing local automotive lockout assistance in North Carolina',
-    seoTitle: 'Car Lockout Locksmith in Harnett County, NC | Safe Steps',
-    seoDescription: 'Locked keys in your car? Learn safe next steps and when to call 911 or a car lockout locksmith in Lillington, Angier, Dunn, Fuquay-Varina, and nearby NC areas.',
-    about: ['Car lockout locksmith', 'Keys locked in car', 'Automotive locksmith', 'Vehicle lockout safety'],
-  },
-  {
-    slug: 'home-door-security-lock-checklist-nc',
-    title: 'Home Door Security Checklist: Locks, Frames & Strike Plates',
-    excerpt: 'A strong deadbolt is only one part of a secure entrance. Use this practical checklist to evaluate the locks, strike plates, frames, hinges, and garage-entry doors protecting your home.',
-    publishedDate: 'August 14, 2026',
-    datePublished: '2026-08-14',
-    readingTime: '8 min read',
-    category: 'Home Security',
-    image: '/images/locksmith-customer-key-handoff.webp',
-    imageAlt: 'A Good Locksmith handing keys to a customer after professional locksmith service in North Carolina',
-    seoTitle: 'Home Security Locks in Harnett County, NC | Door Checklist',
-    seoDescription: 'Use this home door security checklist to evaluate deadbolts, strike plates, frames, hinges, and garage-entry doors in Harnett and southern Wake County, NC.',
-    about: ['Home security locks', 'Deadbolt locks', 'Door reinforcement', 'Strike plates', 'Residential locksmith'],
-  },
-  {
-    slug: 'why-hire-professional-locksmith-avoid-damage',
-    title: 'Why Hiring a Professional Locksmith Helps Prevent Costly Damage',
-    excerpt: 'A careful, experienced locksmith can solve lock and key problems while helping protect your vehicle, door, lock, and property from avoidable damage.',
-    publishedDate: 'August 9, 2026',
-    datePublished: '2026-08-09',
-    readingTime: '7 min read',
-    category: 'Professional Locksmith Advice',
-    image: '/images/professional-locksmith-key-handoff.webp',
-    imageAlt: 'A Good Locksmith returning keys to a customer after professional automotive locksmith service',
-    seoTitle: 'Professional Locksmith Near Lillington, NC | Avoid Damage',
-    seoDescription: 'Learn how a professional locksmith helps prevent damage during car, home, and business lock service in Lillington, Angier, Bunlevel, Fuquay-Varina, Coats, Dunn, and nearby NC areas.',
-    about: ['Professional locksmith service', 'Damage-free lockout service', 'Automotive locksmith', 'Residential locksmith', 'Commercial locksmith'],
-  },
-  {
-    slug: 'rekey-now-avoid-big-problems-later',
-    title: 'Rekey Now & Avoid Big Problems or Losses Later',
-    excerpt: 'Why homeowners, tenants, landlords, realtors, rental agents, and business owners should make rekeying part of every property handoff.',
-    publishedDate: 'July 29, 2026',
-    readingTime: '6 min read',
-    category: 'Home & Business Security',
-    image: '/images/rekey-property-handoff.webp',
-    imageAlt: 'A secure home and business entrance during a new-key property handoff',
-    datePublished: '2026-07-29',
-    seoTitle: 'Rekey Locks in Harnett & Wake County, NC | A Good Locksmith',
-    seoDescription: 'Rekey your home, rental property, or business locks in Lillington, Angier, Dunn, Coats, Erwin, Sanford, Fuquay-Varina, Harnett County, and Wake County. Call A Good Locksmith.',
-    about: ['Lock rekeying', 'Residential security', 'Commercial security', 'Rental property security'],
-  },
-];
+    m·ïkh‘éì¶»§q«^uØ\›Û[˜HÛY[ÝÛ™\‰ËˆÙ[Õ]Nˆ	ÒÙ^YYP[ZÙHØÚÜÈ[ˆ\›™]ÛÝ[KÈÛ™KRÙ^HÝZYIËˆÙ[Ñ\ØÜš\[ÛŽˆ	ÐØ[ˆÛ™HÙ^HÜ[ˆ]™\žH^\š[ÜˆÛÜÈX\›ˆX›Ý]ÛÛ\]Xš[]K™ZÙ^Z[™ÈØÚÜÈ[ZÙKÙ^HÛÛ›Û[™X\Ý\‹ZÙ^HY™™\™[˜Ù\È[ˆ\›™]ÛÝ[KË‰ËˆX›Ý]ˆÉÒÙ^YYX[ZÙHØÚÜÉË	ÓÛ™HÙ^H›Üˆ][\HÛÜœÉË	Ô™ZÙ^HØÚÜÈÈØ[YHÙ^IË	Ô™\ÚY[X[Ù^H[›š[™ÉË	ÓØÚÈ™ZÙ^Z[™É×KˆKˆÂˆÛYÎˆ	ÜÛY[™Ë\][ËYÛÜ‹]ÛÛ[ØÚË[˜ÉËˆ]Nˆ	ÔÛY[™È][ÈÛÜˆÛÛ¸ &]ØÚÏÈÚXÚÈH]Ú[YÛ›Y[[™˜XÚÝ\ÙXÝ\š]IËˆ^Ù\œˆ	ÓX\›ˆÝÈÈÙ\\˜]HH][ËYÛÜˆ]Ú›Ø›[Hœ›ÛH[™[[YÛ›Y[›Û\‹ÙY\\‹Üˆ[™H›ÝX›x %[™ÝÈÙXÛÛ™\žHÙXÝ\š]HÚÝ[Ý\Ü›ÝYKH˜Z[Yš[X\žHØÚË‰ËˆX›\ÚY]Nˆ	Ð]YÝ\ÝÌŒ‰Ëˆ]TX›\ÚYˆ	ÌŒ‹LLÌ	Ëˆ™XY[™Õ[YNˆ	ÎHZ[ˆ™XY	ËˆØ]YÛÜžNˆ	Ô][ÈÛÜˆÙXÝ\š]IËˆ[XYÙNˆ	ËÚ[XYÙ\ËÜ™\ÚY[X[\™ZÙ^KYÛÛÙ[ØÚÜÛZ]ÙXœ	Ëˆ[XYÙP[ˆ	ÐHÛÛÙØÚÜÛZ]]˜[X][™È^\š[ÜˆÛÜˆ[™ØÚÈÙXÝ\š]H]H›ÜØ\›Û[˜HÛYIËˆÙ[Õ]Nˆ	ÔÛY[™È][ÈÛÜˆÛÛ¸ &]ØÚÏÈ\›™]ÛÝ[KÉËˆÙ[Ñ\ØÜš\[ÛŽˆ	ÔÛY[™È][ÈÛÜˆÛÛ¸ &]ØÚÏÈX\›ˆÝÈ]ÚÙY\\‹[™[[YÛ›Y[›Û\œË[™ÙXÛÛ™\žHÙXÝ\š]H\™H]˜[X]Y[ˆ\›™]ÛÝ[KË‰ËˆX›Ý]ˆÉÔÛY[™È][ÈÛÜˆØÚÉË	Ô][ÈÛÜˆ]Ú	Ë	ÔÛY[™ÈÛÜˆ[YÛ›Y[	Ë	Ô][ÈÛÜˆÙXÝ\š]H˜\‰Ë	Ô™\ÚY[X[ØÚÜÛZ]	×KˆKˆÂˆÛYÎˆ	Ù\XØ]KZÝ\ÙKZÙ^K]ÛÛ]ÛÜšË[˜ÉËˆ]Nˆ	Ó™]È\XØ]HÝ\ÙHÙ^HÛÛ¸ &]ÛÜšÏÈ\™x &\ÈÚ]ÈÚXÚÉËˆ^Ù\œˆ	ÐHœ™\Ú[ÛÚÚ[™ÈÛÜHØ[ˆÝ[˜Z[™XØ]\ÙHÙˆH›[šËÝ][™È™Y™\™[˜ÙKÙX\ˆ[ˆHÛÝ\˜ÙHÙ^K\œœËÜˆHØÚÈ]Ù[‹ˆX\›ˆÚ]È\ÝÚ]Ý]›Ü˜Ú[™È]‰ËˆX›\ÚY]Nˆ	Ð]YÝ\ÝŽKŒ‰Ëˆ]TX›\ÚYˆ	ÌŒ‹LLŽIËˆ™XY[™Õ[YNˆ	ÎZ[ˆ™XY	ËˆØ]YÛÜžNˆ	ÒÙ^HÝ][™È	ˆØÚÈYšXÙIËˆ[XYÙNˆ	ËÚ[XYÙ\ËÛØÚÜÛZ]XÝ\ÝÛY\‹ZÙ^KZ[™Ù™‹ÙXœ	Ëˆ[XYÙP[ˆ	ÐHÛÛÙØÚÜÛZ][™[™ÈH›Ü\›HÝ]\XØ]HÝ\ÙHÙ^HÈH›ÜØ\›Û[˜HÝ\ÝÛY\‰ËˆÙ[Õ]Nˆ	Ñ\XØ]HÝ\ÙHÙ^HÛÛ¸ &]ÛÜšÏÈ\›™]ÛÝ[KÉËˆÙ[Ñ\ØÜš\[ÛŽˆ	Ó™]È\XØ]HÝ\ÙHÙ^HÛÛ¸ &]ÛÜšÏÈX\›ˆÝÈÛÜ›ˆÜšYÚ[˜[ËÙ^H›[šÜËÝ][™È\œ›ÜœË\œœË[™ØÚÈ›Ø›[\È\™HXYÛ›ÜÙY[ˆ\›™]ÛÝ[KË‰ËˆX›Ý]ˆÉÑ\XØ]HÝ\ÙHÙ^IË	ÒÙ^HÝ][™ÉË	ÕÛÜ›ˆÝ\ÙHÙ^IË	ÒÙ^H›[šÈY[YšXØ][Û‰Ë	Ô™\ÚY[X[ØÚÜÛZ]	×KˆKˆÂˆÛYÎˆ	ÙÝX›KXÞ[[™\‹YXY›ÛYYÜ™\ÜË\ØY™]K[˜ÉËˆ]Nˆ	ÑÝX›KPÞ[[™\ˆXY›Û™X\ˆÛÜˆÛ\ÜÏÈ˜[[˜ÙHÙXÝ\š]HÚ]ØY™H^]	Ëˆ^Ù\œˆ	ÐHØÚÈÙ^YYÛˆ›ÝÚY\ÈØ[ˆ[Z]™XXÚ]›ÝYÚ[›ØÚÚ[™È™X\ˆÛ\ÜË]]Ø[ˆ[ÛÈ™\]Z\™HHÙ^HÈ^]ˆX\›ˆHØY™]H[™ÛÙH]Y\Ý[ÛœÈÈ[œÝÙ\ˆš\œÝ‰ËˆX›\ÚY]Nˆ	Ð]YÝ\ÝŽŒ‰Ëˆ]TX›\ÚYˆ	ÌŒ‹LLŽ	Ëˆ™XY[™Õ[YNˆ	ÎHZ[ˆ™XY	ËˆØ]YÛÜžNˆ	Ô™\ÚY[X[ØÚÈØY™]IËˆ[XYÙNˆ	ËÚ[XYÙ\ËÜ™\ÚY[X[\™ZÙ^KYÛÛÙ[ØÚÜÛZ]ÙXœ	Ëˆ[XYÙP[ˆ	ÐHÛÛÙØÚÜÛZ]]˜[X][™È™\ÚY[X[XY›Û[™^\š[ÜˆÛÜˆÙXÝ\š]H[ˆ›ÜØ\›Û[˜IËˆÙ[Õ]Nˆ	ÑÝX›KPÞ[[™\ˆXY›ÛØY™]H\›™]ÛÝ[KÉËˆÙ[Ñ\ØÜš\[ÛŽˆ	ÐÛÛœÚY\š[™ÈHÝX›KXÞ[[™\ˆXY›Û™X\ˆÛÜˆÛ\ÜÏÈÛÛ\\™H™XXÚ]›ÝYÚÙXÝ\š]HÚ][Y\™Ù[˜ÞKYYÜ™\ÜÈ™\]Z\™[Y[È[ˆ\›™]ÛÝ[KË‰ËˆX›Ý]ˆÉÑÝX›KXÞ[[™\ˆXY›Û	Ë	ÒÙ^YYX›Ý\ÚY\ÈXY›Û	Ë	ÑYÜ™\ÜÈÛÜˆØÚÜÉË	ÔÚ[™ÛKXÞ[[™\ˆXY›Û	Ë	ÑXY›Û[œÝ[][Û‰×KˆKˆÂˆÛYÎˆ	ÙXY›Û]ÛÛ[ØÚËYÛÜ‹X[YÛ›Y[[˜ÉËˆ]Nˆ	ÑXY›ÛÛÛ¸ &]ØÚÈ[›\ÜÈ[ÝH\ÚHÛÜÈÚ]]\ÝX[HYX[œÉËˆ^Ù\œˆ	ÓX\›ˆÝÈÈ[Ú]\ˆHÝXÚÚ[™ÈXY›ÛÚ[ÈÈÛÜˆ[YÛ›Y[ÝšZÙHXÙ[Y[ÛÜÙH\™Ø\™KÜˆHØÚÈ›Ø›[x %[™ÚH›Ü˜Ú[™ÈHÙ^HØ[ˆXZÙHX]\œÈÛÜœÙK‰ËˆX›\ÚY]Nˆ	Ð]YÝ\ÝËŒ‰Ëˆ]TX›\ÚYˆ	ÌŒ‹LLÉËˆ™XY[™Õ[YNˆ	ÎZ[ˆ™XY	ËˆØ]YÛÜžNˆ	ÓØÚÈ	ˆÛÜˆXZ[[˜[˜ÙIËˆ[XYÙNˆ	ËÚ[XYÙ\ËÜ™\ÚY[X[\™ZÙ^KYÛÛÙ[ØÚÜÛZ]ÙXœ	Ëˆ[XYÙP[ˆ	ÐHÛÛÙØÚÜÛZ]ÚXÚÚ[™ÈXY›Û[™ÛÜˆ[YÛ›Y[]H›ÜØ\›Û[˜HÛYIËˆÙ[Õ]Nˆ	ÑXY›ÛÛÛ¸ &]ØÚÏÈÛÜˆ[YÛ›Y[ÝZYH\›™]ÛÝ[KÉËˆÙ[Ñ\ØÜš\[ÛŽˆ	ÑXY›ÛÛÛ¸ &]ØÚÈ[›\ÜÈ[ÝH\ÚÜˆ[HÛÜÈX\›ˆÚ]ÈÚXÚÈ[™Ú[ˆÈØ[HØÚÜÛZ]›ÜˆÛÜˆØÚÈ[YÛ›Y[[ˆ\›™]ÛÝ[KË‰ËˆX›Ý]ˆÉÑXY›ÛÛÛ¸ &]ØÚÉË	ÑÛÜˆØÚÈ[YÛ›Y[	Ë	ÔÝšZÙH]H[YÛ›Y[	Ë	ÔÝXÚÚ[™ÈXY›Û	Ë	Ô™\ÚY[X[ØÚÜÛZ]	×KˆKˆÂˆÛYÎˆ	Ý˜XØ][Û‹ZÛYK[ØÚË\ÙXÝ\š]KXÚXÚÛ\Ý[˜ÉËˆ]Nˆ	ÓX]š[™ÈÝÛÈHØÚËX[™RÙ^H˜XØ][ÛˆÙXÝ\š]HÚXÚÛ\Ý	Ëˆ^Ù\œˆ	Ð™Y›Ü™HHš\\Ý^\š[ÜˆØÚÜËXØÛÝ[›ÜˆÙ^\Ë[ˆ\ÝYXØÙ\ÜËÙXÝ\™HÛX\[ØÚÈXØÛÝ[Ë[™]›ÚYØš[Ý\ÈÚYÛœÈ][Ý\ˆÛYH\È˜XØ[‰ËˆX›\ÚY]Nˆ	Ð]YÝ\Ý‹Œ‰Ëˆ]TX›\ÚYˆ	ÌŒ‹LL‰Ëˆ™XY[™Õ[YNˆ	ÎHZ[ˆ™XY	ËˆØ]YÛÜžNˆ	Ô™\ÚY[X[ÙXÝ\š]IËˆ[XYÙNˆ	ËÚ[XYÙ\ËÜ™\ÚY[X[\™ZÙ^KYÛÛÙ[ØÚÜÛZ]ÙXœ	Ëˆ[XYÙP[ˆ	ÐHÛÛÙØÚÜÛZ]ÚXÚÚ[™È™\ÚY[X[ÛÜˆ[™ØÚÈÙXÝ\š]H]H›ÜØ\›Û[˜HÛYIËˆÙ[Õ]Nˆ	Õ˜XØ][ÛˆÛYHÙXÝ\š]HÚXÚÛ\Ý\›™]ÛÝ[KÉËˆÙ[Ñ\ØÜš\[ÛŽˆ	Õ\ÙH\È˜XØ][ÛˆÛYHÙXÝ\š]HÚXÚÛ\ÝÈ\ÝØÚÜËÛÛ›ÛÜ\™HÙ^\Ë[ˆ\ÝYXØÙ\ÜË[™™\\™H[Ý\ˆ\›™]ÛÝ[KÈÛYH™Y›Ü™H˜]™[‰ËˆX›Ý]ˆÉÕ˜XØ][ÛˆÛYHÙXÝ\š]HÚXÚÛ\Ý	Ë	ÓØÚÈÚXÚÛ\Ý™Y›Ü™H˜XØ][Û‰Ë	ÔÜ\™HÙ^HÙXÝ\š]IË	ÔÛX\ØÚÈÙXÝ\š]IË	Ô™\ÚY[X[ØÚÜÛZ]	×KˆKˆÂˆÛYÎˆ	ÚÙ^K\ÝËXš][™ËXÛÙK\ÙXÝ\š]K[˜ÉËˆ]Nˆ	Ö[Ý\ˆÙ^HÛÝ[™]™X[[Ü™H[ˆ[ÝH[šÎˆHÙXÝ\š]Hš\ÚÜÈÙˆZ\Ú[™[™ÈÙ^\ÉËˆ^Ù\œˆ	ÓX\›ˆÝÈ^ÜÙYÙ^HÝÜË\™XÝš][™È[X™\œË›[™ÛÙ\Ë[™ÛÜˆÙ^KXÛÛ›ÛXš]ÈØ[ˆÜ™X]HHÙ\š[Ý\È›Ü\K\ÙXÝ\š]Hš\ÚË‰ËˆX›\ÚY]Nˆ	Ð]YÝ\ÝKŒ‰Ëˆ]TX›\ÚYˆ	ÌŒ‹LLIËˆ™XY[™Õ[YNˆ	ÎZ[ˆ™XY	ËˆØ]YÛÜžNˆ	ÒÙ^HÛÛ›Û	ˆ›Ü\HÙXÝ\š]IËˆ[XYÙNˆ	ËÚ[XYÙ\ËÜØÚYÙKZÙ^KY\™XÝXš][™ËY^[\Kœ™ÉËˆ[XYÙP[ˆ	ÐRKXÜ™X]YØÚYÙHÝ\ÙHÙ^HÚÝÚ[™ÈHš\ÚX›H\™XÝš][™È[X™\ˆ\ÈHÙ^K\ÙXÝ\š]H^[\IËˆÙ[Õ]Nˆ	ÐØ[ˆÛÛY[Û™HÛÜHHÙ^Hœ›ÛHHÝÏÈÙ^HÙXÝ\š]H\ÉËˆÙ[Ñ\ØÜš\[ÛŽˆ	Ó[X™\œÈ[™š\ÚX›HÝ]ÈÛˆHÙ^HX^H™]™X[[›ÝYÚ[™›Ü›X][ÛˆÈÜ™X]HH\XØ]KˆX\›ˆÚ[ˆÈ™ZÙ^H[Ý\ˆ\›™]ÛÝ[KÈ›Ü\K‰ËˆX›Ý]ˆÉÒÙ^HÙXÝ\š]IË	ÒÙ^Hš][™ÉË	Ð›[™Ù^HÛÙ\ÉË	ÒÙ^H\XØ][Ûˆš\ÚÉË	ÓØÚÈ™ZÙ^Z[™É×KˆKˆÂˆÛYÎˆ	ÛØÚÜËXY\‹Xœ™XZËZ[‹Y›Ü˜ÙYY[žK[˜ÉËˆ]Nˆ	ÑÛÜˆÜˆØÚÈ[XYÙYY\ˆHœ™XZËR[ÈÚ]ÈÈš\œÝ	Ëˆ^Ù\œˆ	ÓX\›ˆÝÈÈš[Üš]^™HØY™]K™\Ù\™HÜÜÚX›H]šY[˜ÙKØÝ[Y[›Ü˜ÙYY[žH[XYÙKÛÛÜ™[˜]H[\Ü˜\žHÙXÝ\š]K[™]˜[X]HÚ]\ˆØÚÜÈÚÝ[™H™ZÙ^YYÜˆ™\XÙY‰ËˆX›\ÚY]Nˆ	Ð]YÝ\ÝKŒ‰Ëˆ]TX›\ÚYˆ	ÌŒ‹LLIËˆ™XY[™Õ[YNˆ	ÌLZ[ˆ™XY	ËˆØ]YÛÜžNˆ	Ô›Ü\HÙXÝ\š]IËˆ[XYÙNˆ	ËÚ[XYÙ\ËÜ™\ÚY[X[\™ZÙ^KYÛÛÙ[ØÚÜÛZ]ÙXœ	Ëˆ[XYÙP[ˆ	ÐHÛÛÙØÚÜÛZ]]˜[X][™È™\ÚY[X[ÛÜˆ[™ØÚÈÙXÝ\š]H[ˆ›ÜØ\›Û[˜IËˆÙ[Õ]Nˆ	ÓØÚÜÈY\ˆHœ™XZËR[ˆ[ˆ\›™]ÛÝ[KÈ™^Ý\ÉËˆÙ[Ñ\ØÜš\[ÛŽˆ	ÑÛÜˆÜˆØÚÈ[XYÙYžH›Ü˜ÙY[žOÈX\›ˆHØY™H™^Ý\È™Y›Ü™H™ZÙ^Z[™ÈÜˆ™\XÚ[™ÈØÚÜÈY\ˆHœ™XZËZ[ˆ[ˆ\›™]ÛÝ[KË‰ËˆX›Ý]ˆÉÓØÚÜÈY\ˆHœ™XZËZ[‰Ë	Ñ›Ü˜ÙYY[žHÛÜˆ[XYÙIË	ÓØÚÈ™\XÙ[Y[	Ë	ÓØÚÈ™ZÙ^Z[™ÉË	Ô›Ü\HÙXÝ\š]H\ÜÙ\ÜÛY[	×KˆKˆÂˆÛYÎˆ	ÛØÚÙY[Ý][Ù‹ZÝ\ÙK\ØY™K[™^\Ý\Ë[˜ÉËˆ]Nˆ	ÓØÚÙYÝ]Ùˆ[Ý\ˆÝ\ÙOÈØY™H™^Ý\È™Y›Ü™HØ[[™ÈHØÚÜÛZ]	Ëˆ^Ù\œˆ	ÓX\›ˆÚ[ˆHÛYHØÚÛÝ]\ÈHLLH[Y\™Ù[˜ÞKÚXÚØY™HXØÙ\ÜÈÜ[ÛœÈÈÚXÚËÚ]]]Üš^˜][ÛˆÈ™\\™K[™ÝÈÈ]›ÚY[›™XÙ\ÜØ\žHÛÜˆ[XYÙK‰ËˆX›\ÚY]Nˆ	Ð]YÝ\ÝŒ‰Ëˆ]TX›\ÚYˆ	ÌŒ‹LL	Ëˆ™XY[™Õ[YNˆ	ÎHZ[ˆ™XY	ËˆØ]YÛÜžNˆ	Ô™\ÚY[X[ØÚÜÛZ]YšXÙIËˆ[XYÙNˆ	ËÚ[XYÙ\ËÜ™\ÚY[X[\™ZÙ^KYÛÛÙ[ØÚÜÛZ]ÙXœ	Ëˆ[XYÙP[ˆ	ÐHÛÛÙØÚÜÛZ]›ÝšY[™È›Ù™\ÜÚ[Û˜[™\ÚY[X[ØÚÈÙ\šXÙH]H›ÜØ\›Û[˜HÛYIËˆÙ[Õ]Nˆ	ÒÝ\ÙHØÚÛÝ]ØÚÜÛZ][ˆ\›™]ÛÝ[KÈØY™HÝ\ÉËˆÙ[Ñ\ØÜš\[ÛŽˆ	ÓØÚÙYÝ]Ùˆ[Ý\ˆÝ\ÙOÈX\›ˆØY™H™^Ý\ËÚ[ˆÈØ[LLKÚ]QÈ™\\™K[™Ú[ˆÈØ[HÝ\ÙHØÚÛÝ]ØÚÜÛZ][ˆ\›™]ÛÝ[KË‰ËˆX›Ý]ˆÉÒÝ\ÙHØÚÛÝ]ØÚÜÛZ]	Ë	ÓØÚÙYÝ]ÙˆÝ\ÙIË	Ô™\ÚY[X[ØÚÛÝ]Ù\šXÙIË	Ñ[Y\™Ù[˜ÞHØÚÛÝ]ØY™]IË	ÓXÙ[œÙYØÚÜÛZ]	×KˆKˆÂˆÛYÎˆ	Û[ÝÜ˜ÞXÛKZÙ^K\™\XÙ[Y[[›Ë[ÜšYÚ[˜[[˜ÉËˆ]Nˆ	ÐØ[ˆHØÚÜÛZ]XZÙHH[ÝÜ˜ÞXÛHÙ^HÚ]Ý]HÜšYÚ[˜[ÉËˆ^Ù\œˆ	ÓX\›ˆÚ[ˆ[ˆ^\šY[˜ÙYØÚÜÛZ]X^H™HX›HÈÜšYÚ[˜]HHÝ\ÜYYXÚ[šXØ[[ÝÜ˜ÞXÛHÙ^H[™Ú]Y[YšXØ][Û‹’S‹ÝÛ™\œÚ\[™ØÚÈ]Z[ÈÈ™\\™K‰ËˆX›\ÚY]Nˆ	Ð]YÝ\ÝŒËŒ‰Ëˆ]TX›\ÚYˆ	ÌŒ‹LLŒÉËˆ™XY[™Õ[YNˆ	ÎHZ[ˆ™XY	ËˆØ]YÛÜžNˆ	Ó[ÝÜ˜ÞXÛHÙ^HYšXÙIËˆ[XYÙNˆ	ËÚ[XYÙ\ËÜ›Ù™\ÜÚ[Û˜[[ØÚÜÛZ]ZÙ^KZ[™Ù™‹ÙXœ	Ëˆ[XYÙP[ˆ	ÐHÛÛÙØÚÜÛZ]›ÝšY[™È›Ù™\ÜÚ[Û˜[YXÚ[šXØ[Ù^HÙ\šXÙH[ˆ›ÜØ\›Û[˜IËˆÙ[Õ]Nˆ	Ó[ÝÜ˜ÞXÛHÙ^H™\XÙ[Y[[ˆ\›™]ÛÝ[KÈÝZYIËˆÙ[Ñ\ØÜš\[ÛŽˆ	ÓÜÝHÛ›HYXÚ[šXØ[[ÝÜ˜ÞXÛHÙ^OÈX\›ˆÚ]HØÚÜÛZ]™YYÈ›Üˆ[ÝÜ˜ÞXÛHÙ^H™\XÙ[Y[[ˆ\›™]ÛÝ[KËˆ›È˜[œÜÛ™\ˆ›ÙÜ˜[[Z[™Ë‰ËˆX›Ý]ˆÉÓ[ÝÜ˜ÞXÛHÙ^H™\XÙ[Y[	Ë	ÓÜÝ[ÝÜ˜ÞXÛHÙ^IË	ÓYXÚ[šXØ[[ÝÜ˜ÞXÛHÙ^\ÉË	Ó[ÝÜ˜ÞXÛHÙ^H\XØ][Û‰Ë	Ó[Øš[HØÚÜÛZ]	×KˆKˆÂˆÛYÎˆ	ÚYÚ\ÙXÝ\š]K[ØÚÜËZÙ^KXÛÛ›ÛYÝZYK[˜ÉËˆ]Nˆ	ÕÚ]XZÙ\ÈHØÚÈ8 'YÚÙXÝ\š]x 'OÈH˜XÝXØ[^Y\¸ &\ÈÝZYIËˆ^Ù\œˆ	ÓX\›ˆÝÈ[™\[™[Ù\YšXØ][Û‹Þ[[™\ˆÙXÝ\š]H]™[Ë\™Ø\™HÜ˜Y\ËÙ^HÛÛ›Û[™HÛÛ\]HÛÜˆÜ[š[™ÈY™™XÝHYX[š[™Ù[ÙXÝ\š]H\Ü˜YK‰ËˆX›\ÚY]Nˆ	Ð]YÝ\ÝŒ‹Œ‰Ëˆ]TX›\ÚYˆ	ÌŒ‹LLŒ‰Ëˆ™XY[™Õ[YNˆ	ÎHZ[ˆ™XY	ËˆØ]YÛÜžNˆ	ÒÛYH	ˆ\Ú[™\ÜÈÙXÝ\š]IËˆ[XYÙNˆ	ËÚ[XYÙ\ËÛØÚÜÛZ]XÝ\ÝÛY\‹ZÙ^KZ[™Ù™‹ÙXœ	Ëˆ[XYÙP[ˆ	ÐHÛÛÙØÚÜÛZ]\ØÝ\ÜÚ[™È›Ù™\ÜÚ[Û˜[ØÚÈ[™Ù^HÜ[ÛœÈÚ]H›ÜØ\›Û[˜HÝ\ÝÛY\‰ËˆÙ[Õ]Nˆ	ÒYÚTÙXÝ\š]HØÚÜÈ[ˆ\›™]ÛÝ[KÈ^Y\¸ &\ÈÝZYIËˆÙ[Ñ\ØÜš\[ÛŽˆ	ÕÚ]XZÙ\ÈHØÚÈYÚÙXÝ\š]OÈÛÛ\\™HÙ\YšXØ][Û‹Þ[[™\ˆ]™[Ë\™Ø\™HÜ˜Y\ËÙ^HÛÛ›Û[™[œÝ[][Ûˆ›Üˆ\›™]ÛÝ[KÈ›Ü\Y\Ë‰ËˆX›Ý]ˆÉÒYÚ\ÙXÝ\š]HØÚÜÉË	Ô™\ÝšXÝYÙ^HÛÛ›Û	Ë	ÒYÚ\ÙXÝ\š]HÞ[[™\œÉË	Ð’PHÙ\YšYYØÚÜÉË	ÓØÚÈ\Ü˜Y\É×KˆKˆÂˆÛYÎˆ	ØÛÛ[Y\˜ÚX[\[šXËZ\™Ø\™KY^]YÛÜ‹\ØY™]K[˜ÉËˆ]Nˆ	Ô[šXÈ\™Ø\™H[™ÛÛ[Y\˜ÚX[^]ÛÜœÎˆHØY™]HÚXÚÛ\Ý	Ëˆ^Ù\œˆ	ÓX\›ˆÝÈ[šXÈ˜\œË]Ú\ËÛÜÙ\œË[™Ù\Ëœ˜[Y\Ë[™^]›Ý]\ÈÛÜšÈÙÙ]\¸ %[™ÚXÚØ\›š[™ÈÚYÛœÈØ[›Üˆ›Ù™\ÜÚ[Û˜[][[Û‹‰ËˆX›\ÚY]Nˆ	Ð]YÝ\ÝŒKŒ‰Ëˆ]TX›\ÚYˆ	ÌŒ‹LLŒIËˆ™XY[™Õ[YNˆ	ÎHZ[ˆ™XY	ËˆØ]YÛÜžNˆ	ÐÛÛ[Y\˜ÚX[ÙXÝ\š]IËˆ[XYÙNˆ	ËÚ[XYÙ\ËØÛÛ[Y\˜ÚX[\™ZÙ^KYÛÛÙ[ØÚÜÛZ]ÙXœ	Ëˆ[XYÙP[ˆ	ÐHÛÛÙØÚÜÛZ]›ÝšY[™ÈÛÛ[Y\˜ÚX[ÛÜˆ[™ØÚÈÙ\šXÙH]H›ÜØ\›Û[˜H\Ú[™\ÜÉËˆÙ[Õ]Nˆ	Ô[šXÈ\™Ø\™H[ˆ\›™]ÛÝ[KÈ^]ÛÜˆÝZYIËˆÙ[Ñ\ØÜš\[ÛŽˆ	ÐÛÛ[Y\˜ÚX[^]ÛÜˆÝXÚÚ[™ÈÜˆ›Ý]Ú[™ÏÈ\ÙH\È[šXÈ\™Ø\™HØY™]HÚXÚÛ\Ý›Üˆ\›™]ÛÝ[KÈ\Ú[™\ÜÙ\È[™X\›ˆÚ[ˆÈØ[HØÚÜÛZ]‰ËˆX›Ý]ˆÉÔ[šXÈ\™Ø\™IË	ÐÛÛ[Y\˜ÚX[^]ÛÜœÉË	Ñ^]]šXÙ\ÉË	Ô\Ú˜\œÉË	ÐÛÛ[Y\˜ÚX[ØÚÜÛZ]	×KˆKˆÂˆÛYÎˆ	Ý™\šYžK[XÙ[œÙY[ØÚÜÛZ][›ÜXØ\›Û[˜IËˆ]Nˆ	ÒÝÈÈ™\šYžHHXÙ[œÙY›ÜØ\›Û[˜HØÚÜÛZ]™Y›Ü™H[ÝH\™HÛ™IËˆ^Ù\œˆ	Õ\ÙH\È˜XÝXØ[ÚXÚÛ\ÝÈ™\šYžHH›ÜØ\›Û[˜HØÚÜÛZ]8 &\ÈXÙ[œÙKY[]K›ÜÜÙYÛÜšËšXÚ[™Ë]]Üš^˜][Ûˆ›ØÙ\ÜË[™[›ÚXÙK‰ËˆX›\ÚY]Nˆ	Ð]YÝ\ÝŒŒ‰Ëˆ]TX›\ÚYˆ	ÌŒ‹LLŒ	Ëˆ™XY[™Õ[YNˆ	ÎHZ[ˆ™XY	ËˆØ]YÛÜžNˆ	ÐÛÛœÝ[Y\ˆ›ÝXÝ[Û‰Ëˆ[XYÙNˆ	ËÚ[XYÙ\ËÜ›Ù™\ÜÚ[Û˜[[ØÚÜÛZ]ZÙ^KZ[™Ù™‹ÙXœ	Ëˆ[XYÙP[ˆ	ÐHÛÛÙØÚÜÛZ]™]\›š[™ÈÙ^\ÈY\ˆ›Ù™\ÜÚ[Û˜[XÙ[œÙYØÚÜÛZ]Ù\šXÙH[ˆ›ÜØ\›Û[˜IËˆÙ[Õ]Nˆ	ÓXÙ[œÙYØÚÜÛZ][ˆ\›™]ÛÝ[KÈ™\šYžHš\œÝ	ËˆÙ[Ñ\ØÜš\[ÛŽˆ	ÓX\›ˆÝÈÈ™\šYžHHXÙ[œÙYØÚÜÛZ][ˆ\›™]ÛÝ[KË[˜ÛY[™ÈÝ]HXÙ[œÙH™XÛÜ™ËÝÈQ]]Üš^˜][Û‹šXÚ[™Ë[™[›ÚXÙHÚXÚÜË‰ËˆX›Ý]ˆÉÓXÙ[œÙYØÚÜÛZ]	Ë	Ó›ÜØ\›Û[˜HØÚÜÛZ]XÙ[œÙIË	ÓØÚÜÛZ]™\šYšXØ][Û‰Ë	ÐÛÛœÝ[Y\ˆ›ÝXÝ[Û‰Ë	ÓØØ[ØÚÜÛZ]	×KˆKˆÂˆÛYÎˆ	ÚÙ^KZ\™]Ë]\›‹Xœ›ÚÙ[‹ZÙ^KY^˜XÝ[Û‹[˜ÉËˆ]Nˆ	ÒÙ^H\™È\›ÈÚYÛœÈ]X^Hœ™XZø %[™Ú]ÈÈ™^	Ëˆ^Ù\œˆ	ÓX\›ˆÝÈÈ™XÛÙÛš^™HÙ^HÙX\‹ÛÜˆZ\Ø[YÛ›Y[[™ØÚÈ™\Ú\Ý[˜ÙH™Y›Ü™HHÙ^HÛ˜\Ë\ÈØY™H™^Ý\ÈÚ[ˆHÙ^H\È[™XYHœ›ÚÙ[‹‰ËˆX›\ÚY]Nˆ	Ð]YÝ\ÝNKŒ‰Ëˆ]TX›\ÚYˆ	ÌŒ‹LLNIËˆ™XY[™Õ[YNˆ	ÎHZ[ˆ™XY	ËˆØ]YÛÜžNˆ	ÓØÚÈ	ˆÙ^HXZ[[˜[˜ÙIËˆ[XYÙNˆ	ËÚ[XYÙ\ËÛØÚÜÛZ]XÝ\ÝÛY\‹ZÙ^KZ[™Ù™‹ÙXœ	Ëˆ[XYÙP[ˆ	ÐHÛÛÙØÚÜÛZ][™[™ÈH›Ü\›HÛÜšÚ[™ÈÙ^HÈH›ÜØ\›Û[˜HÝ\ÝÛY\‰ËˆÙ[Õ]Nˆ	Ðœ›ÚÙ[ˆÙ^H^˜XÝ[Ûˆ[ˆ\›™]ÛÝ[KÈÚ]ÈÉËˆÙ[Ñ\ØÜš\[ÛŽˆ	ÒÙ^H\™È\›ˆÜˆœ›ÚÙ[ˆ[ˆHØÚÏÈX\›ˆØY™H™^Ý\ËÛÛ[[ÛˆØ\›š[™ÈÚYÛœË[™Ú[ˆÈØ[›Üˆœ›ÚÙ[ˆÙ^H^˜XÝ[Ûˆ[ˆ\›™]ÛÝ[KË‰ËˆX›Ý]ˆÉÐœ›ÚÙ[ˆÙ^H^˜XÝ[Û‰Ë	ÒÙ^HÝXÚÈ[ˆØÚÉË	ÓØÚÈ™\Z\‰Ë	ÑÛÜˆ[YÛ›Y[	Ë	Ô›Ù™\ÜÚ[Û˜[Ù^HÝ][™É×KˆKˆÂˆÛYÎˆ	ØÛÛ[Y\˜ÚX[[X\Ý\‹ZÙ^K\Þ\Ý[KYÝZYK[˜ÉËˆ]Nˆ	ÓX\Ý\ˆÙ^HÞ\Ý[\È›ÜˆÛX[\Ú[™\ÜÙ\ÎˆH˜XÝXØ[[›š[™ÈÝZYIËˆ^Ù\œˆ	ÓX\›ˆÝÈYXÚ[šXØ[X\Ý\ˆÙ^HÞ\Ý[\ÈÜ™Ø[š^™HXØÙ\ÜËÚHÙ^KXÛÛ›Û™XÛÜ™ÈX]\‹[™Ú]\Ú[™\ÜÈÝÛ™\œÈÚÝ[[ˆ™Y›Ü™HÚ[™Ú[™ÈÛÛ[Y\˜ÚX[ØÚÜË‰ËˆX›\ÚY]Nˆ	Ð]YÝ\ÝNŒ‰Ëˆ]TX›\ÚYˆ	ÌŒ‹LLN	Ëˆ™XY[™Õ[YNˆ	ÎHZ[ˆ™XY	ËˆØ]YÛÜžNˆ	ÐÛÛ[Y\˜ÚX[ÙXÝ\š]IËˆ[XYÙNˆ	ËÚ[XYÙ\ËØÛÛ[Y\˜ÚX[\™ZÙ^KYÛÛÙ[ØÚÜÛZ]ÙXœ	Ëˆ[XYÙP[ˆ	ÐHÛÛÙØÚÜÛZ]›ÝšY[™ÈÛÛ[Y\˜ÚX[ØÚÈÙ\šXÙH]H›ÜØ\›Û[˜H\Ú[™\ÜÉËˆÙ[Õ]Nˆ	ÓX\Ý\ˆÙ^HÞ\Ý[\È[ˆ\›™]ÛÝ[KÈ\Ú[™\ÜÈÝZYIËˆÙ[Ñ\ØÜš\[ÛŽˆ	Ô[›š[™ÈHÛÛ[Y\˜ÚX[X\Ý\ˆÙ^HÞ\Ý[H[ˆ\›™]ÛÝ[KÏÈX\›ˆX›Ý]XØÙ\ÜÈ]™[ËÙ^HÛÛ›ÛÜÝZÙ^H[›š[™ËÛÜˆ\™Ø\™K[™ØY™HYÜ™\ÜË‰ËˆX›Ý]ˆÉÐÛÛ[Y\˜ÚX[X\Ý\ˆÙ^HÞ\Ý[\ÉË	Ð\Ú[™\ÜÈÙ^HÛÛ›Û	Ë	ÐÛÛ[Y\˜ÚX[ØÚÜÛZ]	Ë	ÐXØÙ\ÜÈÛÛ›Û	Ë	Ô[šXÈ\™Ø\™I×KˆKˆÂˆÛYÎˆ	ØØ\‹ZÙ^K\™\XÙ[Y[]Ú]]ËZ]™K\™XYK[˜ÉËˆ]Nˆ	Ó™YYH™\XÙ[Y[Ø\ˆÙ^OÈÚ]È]™H™XYH™Y›Ü™H[ÝHØ[	Ëˆ^Ù\œˆ	ÓX\›ˆÚXÚ™ZXÛH]Z[È[™]]Üš^˜][ÛˆØÝ[Y[ÈÈØ]\ˆ™Y›Ü™H™\]Y\Ý[™ÈH™\XÙ[Y[ÜˆÜ\™HØ\ˆÙ^Hœ›ÛHH[Øš[HØÚÜÛZ]‰ËˆX›\ÚY]Nˆ	Ð]YÝ\ÝMËŒ‰Ëˆ]TX›\ÚYˆ	ÌŒ‹LLMÉËˆ™XY[™Õ[YNˆ	ÎZ[ˆ™XY	ËˆØ]YÛÜžNˆ	Ð]]Û[Ý]™HØÚÜÛZ]YšXÙIËˆ[XYÙNˆ	ËÚ[XYÙ\ËÜ›Ù™\ÜÚ[Û˜[[ØÚÜÛZ]ZÙ^KZ[™Ù™‹ÙXœ	Ëˆ[XYÙP[ˆ	ÐHÛÛÙØÚÜÛZ]™]\›š[™ÈÙ^\ÈY\ˆ›Ù™\ÜÚ[Û˜[]]Û[Ý]™HØÚÜÛZ]Ù\šXÙH[ˆ›ÜØ\›Û[˜IËˆÙ[Õ]Nˆ	ÐØ\ˆÙ^H™\XÙ[Y[[ˆ\›™]ÛÝ[KÈÚ][ÝH™YY	ËˆÙ[Ñ\ØÜš\[ÛŽˆ	Ó™YYØ\ˆÙ^H™\XÙ[Y[[ˆ\›™]ÛÝ[KÏÈX\›ˆÚXÚ™ZXÛH]Z[Ë’S‹Ù^H[™›Ü›X][Û‹[™]]Üš^˜][ÛˆØÝ[Y[ÈÈ]™H™XYH™Y›Ü™HØ[[™Ë‰ËˆX›Ý]ˆÉÐØ\ˆÙ^H™\XÙ[Y[	Ë	ÔÜ\™HØ\ˆÙ^\ÉË	Ð]]Û[Ý]™HÙ^HÝ][™ÉË	Õ˜[œÜÛ™\ˆÙ^\ÉË	Ó[Øš[H]]Û[Ý]™HØÚÜÛZ]	×KˆKˆÂˆÛYÎˆ	ÜÛX\[ØÚË]œË]˜Y][Û˜[YXY›Û[˜ÉËˆ]Nˆ	ÔÛX\ØÚÈÜˆ˜Y][Û˜[XY›ÛÈH›ÜØ\›Û[˜HÛY[ÝÛ™\¸ &\ÈÝZYIËˆ^Ù\œˆ	ÐÛÛ\\™HÛX\ØÚÜÈ[™˜Y][Û˜[XY›ÛË[˜ÛY[™ÈÛÜˆš]˜XÚÝ\XØÙ\ÜË˜]\šY\ËÞX™\œÙXÝ\š]K›ÙXÝ\Ý[™Ë[™›Ù™\ÜÚ[Û˜[[œÝ[][Û‹‰ËˆX›\ÚY]Nˆ	Ð]YÝ\ÝM‹Œ‰Ëˆ]TX›\ÚYˆ	ÌŒ‹LLM‰Ëˆ™XY[™Õ[YNˆ	ÎZ[ˆ™XY	ËˆØ]YÛÜžNˆ	ÔÛX\ÛYHÙXÝ\š]IËˆ[XYÙNˆ	ËÚ[XYÙ\ËÜ™\ÚY[X[\™ZÙ^KYÛÛÙ[ØÚÜÛZ]ÙXœ	Ëˆ[XYÙP[ˆ	ÐHÛÛÙØÚÜÛZ]›ÝšY[™È™\ÚY[X[ØÚÈÙ\šXÙH]H›ÜØ\›Û[˜HÛYIËˆÙ[Õ]Nˆ	ÔÛX\ØÚÈ[œÝ[][Ûˆ[ˆ\›™]ÛÝ[KÈÝZYIËˆÙ[Ñ\ØÜš\[ÛŽˆ	ÐÛÛ\\™HÛX\ØÚÜÈ[™˜Y][Û˜[XY›ÛË[˜ÛY[™ÈÛÜˆš]˜XÚÝ\XØÙ\ÜË˜]\šY\ËÞX™\œÙXÝ\š]K[™[œÝ[][Ûˆ[ˆ\›™]ÛÝ[KË‰ËˆX›Ý]ˆÉÔÛX\ØÚÈ[œÝ[][Û‰Ë	ÔÛX\ØÚÜÈ™\œÝ\ÈXY›ÛÉË	ÒÙ^[\ÜÈ[žIË	Ô™\ÚY[X[ØÚÜÛZ]	Ë	ÐÛÛ›™XÝYÛYHÙXÝ\š]I×KˆKˆÂˆÛYÎˆ	ÛØÚÙYZÙ^\ËZ[‹XØ\‹\ØY™K[™^\Ý\Ë[˜ÉËˆ]Nˆ	ÓØÚÙYÙ^\È[ˆHØ\ÈØY™H™^Ý\È[ˆ›ÜØ\›Û[˜IËˆ^Ù\œˆ	ÐHØ[KØY™]KYš\œÝÝZYHÈ™ZXÛHØÚÛÝ]ÎˆÚ[ˆÈØ[LLKÚ]ÈÚXÚËÚ][™›Ü›X][ÛˆHØÚÜÛZ]™YYË[™ÚH[\›Ýš\ÙY[žHØ[ˆØ]\ÙH^[œÚ]™H[XYÙK‰ËˆX›\ÚY]Nˆ	Ð]YÝ\ÝMKŒ‰Ëˆ]TX›\ÚYˆ	ÌŒ‹LLMIËˆ™XY[™Õ[YNˆ	ÍÈZ[ˆ™XY	ËˆØ]YÛÜžNˆ	Ð]]Û[Ý]™HØÚÜÛZ]YšXÙIËˆ[XYÙNˆ	ËÚ[XYÙ\ËÛØØ[XØ\‹[ØÚÛÝ]YÛÛÙ[ØÚÜÛZ]ÙXœ	Ëˆ[XYÙP[ˆ	ÐHÛÛÙØÚÜÛZ]Ù\šXÙH™ZXÛH›ÝšY[™ÈØØ[]]Û[Ý]™HØÚÛÝ]\ÜÚ\Ý[˜ÙH[ˆ›ÜØ\›Û[˜IËˆÙ[Õ]Nˆ	ÐØ\ˆØÚÛÝ]ØÚÜÛZ][ˆ\›™]ÛÝ[KÈØY™HÝ\ÉËˆÙ[Ñ\ØÜš\[ÛŽˆ	ÓØÚÙYÙ^\È[ˆ[Ý\ˆØ\ÈX\›ˆØY™H™^Ý\È[™Ú[ˆÈØ[LLHÜˆHØ\ˆØÚÛÝ]ØÚÜÛZ][ˆ[[™ÝÛ‹[™ÚY\‹[›‹\]X^KU˜\š[˜K[™™X\˜žHÈ\™X\Ë‰ËˆX›Ý]ˆÉÐØ\ˆØÚÛÝ]ØÚÜÛZ]	Ë	ÒÙ^\ÈØÚÙY[ˆØ\‰Ë	Ð]]Û[Ý]™HØÚÜÛZ]	Ë	Õ™ZXÛHØÚÛÝ]ØY™]I×KˆKˆÂˆÛYÎˆ	ÚÛYKYÛÜ‹\ÙXÝ\š]K[ØÚËXÚXÚÛ\Ý[˜ÉËˆ]Nˆ	ÒÛYHÛÜˆÙXÝ\š]HÚXÚÛ\ÝˆØÚÜËœ˜[Y\È	ˆÝšZÙH]\ÉËˆ^Ù\œˆ	ÐHÝ›Û™ÈXY›Û\ÈÛ›HÛ™H\ÙˆHÙXÝ\™H[˜[˜ÙKˆ\ÙH\È˜XÝXØ[ÚXÚÛ\ÝÈ]˜[X]HHØÚÜËÝšZÙH]\Ëœ˜[Y\Ë[™Ù\Ë[™Ø\˜YÙKY[žHÛÜœÈ›ÝXÝ[™È[Ý\ˆÛYK‰ËˆX›\ÚY]Nˆ	Ð]YÝ\ÝMŒ‰Ëˆ]TX›\ÚYˆ	ÌŒ‹LLM	Ëˆ™XY[™Õ[YNˆ	ÎZ[ˆ™XY	ËˆØ]YÛÜžNˆ	ÒÛYHÙXÝ\š]IËˆ[XYÙNˆ	ËÚ[XYÙ\ËÛØÚÜÛZ]XÝ\ÝÛY\‹ZÙ^KZ[™Ù™‹ÙXœ	Ëˆ[XYÙP[ˆ	ÐHÛÛÙØÚÜÛZ][™[™ÈÙ^\ÈÈHÝ\ÝÛY\ˆY\ˆ›Ù™\ÜÚ[Û˜[ØÚÜÛZ]Ù\šXÙH[ˆ›ÜØ\›Û[˜IËˆÙ[Õ]Nˆ	ÒÛYHÙXÝ\š]HØÚÜÈ[ˆ\›™]ÛÝ[KÈÛÜˆÚXÚÛ\Ý	ËˆÙ[Ñ\ØÜš\[ÛŽˆ	Õ\ÙH\ÈÛYHÛÜˆÙXÝ\š]HÚXÚÛ\ÝÈ]˜[X]HXY›ÛËÝšZÙH]\Ëœ˜[Y\Ë[™Ù\Ë[™Ø\˜YÙKY[žHÛÜœÈ[ˆ\›™][™ÛÝ]\›ˆØZÙHÛÝ[KË‰ËˆX›Ý]ˆÉÒÛYHÙXÝ\š]HØÚÜÉË	ÑXY›ÛØÚÜÉË	ÑÛÜˆ™Z[™›Ü˜Ù[Y[	Ë	ÔÝšZÙH]\ÉË	Ô™\ÚY[X[ØÚÜÛZ]	×KˆKˆÂˆÛYÎˆ	ÝÚKZ\™K\›Ù™\ÜÚ[Û˜[[ØÚÜÛZ]X]›ÚYY[XYÙIËˆ]Nˆ	ÕÚH\š[™ÈH›Ù™\ÜÚ[Û˜[ØÚÜÛZ][È™]™[ÛÜÝH[XYÙIËˆ^Ù\œˆ	ÐHØ\™Y[^\šY[˜ÙYØÚÜÛZ]Ø[ˆÛÛ™HØÚÈ[™Ù^H›Ø›[\ÈÚ[H[[™È›ÝXÝ[Ý\ˆ™ZXÛKÛÜ‹ØÚË[™›Ü\Hœ›ÛH]›ÚYX›H[XYÙK‰ËˆX›\ÚY]Nˆ	Ð]YÝ\ÝKŒ‰Ëˆ]TX›\ÚYˆ	ÌŒ‹LLIËˆ™XY[™Õ[YNˆ	ÍÈZ[ˆ™XY	ËˆØ]YÛÜžNˆ	Ô›Ù™\ÜÚ[Û˜[ØÚÜÛZ]YšXÙIËˆ[XYÙNˆ	ËÚ[XYÙ\ËÜ›Ù™\ÜÚ[Û˜[[ØÚÜÛZ]ZÙ^KZ[™Ù™‹ÙXœ	Ëˆ[XYÙP[ˆ	ÐHÛÛÙØÚÜÛZ]™]\›š[™ÈÙ^\ÈÈHÝ\ÝÛY\ˆY\ˆ›Ù™\ÜÚ[Û˜[]]Û[Ý]™HØÚÜÛZ]Ù\šXÙIËˆÙ[Õ]Nˆ	Ô›Ù™\ÜÚ[Û˜[ØÚÜÛZ]™X\ˆ[[™ÝÛ‹È]›ÚY[XYÙIËˆÙ[Ñ\ØÜš\[ÛŽˆ	ÓX\›ˆÝÈH›Ù™\ÜÚ[Û˜[ØÚÜÛZ][È™]™[[XYÙH\š[™ÈØ\‹ÛYK[™\Ú[™\ÜÈØÚÈÙ\šXÙH[ˆ[[™ÝÛ‹[™ÚY\‹[›]™[\]X^KU˜\š[˜KÛØ]Ë[›‹[™™X\˜žHÈ\™X\Ë‰ËˆX›Ý]ˆÉÔ›Ù™\ÜÚ[Û˜[ØÚÜÛZ]Ù\šXÙIË	Ñ[XYÙKYœ™YHØÚÛÝ]Ù\šXÙIË	Ð]]Û[Ý]™HØÚÜÛZ]	Ë	Ô™\ÚY[X[ØÚÜÛZ]	Ë	ÐÛÛ[Y\˜ÚX[ØÚÜÛZ]	×KˆKˆÂˆÛYÎˆ	Ü™ZÙ^K[›ÝËX]›ÚYXšYË\›Ø›[\Ë[]\‰Ëˆ]Nˆ	Ô™ZÙ^H›ÝÈ	ˆ]›ÚYšYÈ›Ø›[\ÈÜˆÜÜÙ\È]\‰Ëˆ^Ù\œˆ	ÕÚHÛY[ÝÛ™\œË[˜[Ë[™Ü™Ë™X[ÜœË™[[YÙ[Ë[™\Ú[™\ÜÈÝÛ™\œÈÚÝ[XZÙH™ZÙ^Z[™È\Ùˆ]™\žH›Ü\H[™Ù™‹‰ËˆX›\ÚY]Nˆ	Ò[HŽKŒ‰Ëˆ™XY[™Õ[YNˆ	ÍˆZ[ˆ™XY	ËˆØ]YÛÜžNˆ	ÒÛYH	ˆ\Ú[™\ÜÈÙXÝ\š]IËˆ[XYÙNˆ	ËÚ[XYÙ\ËÜ™ZÙ^K\›Ü\KZ[™Ù™‹ÙXœ	Ëˆ[XYÙP[ˆ	ÐHÙXÝ\™HÛYH[™\Ú[™\ÜÈ[˜[˜ÙH\š[™ÈH™]ËZÙ^H›Ü\H[™Ù™‰Ëˆ]TX›\ÚYˆ	ÌŒ‹LËLŽIËˆÙ[Õ]Nˆ	Ô™ZÙ^HØÚÜÈ[ˆ\›™]	ˆØZÙHÛÝ[KÈHÛÛÙØÚÜÛZ]	ËˆÙ[Ñ\ØÜš\[ÛŽˆ	Ô™ZÙ^H[Ý\ˆÛYK™[[›Ü\KÜˆ\Ú[™\ÜÈØÚÜÈ[ˆ[[™ÝÛ‹[™ÚY\‹[›‹ÛØ]Ë\Ú[‹Ø[™›Ü™\]X^KU˜\š[˜K\›™]ÛÝ[K[™ØZÙHÛÝ[KˆØ[HÛÛÙØÚÜÛZ]‰ËˆX›Ý]ˆÉÓØÚÈ™ZÙ^Z[™ÉË	Ô™\ÚY[X[ÙXÝ\š]IË	ÐÛÛ[Y\˜ÚX[ÙXÝ\š]IË	Ô™[[›Ü\HÙXÝ\š]I×KˆK—NÂ‚™^ÜÛÛœÝÙ]›ÙÔÜÝH
+ÛYÊHOˆ›ÙÔÜÝË™š[™
 
-export const getBlogPost = (slug) => blogPosts.find((post) => post.slug === slug);
+ÜÝ
+HOˆÜÝœÛYÈOOHÛYÊNÂ

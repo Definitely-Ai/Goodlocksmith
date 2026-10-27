@@ -78,6 +78,7 @@ import PanicBarDoggingGuidePost from './PanicBarDoggingGuidePost';
 import LocksmithOrDoorRepairGuidePost from './LocksmithOrDoorRepairGuidePost';
 import LaserEdgeCutCarKeyGuidePost from './LaserEdgeCutCarKeyGuidePost';
 import ValetKeyModeGuidePost from './ValetKeyModeGuidePost';
+import SmartLockColdWeatherGuidePost from './SmartLockColdWeatherGuidePost';
 import { getBlogPost } from '../data/blogPosts';
 import { phoneLink } from '../data/cities';
 import './Blog.css';
@@ -142,6 +143,10 @@ const BlogPostPage = () => {
   }, [post]);
 
   if (!post) return <Navigate to="/blog" replace />;
+
+  if (post.slug === 'smart-lock-cold-weather-winter-nc') {
+    return <SmartLockColdWeatherGuidePost post={post} />;
+  }
 
   if (post.slug === 'what-is-valet-key-vs-valet-mode-nc') {
     return <ValetKeyModeGuidePost post={post} />;
