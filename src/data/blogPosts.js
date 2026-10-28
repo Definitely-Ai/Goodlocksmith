@@ -1,5 +1,19 @@
 export const blogPosts = [
   {
+    slug: 'bring-all-car-keys-for-programming-nc',
+    title: 'Do You Need to Bring Every Car Key When Programming a Replacement?',
+    excerpt: 'Some procedures add one key while others erase and relearn the vehicle’s authorized keys. Learn why bringing every working key and fob can prevent surprises.',
+    publishedDate: 'October 28, 2026',
+    datePublished: '2026-10-28',
+    readingTime: '9 min read',
+    category: 'Automotive Key Programming',
+    image: '/images/local-car-lockout-good-locksmith.webp',
+    imageAlt: 'A Good Locksmith identifying all working vehicle keys and fobs before replacement-key programming',
+    seoTitle: 'Bring All Car Keys for Programming? | Harnett County, NC',
+    seoDescription: 'Should you bring every car key for replacement-key programming? Learn when absent keys may stop working and what to prepare before service.',
+    about: ['Bring all car keys for programming', 'Replacement car key programming', 'Erase and relearn car keys', 'Working key and key fob', 'Harnett County automotive locksmith'],
+  },
+  {
     slug: 'smart-lock-cold-weather-winter-nc',
     title: 'Will a Smart Lock Work in Cold Weather? What to Check Before Winter',
     excerpt: 'Cold weather can affect batteries, door alignment, touchscreens, and fingerprint readers differently. Learn what to verify before relying on a smart lock this winter.',

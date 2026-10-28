@@ -79,6 +79,7 @@ import LocksmithOrDoorRepairGuidePost from './LocksmithOrDoorRepairGuidePost';
 import LaserEdgeCutCarKeyGuidePost from './LaserEdgeCutCarKeyGuidePost';
 import ValetKeyModeGuidePost from './ValetKeyModeGuidePost';
 import SmartLockColdWeatherGuidePost from './SmartLockColdWeatherGuidePost';
+import BringAllCarKeysProgrammingGuidePost from './BringAllCarKeysProgrammingGuidePost';
 import { getBlogPost } from '../data/blogPosts';
 import { phoneLink } from '../data/cities';
 import './Blog.css';
@@ -143,6 +144,10 @@ const BlogPostPage = () => {
   }, [post]);
 
   if (!post) return <Navigate to="/blog" replace />;
+
+  if (post.slug === 'bring-all-car-keys-for-programming-nc') {
+    return <BringAllCarKeysProgrammingGuidePost post={post} />;
+  }
 
   if (post.slug === 'smart-lock-cold-weather-winter-nc') {
     return <SmartLockColdWeatherGuidePost post={post} />;
