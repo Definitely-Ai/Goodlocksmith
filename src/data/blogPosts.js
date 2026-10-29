@@ -1,5 +1,19 @@
 export const blogPosts = [
   {
+    slug: 'new-construction-home-rekey-after-closing-nc',
+    title: 'Does a New-Construction Home Need Rekeying After Closing?',
+    excerpt: 'Some new homes use temporary construction keying that can disable a builder key, but not every lock or project uses the same system. Learn what to verify at handoff.',
+    publishedDate: 'October 29, 2026',
+    datePublished: '2026-10-29',
+    readingTime: '9 min read',
+    category: 'New-Home Key Control',
+    image: '/images/residential-rekey-good-locksmith.webp',
+    imageAlt: 'A Good Locksmith checking exterior locks and keys during a new-home security handoff',
+    seoTitle: 'Rekey a New-Construction Home? | Harnett County, NC',
+    seoDescription: 'Does a new-construction home need rekeying after closing? Learn how builder keys, construction keying, permanent keys, and lock handoff should be checked.',
+    about: ['Rekey new-construction home after closing', 'Builder key', 'Construction keying', 'New-home lock handoff', 'Harnett County residential locksmith'],
+  },
+  {
     slug: 'bring-all-car-keys-for-programming-nc',
     title: 'Do You Need to Bring Every Car Key When Programming a Replacement?',
     excerpt: 'Some procedures add one key while others erase and relearn the vehicle’s authorized keys. Learn why bringing every working key and fob can prevent surprises.',
