@@ -1,5 +1,19 @@
 export const blogPosts = [
   {
+    slug: 'car-key-cutting-vs-programming-nc',
+    title: 'Car Key Cutting vs. Programming: Why Many Replacement Keys Need Both',
+    excerpt: 'Cutting matches the mechanical lock; programming authorizes an electronic credential. Learn why a replacement can do one job correctly and still fail the other.',
+    publishedDate: 'October 30, 2026',
+    datePublished: '2026-10-30',
+    readingTime: '9 min read',
+    category: 'Automotive Key Replacement',
+    image: '/images/local-car-lockout-good-locksmith.webp',
+    imageAlt: 'A Good Locksmith identifying the mechanical blade and electronic requirements of a replacement car key',
+    seoTitle: 'Car Key Cutting vs. Programming | Harnett County, NC',
+    seoDescription: 'Car key cutting and programming are different jobs. Learn what the blade, transponder, remote, and immobilizer each require before replacing a key.',
+    about: ['Car key cutting and programming', 'Transponder key programming', 'Automotive key cutting', 'Replacement car key', 'Harnett County automotive locksmith'],
+  },
+  {
     slug: 'new-construction-home-rekey-after-closing-nc',
     title: 'Does a New-Construction Home Need Rekeying After Closing?',
     excerpt: 'Some new homes use temporary construction keying that can disable a builder key, but not every lock or project uses the same system. Learn what to verify at handoff.',

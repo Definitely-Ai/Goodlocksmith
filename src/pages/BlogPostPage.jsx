@@ -81,6 +81,7 @@ import ValetKeyModeGuidePost from './ValetKeyModeGuidePost';
 import SmartLockColdWeatherGuidePost from './SmartLockColdWeatherGuidePost';
 import BringAllCarKeysProgrammingGuidePost from './BringAllCarKeysProgrammingGuidePost';
 import NewConstructionHomeRekeyGuidePost from './NewConstructionHomeRekeyGuidePost';
+import CarKeyCuttingProgrammingGuidePost from './CarKeyCuttingProgrammingGuidePost';
 import { getBlogPost } from '../data/blogPosts';
 import { phoneLink } from '../data/cities';
 import './Blog.css';
@@ -145,6 +146,10 @@ const BlogPostPage = () => {
   }, [post]);
 
   if (!post) return <Navigate to="/blog" replace />;
+
+  if (post.slug === 'car-key-cutting-vs-programming-nc') {
+    return <CarKeyCuttingProgrammingGuidePost post={post} />;
+  }
 
   if (post.slug === 'new-construction-home-rekey-after-closing-nc') {
     return <NewConstructionHomeRekeyGuidePost post={post} />;
