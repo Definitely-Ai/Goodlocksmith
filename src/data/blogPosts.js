@@ -1,5 +1,19 @@
 export const blogPosts = [
   {
+    slug: 'copy-worn-house-key-original-nc',
+    title: 'Should You Copy a Worn House Key? Bring the Best-Working Original',
+    excerpt: 'A duplicate can reproduce wear or errors in the key presented to the cutter. Learn which key to bring and when the lock also needs inspection.',
+    publishedDate: 'October 31, 2026',
+    datePublished: '2026-10-31',
+    readingTime: '9 min read',
+    category: 'House Key Duplication',
+    image: '/images/residential-rekey-good-locksmith.webp',
+    imageAlt: 'A Good Locksmith comparing an original house key with a worn duplicate before cutting a replacement',
+    seoTitle: 'Copy a Worn House Key? | Harnett County, NC',
+    seoDescription: 'Should you copy a worn house key? Learn why the best-working original matters, when a key can be decoded, and when the lock also needs inspection.',
+    about: ['Copy a worn house key', 'Duplicate house key', 'Worn key replacement', 'Key decoding', 'Harnett County locksmith'],
+  },
+  {
     slug: 'car-key-cutting-vs-programming-nc',
     title: 'Car Key Cutting vs. Programming: Why Many Replacement Keys Need Both',
     excerpt: 'Cutting matches the mechanical lock; programming authorizes an electronic credential. Learn why a replacement can do one job correctly and still fail the other.',

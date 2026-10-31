@@ -82,6 +82,7 @@ import SmartLockColdWeatherGuidePost from './SmartLockColdWeatherGuidePost';
 import BringAllCarKeysProgrammingGuidePost from './BringAllCarKeysProgrammingGuidePost';
 import NewConstructionHomeRekeyGuidePost from './NewConstructionHomeRekeyGuidePost';
 import CarKeyCuttingProgrammingGuidePost from './CarKeyCuttingProgrammingGuidePost';
+import WornHouseKeyCopyGuidePost from './WornHouseKeyCopyGuidePost';
 import { getBlogPost } from '../data/blogPosts';
 import { phoneLink } from '../data/cities';
 import './Blog.css';
@@ -146,6 +147,10 @@ const BlogPostPage = () => {
   }, [post]);
 
   if (!post) return <Navigate to="/blog" replace />;
+
+  if (post.slug === 'copy-worn-house-key-original-nc') {
+    return <WornHouseKeyCopyGuidePost post={post} />;
+  }
 
   if (post.slug === 'car-key-cutting-vs-programming-nc') {
     return <CarKeyCuttingProgrammingGuidePost post={post} />;
