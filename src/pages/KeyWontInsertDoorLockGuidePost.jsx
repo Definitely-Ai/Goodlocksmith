@@ -109,7 +109,7 @@ const KeyWontInsertDoorLockGuidePost = ({ post }) => (
               <li><a href="https://commercial.schlage.com/content/dam/allegion-us-2/web-files/schlage/technical-documents/Schlage_Everest_29_SL_Service_Manual__111232.pdf" target="_blank" rel="noreferrer">Schlage: Everest 29 SL Service Manual</a></li>
               <li><a href="https://commercial.schlage.com/en/resources/training-education/schlage-101/key-systems.html" target="_blank" rel="noreferrer">Schlage: Keyways and Key-System Fundamentals</a></li>
               <li><a href="https://www.ilco.us/products/lumi-key-profile-reader" target="_blank" rel="noreferrer">Ilco: Residential Key-Profile Identification</a></li>
-              <li><a href="https://www.assaabloy.com/au/en/about-us/general-information1/warranties-and-guarantees/assa-abloy-product-care-and-maintenance-recommendations" target="_blank" rel="noreferrer">ASSA ABLOY: Product Care and Maintenance Recommendations</a></li>
+              <li><a href="https://www.assaabloy.com/lv/en/support/maintaining-your-locks" target="_blank" rel="noreferrer">ASSA ABLOY: Maintaining Your Locks</a></li>
               <li><a href="https://www.ncleg.gov/enactedlegislation/statutes/html/bysection/chapter_74f/gs_74f-4.html" target="_blank" rel="noreferrer">North Carolina General Statutes § 74F-4: Locksmith Services</a></li>
             </ul>
 
