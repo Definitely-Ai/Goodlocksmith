@@ -1,5 +1,19 @@
 export const blogPosts = [
   {
+    slug: 'key-wont-go-into-door-lock-nc',
+    title: 'Key Won’t Go Into the Door Lock? Don’t Force It',
+    excerpt: 'A key that stops at the entrance or inserts only partway may be bent, incorrect, obstructed, or meeting a damaged keyway. Learn what to check safely.',
+    publishedDate: 'November 1, 2026',
+    datePublished: '2026-11-01',
+    readingTime: '9 min read',
+    category: 'Door Lock Troubleshooting',
+    image: '/images/residential-rekey-good-locksmith.webp',
+    imageAlt: 'A Good Locksmith inspecting a house key that will not enter a residential door lock',
+    seoTitle: 'Key Won’t Go Into Door Lock? | Harnett County, NC',
+    seoDescription: 'Key won’t go into the door lock? Learn how bent keys, wrong blanks, debris, damaged keyways, and worn locks cause different insertion problems.',
+    about: ['Key will not go into door lock', 'Key will not insert', 'Damaged keyway', 'Wrong key blank', 'Harnett County locksmith'],
+  },
+  {
     slug: 'copy-worn-house-key-original-nc',
     title: 'Should You Copy a Worn House Key? Bring the Best-Working Original',
     excerpt: 'A duplicate can reproduce wear or errors in the key presented to the cutter. Learn which key to bring and when the lock also needs inspection.',

@@ -83,6 +83,7 @@ import BringAllCarKeysProgrammingGuidePost from './BringAllCarKeysProgrammingGui
 import NewConstructionHomeRekeyGuidePost from './NewConstructionHomeRekeyGuidePost';
 import CarKeyCuttingProgrammingGuidePost from './CarKeyCuttingProgrammingGuidePost';
 import WornHouseKeyCopyGuidePost from './WornHouseKeyCopyGuidePost';
+import KeyWontInsertDoorLockGuidePost from './KeyWontInsertDoorLockGuidePost';
 import { getBlogPost } from '../data/blogPosts';
 import { phoneLink } from '../data/cities';
 import './Blog.css';
@@ -147,6 +148,10 @@ const BlogPostPage = () => {
   }, [post]);
 
   if (!post) return <Navigate to="/blog" replace />;
+
+  if (post.slug === 'key-wont-go-into-door-lock-nc') {
+    return <KeyWontInsertDoorLockGuidePost post={post} />;
+  }
 
   if (post.slug === 'copy-worn-house-key-original-nc') {
     return <WornHouseKeyCopyGuidePost post={post} />;
