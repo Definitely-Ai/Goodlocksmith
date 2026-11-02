@@ -84,6 +84,7 @@ import NewConstructionHomeRekeyGuidePost from './NewConstructionHomeRekeyGuidePo
 import CarKeyCuttingProgrammingGuidePost from './CarKeyCuttingProgrammingGuidePost';
 import WornHouseKeyCopyGuidePost from './WornHouseKeyCopyGuidePost';
 import KeyWontInsertDoorLockGuidePost from './KeyWontInsertDoorLockGuidePost';
+import DoorKnobDeadboltSecurityGuidePost from './DoorKnobDeadboltSecurityGuidePost';
 import { getBlogPost } from '../data/blogPosts';
 import { phoneLink } from '../data/cities';
 import './Blog.css';
@@ -148,6 +149,10 @@ const BlogPostPage = () => {
   }, [post]);
 
   if (!post) return <Navigate to="/blog" replace />;
+
+  if (post.slug === 'lock-door-knob-and-deadbolt-nc') {
+    return <DoorKnobDeadboltSecurityGuidePost post={post} />;
+  }
 
   if (post.slug === 'key-wont-go-into-door-lock-nc') {
     return <KeyWontInsertDoorLockGuidePost post={post} />;

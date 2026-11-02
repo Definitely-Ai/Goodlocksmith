@@ -1,5 +1,19 @@
 export const blogPosts = [
   {
+    slug: 'lock-door-knob-and-deadbolt-nc',
+    title: 'Should You Lock Both the Door Knob and Deadbolt?',
+    excerpt: 'A keyed knob can add another locked point, but it does not replace a properly installed deadbolt. Learn what each lock does and what matters most at the door.',
+    publishedDate: 'November 2, 2026',
+    datePublished: '2026-11-02',
+    readingTime: '9 min read',
+    category: 'Residential Door Security',
+    image: '/images/residential-rekey-good-locksmith.webp',
+    imageAlt: 'A Good Locksmith checking a keyed entry knob and deadbolt on a residential exterior door',
+    seoTitle: 'Lock the Door Knob and Deadbolt? | Harnett County, NC',
+    seoDescription: 'Should you lock both the door knob and deadbolt? Learn what each lock does, when both may help, and why the strike, frame, alignment, and safe exit matter.',
+    about: ['Lock door knob and deadbolt', 'Keyed entry knob', 'Residential deadbolt', 'Exterior door security', 'Harnett County locksmith'],
+  },
+  {
     slug: 'key-wont-go-into-door-lock-nc',
     title: 'Key Won’t Go Into the Door Lock? Don’t Force It',
     excerpt: 'A key that stops at the entrance or inserts only partway may be bent, incorrect, obstructed, or meeting a damaged keyway. Learn what to check safely.',
