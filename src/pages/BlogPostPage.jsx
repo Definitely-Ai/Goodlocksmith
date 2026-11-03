@@ -85,6 +85,7 @@ import CarKeyCuttingProgrammingGuidePost from './CarKeyCuttingProgrammingGuidePo
 import WornHouseKeyCopyGuidePost from './WornHouseKeyCopyGuidePost';
 import KeyWontInsertDoorLockGuidePost from './KeyWontInsertDoorLockGuidePost';
 import DoorKnobDeadboltSecurityGuidePost from './DoorKnobDeadboltSecurityGuidePost';
+import LockRekeyLimitGuidePost from './LockRekeyLimitGuidePost';
 import { getBlogPost } from '../data/blogPosts';
 import { phoneLink } from '../data/cities';
 import './Blog.css';
@@ -149,6 +150,10 @@ const BlogPostPage = () => {
   }, [post]);
 
   if (!post) return <Navigate to="/blog" replace />;
+
+  if (post.slug === 'how-many-times-can-lock-be-rekeyed-nc') {
+    return <LockRekeyLimitGuidePost post={post} />;
+  }
 
   if (post.slug === 'lock-door-knob-and-deadbolt-nc') {
     return <DoorKnobDeadboltSecurityGuidePost post={post} />;

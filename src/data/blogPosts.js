@@ -1,5 +1,19 @@
 export const blogPosts = [
   {
+    slug: 'how-many-times-can-lock-be-rekeyed-nc',
+    title: 'How Many Times Can a Door Lock Be Rekeyed?',
+    excerpt: 'There is no universal rekey limit for every lock. Learn how cylinder condition, keyway compatibility, wear, damage, and the keying plan affect the answer.',
+    publishedDate: 'November 3, 2026',
+    datePublished: '2026-11-03',
+    readingTime: '9 min read',
+    category: 'Lock Rekeying',
+    image: '/images/residential-rekey-good-locksmith.webp',
+    imageAlt: 'A Good Locksmith inspecting a residential lock cylinder before another rekey',
+    seoTitle: 'How Many Times Can a Lock Be Rekeyed? | Harnett County, NC',
+    seoDescription: 'How many times can a door lock be rekeyed? Learn why there is no universal limit and when cylinder wear, damage, compatibility, or keying plans matter.',
+    about: ['How many times can a lock be rekeyed', 'Residential lock rekeying', 'Pin tumbler cylinder', 'Rekey or replace lock', 'Harnett County locksmith'],
+  },
+  {
     slug: 'lock-door-knob-and-deadbolt-nc',
     title: 'Should You Lock Both the Door Knob and Deadbolt?',
     excerpt: 'A keyed knob can add another locked point, but it does not replace a properly installed deadbolt. Learn what each lock does and what matters most at the door.',
