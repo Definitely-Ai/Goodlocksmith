@@ -86,6 +86,7 @@ import WornHouseKeyCopyGuidePost from './WornHouseKeyCopyGuidePost';
 import KeyWontInsertDoorLockGuidePost from './KeyWontInsertDoorLockGuidePost';
 import DoorKnobDeadboltSecurityGuidePost from './DoorKnobDeadboltSecurityGuidePost';
 import LockRekeyLimitGuidePost from './LockRekeyLimitGuidePost';
+import SmartLockSubscriptionGuidePost from './SmartLockSubscriptionGuidePost';
 import { getBlogPost } from '../data/blogPosts';
 import { phoneLink } from '../data/cities';
 import './Blog.css';
@@ -150,6 +151,10 @@ const BlogPostPage = () => {
   }, [post]);
 
   if (!post) return <Navigate to="/blog" replace />;
+
+  if (post.slug === 'do-smart-locks-require-subscription-nc') {
+    return <SmartLockSubscriptionGuidePost post={post} />;
+  }
 
   if (post.slug === 'how-many-times-can-lock-be-rekeyed-nc') {
     return <LockRekeyLimitGuidePost post={post} />;

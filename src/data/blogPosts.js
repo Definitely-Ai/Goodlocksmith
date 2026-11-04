@@ -1,5 +1,19 @@
 export const blogPosts = [
   {
+    slug: 'do-smart-locks-require-subscription-nc',
+    title: 'Do Smart Locks Require a Monthly Subscription?',
+    excerpt: 'Many smart locks do not require a monthly fee for basic lock features, but apps, remote access, video storage, integrations, and optional services vary by model.',
+    publishedDate: 'November 4, 2026',
+    datePublished: '2026-11-04',
+    readingTime: '9 min read',
+    category: 'Smart Lock Buying Guide',
+    image: '/images/residential-rekey-good-locksmith.webp',
+    imageAlt: 'A Good Locksmith evaluating a residential smart lock and its app requirements',
+    seoTitle: 'Do Smart Locks Require a Subscription? | Harnett County, NC',
+    seoDescription: 'Do smart locks require a monthly subscription? Learn which lock features may be free, optional, internet-dependent, or tied to a separate service.',
+    about: ['Smart lock subscription', 'Smart lock monthly fee', 'Free smart lock app', 'Smart lock remote access', 'Harnett County smart lock installation'],
+  },
+  {
     slug: 'how-many-times-can-lock-be-rekeyed-nc',
     title: 'How Many Times Can a Door Lock Be Rekeyed?',
     excerpt: 'There is no universal rekey limit for every lock. Learn how cylinder condition, keyway compatibility, wear, damage, and the keying plan affect the answer.',
