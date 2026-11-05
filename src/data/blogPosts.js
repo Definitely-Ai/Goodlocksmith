@@ -1,5 +1,19 @@
 export const blogPosts = [
   {
+    slug: 'can-schlage-kwikset-locks-use-same-key-nc',
+    title: 'Can Schlage and Kwikset Locks Use the Same Key?',
+    excerpt: 'Standard Schlage C/SC1 and Kwikset KW1 keyways are different, but a newer SC1 SmartKey option creates an important exception. Learn what must match before locks can share a key.',
+    publishedDate: 'November 5, 2026',
+    datePublished: '2026-11-05',
+    readingTime: '9 min read',
+    category: 'Residential Rekeying',
+    image: '/images/residential-rekey-good-locksmith.webp',
+    imageAlt: 'A Good Locksmith comparing residential keys and lock keyways before rekeying',
+    seoTitle: 'Can Schlage and Kwikset Use the Same Key? | Harnett County, NC',
+    seoDescription: 'Can Schlage and Kwikset locks use the same key? Learn why standard keyways differ, when an SC1 SmartKey cylinder may work, and what a locksmith should inspect.',
+    about: ['Schlage and Kwikset same key', 'SC1 keyway', 'KW1 keyway', 'Keyed alike door locks', 'Harnett County lock rekeying'],
+  },
+  {
     slug: 'do-smart-locks-require-subscription-nc',
     title: 'Do Smart Locks Require a Monthly Subscription?',
     excerpt: 'Many smart locks do not require a monthly fee for basic lock features, but apps, remote access, video storage, integrations, and optional services vary by model.',

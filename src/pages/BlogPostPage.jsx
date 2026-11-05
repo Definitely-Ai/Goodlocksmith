@@ -87,6 +87,7 @@ import KeyWontInsertDoorLockGuidePost from './KeyWontInsertDoorLockGuidePost';
 import DoorKnobDeadboltSecurityGuidePost from './DoorKnobDeadboltSecurityGuidePost';
 import LockRekeyLimitGuidePost from './LockRekeyLimitGuidePost';
 import SmartLockSubscriptionGuidePost from './SmartLockSubscriptionGuidePost';
+import SchlageKwiksetSameKeyGuidePost from './SchlageKwiksetSameKeyGuidePost';
 import { getBlogPost } from '../data/blogPosts';
 import { phoneLink } from '../data/cities';
 import './Blog.css';
@@ -151,6 +152,10 @@ const BlogPostPage = () => {
   }, [post]);
 
   if (!post) return <Navigate to="/blog" replace />;
+
+  if (post.slug === 'can-schlage-kwikset-locks-use-same-key-nc') {
+    return <SchlageKwiksetSameKeyGuidePost post={post} />;
+  }
 
   if (post.slug === 'do-smart-locks-require-subscription-nc') {
     return <SmartLockSubscriptionGuidePost post={post} />;
