@@ -88,6 +88,7 @@ import DoorKnobDeadboltSecurityGuidePost from './DoorKnobDeadboltSecurityGuidePo
 import LockRekeyLimitGuidePost from './LockRekeyLimitGuidePost';
 import SmartLockSubscriptionGuidePost from './SmartLockSubscriptionGuidePost';
 import SchlageKwiksetSameKeyGuidePost from './SchlageKwiksetSameKeyGuidePost';
+import LocksmithIdAuthorizationGuidePost from './LocksmithIdAuthorizationGuidePost';
 import { getBlogPost } from '../data/blogPosts';
 import { phoneLink } from '../data/cities';
 import './Blog.css';
@@ -152,6 +153,10 @@ const BlogPostPage = () => {
   }, [post]);
 
   if (!post) return <Navigate to="/blog" replace />;
+
+  if (post.slug === 'why-locksmith-asks-for-id-before-opening-door-nc') {
+    return <LocksmithIdAuthorizationGuidePost post={post} />;
+  }
 
   if (post.slug === 'can-schlage-kwikset-locks-use-same-key-nc') {
     return <SchlageKwiksetSameKeyGuidePost post={post} />;

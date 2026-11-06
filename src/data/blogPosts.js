@@ -1,5 +1,19 @@
 export const blogPosts = [
   {
+    slug: 'why-locksmith-asks-for-id-before-opening-door-nc',
+    title: 'Why Does a Locksmith Ask for ID Before Opening a Door?',
+    excerpt: 'A locksmith must reasonably verify ownership or authorization before providing access. Learn what North Carolina requires and which records may help for homes, businesses, rentals, and vehicles.',
+    publishedDate: 'November 6, 2026',
+    datePublished: '2026-11-06',
+    readingTime: '9 min read',
+    category: 'Lockout Authorization',
+    image: '/images/residential-rekey-good-locksmith.webp',
+    imageAlt: 'A Good Locksmith verifying customer identification and authorization before providing access',
+    seoTitle: 'Why Does a Locksmith Ask for ID? | Harnett County, NC',
+    seoDescription: 'Why does a locksmith ask for ID before opening a door? Learn how North Carolina ownership and authorization checks protect homes, businesses, and vehicles.',
+    about: ['Why a locksmith asks for ID', 'Proof of ownership for locksmith', 'Lockout authorization', 'Locksmith customer verification', 'Harnett County locksmith'],
+  },
+  {
     slug: 'can-schlage-kwikset-locks-use-same-key-nc',
     title: 'Can Schlage and Kwikset Locks Use the Same Key?',
     excerpt: 'Standard Schlage C/SC1 and Kwikset KW1 keyways are different, but a newer SC1 SmartKey option creates an important exception. Learn what must match before locks can share a key.',
