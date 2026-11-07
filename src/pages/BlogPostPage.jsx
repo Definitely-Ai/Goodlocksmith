@@ -89,6 +89,7 @@ import LockRekeyLimitGuidePost from './LockRekeyLimitGuidePost';
 import SmartLockSubscriptionGuidePost from './SmartLockSubscriptionGuidePost';
 import SchlageKwiksetSameKeyGuidePost from './SchlageKwiksetSameKeyGuidePost';
 import LocksmithIdAuthorizationGuidePost from './LocksmithIdAuthorizationGuidePost';
+import CheckLocksmithWorkGuidePost from './CheckLocksmithWorkGuidePost';
 import { getBlogPost } from '../data/blogPosts';
 import { phoneLink } from '../data/cities';
 import './Blog.css';
@@ -153,6 +154,10 @@ const BlogPostPage = () => {
   }, [post]);
 
   if (!post) return <Navigate to="/blog" replace />;
+
+  if (post.slug === 'how-to-check-locksmith-work-before-they-leave-nc') {
+    return <CheckLocksmithWorkGuidePost post={post} />;
+  }
 
   if (post.slug === 'why-locksmith-asks-for-id-before-opening-door-nc') {
     return <LocksmithIdAuthorizationGuidePost post={post} />;

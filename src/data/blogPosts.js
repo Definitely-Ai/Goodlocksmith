@@ -1,5 +1,19 @@
 export const blogPosts = [
   {
+    slug: 'how-to-check-locksmith-work-before-they-leave-nc',
+    title: 'How Do You Know a Locksmith Finished the Job Correctly?',
+    excerpt: 'Before the locksmith leaves, test every included key and lock with the door open and closed. Use this practical checklist for rekeying, repair, installation, and electronic access work.',
+    publishedDate: 'November 7, 2026',
+    datePublished: '2026-11-07',
+    readingTime: '10 min read',
+    category: 'Locksmith Service Checklist',
+    image: '/images/residential-rekey-good-locksmith.webp',
+    imageAlt: 'A Good Locksmith testing keys and finished door-lock operation with a customer',
+    seoTitle: 'How to Check Locksmith Work | Harnett County, NC',
+    seoDescription: 'How do you check locksmith work before the technician leaves? Test every key and lock, open and closed, and verify alignment, safe exit, codes, and records.',
+    about: ['How to check locksmith work', 'Lock rekey testing', 'Door lock installation checklist', 'Test new house keys', 'Harnett County locksmith'],
+  },
+  {
     slug: 'why-locksmith-asks-for-id-before-opening-door-nc',
     title: 'Why Does a Locksmith Ask for ID Before Opening a Door?',
     excerpt: 'A locksmith must reasonably verify ownership or authorization before providing access. Learn what North Carolina requires and which records may help for homes, businesses, rentals, and vehicles.',
