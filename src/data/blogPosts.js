@@ -1,5 +1,19 @@
 export const blogPosts = [
   {
+    slug: 'business-door-lock-maintenance-checklist-nc',
+    title: 'How Often Should a Business Inspect Door Locks and Exit Hardware?',
+    excerpt: 'There is no single maintenance interval for every commercial opening. Use a practical inspection plan based on the hardware, door use, environment, warning signs, and applicable exit requirements.',
+    publishedDate: 'November 8, 2026',
+    datePublished: '2026-11-08',
+    readingTime: '10 min read',
+    category: 'Commercial Lock Maintenance',
+    image: '/images/commercial-rekey-good-locksmith.webp',
+    imageAlt: 'A Good Locksmith inspecting a commercial lever lock, latch, strike, and door alignment',
+    seoTitle: 'Commercial Door Lock Maintenance | Harnett County, NC',
+    seoDescription: 'How often should a business inspect door locks and exit hardware? Build a practical maintenance plan around use, conditions, warning signs, and exit safety.',
+    about: ['Commercial door lock maintenance', 'Business lock inspection', 'Exit hardware maintenance', 'Door hardware warning signs', 'Harnett County commercial locksmith'],
+  },
+  {
     slug: 'how-to-check-locksmith-work-before-they-leave-nc',
     title: 'How Do You Know a Locksmith Finished the Job Correctly?',
     excerpt: 'Before the locksmith leaves, test every included key and lock with the door open and closed. Use this practical checklist for rekeying, repair, installation, and electronic access work.',
