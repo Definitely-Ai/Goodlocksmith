@@ -1,5 +1,19 @@
 export const blogPosts = [
   {
+    slug: 'does-locksmith-work-come-with-warranty-nc',
+    title: 'Does Locksmith Work Come With a Warranty? What to Ask Before Service',
+    excerpt: 'A lock product warranty, a locksmith’s workmanship terms, and a paid service contract are different. Learn what to ask, what exclusions to check, and which records to keep.',
+    publishedDate: 'November 9, 2026',
+    datePublished: '2026-11-09',
+    readingTime: '10 min read',
+    category: 'Locksmith Warranty Questions',
+    image: '/images/residential-rekey-good-locksmith.webp',
+    imageAlt: 'A Good Locksmith reviewing lock hardware, service records, and written warranty information',
+    seoTitle: 'Locksmith Warranty Questions | Harnett County, NC',
+    seoDescription: 'Does locksmith work come with a warranty? Learn how product coverage, workmanship terms, exclusions, records, and claim steps differ in Harnett County, NC.',
+    about: ['Locksmith warranty questions', 'Lock hardware warranty', 'Locksmith workmanship terms', 'Door lock service records', 'Harnett County locksmith'],
+  },
+  {
     slug: 'business-door-lock-maintenance-checklist-nc',
     title: 'How Often Should a Business Inspect Door Locks and Exit Hardware?',
     excerpt: 'There is no single maintenance interval for every commercial opening. Use a practical inspection plan based on the hardware, door use, environment, warning signs, and applicable exit requirements.',
