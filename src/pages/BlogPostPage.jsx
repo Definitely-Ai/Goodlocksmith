@@ -91,6 +91,7 @@ import SchlageKwiksetSameKeyGuidePost from './SchlageKwiksetSameKeyGuidePost';
 import LocksmithIdAuthorizationGuidePost from './LocksmithIdAuthorizationGuidePost';
 import CheckLocksmithWorkGuidePost from './CheckLocksmithWorkGuidePost';
 import BusinessLockMaintenanceGuidePost from './BusinessLockMaintenanceGuidePost';
+import LocksmithWarrantyGuidePost from './LocksmithWarrantyGuidePost';
 import { getBlogPost } from '../data/blogPosts';
 import { phoneLink } from '../data/cities';
 import './Blog.css';
@@ -155,6 +156,10 @@ const BlogPostPage = () => {
   }, [post]);
 
   if (!post) return <Navigate to="/blog" replace />;
+
+  if (post.slug === 'does-locksmith-work-come-with-warranty-nc') {
+    return <LocksmithWarrantyGuidePost post={post} />;
+  }
 
   if (post.slug === 'business-door-lock-maintenance-checklist-nc') {
     return <BusinessLockMaintenanceGuidePost post={post} />;
