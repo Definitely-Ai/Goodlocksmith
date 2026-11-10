@@ -1,5 +1,19 @@
 export const blogPosts = [
   {
+    slug: 'rekey-locks-after-roommate-moves-out-nc',
+    title: 'Roommate Moved Out—Should You Rekey the Locks?',
+    excerpt: 'A returned key does not prove that no copy exists. Learn how to review mechanical keys, smart-lock users, codes, remotes, authorization, and hardware after a roommate moves out.',
+    publishedDate: 'November 10, 2026',
+    datePublished: '2026-11-10',
+    readingTime: '10 min read',
+    category: 'Residential Rekeying',
+    image: '/images/residential-rekey-good-locksmith.webp',
+    imageAlt: 'A Good Locksmith preparing new residential keys after an authorized household access change',
+    seoTitle: 'Rekey After a Roommate Moves Out | Harnett County, NC',
+    seoDescription: 'Should you rekey after a roommate moves out? Review old keys, smart-lock users, codes, remotes, authorization, and lock condition in Harnett County, NC.',
+    about: ['Rekey after roommate moves out', 'Unreturned house key', 'Residential key control', 'Remove smart lock access', 'Harnett County rekeying'],
+  },
+  {
     slug: 'does-locksmith-work-come-with-warranty-nc',
     title: 'Does Locksmith Work Come With a Warranty? What to Ask Before Service',
     excerpt: 'A lock product warranty, a locksmith’s workmanship terms, and a paid service contract are different. Learn what to ask, what exclusions to check, and which records to keep.',
