@@ -92,6 +92,7 @@ import LocksmithIdAuthorizationGuidePost from './LocksmithIdAuthorizationGuidePo
 import CheckLocksmithWorkGuidePost from './CheckLocksmithWorkGuidePost';
 import BusinessLockMaintenanceGuidePost from './BusinessLockMaintenanceGuidePost';
 import LocksmithWarrantyGuidePost from './LocksmithWarrantyGuidePost';
+import RoommateMoveOutRekeyGuidePost from './RoommateMoveOutRekeyGuidePost';
 import { getBlogPost } from '../data/blogPosts';
 import { phoneLink } from '../data/cities';
 import './Blog.css';
@@ -156,6 +157,10 @@ const BlogPostPage = () => {
   }, [post]);
 
   if (!post) return <Navigate to="/blog" replace />;
+
+  if (post.slug === 'rekey-locks-after-roommate-moves-out-nc') {
+    return <RoommateMoveOutRekeyGuidePost post={post} />;
+  }
 
   if (post.slug === 'does-locksmith-work-come-with-warranty-nc') {
     return <LocksmithWarrantyGuidePost post={post} />;
