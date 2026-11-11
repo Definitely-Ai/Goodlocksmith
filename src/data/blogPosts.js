@@ -1,5 +1,19 @@
 export const blogPosts = [
   {
+    slug: 'does-rekeying-make-lock-more-secure-nc',
+    title: 'Does Rekeying Make a Lock More Secure?',
+    excerpt: 'Rekeying restores key control by making prior keys stop working, but it does not strengthen worn hardware, the strike, door, or frame. Learn when to rekey, repair, or replace.',
+    publishedDate: 'November 11, 2026',
+    datePublished: '2026-11-11',
+    readingTime: '10 min read',
+    category: 'Residential Rekeying',
+    image: '/images/residential-rekey-good-locksmith.webp',
+    imageAlt: 'A Good Locksmith assessing a residential deadbolt and keys before recommending rekeying, repair, or replacement',
+    seoTitle: 'Does Rekeying Make a Lock More Secure? | Harnett County, NC',
+    seoDescription: 'Does rekeying make a lock more secure? Learn how it restores key control, what it cannot strengthen, and when repair or replacement makes more sense.',
+    about: ['Does rekeying improve security', 'Residential key control', 'Rekey or replace lock', 'Door lock security', 'Harnett County rekeying'],
+  },
+  {
     slug: 'rekey-locks-after-roommate-moves-out-nc',
     title: 'Roommate Moved Out—Should You Rekey the Locks?',
     excerpt: 'A returned key does not prove that no copy exists. Learn how to review mechanical keys, smart-lock users, codes, remotes, authorization, and hardware after a roommate moves out.',
