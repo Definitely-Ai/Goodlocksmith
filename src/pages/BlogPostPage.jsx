@@ -93,6 +93,7 @@ import CheckLocksmithWorkGuidePost from './CheckLocksmithWorkGuidePost';
 import BusinessLockMaintenanceGuidePost from './BusinessLockMaintenanceGuidePost';
 import LocksmithWarrantyGuidePost from './LocksmithWarrantyGuidePost';
 import RoommateMoveOutRekeyGuidePost from './RoommateMoveOutRekeyGuidePost';
+import RekeySecurityStrengthGuidePost from './RekeySecurityStrengthGuidePost';
 import { getBlogPost } from '../data/blogPosts';
 import { phoneLink } from '../data/cities';
 import './Blog.css';
@@ -157,6 +158,10 @@ const BlogPostPage = () => {
   }, [post]);
 
   if (!post) return <Navigate to="/blog" replace />;
+
+  if (post.slug === 'does-rekeying-make-lock-more-secure-nc') {
+    return <RekeySecurityStrengthGuidePost post={post} />;
+  }
 
   if (post.slug === 'rekey-locks-after-roommate-moves-out-nc') {
     return <RoommateMoveOutRekeyGuidePost post={post} />;
