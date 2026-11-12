@@ -94,6 +94,7 @@ import BusinessLockMaintenanceGuidePost from './BusinessLockMaintenanceGuidePost
 import LocksmithWarrantyGuidePost from './LocksmithWarrantyGuidePost';
 import RoommateMoveOutRekeyGuidePost from './RoommateMoveOutRekeyGuidePost';
 import RekeySecurityStrengthGuidePost from './RekeySecurityStrengthGuidePost';
+import OnlineKeyFobProgrammingGuidePost from './OnlineKeyFobProgrammingGuidePost';
 import { getBlogPost } from '../data/blogPosts';
 import { phoneLink } from '../data/cities';
 import './Blog.css';
@@ -158,6 +159,10 @@ const BlogPostPage = () => {
   }, [post]);
 
   if (!post) return <Navigate to="/blog" replace />;
+
+  if (post.slug === 'will-locksmith-program-online-key-fob-nc') {
+    return <OnlineKeyFobProgrammingGuidePost post={post} />;
+  }
 
   if (post.slug === 'does-rekeying-make-lock-more-secure-nc') {
     return <RekeySecurityStrengthGuidePost post={post} />;
