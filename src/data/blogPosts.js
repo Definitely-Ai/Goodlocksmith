@@ -1,5 +1,19 @@
 export const blogPosts = [
   {
+    slug: 'will-locksmith-program-online-key-fob-nc',
+    title: 'Will a Locksmith Program a Key Fob You Bought Online?',
+    excerpt: 'An online key fob may be programmable—or it may be incompatible, incomplete, previously paired, defective, or unsupported. Learn what to verify before ordering.',
+    publishedDate: 'November 12, 2026',
+    datePublished: '2026-11-12',
+    readingTime: '10 min read',
+    category: 'Automotive Key Programming',
+    image: '/images/local-car-lockout-good-locksmith.webp',
+    imageAlt: 'A Good Locksmith comparing a customer-supplied automotive key fob with the exact vehicle and a known-working key',
+    seoTitle: 'Will a Locksmith Program an Online Key Fob? | Harnett County, NC',
+    seoDescription: 'Will a locksmith program a key fob bought online? Learn what vehicle, part, blade, condition, authorization, return, and service details to verify first.',
+    about: ['Program online key fob', 'Customer-supplied car key', 'Key fob compatibility', 'Automotive key programming', 'Harnett County locksmith'],
+  },
+  {
     slug: 'does-rekeying-make-lock-more-secure-nc',
     title: 'Does Rekeying Make a Lock More Secure?',
     excerpt: 'Rekeying restores key control by making prior keys stop working, but it does not strengthen worn hardware, the strike, door, or frame. Learn when to rekey, repair, or replace.',
