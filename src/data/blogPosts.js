@@ -1,5 +1,19 @@
 export const blogPosts = [
   {
+    slug: 'storefront-door-keypad-access-nc',
+    title: 'Can You Add Keypad Access to an Existing Storefront Door?',
+    excerpt: 'Many aluminum storefront doors can be upgraded to keypad access, but the existing lock, door preparation, alignment, egress, accessibility, and power plan must be evaluated first.',
+    publishedDate: 'November 13, 2026',
+    datePublished: '2026-11-13',
+    readingTime: '11 min read',
+    category: 'Commercial Keypad Access',
+    image: '/images/commercial-rekey-good-locksmith.webp',
+    imageAlt: 'A Good Locksmith evaluating an aluminum storefront door, narrow-stile lock, and inside egress hardware before a keypad-access upgrade',
+    seoTitle: 'Storefront Keypad Lock Installation | Harnett County, NC',
+    seoDescription: 'Can an existing storefront door use keypad access? Learn what lock, door prep, alignment, egress, accessibility, and power details must be checked first.',
+    about: ['Storefront keypad lock installation', 'Commercial keypad access', 'Narrow-stile aluminum door', 'Electronic door lock retrofit', 'Harnett County commercial locksmith'],
+  },
+  {
     slug: 'will-locksmith-program-online-key-fob-nc',
     title: 'Will a Locksmith Program a Key Fob You Bought Online?',
     excerpt: 'An online key fob may be programmable—or it may be incompatible, incomplete, previously paired, defective, or unsupported. Learn what to verify before ordering.',
