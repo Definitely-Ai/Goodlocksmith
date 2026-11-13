@@ -95,6 +95,7 @@ import LocksmithWarrantyGuidePost from './LocksmithWarrantyGuidePost';
 import RoommateMoveOutRekeyGuidePost from './RoommateMoveOutRekeyGuidePost';
 import RekeySecurityStrengthGuidePost from './RekeySecurityStrengthGuidePost';
 import OnlineKeyFobProgrammingGuidePost from './OnlineKeyFobProgrammingGuidePost';
+import StorefrontKeypadAccessGuidePost from './StorefrontKeypadAccessGuidePost';
 import { getBlogPost } from '../data/blogPosts';
 import { phoneLink } from '../data/cities';
 import './Blog.css';
@@ -159,6 +160,10 @@ const BlogPostPage = () => {
   }, [post]);
 
   if (!post) return <Navigate to="/blog" replace />;
+
+  if (post.slug === 'storefront-door-keypad-access-nc') {
+    return <StorefrontKeypadAccessGuidePost post={post} />;
+  }
 
   if (post.slug === 'will-locksmith-program-online-key-fob-nc') {
     return <OnlineKeyFobProgrammingGuidePost post={post} />;
