@@ -96,6 +96,7 @@ import RoommateMoveOutRekeyGuidePost from './RoommateMoveOutRekeyGuidePost';
 import RekeySecurityStrengthGuidePost from './RekeySecurityStrengthGuidePost';
 import OnlineKeyFobProgrammingGuidePost from './OnlineKeyFobProgrammingGuidePost';
 import StorefrontKeypadAccessGuidePost from './StorefrontKeypadAccessGuidePost';
+import LostBusinessMasterKeyGuidePost from './LostBusinessMasterKeyGuidePost';
 import { getBlogPost } from '../data/blogPosts';
 import { phoneLink } from '../data/cities';
 import './Blog.css';
@@ -160,6 +161,10 @@ const BlogPostPage = () => {
   }, [post]);
 
   if (!post) return <Navigate to="/blog" replace />;
+
+  if (post.slug === 'lost-business-master-key-rekey-scope-nc') {
+    return <LostBusinessMasterKeyGuidePost post={post} />;
+  }
 
   if (post.slug === 'storefront-door-keypad-access-nc') {
     return <StorefrontKeypadAccessGuidePost post={post} />;
