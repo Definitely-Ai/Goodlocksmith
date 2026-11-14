@@ -1,5 +1,19 @@
 export const blogPosts = [
   {
+    slug: 'lost-business-master-key-rekey-scope-nc',
+    title: 'Lost a Business Master Key—Do You Need to Rekey Every Lock?',
+    excerpt: 'A missing master key may affect a few doors or most of a building. Learn how access level, records, identification, duplication control, and exposure determine the rekeying scope.',
+    publishedDate: 'November 14, 2026',
+    datePublished: '2026-11-14',
+    readingTime: '10 min read',
+    category: 'Commercial Key Control',
+    image: '/images/commercial-rekey-good-locksmith.webp',
+    imageAlt: 'A Good Locksmith reviewing a commercial key schedule and master-key access levels before determining which business locks need rekeying',
+    seoTitle: 'Lost Business Master Key? Rekeying Scope | Harnett County, NC',
+    seoDescription: 'Lost a business master key? Learn how its access level, key records, identification, duplication control, and circumstances determine which locks need rekeying.',
+    about: ['Lost business master key', 'Commercial lock rekeying', 'Master key security', 'Business key control', 'Harnett County commercial locksmith'],
+  },
+  {
     slug: 'storefront-door-keypad-access-nc',
     title: 'Can You Add Keypad Access to an Existing Storefront Door?',
     excerpt: 'Many aluminum storefront doors can be upgraded to keypad access, but the existing lock, door preparation, alignment, egress, accessibility, and power plan must be evaluated first.',
