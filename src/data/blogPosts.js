@@ -1,5 +1,19 @@
 export const blogPosts = [
   {
+    slug: 'vintage-mortise-cylinder-replacement-older-lock-nc',
+    title: 'Why Won’t a Replacement Mortise Cylinder Fit an Older Lock?',
+    excerpt: 'A threaded cylinder can look correct and still have the wrong diameter, thread pitch, length, cam, collar, or keyway. Learn what to identify before modifying an older lock.',
+    publishedDate: 'November 15, 2026',
+    datePublished: '2026-11-15',
+    readingTime: '10 min read',
+    category: 'Older Lock Identification',
+    image: '/images/commercial-rekey-good-locksmith.webp',
+    imageAlt: 'A Good Locksmith comparing an older threaded mortise cylinder, rear cam, collar, and lock body before selecting a compatible replacement',
+    seoTitle: 'Vintage Mortise Cylinder Replacement | Harnett County, NC',
+    seoDescription: 'Why will a replacement mortise cylinder not fit an older lock? Learn how diameter, thread pitch, length, cam, collar, keyway, and condition affect compatibility.',
+    about: ['Vintage mortise cylinder replacement', 'Older lock cylinder identification', 'Mortise cylinder thread size', 'Mortise cylinder cam', 'Harnett County locksmith'],
+  },
+  {
     slug: 'lost-business-master-key-rekey-scope-nc',
     title: 'Lost a Business Master Key—Do You Need to Rekey Every Lock?',
     excerpt: 'A missing master key may affect a few doors or most of a building. Learn how access level, records, identification, duplication control, and exposure determine the rekeying scope.',
