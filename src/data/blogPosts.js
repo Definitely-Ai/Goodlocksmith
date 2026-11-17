@@ -1,5 +1,19 @@
 export const blogPosts = [
   {
+    slug: 'frozen-mechanical-door-lock-cold-weather-nc',
+    title: 'Door Lock Frozen After a Cold Night? What to Do Before You Force the Key',
+    excerpt: 'A frozen cylinder, door pressure, worn key, and failing lock can feel similar. Learn safe first steps, what not to put in the keyway, and when to call a locksmith.',
+    publishedDate: 'November 17, 2026',
+    datePublished: '2026-11-17',
+    readingTime: '10 min read',
+    category: 'Winter Lock Care',
+    image: '/images/residential-rekey-good-locksmith.webp',
+    imageAlt: 'A Good Locksmith evaluating a keyed exterior door lock after a freezing central North Carolina night before applying force or maintenance products',
+    seoTitle: 'Frozen Door Lock Help | Harnett County, NC',
+    seoDescription: 'Door lock frozen after a cold night? Learn how to separate ice from door pressure or wear, avoid breaking the key, and choose safe model-specific care.',
+    about: ['Frozen door lock', 'Key will not turn in cold weather', 'Winter lock maintenance', 'Mechanical door lock freezes', 'Harnett County locksmith'],
+  },
+  {
     slug: 'vintage-mortise-cylinder-replacement-older-lock-nc',
     title: 'Why Won’t a Replacement Mortise Cylinder Fit an Older Lock?',
     excerpt: 'A threaded cylinder can look correct and still have the wrong diameter, thread pitch, length, cam, collar, or keyway. Learn what to identify before modifying an older lock.',
