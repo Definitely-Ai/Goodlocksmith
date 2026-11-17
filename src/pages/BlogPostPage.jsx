@@ -98,6 +98,7 @@ import OnlineKeyFobProgrammingGuidePost from './OnlineKeyFobProgrammingGuidePost
 import StorefrontKeypadAccessGuidePost from './StorefrontKeypadAccessGuidePost';
 import LostBusinessMasterKeyGuidePost from './LostBusinessMasterKeyGuidePost';
 import VintageMortiseCylinderReplacementGuidePost from './VintageMortiseCylinderReplacementGuidePost';
+import FrozenMechanicalDoorLockGuidePost from './FrozenMechanicalDoorLockGuidePost';
 import { getBlogPost } from '../data/blogPosts';
 import { phoneLink } from '../data/cities';
 import './Blog.css';
@@ -162,6 +163,10 @@ const BlogPostPage = () => {
   }, [post]);
 
   if (!post) return <Navigate to="/blog" replace />;
+
+  if (post.slug === 'frozen-mechanical-door-lock-cold-weather-nc') {
+    return <FrozenMechanicalDoorLockGuidePost post={post} />;
+  }
 
   if (post.slug === 'vintage-mortise-cylinder-replacement-older-lock-nc') {
     return <VintageMortiseCylinderReplacementGuidePost post={post} />;
