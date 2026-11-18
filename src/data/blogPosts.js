@@ -1,5 +1,19 @@
 export const blogPosts = [
   {
+    slug: 'rekey-panic-bar-door-without-replacing-exit-device-nc',
+    title: 'Can a Panic Bar Door Be Rekeyed Without Replacing the Exit Device?',
+    excerpt: 'Many panic-bar doors use a separate keyed cylinder in the outside trim. Learn when that cylinder can be rekeyed, when other parts need work, and what must be tested.',
+    publishedDate: 'November 18, 2026',
+    datePublished: '2026-11-18',
+    readingTime: '10 min read',
+    category: 'Commercial Exit Hardware',
+    image: '/images/commercial-rekey-good-locksmith.webp',
+    imageAlt: 'A Good Locksmith identifying the outside keyed trim and inside exit device on a commercial panic-bar door before rekeying the cylinder',
+    seoTitle: 'Panic Bar Rekeying | Harnett County, NC',
+    seoDescription: 'Can a panic-bar door be rekeyed without replacing the exit device? Learn when the outside cylinder can be rekeyed and what must be identified and tested.',
+    about: ['Panic bar rekeying', 'Exit device cylinder rekey', 'Outside trim key', 'Commercial door rekeying', 'Harnett County commercial locksmith'],
+  },
+  {
     slug: 'frozen-mechanical-door-lock-cold-weather-nc',
     title: 'Door Lock Frozen After a Cold Night? What to Do Before You Force the Key',
     excerpt: 'A frozen cylinder, door pressure, worn key, and failing lock can feel similar. Learn safe first steps, what not to put in the keyway, and when to call a locksmith.',
