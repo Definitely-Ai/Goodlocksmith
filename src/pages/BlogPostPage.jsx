@@ -99,6 +99,7 @@ import StorefrontKeypadAccessGuidePost from './StorefrontKeypadAccessGuidePost';
 import LostBusinessMasterKeyGuidePost from './LostBusinessMasterKeyGuidePost';
 import VintageMortiseCylinderReplacementGuidePost from './VintageMortiseCylinderReplacementGuidePost';
 import FrozenMechanicalDoorLockGuidePost from './FrozenMechanicalDoorLockGuidePost';
+import PanicBarRekeyGuidePost from './PanicBarRekeyGuidePost';
 import { getBlogPost } from '../data/blogPosts';
 import { phoneLink } from '../data/cities';
 import './Blog.css';
@@ -163,6 +164,10 @@ const BlogPostPage = () => {
   }, [post]);
 
   if (!post) return <Navigate to="/blog" replace />;
+
+  if (post.slug === 'rekey-panic-bar-door-without-replacing-exit-device-nc') {
+    return <PanicBarRekeyGuidePost post={post} />;
+  }
 
   if (post.slug === 'frozen-mechanical-door-lock-cold-weather-nc') {
     return <FrozenMechanicalDoorLockGuidePost post={post} />;
