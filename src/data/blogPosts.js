@@ -1,5 +1,19 @@
 export const blogPosts = [
   {
+    slug: 'add-new-door-existing-master-key-system-nc',
+    title: 'Can You Add a New Door to an Existing Master-Key System?',
+    excerpt: 'A new door can often join an existing master-key system, but keyway, cylinder format, hierarchy, records, authorization, and remaining system capacity must be checked first.',
+    publishedDate: 'November 19, 2026',
+    datePublished: '2026-11-19',
+    readingTime: '10 min read',
+    category: 'Commercial Master-Key Systems',
+    image: '/images/commercial-rekey-good-locksmith.webp',
+    imageAlt: 'A Good Locksmith reviewing a commercial door, cylinder, key schedule, and master-key hierarchy before adding the opening to an existing system',
+    seoTitle: 'Add a Door to a Master-Key System | Harnett County, NC',
+    seoDescription: 'Can a new door join an existing master-key system? Learn how keyway, cylinder format, hierarchy, records, authorization, and system capacity affect the answer.',
+    about: ['Add door to master key system', 'Expand commercial master key system', 'Commercial key hierarchy', 'Business key system records', 'Harnett County commercial locksmith'],
+  },
+  {
     slug: 'rekey-panic-bar-door-without-replacing-exit-device-nc',
     title: 'Can a Panic Bar Door Be Rekeyed Without Replacing the Exit Device?',
     excerpt: 'Many panic-bar doors use a separate keyed cylinder in the outside trim. Learn when that cylinder can be rekeyed, when other parts need work, and what must be tested.',
