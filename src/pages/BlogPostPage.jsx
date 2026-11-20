@@ -101,6 +101,7 @@ import VintageMortiseCylinderReplacementGuidePost from './VintageMortiseCylinder
 import FrozenMechanicalDoorLockGuidePost from './FrozenMechanicalDoorLockGuidePost';
 import PanicBarRekeyGuidePost from './PanicBarRekeyGuidePost';
 import MasterKeySystemExpansionGuidePost from './MasterKeySystemExpansionGuidePost';
+import BusinessExitDoorDeadboltGuidePost from './BusinessExitDoorDeadboltGuidePost';
 import { getBlogPost } from '../data/blogPosts';
 import { phoneLink } from '../data/cities';
 import './Blog.css';
@@ -165,6 +166,10 @@ const BlogPostPage = () => {
   }, [post]);
 
   if (!post) return <Navigate to="/blog" replace />;
+
+  if (post.slug === 'add-deadbolt-business-exit-door-nc') {
+    return <BusinessExitDoorDeadboltGuidePost post={post} />;
+  }
 
   if (post.slug === 'add-new-door-existing-master-key-system-nc') {
     return <MasterKeySystemExpansionGuidePost post={post} />;

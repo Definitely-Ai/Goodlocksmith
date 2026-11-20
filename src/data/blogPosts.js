@@ -1,5 +1,19 @@
 export const blogPosts = [
   {
+    slug: 'add-deadbolt-business-exit-door-nc',
+    title: 'Can You Add a Deadbolt to a Business Exit Door?',
+    excerpt: 'A second deadbolt can interfere with egress, panic hardware, fire-door listings, or accessibility. Learn what must be checked before changing a commercial exit door.',
+    publishedDate: 'November 20, 2026',
+    datePublished: '2026-11-20',
+    readingTime: '11 min read',
+    category: 'Commercial Exit-Door Security',
+    image: '/images/commercial-rekey-good-locksmith.webp',
+    imageAlt: 'A Good Locksmith evaluating a commercial exit door, inside release hardware, fire labels, and exterior lock before considering a deadbolt',
+    seoTitle: 'Deadbolt on a Business Exit Door? | Harnett County, NC',
+    seoDescription: 'Can you add a deadbolt to a business exit door? Learn how egress, panic hardware, fire ratings, accessibility, and local approval affect the answer.',
+    about: ['Deadbolt on business exit door', 'Commercial exit door lock', 'Single-motion egress', 'Panic hardware security', 'Harnett County commercial locksmith'],
+  },
+  {
     slug: 'add-new-door-existing-master-key-system-nc',
     title: 'Can You Add a New Door to an Existing Master-Key System?',
     excerpt: 'A new door can often join an existing master-key system, but keyway, cylinder format, hierarchy, records, authorization, and remaining system capacity must be checked first.',
