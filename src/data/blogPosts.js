@@ -1,5 +1,19 @@
 export const blogPosts = [
   {
+    slug: 'business-key-control-log-guide-nc',
+    title: 'What Should a Business Key-Control Log Include?',
+    excerpt: 'A practical key log records each physical key, holder, approved access, issue and return dates, authorization, status, and follow-up without exposing sensitive bitting data.',
+    publishedDate: 'November 21, 2026',
+    datePublished: '2026-11-21',
+    readingTime: '11 min read',
+    category: 'Commercial Key Control',
+    image: '/images/commercial-rekey-good-locksmith.webp',
+    imageAlt: 'A Good Locksmith reviewing a protected commercial key schedule and a separate business key issue-and-return log',
+    seoTitle: 'Business Key-Control Log Guide | Harnett County, NC',
+    seoDescription: 'What should a business key-control log include? Track each key, holder, access, authorization, issue, return, loss, replacement, and completed follow-up.',
+    about: ['Business key control log', 'Key issue and return record', 'Commercial key management', 'Master key records', 'Harnett County commercial locksmith'],
+  },
+  {
     slug: 'add-deadbolt-business-exit-door-nc',
     title: 'Can You Add a Deadbolt to a Business Exit Door?',
     excerpt: 'A second deadbolt can interfere with egress, panic hardware, fire-door listings, or accessibility. Learn what must be checked before changing a commercial exit door.',

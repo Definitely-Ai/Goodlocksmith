@@ -102,6 +102,7 @@ import FrozenMechanicalDoorLockGuidePost from './FrozenMechanicalDoorLockGuidePo
 import PanicBarRekeyGuidePost from './PanicBarRekeyGuidePost';
 import MasterKeySystemExpansionGuidePost from './MasterKeySystemExpansionGuidePost';
 import BusinessExitDoorDeadboltGuidePost from './BusinessExitDoorDeadboltGuidePost';
+import BusinessKeyControlLogGuidePost from './BusinessKeyControlLogGuidePost';
 import { getBlogPost } from '../data/blogPosts';
 import { phoneLink } from '../data/cities';
 import './Blog.css';
@@ -166,6 +167,10 @@ const BlogPostPage = () => {
   }, [post]);
 
   if (!post) return <Navigate to="/blog" replace />;
+
+  if (post.slug === 'business-key-control-log-guide-nc') {
+    return <BusinessKeyControlLogGuidePost post={post} />;
+  }
 
   if (post.slug === 'add-deadbolt-business-exit-door-nc') {
     return <BusinessExitDoorDeadboltGuidePost post={post} />;
