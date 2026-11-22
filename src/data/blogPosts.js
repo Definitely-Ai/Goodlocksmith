@@ -1,5 +1,19 @@
 export const blogPosts = [
   {
+    slug: 'manufactured-home-door-lock-fit-nc',
+    title: 'Will a Standard Door Lock Fit a Manufactured Home Door?',
+    excerpt: 'Some manufactured-home doors accept common residential locks; others need specialty hardware. Learn which measurements, egress rules, and door conditions determine a safe fit.',
+    publishedDate: 'November 22, 2026',
+    datePublished: '2026-11-22',
+    readingTime: '11 min read',
+    category: 'Manufactured Home Door Locks',
+    image: '/images/residential-rekey-good-locksmith.webp',
+    imageAlt: 'A Good Locksmith measuring the thickness, backset, bore, latch, and strike of a manufactured-home exterior door before selecting a compatible lock',
+    seoTitle: 'Manufactured Home Door Lock Fit | Harnett County, NC',
+    seoDescription: 'Will a standard lock fit a manufactured home door? Check thickness, backset, bores, latch, strike, inside egress, and door condition before replacement.',
+    about: ['Manufactured home door lock', 'Mobile home door lock replacement', 'Manufactured home deadbolt', 'Door lock measurements', 'Harnett County residential locksmith'],
+  },
+  {
     slug: 'business-key-control-log-guide-nc',
     title: 'What Should a Business Key-Control Log Include?',
     excerpt: 'A practical key log records each physical key, holder, approved access, issue and return dates, authorization, status, and follow-up without exposing sensitive bitting data.',

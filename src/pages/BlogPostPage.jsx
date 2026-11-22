@@ -103,6 +103,7 @@ import PanicBarRekeyGuidePost from './PanicBarRekeyGuidePost';
 import MasterKeySystemExpansionGuidePost from './MasterKeySystemExpansionGuidePost';
 import BusinessExitDoorDeadboltGuidePost from './BusinessExitDoorDeadboltGuidePost';
 import BusinessKeyControlLogGuidePost from './BusinessKeyControlLogGuidePost';
+import ManufacturedHomeDoorLockFitGuidePost from './ManufacturedHomeDoorLockFitGuidePost';
 import { getBlogPost } from '../data/blogPosts';
 import { phoneLink } from '../data/cities';
 import './Blog.css';
@@ -167,6 +168,10 @@ const BlogPostPage = () => {
   }, [post]);
 
   if (!post) return <Navigate to="/blog" replace />;
+
+  if (post.slug === 'manufactured-home-door-lock-fit-nc') {
+    return <ManufacturedHomeDoorLockFitGuidePost post={post} />;
+  }
 
   if (post.slug === 'business-key-control-log-guide-nc') {
     return <BusinessKeyControlLogGuidePost post={post} />;
