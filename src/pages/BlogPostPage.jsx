@@ -104,6 +104,7 @@ import MasterKeySystemExpansionGuidePost from './MasterKeySystemExpansionGuidePo
 import BusinessExitDoorDeadboltGuidePost from './BusinessExitDoorDeadboltGuidePost';
 import BusinessKeyControlLogGuidePost from './BusinessKeyControlLogGuidePost';
 import ManufacturedHomeDoorLockFitGuidePost from './ManufacturedHomeDoorLockFitGuidePost';
+import SmartLockRentalPropertyNcGuidePost from './SmartLockRentalPropertyNcGuidePost';
 import { getBlogPost } from '../data/blogPosts';
 import { phoneLink } from '../data/cities';
 import './Blog.css';
@@ -168,6 +169,10 @@ const BlogPostPage = () => {
   }, [post]);
 
   if (!post) return <Navigate to="/blog" replace />;
+
+  if (post.slug === 'smart-lock-rental-property-north-carolina') {
+    return <SmartLockRentalPropertyNcGuidePost post={post} />;
+  }
 
   if (post.slug === 'manufactured-home-door-lock-fit-nc') {
     return <ManufacturedHomeDoorLockFitGuidePost post={post} />;

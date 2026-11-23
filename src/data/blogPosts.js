@@ -1,5 +1,19 @@
 export const blogPosts = [
   {
+    slug: 'smart-lock-rental-property-north-carolina',
+    title: 'Can a North Carolina Tenant Install a Smart Lock?',
+    excerpt: 'Before changing rental-property hardware, settle permission, keys, app ownership, maintenance, move-out restoration, and physical door fit. Learn what to document first.',
+    publishedDate: 'November 23, 2026',
+    datePublished: '2026-11-23',
+    readingTime: '11 min read',
+    category: 'Rental Smart Locks',
+    image: '/images/residential-rekey-good-locksmith.webp',
+    imageAlt: 'A Good Locksmith evaluating an authorized rental-property door, existing deadbolt, smart-lock fit, keys, and access-control handoff',
+    seoTitle: 'Smart Lock in a NC Rental? Permission & Fit Guide',
+    seoDescription: 'Can a North Carolina tenant install a smart lock? Review written permission, keys, app control, door fit, maintenance, and move-out restoration first.',
+    about: ['Smart lock rental property North Carolina', 'Tenant smart lock permission', 'Rental door lock replacement', 'Smart lock installation', 'Harnett County residential locksmith'],
+  },
+  {
     slug: 'manufactured-home-door-lock-fit-nc',
     title: 'Will a Standard Door Lock Fit a Manufactured Home Door?',
     excerpt: 'Some manufactured-home doors accept common residential locks; others need specialty hardware. Learn which measurements, egress rules, and door conditions determine a safe fit.',
