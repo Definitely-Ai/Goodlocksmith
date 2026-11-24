@@ -105,6 +105,7 @@ import BusinessExitDoorDeadboltGuidePost from './BusinessExitDoorDeadboltGuidePo
 import BusinessKeyControlLogGuidePost from './BusinessKeyControlLogGuidePost';
 import ManufacturedHomeDoorLockFitGuidePost from './ManufacturedHomeDoorLockFitGuidePost';
 import SmartLockRentalPropertyNcGuidePost from './SmartLockRentalPropertyNcGuidePost';
+import WetKeyFobGuidePost from './WetKeyFobGuidePost';
 import { getBlogPost } from '../data/blogPosts';
 import { phoneLink } from '../data/cities';
 import './Blog.css';
@@ -169,6 +170,10 @@ const BlogPostPage = () => {
   }, [post]);
 
   if (!post) return <Navigate to="/blog" replace />;
+
+  if (post.slug === 'car-key-fob-got-wet-water-damage-nc') {
+    return <WetKeyFobGuidePost post={post} />;
+  }
 
   if (post.slug === 'smart-lock-rental-property-north-carolina') {
     return <SmartLockRentalPropertyNcGuidePost post={post} />;

@@ -1,5 +1,19 @@
 export const blogPosts = [
   {
+    slug: 'car-key-fob-got-wet-water-damage-nc',
+    title: 'Car Key Fob Got Wet? What to Do Before Trying It Again',
+    excerpt: 'Stop pressing buttons, avoid heat, follow the exact owner-manual battery instructions, protect the coin cell, and identify what still works before testing or replacing a wet key fob.',
+    publishedDate: 'November 24, 2026',
+    datePublished: '2026-11-24',
+    readingTime: '12 min read',
+    category: 'Automotive Key Fob Care',
+    image: '/images/local-car-lockout-good-locksmith.webp',
+    imageAlt: 'A Good Locksmith evaluating a car key fob after liquid exposure before battery, replacement, or programming decisions',
+    seoTitle: 'Wet Key Fob: Safe Next Steps | Harnett County, NC',
+    seoDescription: 'Car key fob got wet? Stop pressing buttons, avoid heat, follow the exact manual, protect the coin cell, compare a spare, and identify the right service.',
+    about: ['Wet key fob', 'Key fob water damage', 'Car remote got wet', 'Automotive key fob care', 'Harnett County automotive locksmith'],
+  },
+  {
     slug: 'smart-lock-rental-property-north-carolina',
     title: 'Can a North Carolina Tenant Install a Smart Lock?',
     excerpt: 'Before changing rental-property hardware, settle permission, keys, app ownership, maintenance, move-out restoration, and physical door fit. Learn what to document first.',
