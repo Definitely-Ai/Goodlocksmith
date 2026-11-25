@@ -1,5 +1,19 @@
 export const blogPosts = [
   {
+    slug: 'employee-key-business-hours-access-control-nc',
+    title: 'Can an Employee Key Work Only During Business Hours?',
+    excerpt: 'A mechanical key cannot follow a clock, but supported electronic credentials can use door assignments, schedules, and activation or expiration dates. Learn what businesses must plan first.',
+    publishedDate: 'November 25, 2026',
+    datePublished: '2026-11-25',
+    readingTime: '12 min read',
+    category: 'Commercial Access Control',
+    image: '/images/commercial-rekey-good-locksmith.webp',
+    imageAlt: 'A Good Locksmith comparing a mechanical employee key with individually scheduled electronic door credentials for a local business',
+    seoTitle: 'Employee Key Business Hours Access | Harnett County, NC',
+    seoDescription: 'Can an employee key work only during business hours? Compare mechanical keys with scheduled electronic credentials, door assignments, updates, and outage planning.',
+    about: ['Employee key business hours', 'Time-restricted employee access', 'Electronic access schedule', 'Commercial door credentials', 'Harnett County commercial locksmith'],
+  },
+  {
     slug: 'car-key-fob-got-wet-water-damage-nc',
     title: 'Car Key Fob Got Wet? What to Do Before Trying It Again',
     excerpt: 'Stop pressing buttons, avoid heat, follow the exact owner-manual battery instructions, protect the coin cell, and identify what still works before testing or replacing a wet key fob.',
