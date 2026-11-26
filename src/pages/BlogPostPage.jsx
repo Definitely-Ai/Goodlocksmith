@@ -107,6 +107,7 @@ import ManufacturedHomeDoorLockFitGuidePost from './ManufacturedHomeDoorLockFitG
 import SmartLockRentalPropertyNcGuidePost from './SmartLockRentalPropertyNcGuidePost';
 import WetKeyFobGuidePost from './WetKeyFobGuidePost';
 import EmployeeBusinessHoursAccessGuidePost from './EmployeeBusinessHoursAccessGuidePost';
+import FireDamagedDoorLockGuidePost from './FireDamagedDoorLockGuidePost';
 import { getBlogPost } from '../data/blogPosts';
 import { phoneLink } from '../data/cities';
 import './Blog.css';
@@ -171,6 +172,10 @@ const BlogPostPage = () => {
   }, [post]);
 
   if (!post) return <Navigate to="/blog" replace />;
+
+  if (post.slug === 'door-lock-after-house-fire-nc') {
+    return <FireDamagedDoorLockGuidePost post={post} />;
+  }
 
   if (post.slug === 'employee-key-business-hours-access-control-nc') {
     return <EmployeeBusinessHoursAccessGuidePost post={post} />;

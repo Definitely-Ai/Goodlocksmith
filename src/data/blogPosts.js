@@ -1,5 +1,19 @@
 export const blogPosts = [
   {
+    slug: 'door-lock-after-house-fire-nc',
+    title: 'Can You Keep Using a Door Lock After a House Fire?',
+    excerpt: 'A key that still turns does not prove a fire-affected opening is dependable. Learn when authorities, structural safety, insurance, door condition, and lock damage point to repair or replacement.',
+    publishedDate: 'November 26, 2026',
+    datePublished: '2026-11-26',
+    readingTime: '11 min read',
+    category: 'Fire-Damaged Door Locks',
+    image: '/images/residential-rekey-good-locksmith.webp',
+    imageAlt: 'A Good Locksmith evaluating a fire-affected exterior door, frame, strike, hinges, and lock after the property has been released for safe service',
+    seoTitle: 'Door Lock After a House Fire | Harnett County, NC',
+    seoDescription: 'Can you keep using a door lock after a house fire? Check authority, insurance, heat, water, soot, door alignment, egress, and the full opening first.',
+    about: ['Door lock after house fire', 'Fire damaged door lock', 'Smoke and water damaged lock', 'Post-fire property security', 'Harnett County residential locksmith'],
+  },
+  {
     slug: 'employee-key-business-hours-access-control-nc',
     title: 'Can an Employee Key Work Only During Business Hours?',
     excerpt: 'A mechanical key cannot follow a clock, but supported electronic credentials can use door assignments, schedules, and activation or expiration dates. Learn what businesses must plan first.',
