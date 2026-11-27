@@ -1,5 +1,19 @@
 export const blogPosts = [
   {
+    slug: 'garage-entry-door-deadbolt-nc',
+    title: 'Should the Door From Your Garage to Your House Have a Deadbolt?',
+    excerpt: 'Keep the garage-to-house door locked, but check its construction, label, closer, latch, frame, preparation, and inside operation before adding a deadbolt.',
+    publishedDate: 'November 27, 2026',
+    datePublished: '2026-11-27',
+    readingTime: '12 min read',
+    category: 'Garage Entry Door Security',
+    image: '/images/residential-rekey-good-locksmith.webp',
+    imageAlt: 'A Good Locksmith evaluating the deadbolt, latch, closer, frame, and label on a door between an attached garage and a home',
+    seoTitle: 'Garage Entry Door Deadbolt | Harnett County, NC',
+    seoDescription: 'Should the garage-to-house door have a deadbolt? Check security, door construction, fire separation, closing, latching, fit, and safe inside operation.',
+    about: ['Garage entry door deadbolt', 'Garage-to-house door lock', 'Attached garage door security', 'Garage fire separation door', 'Harnett County residential locksmith'],
+  },
+  {
     slug: 'door-lock-after-house-fire-nc',
     title: 'Can You Keep Using a Door Lock After a House Fire?',
     excerpt: 'A key that still turns does not prove a fire-affected opening is dependable. Learn when authorities, structural safety, insurance, door condition, and lock damage point to repair or replacement.',

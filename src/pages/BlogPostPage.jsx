@@ -108,6 +108,7 @@ import SmartLockRentalPropertyNcGuidePost from './SmartLockRentalPropertyNcGuide
 import WetKeyFobGuidePost from './WetKeyFobGuidePost';
 import EmployeeBusinessHoursAccessGuidePost from './EmployeeBusinessHoursAccessGuidePost';
 import FireDamagedDoorLockGuidePost from './FireDamagedDoorLockGuidePost';
+import GarageEntryDoorDeadboltGuidePost from './GarageEntryDoorDeadboltGuidePost';
 import { getBlogPost } from '../data/blogPosts';
 import { phoneLink } from '../data/cities';
 import './Blog.css';
@@ -172,6 +173,10 @@ const BlogPostPage = () => {
   }, [post]);
 
   if (!post) return <Navigate to="/blog" replace />;
+
+  if (post.slug === 'garage-entry-door-deadbolt-nc') {
+    return <GarageEntryDoorDeadboltGuidePost post={post} />;
+  }
 
   if (post.slug === 'door-lock-after-house-fire-nc') {
     return <FireDamagedDoorLockGuidePost post={post} />;
