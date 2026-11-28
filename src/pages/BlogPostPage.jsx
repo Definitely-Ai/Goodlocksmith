@@ -109,6 +109,7 @@ import WetKeyFobGuidePost from './WetKeyFobGuidePost';
 import EmployeeBusinessHoursAccessGuidePost from './EmployeeBusinessHoursAccessGuidePost';
 import FireDamagedDoorLockGuidePost from './FireDamagedDoorLockGuidePost';
 import GarageEntryDoorDeadboltGuidePost from './GarageEntryDoorDeadboltGuidePost';
+import ShedDeadboltFitGuidePost from './ShedDeadboltFitGuidePost';
 import { getBlogPost } from '../data/blogPosts';
 import { phoneLink } from '../data/cities';
 import './Blog.css';
@@ -173,6 +174,10 @@ const BlogPostPage = () => {
   }, [post]);
 
   if (!post) return <Navigate to="/blog" replace />;
+
+  if (post.slug === 'shed-door-standard-deadbolt-fit-nc') {
+    return <ShedDeadboltFitGuidePost post={post} />;
+  }
 
   if (post.slug === 'garage-entry-door-deadbolt-nc') {
     return <GarageEntryDoorDeadboltGuidePost post={post} />;

@@ -1,5 +1,19 @@
 export const blogPosts = [
   {
+    slug: 'shed-door-standard-deadbolt-fit-nc',
+    title: 'Will a Standard House Deadbolt Fit a Shed Door?',
+    excerpt: 'Some solid outbuilding doors accept residential deadbolts; thin metal, hollow, double, or sliding doors may not. Check preparation, reinforcement, frame, strike, weather, and inside exit first.',
+    publishedDate: 'November 28, 2026',
+    datePublished: '2026-11-28',
+    readingTime: '12 min read',
+    category: 'Shed and Outbuilding Locks',
+    image: '/images/residential-rekey-good-locksmith.webp',
+    imageAlt: 'A Good Locksmith measuring a shed door, frame, strike location, thickness, and backset before selecting compatible outbuilding lock hardware',
+    seoTitle: 'Shed Door Deadbolt Fit | Harnett County, NC',
+    seoDescription: 'Will a house deadbolt fit a shed door? Check door thickness, bores, backset, reinforcement, strike, frame, weather exposure, and safe inside exit first.',
+    about: ['Shed door deadbolt', 'Outbuilding door lock', 'Workshop door security', 'Shed lock installation', 'Harnett County residential locksmith'],
+  },
+  {
     slug: 'garage-entry-door-deadbolt-nc',
     title: 'Should the Door From Your Garage to Your House Have a Deadbolt?',
     excerpt: 'Keep the garage-to-house door locked, but check its construction, label, closer, latch, frame, preparation, and inside operation before adding a deadbolt.',
